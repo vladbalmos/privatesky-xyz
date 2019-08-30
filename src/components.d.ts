@@ -13,6 +13,8 @@ import {
 export namespace Components {
   interface AppHome {}
   interface AppProfile {
+    'getMyName': Function;
+    'lastName': string;
     'match': MatchResults;
   }
   interface AppRoot {
@@ -60,6 +62,8 @@ declare global {
 declare namespace LocalJSX {
   interface AppHome extends JSXBase.HTMLAttributes<HTMLAppHomeElement> {}
   interface AppProfile extends JSXBase.HTMLAttributes<HTMLAppProfileElement> {
+    'getMyName'?: Function;
+    'lastName'?: string;
     'match'?: MatchResults;
   }
   interface AppRoot extends JSXBase.HTMLAttributes<HTMLAppRootElement> {

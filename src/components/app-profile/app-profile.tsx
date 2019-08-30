@@ -8,6 +8,8 @@ import { MatchResults } from '@stencil/router';
 })
 export class AppProfile {
   @Prop() match: MatchResults;
+  @Prop() lastName: string;
+  @Prop() getMyName: Function;
 
   normalize(name: string): string {
     if (name) {
@@ -17,12 +19,12 @@ export class AppProfile {
   }
 
   render() {
+    console.log(this.match);
     if (this.match && this.match.params.name) {
       return (
         <div class="app-profile">
           <p>
-            Hello! My name is {this.normalize(this.match.params.name)}. My name was passed in
-            through a route param!
+            Hello! My name is {this.normalize(this.match.params.name)}. My last name is {this.lastName} and my full Name is {this.getMyName(this.match.params.name, this.lastName) }
           </p>
         </div>
       );
