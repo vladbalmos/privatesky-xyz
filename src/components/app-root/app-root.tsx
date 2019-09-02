@@ -1,5 +1,6 @@
-import {Component, h, Prop} from '@stencil/core';
+import {Component, h, Listen, Prop, Element, EventEmitter,Event} from '@stencil/core';
 import DefaultController from "../../controllers/DefaultController";
+import {RouterHistory} from "@stencil/router";
 
 @Component({
   tag: 'app-root',
@@ -9,17 +10,33 @@ import DefaultController from "../../controllers/DefaultController";
 export class AppRoot {
 
   @Prop() controller: any;
+  @Prop() history: RouterHistory;
+  @Element() element:HTMLElement;
 
+  @Event({
+    eventName: 'routeChanged',
+    composed: true,
+    cancelable: true,
+    bubbles: true,
+  }) routeChangedEvent:EventEmitter;
+
+
+  @Listen('routeChanged', {capture: true})
+  changeRoute(ev){
+    console.log(ev.detail);
+    window.location.pathname=ev.detail;
+  }
 
   render() {
+
     if(!this.controller){
-      this.controller = new DefaultController();
+      this.controller = new DefaultController(this.element);
     }
 
     return (
       <div>
         <header >
-          <app-menu itemRenderer="my-menu-item" onMenuChanged="controller.handler"></app-menu>
+          <app-menu itemRenderer="app-menu-renderer"  controller={this.controller}></app-menu>
         </header>
 
         <main>

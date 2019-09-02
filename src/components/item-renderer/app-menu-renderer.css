@@ -1,0 +1,17 @@
+div{
+  display: inline-block;
+  margin:0px 10px;
+}
+
+:host([active]) a
+{
+  color:indianred;
+}
+
+div a{
+  color:#FFF;
+  text-decoration: none;
+}
+
+
+

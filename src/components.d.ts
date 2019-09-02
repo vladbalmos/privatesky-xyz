@@ -8,10 +8,15 @@
 import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 import {
   MatchResults,
+  RouterHistory,
 } from '@stencil/router';
 
 export namespace Components {
   interface AppHome {}
+  interface AppMenuRenderer {
+    'active': boolean;
+    'value': string;
+  }
   interface AppProfile {
     'getMyName': Function;
     'lastName': string;
@@ -19,6 +24,7 @@ export namespace Components {
   }
   interface AppRoot {
     'controller': any;
+    'history': RouterHistory;
   }
   interface MyMenuItem {
     'label': string;
@@ -32,6 +38,12 @@ declare global {
   var HTMLAppHomeElement: {
     prototype: HTMLAppHomeElement;
     new (): HTMLAppHomeElement;
+  };
+
+  interface HTMLAppMenuRendererElement extends Components.AppMenuRenderer, HTMLStencilElement {}
+  var HTMLAppMenuRendererElement: {
+    prototype: HTMLAppMenuRendererElement;
+    new (): HTMLAppMenuRendererElement;
   };
 
   interface HTMLAppProfileElement extends Components.AppProfile, HTMLStencilElement {}
@@ -53,6 +65,7 @@ declare global {
   };
   interface HTMLElementTagNameMap {
     'app-home': HTMLAppHomeElement;
+    'app-menu-renderer': HTMLAppMenuRendererElement;
     'app-profile': HTMLAppProfileElement;
     'app-root': HTMLAppRootElement;
     'my-menu-item': HTMLMyMenuItemElement;
@@ -61,6 +74,10 @@ declare global {
 
 declare namespace LocalJSX {
   interface AppHome extends JSXBase.HTMLAttributes<HTMLAppHomeElement> {}
+  interface AppMenuRenderer extends JSXBase.HTMLAttributes<HTMLAppMenuRendererElement> {
+    'active'?: boolean;
+    'value'?: string;
+  }
   interface AppProfile extends JSXBase.HTMLAttributes<HTMLAppProfileElement> {
     'getMyName'?: Function;
     'lastName'?: string;
@@ -68,6 +85,8 @@ declare namespace LocalJSX {
   }
   interface AppRoot extends JSXBase.HTMLAttributes<HTMLAppRootElement> {
     'controller'?: any;
+    'history'?: RouterHistory;
+    'onRouteChanged'?: (event: CustomEvent<any>) => void;
   }
   interface MyMenuItem extends JSXBase.HTMLAttributes<HTMLMyMenuItemElement> {
     'label'?: string;
@@ -75,6 +94,7 @@ declare namespace LocalJSX {
 
   interface IntrinsicElements {
     'app-home': AppHome;
+    'app-menu-renderer': AppMenuRenderer;
     'app-profile': AppProfile;
     'app-root': AppRoot;
     'my-menu-item': MyMenuItem;
