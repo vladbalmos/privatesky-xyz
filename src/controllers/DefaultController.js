@@ -1,36 +1,45 @@
+import {getElement} from "@stencil/core";
+import appNavigationStructure from "../global/app-navigation-structure";
+
 export default class DefaultController {
 
-  constructor(view){
-    console.log(view);
-    if(!view) {
-      view = document;
-    }
+  constructor(view) {
+    this.element = getElement(view);
 
-    view.addEventListener('menuEvent', function (e) {
+    this.element.addEventListener('menuEvent', (e) => {
       e.stopImmediatePropagation();
-      let path = e.detail;
-
-      let changePathEvt = new CustomEvent("routeChanged",{bubbles:true, cancelable:false, detail:path});
-      view.dispatchEvent(changePathEvt);
-
-      console.log("Event din default controller", e.detail);
-
+      if (e.detail.type === "href") {
+        window.location.href = e.detail.path;
+      }
+      let menuItem = e.detail;
+      let changePathEvt = new CustomEvent("routeChanged", {bubbles: true, cancelable: false, detail: menuItem});
+      this.element.dispatchEvent(changePathEvt);
     });
-  }
 
-  getMenuItems() {
-    return [{
-      name: "Home",
-      path: "/home"
-    },
-      {
-        name: "About",
-        path: "/about"
-      },
-      {
-        name: "Contact",
-        path: "/contact"
-      }]
+    this.element.addEventListener("needMenuItems", (e) => {
+
+      let callback = e.detail;
+      if (callback && typeof callback === "function") {
+        callback(appNavigationStructure);
+      } else {
+        console.error("Callback was not properly provided!");
+      }
+    });
+
+
+    this.element.addEventListener("getUserInfo", (e) => {
+
+      let callback = e.detail;
+      if (callback && typeof callback === "function") {
+        callback(null,{
+          username:"PSK Components",
+          email:"info@privatesky.ro",
+          avatar:"https://www.seekpng.com/png/full/24-249312_abstract-abstract-colorful-squares-png.png"
+        });
+      } else {
+        console.error("Callback was not properly provided!");
+      }
+    });
   }
 }
 

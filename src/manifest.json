@@ -1,6 +1,6 @@
 {
-  "name": "Stencil Starter",
-  "short_name": "Stencil",
+  "name": "PrivateSky Web Components",
+  "short_name": "PSKWebComponents",
   "start_url": "/",
   "display": "standalone",
   "icons": [{

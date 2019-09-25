@@ -1,0 +1,44 @@
+[{
+  "name": "Home",
+  "path": "/home",
+  "icon": "fa-home",
+  "type": "route",
+  "component":"app-home",
+  "exact":true
+},
+  {
+    "name": "PSK Components",
+    "path": "/psk-components",
+    "icon": "fa-bars",
+    "type": "abstract",
+    "children": [{
+      "name": "App Menu",
+      "path": "/psk-components/app-menu",
+      "icon": "fa-bars",
+      "type": "route",
+      "exact":true
+    },
+      {
+        "name": "User Profile",
+        "path": "/psk-components/user-profile",
+        "icon": "fa-bars",
+        "type": "route",
+        "exact":true
+      },
+      {
+        "name": "App Router",
+        "path": "/psk-components/app-router",
+        "icon": "fa-bars",
+        "type": "route",
+        "exact":true
+      }]
+  },
+  {
+    "name": "Themes",
+    "path": "/themes",
+    "icon": "fa-cog",
+    "type": "route",
+    "component":"psk-themes",
+    "exact":true
+  }
+]

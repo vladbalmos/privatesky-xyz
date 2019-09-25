@@ -1,4 +1,4 @@
-import {Component, h, Listen, Prop, Element, EventEmitter,Event} from '@stencil/core';
+import {Component, h,  Prop, EventEmitter,Event} from '@stencil/core';
 import DefaultController from "../../controllers/DefaultController";
 import {RouterHistory} from "@stencil/router";
 
@@ -11,7 +11,6 @@ export class AppRoot {
 
   @Prop() controller: any;
   @Prop() history: RouterHistory;
-  @Element() element:HTMLElement;
 
   @Event({
     eventName: 'routeChanged',
@@ -20,33 +19,26 @@ export class AppRoot {
     bubbles: true,
   }) routeChangedEvent:EventEmitter;
 
-
-  @Listen('routeChanged', {capture: true})
-  changeRoute(ev){
-    console.log(ev.detail);
-    window.location.pathname=ev.detail;
+  constructor(){
+    if(!this.controller){
+      this.controller = new DefaultController(this);
+    }
   }
 
   render() {
-
-    if(!this.controller){
-      this.controller = new DefaultController(this.element);
-    }
-
     return (
-      <div>
-        <header >
-          <app-menu itemRenderer="app-menu-renderer"  controller={this.controller}></app-menu>
-        </header>
+      <div class="global_container">
+        <aside>
+          <psk-user-profile/>
+          <app-menu item-renderer="sidebar-renderer"></app-menu>
+          <div class="nav-footer">version 0.1</div>
+        </aside>
 
-        <main>
-          <stencil-router>
-            <stencil-route-switch scrollTopOffset={0}>
-              <stencil-route url='/' component='app-home' exact={true} />
-              <stencil-route url='/profile/:name' componentProps ={{lastName:"Test", getMyName(a:string,b:string){return a+b;}}} component='app-profile' />
-            </stencil-route-switch>
-          </stencil-router>
-        </main>
+        <section>
+          <nav> </nav>
+          <psk-app-router> </psk-app-router>
+        </section>
+
       </div>
     );
   }

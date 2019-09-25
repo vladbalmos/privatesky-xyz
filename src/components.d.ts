@@ -10,13 +10,12 @@ import {
   MatchResults,
   RouterHistory,
 } from '@stencil/router';
+import {
+  MenuItem,
+} from 'webcomponents/dist/types/interfaces/MenuItem';
 
 export namespace Components {
   interface AppHome {}
-  interface AppMenuRenderer {
-    'active': boolean;
-    'value': string;
-  }
   interface AppProfile {
     'getMyName': Function;
     'lastName': string;
@@ -26,8 +25,15 @@ export namespace Components {
     'controller': any;
     'history': RouterHistory;
   }
-  interface MyMenuItem {
-    'label': string;
+  interface DropdownRenderer {
+    'active': boolean;
+    'somethingChanged': boolean;
+    'url': any;
+  }
+  interface PskThemes {}
+  interface SidebarRenderer {
+    'active': boolean;
+    'value': MenuItem;
   }
 }
 
@@ -38,12 +44,6 @@ declare global {
   var HTMLAppHomeElement: {
     prototype: HTMLAppHomeElement;
     new (): HTMLAppHomeElement;
-  };
-
-  interface HTMLAppMenuRendererElement extends Components.AppMenuRenderer, HTMLStencilElement {}
-  var HTMLAppMenuRendererElement: {
-    prototype: HTMLAppMenuRendererElement;
-    new (): HTMLAppMenuRendererElement;
   };
 
   interface HTMLAppProfileElement extends Components.AppProfile, HTMLStencilElement {}
@@ -58,26 +58,35 @@ declare global {
     new (): HTMLAppRootElement;
   };
 
-  interface HTMLMyMenuItemElement extends Components.MyMenuItem, HTMLStencilElement {}
-  var HTMLMyMenuItemElement: {
-    prototype: HTMLMyMenuItemElement;
-    new (): HTMLMyMenuItemElement;
+  interface HTMLDropdownRendererElement extends Components.DropdownRenderer, HTMLStencilElement {}
+  var HTMLDropdownRendererElement: {
+    prototype: HTMLDropdownRendererElement;
+    new (): HTMLDropdownRendererElement;
+  };
+
+  interface HTMLPskThemesElement extends Components.PskThemes, HTMLStencilElement {}
+  var HTMLPskThemesElement: {
+    prototype: HTMLPskThemesElement;
+    new (): HTMLPskThemesElement;
+  };
+
+  interface HTMLSidebarRendererElement extends Components.SidebarRenderer, HTMLStencilElement {}
+  var HTMLSidebarRendererElement: {
+    prototype: HTMLSidebarRendererElement;
+    new (): HTMLSidebarRendererElement;
   };
   interface HTMLElementTagNameMap {
     'app-home': HTMLAppHomeElement;
-    'app-menu-renderer': HTMLAppMenuRendererElement;
     'app-profile': HTMLAppProfileElement;
     'app-root': HTMLAppRootElement;
-    'my-menu-item': HTMLMyMenuItemElement;
+    'dropdown-renderer': HTMLDropdownRendererElement;
+    'psk-themes': HTMLPskThemesElement;
+    'sidebar-renderer': HTMLSidebarRendererElement;
   }
 }
 
 declare namespace LocalJSX {
   interface AppHome extends JSXBase.HTMLAttributes<HTMLAppHomeElement> {}
-  interface AppMenuRenderer extends JSXBase.HTMLAttributes<HTMLAppMenuRendererElement> {
-    'active'?: boolean;
-    'value'?: string;
-  }
   interface AppProfile extends JSXBase.HTMLAttributes<HTMLAppProfileElement> {
     'getMyName'?: Function;
     'lastName'?: string;
@@ -88,16 +97,24 @@ declare namespace LocalJSX {
     'history'?: RouterHistory;
     'onRouteChanged'?: (event: CustomEvent<any>) => void;
   }
-  interface MyMenuItem extends JSXBase.HTMLAttributes<HTMLMyMenuItemElement> {
-    'label'?: string;
+  interface DropdownRenderer extends JSXBase.HTMLAttributes<HTMLDropdownRendererElement> {
+    'active'?: boolean;
+    'somethingChanged'?: boolean;
+    'url'?: any;
+  }
+  interface PskThemes extends JSXBase.HTMLAttributes<HTMLPskThemesElement> {}
+  interface SidebarRenderer extends JSXBase.HTMLAttributes<HTMLSidebarRendererElement> {
+    'active'?: boolean;
+    'value'?: MenuItem;
   }
 
   interface IntrinsicElements {
     'app-home': AppHome;
-    'app-menu-renderer': AppMenuRenderer;
     'app-profile': AppProfile;
     'app-root': AppRoot;
-    'my-menu-item': MyMenuItem;
+    'dropdown-renderer': DropdownRenderer;
+    'psk-themes': PskThemes;
+    'sidebar-renderer': SidebarRenderer;
   }
 }
 

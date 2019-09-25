@@ -1,15 +1,18 @@
+@import url("../../assets/css/bootstrap/css/bootstrap.min.css");
+
 .app-home {
   padding: 10px;
 }
 
-button {
-  background: #5851ff;
+a {
+  background: #4e73df;
   color: white;
   margin: 8px;
   border: none;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
+  text-decoration: none;
   padding: 16px 20px;
   border-radius: 2px;
   box-shadow: 0 8px 16px rgba(0,0,0,.1), 0 3px 6px rgba(0,0,0,.08);
@@ -18,7 +21,6 @@ button {
   transition: all .15s ease;
   cursor: pointer;
 }
-  
 button:hover {
   box-shadow: 0 3px 6px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.1);
   transform: translateY(1px);

@@ -1,0 +1,62 @@
+@import url(../../../../assets/fonts/fontawesome/font-awesome.min.css);
+
+:host{
+  width:100%;
+  padding:10px 0 10px 0;
+  display: block;
+  font-size: 16px;
+
+}
+
+span.icon{
+  color: rgba(255,255,255,.8);
+  margin-right: 10px;
+}
+
+.expand-menu{
+  position: absolute;
+  right: 5px;
+  top:22px
+}
+
+.wrapper_container{
+  display: inline-block;
+  padding:0 10px;
+  width:100%;
+  box-sizing: border-box;
+}
+
+.item_container{
+  width: 100%;
+  position: relative;
+  padding: 20px 0 0 0;
+  border-top: 1px solid rgba(255,255,255,.15);
+}
+
+a{
+  color: rgba(255,255,255,.8);
+  text-decoration: none;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+a.active {
+  font-weight: 700;
+  color:#FFF;
+}
+a.active span.icon{
+  color:#FFFFFF;
+}
+
+.children{
+  position:relative;
+  display: none;
+  padding-left: 10px;
+}
+
+:host([active]) div.children{
+  display: block;
+}
+
+
+
