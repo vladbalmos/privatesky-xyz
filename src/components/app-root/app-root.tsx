@@ -46,7 +46,7 @@ export class AppRoot {
         </aside>
 
         <section>
-          <nav> </nav>
+          <nav></nav>
           <psk-app-router> </psk-app-router>
           {this.mobileLayout === true ?<div class="nav-footer bottom-stick">version 0.1</div>:null}
         </section>

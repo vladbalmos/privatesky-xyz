@@ -2,7 +2,7 @@ import {Component, h} from "@stencil/core";
 
 @Component({
   tag: 'user-profile-usage',
-  styleUrl: 'user-profile-usage.css',
+  styleUrl: '../general-css/general-css.css',
   shadow: true,
 })
 export class UserProfileUsage {

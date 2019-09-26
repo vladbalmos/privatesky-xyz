@@ -16,6 +16,7 @@ import {
 
 export namespace Components {
   interface AppHome {}
+  interface AppMenuUsage {}
   interface AppProfile {
     'getMyName': Function;
     'lastName': string;
@@ -45,6 +46,12 @@ declare global {
   var HTMLAppHomeElement: {
     prototype: HTMLAppHomeElement;
     new (): HTMLAppHomeElement;
+  };
+
+  interface HTMLAppMenuUsageElement extends Components.AppMenuUsage, HTMLStencilElement {}
+  var HTMLAppMenuUsageElement: {
+    prototype: HTMLAppMenuUsageElement;
+    new (): HTMLAppMenuUsageElement;
   };
 
   interface HTMLAppProfileElement extends Components.AppProfile, HTMLStencilElement {}
@@ -84,6 +91,7 @@ declare global {
   };
   interface HTMLElementTagNameMap {
     'app-home': HTMLAppHomeElement;
+    'app-menu-usage': HTMLAppMenuUsageElement;
     'app-profile': HTMLAppProfileElement;
     'app-root': HTMLAppRootElement;
     'expandable-renderer': HTMLExpandableRendererElement;
@@ -95,6 +103,7 @@ declare global {
 
 declare namespace LocalJSX {
   interface AppHome extends JSXBase.HTMLAttributes<HTMLAppHomeElement> {}
+  interface AppMenuUsage extends JSXBase.HTMLAttributes<HTMLAppMenuUsageElement> {}
   interface AppProfile extends JSXBase.HTMLAttributes<HTMLAppProfileElement> {
     'getMyName'?: Function;
     'lastName'?: string;
@@ -119,6 +128,7 @@ declare namespace LocalJSX {
 
   interface IntrinsicElements {
     'app-home': AppHome;
+    'app-menu-usage': AppMenuUsage;
     'app-profile': AppProfile;
     'app-root': AppRoot;
     'expandable-renderer': ExpandableRenderer;
