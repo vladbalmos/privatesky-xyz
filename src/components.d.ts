@@ -25,7 +25,7 @@ export namespace Components {
     'controller': any;
     'history': RouterHistory;
   }
-  interface DropdownRenderer {
+  interface ExpandableRenderer {
     'active': boolean;
     'somethingChanged': boolean;
     'url': any;
@@ -35,6 +35,7 @@ export namespace Components {
     'active': boolean;
     'value': MenuItem;
   }
+  interface UserProfileUsage {}
 }
 
 declare global {
@@ -58,10 +59,10 @@ declare global {
     new (): HTMLAppRootElement;
   };
 
-  interface HTMLDropdownRendererElement extends Components.DropdownRenderer, HTMLStencilElement {}
-  var HTMLDropdownRendererElement: {
-    prototype: HTMLDropdownRendererElement;
-    new (): HTMLDropdownRendererElement;
+  interface HTMLExpandableRendererElement extends Components.ExpandableRenderer, HTMLStencilElement {}
+  var HTMLExpandableRendererElement: {
+    prototype: HTMLExpandableRendererElement;
+    new (): HTMLExpandableRendererElement;
   };
 
   interface HTMLPskThemesElement extends Components.PskThemes, HTMLStencilElement {}
@@ -75,13 +76,20 @@ declare global {
     prototype: HTMLSidebarRendererElement;
     new (): HTMLSidebarRendererElement;
   };
+
+  interface HTMLUserProfileUsageElement extends Components.UserProfileUsage, HTMLStencilElement {}
+  var HTMLUserProfileUsageElement: {
+    prototype: HTMLUserProfileUsageElement;
+    new (): HTMLUserProfileUsageElement;
+  };
   interface HTMLElementTagNameMap {
     'app-home': HTMLAppHomeElement;
     'app-profile': HTMLAppProfileElement;
     'app-root': HTMLAppRootElement;
-    'dropdown-renderer': HTMLDropdownRendererElement;
+    'expandable-renderer': HTMLExpandableRendererElement;
     'psk-themes': HTMLPskThemesElement;
     'sidebar-renderer': HTMLSidebarRendererElement;
+    'user-profile-usage': HTMLUserProfileUsageElement;
   }
 }
 
@@ -97,7 +105,7 @@ declare namespace LocalJSX {
     'history'?: RouterHistory;
     'onRouteChanged'?: (event: CustomEvent<any>) => void;
   }
-  interface DropdownRenderer extends JSXBase.HTMLAttributes<HTMLDropdownRendererElement> {
+  interface ExpandableRenderer extends JSXBase.HTMLAttributes<HTMLExpandableRendererElement> {
     'active'?: boolean;
     'somethingChanged'?: boolean;
     'url'?: any;
@@ -107,14 +115,16 @@ declare namespace LocalJSX {
     'active'?: boolean;
     'value'?: MenuItem;
   }
+  interface UserProfileUsage extends JSXBase.HTMLAttributes<HTMLUserProfileUsageElement> {}
 
   interface IntrinsicElements {
     'app-home': AppHome;
     'app-profile': AppProfile;
     'app-root': AppRoot;
-    'dropdown-renderer': DropdownRenderer;
+    'expandable-renderer': ExpandableRenderer;
     'psk-themes': PskThemes;
     'sidebar-renderer': SidebarRenderer;
+    'user-profile-usage': UserProfileUsage;
   }
 }
 

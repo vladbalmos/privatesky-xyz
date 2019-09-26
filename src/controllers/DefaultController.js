@@ -34,7 +34,7 @@ export default class DefaultController {
         callback(null,{
           username:"PSK Components",
           email:"info@privatesky.ro",
-          avatar:"https://www.seekpng.com/png/full/24-249312_abstract-abstract-colorful-squares-png.png"
+          avatar:"https://i.ibb.co/ZTcVc3L/psk-component.png"
         });
       } else {
         console.error("Callback was not properly provided!");

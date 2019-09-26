@@ -23,6 +23,7 @@
         "path": "/psk-components/user-profile",
         "icon": "fa-bars",
         "type": "route",
+        "component":"user-profile-usage",
         "exact":true
       },
       {

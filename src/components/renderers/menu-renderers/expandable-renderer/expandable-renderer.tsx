@@ -1,7 +1,7 @@
 import {Component, getElement, h, Listen,  Prop, State} from '@stencil/core';
 
 @Component({
-  tag: 'dropdown-renderer',
+  tag: 'expandable-renderer',
   shadow: false
 })
 

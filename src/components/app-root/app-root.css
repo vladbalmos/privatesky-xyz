@@ -5,12 +5,23 @@ div.global_container{
   height: 100%;
   background-color: #f8f9fc;
 }
+
+div.global_container.is-mobile{
+  width: 100%;
+  flex-direction: column;
+}
+
+.is-mobile aside{
+  width: 100%;
+  height: auto;
+}
+
 aside {
   height:100%;
   background-color: #4e73df;
   background-image: linear-gradient(180deg,#4e73df 10%,#224abe 100%);
   color: white;
-  align-items: flex-start;
+  align-items: center;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   order:1;
   flex: 1;
@@ -33,7 +44,18 @@ nav{
   background: #142b86;
   font-size: 85%;
 }
-app-menu{
+.nav-footer.bottom-stick{
+ color:#FFF;
+  background: #224abe;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+}
+
+app-menu,
+psk-app-router{
 flex-grow: 1;
 }
 

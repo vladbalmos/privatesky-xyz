@@ -1,0 +1,8 @@
+@import url("../../../assets/css/bootstrap/css/bootstrap.min.css");
+pre{
+  overflow: hidden;
+  padding: 10px;
+  background:#E9E9E9;
+  white-space: pre-wrap;
+  color:#005cbf;
+}
