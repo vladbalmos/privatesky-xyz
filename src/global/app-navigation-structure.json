@@ -36,9 +36,30 @@
       }]
   },
   {
+    "name": "Controllers",
+    "path": "/controllers",
+    "icon": "fa-cog",
+    "type": "route",
+    "exact":true
+  },
+  {
+    "name": "Events",
+    "path": "/events",
+    "icon": "fa-bolt",
+    "type": "route",
+    "exact":true
+  },
+  {
+    "name": "Services",
+    "path": "/services",
+    "icon": "fa-server",
+    "type": "route",
+    "exact":true
+  },
+  {
     "name": "Themes",
     "path": "/themes",
-    "icon": "fa-cog",
+    "icon": "fa-paint-brush",
     "type": "route",
     "component":"psk-themes",
     "exact":true
