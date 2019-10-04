@@ -37,6 +37,7 @@ export namespace Components {
     'active': boolean;
     'value': MenuItem;
   }
+  interface UiLoaderUsage {}
   interface UserProfileUsage {}
 }
 
@@ -91,6 +92,12 @@ declare global {
     new (): HTMLSidebarRendererElement;
   };
 
+  interface HTMLUiLoaderUsageElement extends Components.UiLoaderUsage, HTMLStencilElement {}
+  var HTMLUiLoaderUsageElement: {
+    prototype: HTMLUiLoaderUsageElement;
+    new (): HTMLUiLoaderUsageElement;
+  };
+
   interface HTMLUserProfileUsageElement extends Components.UserProfileUsage, HTMLStencilElement {}
   var HTMLUserProfileUsageElement: {
     prototype: HTMLUserProfileUsageElement;
@@ -105,6 +112,7 @@ declare global {
     'modal-usage': HTMLModalUsageElement;
     'psk-themes': HTMLPskThemesElement;
     'sidebar-renderer': HTMLSidebarRendererElement;
+    'ui-loader-usage': HTMLUiLoaderUsageElement;
     'user-profile-usage': HTMLUserProfileUsageElement;
   }
 }
@@ -133,6 +141,7 @@ declare namespace LocalJSX {
     'active'?: boolean;
     'value'?: MenuItem;
   }
+  interface UiLoaderUsage extends JSXBase.HTMLAttributes<HTMLUiLoaderUsageElement> {}
   interface UserProfileUsage extends JSXBase.HTMLAttributes<HTMLUserProfileUsageElement> {}
 
   interface IntrinsicElements {
@@ -144,6 +153,7 @@ declare namespace LocalJSX {
     'modal-usage': ModalUsage;
     'psk-themes': PskThemes;
     'sidebar-renderer': SidebarRenderer;
+    'ui-loader-usage': UiLoaderUsage;
     'user-profile-usage': UserProfileUsage;
   }
 }
