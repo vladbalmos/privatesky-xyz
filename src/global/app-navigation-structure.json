@@ -35,6 +35,14 @@
                 "exact": true
             },
             {
+                "name": "UI Loader",
+                "component": "ui-loader-usage",
+                "path": "/psk-components/ui-loader",
+                "icon": "fa-bars",
+                "type": "route",
+                "exact": true
+            },
+            {
                 "name": "User Profile",
                 "path": "/psk-components/user-profile",
                 "icon": "fa-bars",
