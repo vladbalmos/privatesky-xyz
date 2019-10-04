@@ -30,8 +30,8 @@
         }
     </style>
     <style>
-        @import url(assets/fonts/fontawesome/font-awesome.min.css);
-        @import url(assets/fonts/nunito/nunito.css);
+        @import url(./assets/fonts/fontawesome/font-awesome.min.css);
+        @import url(./assets/fonts/nunito/nunito.css);
     </style>
     <link rel="apple-touch-icon" href="/assets/icon/icon.png">
     <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico">
