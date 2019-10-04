@@ -31,6 +31,7 @@ export namespace Components {
     'somethingChanged': boolean;
     'url': any;
   }
+  interface ModalUsage {}
   interface PskThemes {}
   interface SidebarRenderer {
     'active': boolean;
@@ -72,6 +73,12 @@ declare global {
     new (): HTMLExpandableRendererElement;
   };
 
+  interface HTMLModalUsageElement extends Components.ModalUsage, HTMLStencilElement {}
+  var HTMLModalUsageElement: {
+    prototype: HTMLModalUsageElement;
+    new (): HTMLModalUsageElement;
+  };
+
   interface HTMLPskThemesElement extends Components.PskThemes, HTMLStencilElement {}
   var HTMLPskThemesElement: {
     prototype: HTMLPskThemesElement;
@@ -95,6 +102,7 @@ declare global {
     'app-profile': HTMLAppProfileElement;
     'app-root': HTMLAppRootElement;
     'expandable-renderer': HTMLExpandableRendererElement;
+    'modal-usage': HTMLModalUsageElement;
     'psk-themes': HTMLPskThemesElement;
     'sidebar-renderer': HTMLSidebarRendererElement;
     'user-profile-usage': HTMLUserProfileUsageElement;
@@ -119,6 +127,7 @@ declare namespace LocalJSX {
     'somethingChanged'?: boolean;
     'url'?: any;
   }
+  interface ModalUsage extends JSXBase.HTMLAttributes<HTMLModalUsageElement> {}
   interface PskThemes extends JSXBase.HTMLAttributes<HTMLPskThemesElement> {}
   interface SidebarRenderer extends JSXBase.HTMLAttributes<HTMLSidebarRendererElement> {
     'active'?: boolean;
@@ -132,6 +141,7 @@ declare namespace LocalJSX {
     'app-profile': AppProfile;
     'app-root': AppRoot;
     'expandable-renderer': ExpandableRenderer;
+    'modal-usage': ModalUsage;
     'psk-themes': PskThemes;
     'sidebar-renderer': SidebarRenderer;
     'user-profile-usage': UserProfileUsage;

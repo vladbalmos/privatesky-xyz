@@ -1,67 +1,76 @@
 [{
-  "name": "Home",
-  "path": "/home",
-  "icon": "fa-home",
-  "type": "route",
-  "component":"app-home",
-  "exact":true
-},
-  {
-    "name": "PSK Components",
-    "path": "/psk-components",
-    "icon": "fa-bars",
-    "type": "abstract",
-    "children": [{
-      "name": "App Menu",
-      "path": "/psk-components/app-menu",
-      "component":"app-menu-usage",
-      "icon": "fa-bars",
-      "type": "route",
-      "exact":true
+        "name": "Home",
+        "path": "/home",
+        "icon": "fa-home",
+        "type": "route",
+        "component": "app-home",
+        "exact": true
     },
-      {
-        "name": "User Profile",
-        "path": "/psk-components/user-profile",
+    {
+        "name": "PSK Components",
+        "path": "/psk-components",
         "icon": "fa-bars",
+        "type": "abstract",
+        "children": [{
+                "name": "App Menu",
+                "path": "/psk-components/app-menu",
+                "component": "app-menu-usage",
+                "icon": "fa-bars",
+                "type": "route",
+                "exact": true
+            },
+            {
+                "name": "App Router",
+                "path": "/psk-components/app-router",
+                "icon": "fa-bars",
+                "type": "route",
+                "exact": true
+            },
+            {
+                "name": "Modal",
+                "component": "modal-usage",
+                "path": "/psk-components/modal",
+                "icon": "fa-bars",
+                "type": "route",
+                "exact": true
+            },
+            {
+                "name": "User Profile",
+                "path": "/psk-components/user-profile",
+                "icon": "fa-bars",
+                "type": "route",
+                "component": "user-profile-usage",
+                "exact": true
+            }
+        ]
+    },
+    {
+        "name": "Controllers",
+        "path": "/controllers",
+        "icon": "fa-cog",
         "type": "route",
-        "component":"user-profile-usage",
-        "exact":true
-      },
-      {
-        "name": "App Router",
-        "path": "/psk-components/app-router",
-        "icon": "fa-bars",
+        "exact": true
+    },
+    {
+        "name": "Events",
+        "path": "/events",
+        "icon": "fa-bolt",
         "type": "route",
-        "exact":true
-      }]
-  },
-  {
-    "name": "Controllers",
-    "path": "/controllers",
-    "icon": "fa-cog",
-    "type": "route",
-    "exact":true
-  },
-  {
-    "name": "Events",
-    "path": "/events",
-    "icon": "fa-bolt",
-    "type": "route",
-    "exact":true
-  },
-  {
-    "name": "Services",
-    "path": "/services",
-    "icon": "fa-server",
-    "type": "route",
-    "exact":true
-  },
-  {
-    "name": "Themes",
-    "path": "/themes",
-    "icon": "fa-paint-brush",
-    "type": "route",
-    "component":"psk-themes",
-    "exact":true
-  }
+        "exact": true
+    },
+    {
+        "name": "Services",
+        "path": "/services",
+        "icon": "fa-server",
+        "type": "route",
+        "exact": true
+    },
+    {
+        "name": "Themes",
+        "path": "/themes",
+        "icon": "fa-paint-brush",
+        "type": "route",
+        "component": "psk-themes",
+        "exact": true
+    }
 ]

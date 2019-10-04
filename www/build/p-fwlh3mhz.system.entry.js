@@ -1,0 +1,1 @@
+System.register(["./p-4cab88ee.system.js"],function(e){"use strict";var t,s;return{setters:[function(e){t=e.r;s=e.h}],execute:function(){var n=e("psk_themes",function(){function e(e){t(this,e)}e.prototype.render=function(){return s("div",{class:"psk-themes"},"App themes")};return e}())}}});
