@@ -35,7 +35,15 @@ export class ModalUsage {
                             <h5>Supported properties</h5>
                         </div>
                         <div class="card-body">
-                            <p><code>opened</code> - is the property that gives the state of the modal if it is opened or closed. The posible values are <code>true</code> or <code>false</code></p>
+                            <div class="card border-light">
+                                <div class="card-header">
+                                    <h5 class="card-title"><code>opened: <b>boolean</b> <i>(optional)</i></code></h5>
+                                </div>
+                                <div class="card-body text-secondary">
+                                    <p>This is the property that gives the state of the modal if it is opened or closed. <i>The posible values are <code>true</code> or <code>false</code>.</i></p>
+                                    <p><b>Note: <i>If this property is not given, <code>false</code> is assumed.</i></b></p>
+                                </div>
+                            </div>
                         </div>
                     </div>
 

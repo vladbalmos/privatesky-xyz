@@ -32,6 +32,7 @@ export namespace Components {
     'url': any;
   }
   interface ModalUsage {}
+  interface PageNotFoundUsage {}
   interface PskThemes {}
   interface SidebarRenderer {
     'active': boolean;
@@ -80,6 +81,12 @@ declare global {
     new (): HTMLModalUsageElement;
   };
 
+  interface HTMLPageNotFoundUsageElement extends Components.PageNotFoundUsage, HTMLStencilElement {}
+  var HTMLPageNotFoundUsageElement: {
+    prototype: HTMLPageNotFoundUsageElement;
+    new (): HTMLPageNotFoundUsageElement;
+  };
+
   interface HTMLPskThemesElement extends Components.PskThemes, HTMLStencilElement {}
   var HTMLPskThemesElement: {
     prototype: HTMLPskThemesElement;
@@ -110,6 +117,7 @@ declare global {
     'app-root': HTMLAppRootElement;
     'expandable-renderer': HTMLExpandableRendererElement;
     'modal-usage': HTMLModalUsageElement;
+    'page-not-found-usage': HTMLPageNotFoundUsageElement;
     'psk-themes': HTMLPskThemesElement;
     'sidebar-renderer': HTMLSidebarRendererElement;
     'ui-loader-usage': HTMLUiLoaderUsageElement;
@@ -136,6 +144,7 @@ declare namespace LocalJSX {
     'url'?: any;
   }
   interface ModalUsage extends JSXBase.HTMLAttributes<HTMLModalUsageElement> {}
+  interface PageNotFoundUsage extends JSXBase.HTMLAttributes<HTMLPageNotFoundUsageElement> {}
   interface PskThemes extends JSXBase.HTMLAttributes<HTMLPskThemesElement> {}
   interface SidebarRenderer extends JSXBase.HTMLAttributes<HTMLSidebarRendererElement> {
     'active'?: boolean;
@@ -151,6 +160,7 @@ declare namespace LocalJSX {
     'app-root': AppRoot;
     'expandable-renderer': ExpandableRenderer;
     'modal-usage': ModalUsage;
+    'page-not-found-usage': PageNotFoundUsage;
     'psk-themes': PskThemes;
     'sidebar-renderer': SidebarRenderer;
     'ui-loader-usage': UiLoaderUsage;

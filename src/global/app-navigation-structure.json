@@ -35,6 +35,14 @@
                 "exact": true
             },
             {
+                "name": "Page not found",
+                "component": "page-not-found-usage",
+                "path": "/psk-components/page-not-found",
+                "icon": "fa-bars",
+                "type": "route",
+                "exact": true
+            },
+            {
                 "name": "UI Loader",
                 "component": "ui-loader-usage",
                 "path": "/psk-components/ui-loader",
