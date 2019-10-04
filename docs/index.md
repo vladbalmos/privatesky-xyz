@@ -20,12 +20,7 @@ body,html{
     height:100%
 }
 </style> 
-
-<style>
-@import url(../fonts/fontawesome/font-awesome.min.css);
-@import url(../fonts/nunito/nunito.css);
-</style>
-
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <link rel="apple-touch-icon" href="/assets/icon/icon.png">
 <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico">
 <link rel="manifest" href="/manifest.json">
