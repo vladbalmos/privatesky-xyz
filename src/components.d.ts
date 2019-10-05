@@ -26,11 +26,13 @@ export namespace Components {
     'controller': any;
     'history': RouterHistory;
   }
+  interface AttachmentListUsage {}
   interface ExpandableRenderer {
     'active': boolean;
     'somethingChanged': boolean;
     'url': any;
   }
+  interface FilesChooserUsage {}
   interface ModalUsage {}
   interface PageNotFoundUsage {}
   interface PskThemes {}
@@ -69,10 +71,22 @@ declare global {
     new (): HTMLAppRootElement;
   };
 
+  interface HTMLAttachmentListUsageElement extends Components.AttachmentListUsage, HTMLStencilElement {}
+  var HTMLAttachmentListUsageElement: {
+    prototype: HTMLAttachmentListUsageElement;
+    new (): HTMLAttachmentListUsageElement;
+  };
+
   interface HTMLExpandableRendererElement extends Components.ExpandableRenderer, HTMLStencilElement {}
   var HTMLExpandableRendererElement: {
     prototype: HTMLExpandableRendererElement;
     new (): HTMLExpandableRendererElement;
+  };
+
+  interface HTMLFilesChooserUsageElement extends Components.FilesChooserUsage, HTMLStencilElement {}
+  var HTMLFilesChooserUsageElement: {
+    prototype: HTMLFilesChooserUsageElement;
+    new (): HTMLFilesChooserUsageElement;
   };
 
   interface HTMLModalUsageElement extends Components.ModalUsage, HTMLStencilElement {}
@@ -115,7 +129,9 @@ declare global {
     'app-menu-usage': HTMLAppMenuUsageElement;
     'app-profile': HTMLAppProfileElement;
     'app-root': HTMLAppRootElement;
+    'attachment-list-usage': HTMLAttachmentListUsageElement;
     'expandable-renderer': HTMLExpandableRendererElement;
+    'files-chooser-usage': HTMLFilesChooserUsageElement;
     'modal-usage': HTMLModalUsageElement;
     'page-not-found-usage': HTMLPageNotFoundUsageElement;
     'psk-themes': HTMLPskThemesElement;
@@ -138,11 +154,13 @@ declare namespace LocalJSX {
     'history'?: RouterHistory;
     'onRouteChanged'?: (event: CustomEvent<any>) => void;
   }
+  interface AttachmentListUsage extends JSXBase.HTMLAttributes<HTMLAttachmentListUsageElement> {}
   interface ExpandableRenderer extends JSXBase.HTMLAttributes<HTMLExpandableRendererElement> {
     'active'?: boolean;
     'somethingChanged'?: boolean;
     'url'?: any;
   }
+  interface FilesChooserUsage extends JSXBase.HTMLAttributes<HTMLFilesChooserUsageElement> {}
   interface ModalUsage extends JSXBase.HTMLAttributes<HTMLModalUsageElement> {}
   interface PageNotFoundUsage extends JSXBase.HTMLAttributes<HTMLPageNotFoundUsageElement> {}
   interface PskThemes extends JSXBase.HTMLAttributes<HTMLPskThemesElement> {}
@@ -158,7 +176,9 @@ declare namespace LocalJSX {
     'app-menu-usage': AppMenuUsage;
     'app-profile': AppProfile;
     'app-root': AppRoot;
+    'attachment-list-usage': AttachmentListUsage;
     'expandable-renderer': ExpandableRenderer;
+    'files-chooser-usage': FilesChooserUsage;
     'modal-usage': ModalUsage;
     'page-not-found-usage': PageNotFoundUsage;
     'psk-themes': PskThemes;

@@ -23,9 +23,9 @@ export class NotFoundUsage {
                             <h5>Description</h5>
                         </div>
                         <div class="card-body">
-                            <p>This component is intended to be used when an action is running in background <i>(e.g. an API call)</i> and we need to render the result of the action inside the page.</p>
-                            <p>This component should be instantiated only once per application, so it can be easily controlled by an Application Controller.</p>
-                            <p>By default, the loader will be hidden.</p>
+                            <p>This component is intended to be used inside a router component, so when the user navigates to an unknown route, this component will be loaded.</p>
+                            <p>This component should be instantiated everywhere in application where there is a possibility to navigate to a wrong or unknown route.</p>
+                            <p>The component has the role to redirect the user to a valid route inside the application by using <code>basePath</code> or <code>urlDestination</code> properties.</p>
                         </div>
                     </div>
 
@@ -36,12 +36,12 @@ export class NotFoundUsage {
                         <div class="card-body">
                             <div class="card border-light">
                                 <div class="card-header">
-                                    <h5 class="card-title"><code>basePath: <b>string</b> <i>(optional)</i></code></h5>
+                                    <h5 class="card-title"><code>basePath: <b>string</b></code></h5>
                                 </div>
                                 <div class="card-body text-secondary">
                                     <p>This property is the base path of the website. If this parameter is sent to the component, then when the user navigates to an unknown page, he will be redirected to the base path.</p>
                                     <p>It is not mandatory to be the root of the application, it can be the root of a section inside the website</p>
-                                    <p><b>Note: <i>If this parameters is missing, nothing will be displayed.</i></b></p>
+                                    <p><b>Note: <i>This parameter is mandatory if <code>urlDestination</code> is missing.</i></b></p>
                                 </div>
                             </div>
 
@@ -52,7 +52,7 @@ export class NotFoundUsage {
                                 <div class="card-body text-secondary">
                                     <p>This property gives a custom redirect URL destination in case the user navigates to an unknown page.</p>
                                     <p>If this property has a value, the basePath property is ignored.</p>
-                                    <p><b>Note: <i>If this parameter is missing, <code>basePath</code> parameter is checked for value.</i></b></p>
+                                    <p><b>Note: <i>If this parameter is missing, <code>basePath</code> parameter is mandatory.</i></b></p>
                                 </div>
                             </div>
                         </div>
