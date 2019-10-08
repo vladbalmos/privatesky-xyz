@@ -26,6 +26,7 @@ export namespace Components {
     'controller': any;
     'history': RouterHistory;
   }
+  interface AppRouterUsage {}
   interface AttachmentListUsage {}
   interface ExpandableRenderer {
     'active': boolean;
@@ -35,6 +36,7 @@ export namespace Components {
   interface FilesChooserUsage {}
   interface ModalUsage {}
   interface PageNotFoundUsage {}
+  interface PinPopupUsage {}
   interface PskThemes {}
   interface SidebarRenderer {
     'active': boolean;
@@ -71,6 +73,12 @@ declare global {
     new (): HTMLAppRootElement;
   };
 
+  interface HTMLAppRouterUsageElement extends Components.AppRouterUsage, HTMLStencilElement {}
+  var HTMLAppRouterUsageElement: {
+    prototype: HTMLAppRouterUsageElement;
+    new (): HTMLAppRouterUsageElement;
+  };
+
   interface HTMLAttachmentListUsageElement extends Components.AttachmentListUsage, HTMLStencilElement {}
   var HTMLAttachmentListUsageElement: {
     prototype: HTMLAttachmentListUsageElement;
@@ -101,6 +109,12 @@ declare global {
     new (): HTMLPageNotFoundUsageElement;
   };
 
+  interface HTMLPinPopupUsageElement extends Components.PinPopupUsage, HTMLStencilElement {}
+  var HTMLPinPopupUsageElement: {
+    prototype: HTMLPinPopupUsageElement;
+    new (): HTMLPinPopupUsageElement;
+  };
+
   interface HTMLPskThemesElement extends Components.PskThemes, HTMLStencilElement {}
   var HTMLPskThemesElement: {
     prototype: HTMLPskThemesElement;
@@ -129,11 +143,13 @@ declare global {
     'app-menu-usage': HTMLAppMenuUsageElement;
     'app-profile': HTMLAppProfileElement;
     'app-root': HTMLAppRootElement;
+    'app-router-usage': HTMLAppRouterUsageElement;
     'attachment-list-usage': HTMLAttachmentListUsageElement;
     'expandable-renderer': HTMLExpandableRendererElement;
     'files-chooser-usage': HTMLFilesChooserUsageElement;
     'modal-usage': HTMLModalUsageElement;
     'page-not-found-usage': HTMLPageNotFoundUsageElement;
+    'pin-popup-usage': HTMLPinPopupUsageElement;
     'psk-themes': HTMLPskThemesElement;
     'sidebar-renderer': HTMLSidebarRendererElement;
     'ui-loader-usage': HTMLUiLoaderUsageElement;
@@ -154,6 +170,7 @@ declare namespace LocalJSX {
     'history'?: RouterHistory;
     'onRouteChanged'?: (event: CustomEvent<any>) => void;
   }
+  interface AppRouterUsage extends JSXBase.HTMLAttributes<HTMLAppRouterUsageElement> {}
   interface AttachmentListUsage extends JSXBase.HTMLAttributes<HTMLAttachmentListUsageElement> {}
   interface ExpandableRenderer extends JSXBase.HTMLAttributes<HTMLExpandableRendererElement> {
     'active'?: boolean;
@@ -163,6 +180,7 @@ declare namespace LocalJSX {
   interface FilesChooserUsage extends JSXBase.HTMLAttributes<HTMLFilesChooserUsageElement> {}
   interface ModalUsage extends JSXBase.HTMLAttributes<HTMLModalUsageElement> {}
   interface PageNotFoundUsage extends JSXBase.HTMLAttributes<HTMLPageNotFoundUsageElement> {}
+  interface PinPopupUsage extends JSXBase.HTMLAttributes<HTMLPinPopupUsageElement> {}
   interface PskThemes extends JSXBase.HTMLAttributes<HTMLPskThemesElement> {}
   interface SidebarRenderer extends JSXBase.HTMLAttributes<HTMLSidebarRendererElement> {
     'active'?: boolean;
@@ -176,11 +194,13 @@ declare namespace LocalJSX {
     'app-menu-usage': AppMenuUsage;
     'app-profile': AppProfile;
     'app-root': AppRoot;
+    'app-router-usage': AppRouterUsage;
     'attachment-list-usage': AttachmentListUsage;
     'expandable-renderer': ExpandableRenderer;
     'files-chooser-usage': FilesChooserUsage;
     'modal-usage': ModalUsage;
     'page-not-found-usage': PageNotFoundUsage;
+    'pin-popup-usage': PinPopupUsage;
     'psk-themes': PskThemes;
     'sidebar-renderer': SidebarRenderer;
     'ui-loader-usage': UiLoaderUsage;

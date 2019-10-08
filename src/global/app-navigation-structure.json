@@ -21,6 +21,7 @@
             },
             {
                 "name": "App Router",
+                "component": "app-router-usage",
                 "path": "/psk-components/app-router",
                 "icon": "fa-bars",
                 "type": "route",
@@ -54,6 +55,14 @@
                 "name": "Page not found",
                 "component": "page-not-found-usage",
                 "path": "/psk-components/page-not-found",
+                "icon": "fa-bars",
+                "type": "route",
+                "exact": true
+            },
+            {
+                "name": "PIN Popup",
+                "component": "pin-popup-usage",
+                "path": "/psk-components/pin-popup",
                 "icon": "fa-bars",
                 "type": "route",
                 "exact": true
