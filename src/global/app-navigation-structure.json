@@ -82,6 +82,14 @@
                 "type": "route",
                 "component": "user-profile-usage",
                 "exact": true
+            },
+            {
+              "name": "Feedback Alert",
+              "path": "/psk-components/ui-feedback",
+              "icon": "fa-bars",
+              "type": "route",
+              "component":"feedback-alert-usage",
+              "exact":true
             }
         ]
     },

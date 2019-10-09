@@ -33,6 +33,7 @@ export namespace Components {
     'somethingChanged': boolean;
     'url': any;
   }
+  interface FeedbackAlertUsage {}
   interface FilesChooserUsage {}
   interface ModalUsage {}
   interface PageNotFoundUsage {}
@@ -91,6 +92,12 @@ declare global {
     new (): HTMLExpandableRendererElement;
   };
 
+  interface HTMLFeedbackAlertUsageElement extends Components.FeedbackAlertUsage, HTMLStencilElement {}
+  var HTMLFeedbackAlertUsageElement: {
+    prototype: HTMLFeedbackAlertUsageElement;
+    new (): HTMLFeedbackAlertUsageElement;
+  };
+
   interface HTMLFilesChooserUsageElement extends Components.FilesChooserUsage, HTMLStencilElement {}
   var HTMLFilesChooserUsageElement: {
     prototype: HTMLFilesChooserUsageElement;
@@ -146,6 +153,7 @@ declare global {
     'app-router-usage': HTMLAppRouterUsageElement;
     'attachment-list-usage': HTMLAttachmentListUsageElement;
     'expandable-renderer': HTMLExpandableRendererElement;
+    'feedback-alert-usage': HTMLFeedbackAlertUsageElement;
     'files-chooser-usage': HTMLFilesChooserUsageElement;
     'modal-usage': HTMLModalUsageElement;
     'page-not-found-usage': HTMLPageNotFoundUsageElement;
@@ -177,6 +185,7 @@ declare namespace LocalJSX {
     'somethingChanged'?: boolean;
     'url'?: any;
   }
+  interface FeedbackAlertUsage extends JSXBase.HTMLAttributes<HTMLFeedbackAlertUsageElement> {}
   interface FilesChooserUsage extends JSXBase.HTMLAttributes<HTMLFilesChooserUsageElement> {}
   interface ModalUsage extends JSXBase.HTMLAttributes<HTMLModalUsageElement> {}
   interface PageNotFoundUsage extends JSXBase.HTMLAttributes<HTMLPageNotFoundUsageElement> {}
@@ -197,6 +206,7 @@ declare namespace LocalJSX {
     'app-router-usage': AppRouterUsage;
     'attachment-list-usage': AttachmentListUsage;
     'expandable-renderer': ExpandableRenderer;
+    'feedback-alert-usage': FeedbackAlertUsage;
     'files-chooser-usage': FilesChooserUsage;
     'modal-usage': ModalUsage;
     'page-not-found-usage': PageNotFoundUsage;
