@@ -9,7 +9,7 @@ export class AppThemes {
   render() {
     return (
       <div class='psk-themes'>
-      App themes
+        <p>App Themes</p>        
       </div>
     );
   }

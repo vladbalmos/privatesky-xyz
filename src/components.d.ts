@@ -45,6 +45,7 @@ export namespace Components {
   }
   interface UiLoaderUsage {}
   interface UserProfileUsage {}
+  interface WizardUsage {}
 }
 
 declare global {
@@ -145,6 +146,12 @@ declare global {
     prototype: HTMLUserProfileUsageElement;
     new (): HTMLUserProfileUsageElement;
   };
+
+  interface HTMLWizardUsageElement extends Components.WizardUsage, HTMLStencilElement {}
+  var HTMLWizardUsageElement: {
+    prototype: HTMLWizardUsageElement;
+    new (): HTMLWizardUsageElement;
+  };
   interface HTMLElementTagNameMap {
     'app-home': HTMLAppHomeElement;
     'app-menu-usage': HTMLAppMenuUsageElement;
@@ -162,6 +169,7 @@ declare global {
     'sidebar-renderer': HTMLSidebarRendererElement;
     'ui-loader-usage': HTMLUiLoaderUsageElement;
     'user-profile-usage': HTMLUserProfileUsageElement;
+    'wizard-usage': HTMLWizardUsageElement;
   }
 }
 
@@ -197,6 +205,7 @@ declare namespace LocalJSX {
   }
   interface UiLoaderUsage extends JSXBase.HTMLAttributes<HTMLUiLoaderUsageElement> {}
   interface UserProfileUsage extends JSXBase.HTMLAttributes<HTMLUserProfileUsageElement> {}
+  interface WizardUsage extends JSXBase.HTMLAttributes<HTMLWizardUsageElement> {}
 
   interface IntrinsicElements {
     'app-home': AppHome;
@@ -215,6 +224,7 @@ declare namespace LocalJSX {
     'sidebar-renderer': SidebarRenderer;
     'ui-loader-usage': UiLoaderUsage;
     'user-profile-usage': UserProfileUsage;
+    'wizard-usage': WizardUsage;
   }
 }
 
