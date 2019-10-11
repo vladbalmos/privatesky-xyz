@@ -92,6 +92,14 @@
                 "exact": true
             },
             {
+                "name": "Feedback List",
+                "path": "/psk-components/list-feedback",
+                "icon": "fa-bars",
+                "type": "route",
+                "component": "feedback-list-usage",
+                "exact": true
+            },
+            {
                 "name": "Wizard",
                 "path": "/psk-components/wizard",
                 "icon": "fa-bars",

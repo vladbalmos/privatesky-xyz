@@ -34,6 +34,7 @@ export namespace Components {
     'url': any;
   }
   interface FeedbackAlertUsage {}
+  interface FeedbackListUsage {}
   interface FilesChooserUsage {}
   interface ModalUsage {}
   interface PageNotFoundUsage {}
@@ -99,6 +100,12 @@ declare global {
     new (): HTMLFeedbackAlertUsageElement;
   };
 
+  interface HTMLFeedbackListUsageElement extends Components.FeedbackListUsage, HTMLStencilElement {}
+  var HTMLFeedbackListUsageElement: {
+    prototype: HTMLFeedbackListUsageElement;
+    new (): HTMLFeedbackListUsageElement;
+  };
+
   interface HTMLFilesChooserUsageElement extends Components.FilesChooserUsage, HTMLStencilElement {}
   var HTMLFilesChooserUsageElement: {
     prototype: HTMLFilesChooserUsageElement;
@@ -161,6 +168,7 @@ declare global {
     'attachment-list-usage': HTMLAttachmentListUsageElement;
     'expandable-renderer': HTMLExpandableRendererElement;
     'feedback-alert-usage': HTMLFeedbackAlertUsageElement;
+    'feedback-list-usage': HTMLFeedbackListUsageElement;
     'files-chooser-usage': HTMLFilesChooserUsageElement;
     'modal-usage': HTMLModalUsageElement;
     'page-not-found-usage': HTMLPageNotFoundUsageElement;
@@ -194,6 +202,7 @@ declare namespace LocalJSX {
     'url'?: any;
   }
   interface FeedbackAlertUsage extends JSXBase.HTMLAttributes<HTMLFeedbackAlertUsageElement> {}
+  interface FeedbackListUsage extends JSXBase.HTMLAttributes<HTMLFeedbackListUsageElement> {}
   interface FilesChooserUsage extends JSXBase.HTMLAttributes<HTMLFilesChooserUsageElement> {}
   interface ModalUsage extends JSXBase.HTMLAttributes<HTMLModalUsageElement> {}
   interface PageNotFoundUsage extends JSXBase.HTMLAttributes<HTMLPageNotFoundUsageElement> {}
@@ -216,6 +225,7 @@ declare namespace LocalJSX {
     'attachment-list-usage': AttachmentListUsage;
     'expandable-renderer': ExpandableRenderer;
     'feedback-alert-usage': FeedbackAlertUsage;
+    'feedback-list-usage': FeedbackListUsage;
     'files-chooser-usage': FilesChooserUsage;
     'modal-usage': ModalUsage;
     'page-not-found-usage': PageNotFoundUsage;
