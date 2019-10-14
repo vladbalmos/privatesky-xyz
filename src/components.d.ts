@@ -28,6 +28,10 @@ export namespace Components {
   }
   interface AppRouterUsage {}
   interface AttachmentListUsage {}
+  interface EnterCsbName {
+    'onPropertiesChange': Function;
+    'stepProperties': any;
+  }
   interface ExpandableRenderer {
     'active': boolean;
     'somethingChanged': boolean;
@@ -36,10 +40,19 @@ export namespace Components {
   interface FeedbackAlertUsage {}
   interface FeedbackListUsage {}
   interface FilesChooserUsage {}
+  interface FinishPage {}
   interface ModalUsage {}
   interface PageNotFoundUsage {}
   interface PinPopupUsage {}
   interface PskThemes {}
+  interface SaveRecoveryPhrase {
+    'onPropertiesChange': Function;
+    'stepProperties': any;
+  }
+  interface SelectCsbType {
+    'onPropertiesChange': Function;
+    'stepProperties': any;
+  }
   interface SidebarRenderer {
     'active': boolean;
     'value': MenuItem;
@@ -88,6 +101,12 @@ declare global {
     new (): HTMLAttachmentListUsageElement;
   };
 
+  interface HTMLEnterCsbNameElement extends Components.EnterCsbName, HTMLStencilElement {}
+  var HTMLEnterCsbNameElement: {
+    prototype: HTMLEnterCsbNameElement;
+    new (): HTMLEnterCsbNameElement;
+  };
+
   interface HTMLExpandableRendererElement extends Components.ExpandableRenderer, HTMLStencilElement {}
   var HTMLExpandableRendererElement: {
     prototype: HTMLExpandableRendererElement;
@@ -112,6 +131,12 @@ declare global {
     new (): HTMLFilesChooserUsageElement;
   };
 
+  interface HTMLFinishPageElement extends Components.FinishPage, HTMLStencilElement {}
+  var HTMLFinishPageElement: {
+    prototype: HTMLFinishPageElement;
+    new (): HTMLFinishPageElement;
+  };
+
   interface HTMLModalUsageElement extends Components.ModalUsage, HTMLStencilElement {}
   var HTMLModalUsageElement: {
     prototype: HTMLModalUsageElement;
@@ -134,6 +159,18 @@ declare global {
   var HTMLPskThemesElement: {
     prototype: HTMLPskThemesElement;
     new (): HTMLPskThemesElement;
+  };
+
+  interface HTMLSaveRecoveryPhraseElement extends Components.SaveRecoveryPhrase, HTMLStencilElement {}
+  var HTMLSaveRecoveryPhraseElement: {
+    prototype: HTMLSaveRecoveryPhraseElement;
+    new (): HTMLSaveRecoveryPhraseElement;
+  };
+
+  interface HTMLSelectCsbTypeElement extends Components.SelectCsbType, HTMLStencilElement {}
+  var HTMLSelectCsbTypeElement: {
+    prototype: HTMLSelectCsbTypeElement;
+    new (): HTMLSelectCsbTypeElement;
   };
 
   interface HTMLSidebarRendererElement extends Components.SidebarRenderer, HTMLStencilElement {}
@@ -166,14 +203,18 @@ declare global {
     'app-root': HTMLAppRootElement;
     'app-router-usage': HTMLAppRouterUsageElement;
     'attachment-list-usage': HTMLAttachmentListUsageElement;
+    'enter-csb-name': HTMLEnterCsbNameElement;
     'expandable-renderer': HTMLExpandableRendererElement;
     'feedback-alert-usage': HTMLFeedbackAlertUsageElement;
     'feedback-list-usage': HTMLFeedbackListUsageElement;
     'files-chooser-usage': HTMLFilesChooserUsageElement;
+    'finish-page': HTMLFinishPageElement;
     'modal-usage': HTMLModalUsageElement;
     'page-not-found-usage': HTMLPageNotFoundUsageElement;
     'pin-popup-usage': HTMLPinPopupUsageElement;
     'psk-themes': HTMLPskThemesElement;
+    'save-recovery-phrase': HTMLSaveRecoveryPhraseElement;
+    'select-csb-type': HTMLSelectCsbTypeElement;
     'sidebar-renderer': HTMLSidebarRendererElement;
     'ui-loader-usage': HTMLUiLoaderUsageElement;
     'user-profile-usage': HTMLUserProfileUsageElement;
@@ -196,6 +237,10 @@ declare namespace LocalJSX {
   }
   interface AppRouterUsage extends JSXBase.HTMLAttributes<HTMLAppRouterUsageElement> {}
   interface AttachmentListUsage extends JSXBase.HTMLAttributes<HTMLAttachmentListUsageElement> {}
+  interface EnterCsbName extends JSXBase.HTMLAttributes<HTMLEnterCsbNameElement> {
+    'onPropertiesChange'?: Function;
+    'stepProperties'?: any;
+  }
   interface ExpandableRenderer extends JSXBase.HTMLAttributes<HTMLExpandableRendererElement> {
     'active'?: boolean;
     'somethingChanged'?: boolean;
@@ -204,10 +249,19 @@ declare namespace LocalJSX {
   interface FeedbackAlertUsage extends JSXBase.HTMLAttributes<HTMLFeedbackAlertUsageElement> {}
   interface FeedbackListUsage extends JSXBase.HTMLAttributes<HTMLFeedbackListUsageElement> {}
   interface FilesChooserUsage extends JSXBase.HTMLAttributes<HTMLFilesChooserUsageElement> {}
+  interface FinishPage extends JSXBase.HTMLAttributes<HTMLFinishPageElement> {}
   interface ModalUsage extends JSXBase.HTMLAttributes<HTMLModalUsageElement> {}
   interface PageNotFoundUsage extends JSXBase.HTMLAttributes<HTMLPageNotFoundUsageElement> {}
   interface PinPopupUsage extends JSXBase.HTMLAttributes<HTMLPinPopupUsageElement> {}
   interface PskThemes extends JSXBase.HTMLAttributes<HTMLPskThemesElement> {}
+  interface SaveRecoveryPhrase extends JSXBase.HTMLAttributes<HTMLSaveRecoveryPhraseElement> {
+    'onPropertiesChange'?: Function;
+    'stepProperties'?: any;
+  }
+  interface SelectCsbType extends JSXBase.HTMLAttributes<HTMLSelectCsbTypeElement> {
+    'onPropertiesChange'?: Function;
+    'stepProperties'?: any;
+  }
   interface SidebarRenderer extends JSXBase.HTMLAttributes<HTMLSidebarRendererElement> {
     'active'?: boolean;
     'value'?: MenuItem;
@@ -223,14 +277,18 @@ declare namespace LocalJSX {
     'app-root': AppRoot;
     'app-router-usage': AppRouterUsage;
     'attachment-list-usage': AttachmentListUsage;
+    'enter-csb-name': EnterCsbName;
     'expandable-renderer': ExpandableRenderer;
     'feedback-alert-usage': FeedbackAlertUsage;
     'feedback-list-usage': FeedbackListUsage;
     'files-chooser-usage': FilesChooserUsage;
+    'finish-page': FinishPage;
     'modal-usage': ModalUsage;
     'page-not-found-usage': PageNotFoundUsage;
     'pin-popup-usage': PinPopupUsage;
     'psk-themes': PskThemes;
+    'save-recovery-phrase': SaveRecoveryPhrase;
+    'select-csb-type': SelectCsbType;
     'sidebar-renderer': SidebarRenderer;
     'ui-loader-usage': UiLoaderUsage;
     'user-profile-usage': UserProfileUsage;
