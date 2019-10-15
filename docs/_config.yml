@@ -1,2 +1,3 @@
 #theme: jekyll-theme-cayman
-remote-theme: paiusCatalin/pwc-apps-theme
+markdown: kramdown
+remote_theme: paiusCatalin/pwc-apps-theme
