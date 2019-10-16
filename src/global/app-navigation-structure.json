@@ -114,6 +114,8 @@
         "path": "/controllers",
         "icon": "fa-cog",
         "type": "route",
+        "component": "psk-page-loader",
+        "componentProps": {"pageUrl": "https://privatesky.xyz"},
         "exact": true
     },
     {
