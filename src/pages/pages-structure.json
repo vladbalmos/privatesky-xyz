@@ -9,5 +9,16 @@
       "pageUrl": "https://raw.githubusercontent.com/PrivateSky/pwc-apps/master/src/pages/Controllers/index.html"
     },
     "exact": true
+  },
+  {
+    "name": "Themes",
+    "path": "/themes",
+    "icon": "fa-paint-brush",
+    "type": "route",
+    "component": "psk-page-loader",
+    "componentProps": {
+      "pageUrl": "https://raw.githubusercontent.com/PrivateSky/pwc-apps/master/src/pages/Themes/index.html"
+    },
+    "exact": true
   }
 ]

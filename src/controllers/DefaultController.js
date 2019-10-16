@@ -40,7 +40,8 @@ export default class DefaultController {
             if (xhr.status != 200) {
               prepareNavigationStructure(appNavigationStructure);
             } else {
-              let pagesNavigation = JSON.stringify(xhr.responseText);
+              let pagesNavigation = JSON.parse(xhr.responseText);
+              console.log(appNavigationStructure.concat(pagesNavigation));
               prepareNavigationStructure(appNavigationStructure.concat(pagesNavigation));
             }
           };
