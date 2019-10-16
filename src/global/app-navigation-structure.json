@@ -1,143 +1,147 @@
-[{
-        "name": "Home",
-        "path": "/home",
-        "icon": "fa-home",
-        "type": "route",
-        "component": "app-home",
-        "exact": true
-    },
-    {
-        "name": "PSK Components",
-        "path": "/psk-components",
+[
+  {
+    "name": "Home",
+    "path": "/home",
+    "icon": "fa-home",
+    "type": "route",
+    "component": "app-home",
+    "exact": true
+  },
+  {
+    "name": "PSK Components",
+    "path": "/psk-components",
+    "icon": "fa-bars",
+    "type": "abstract",
+    "children": [
+      {
+        "name": "App Menu",
+        "path": "/psk-components/app-menu",
+        "component": "app-menu-usage",
         "icon": "fa-bars",
-        "type": "abstract",
-        "children": [{
-                "name": "App Menu",
-                "path": "/psk-components/app-menu",
-                "component": "app-menu-usage",
-                "icon": "fa-bars",
-                "type": "route",
-                "exact": true
-            },
-            {
-                "name": "App Router",
-                "component": "app-router-usage",
-                "path": "/psk-components/app-router",
-                "icon": "fa-bars",
-                "type": "route",
-                "exact": true
-            },
-            {
-                "name": "Attachments List",
-                "component": "attachment-list-usage",
-                "path": "/psk-components/attach-list",
-                "icon": "fa-bars",
-                "type": "route",
-                "exact": true
-            },
-            {
-                "name": "Files Chooser",
-                "component": "files-chooser-usage",
-                "path": "/psk-components/files-chooser",
-                "icon": "fa-bars",
-                "type": "route",
-                "exact": true
-            },
-            {
-                "name": "Modal",
-                "component": "modal-usage",
-                "path": "/psk-components/modal",
-                "icon": "fa-bars",
-                "type": "route",
-                "exact": true
-            },
-            {
-                "name": "Page not found",
-                "component": "page-not-found-usage",
-                "path": "/psk-components/page-not-found",
-                "icon": "fa-bars",
-                "type": "route",
-                "exact": true
-            },
-            {
-                "name": "PIN Popup",
-                "component": "pin-popup-usage",
-                "path": "/psk-components/pin-popup",
-                "icon": "fa-bars",
-                "type": "route",
-                "exact": true
-            },
-            {
-                "name": "UI Loader",
-                "component": "ui-loader-usage",
-                "path": "/psk-components/ui-loader",
-                "icon": "fa-bars",
-                "type": "route",
-                "exact": true
-            },
-            {
-                "name": "User Profile",
-                "path": "/psk-components/user-profile",
-                "icon": "fa-bars",
-                "type": "route",
-                "component": "user-profile-usage",
-                "exact": true
-            },
-            {
-                "name": "Feedback Alert",
-                "path": "/psk-components/ui-feedback",
-                "icon": "fa-bars",
-                "type": "route",
-                "component": "feedback-alert-usage",
-                "exact": true
-            },
-            {
-                "name": "Feedback List",
-                "path": "/psk-components/list-feedback",
-                "icon": "fa-bars",
-                "type": "route",
-                "component": "feedback-list-usage",
-                "exact": true
-            },
-            {
-                "name": "Wizard",
-                "path": "/psk-components/wizard",
-                "icon": "fa-bars",
-                "type": "route",
-                "component": "wizard-usage",
-                "exact": true
-            }
-        ]
-    },
-    {
-        "name": "Controllers",
-        "path": "/controllers",
-        "icon": "fa-cog",
-        "type": "route",
-        "component": "psk-page-loader",
-        "componentProps": {"pageUrl": "https://privatesky.xyz"},
-        "exact": true
-    },
-    {
-        "name": "Events",
-        "path": "/events",
-        "icon": "fa-bolt",
         "type": "route",
         "exact": true
-    },
-    {
-        "name": "Services",
-        "path": "/services",
-        "icon": "fa-server",
+      },
+      {
+        "name": "App Router",
+        "component": "app-router-usage",
+        "path": "/psk-components/app-router",
+        "icon": "fa-bars",
         "type": "route",
         "exact": true
-    },
-    {
-        "name": "Themes",
-        "path": "/themes",
-        "icon": "fa-paint-brush",
+      },
+      {
+        "name": "Attachments List",
+        "component": "attachment-list-usage",
+        "path": "/psk-components/attach-list",
+        "icon": "fa-bars",
         "type": "route",
-        "component": "psk-themes",
         "exact": true
-    }
+      },
+      {
+        "name": "Files Chooser",
+        "component": "files-chooser-usage",
+        "path": "/psk-components/files-chooser",
+        "icon": "fa-bars",
+        "type": "route",
+        "exact": true
+      },
+      {
+        "name": "Modal",
+        "component": "modal-usage",
+        "path": "/psk-components/modal",
+        "icon": "fa-bars",
+        "type": "route",
+        "exact": true
+      },
+      {
+        "name": "Page not found",
+        "component": "page-not-found-usage",
+        "path": "/psk-components/page-not-found",
+        "icon": "fa-bars",
+        "type": "route",
+        "exact": true
+      },
+      {
+        "name": "PIN Popup",
+        "component": "pin-popup-usage",
+        "path": "/psk-components/pin-popup",
+        "icon": "fa-bars",
+        "type": "route",
+        "exact": true
+      },
+      {
+        "name": "UI Loader",
+        "component": "ui-loader-usage",
+        "path": "/psk-components/ui-loader",
+        "icon": "fa-bars",
+        "type": "route",
+        "exact": true
+      },
+      {
+        "name": "User Profile",
+        "path": "/psk-components/user-profile",
+        "icon": "fa-bars",
+        "type": "route",
+        "component": "user-profile-usage",
+        "exact": true
+      },
+      {
+        "name": "Feedback Alert",
+        "path": "/psk-components/ui-feedback",
+        "icon": "fa-bars",
+        "type": "route",
+        "component": "feedback-alert-usage",
+        "exact": true
+      },
+      {
+        "name": "Feedback List",
+        "path": "/psk-components/list-feedback",
+        "icon": "fa-bars",
+        "type": "route",
+        "component": "feedback-list-usage",
+        "exact": true
+      },
+      {
+        "name": "Wizard",
+        "path": "/psk-components/wizard",
+        "icon": "fa-bars",
+        "type": "route",
+        "component": "wizard-usage",
+        "exact": true
+      }
+    ]
+  },
+  {
+    "name": "Controllers",
+    "path": "/controllers",
+    "icon": "fa-cog",
+    "type": "route",
+    "component": "psk-page-loader",
+    "componentProps": {
+      "pageUrl": "https://raw.githubusercontent.com/PrivateSky/pwc-apps/master/src/pages/Controllers/index.html"
+    },
+    "exact": true
+  },
+  {
+    "name": "Events",
+    "path": "/events",
+    "icon": "fa-bolt",
+    "type": "route",
+    "exact": true
+  },
+  {
+    "name": "Services",
+    "path": "/services",
+    "icon": "fa-server",
+    "type": "route",
+    "exact": true
+  },
+  {
+    "name": "Themes",
+    "path": "/themes",
+    "icon": "fa-paint-brush",
+    "type": "route",
+    "component": "psk-themes",
+    "exact": true
+  }
 ]
