@@ -58,6 +58,24 @@ export default class DefaultController {
                 console.error("Callback was not properly provided!");
             }
         });
+
+        this.element.addEventListener("sendPin", (evt) => {
+            let callback = evt.detail.callback;
+            if (callback && typeof callback === "function") {
+                this._handleSendPin(evt.detail);
+            } else {
+                console.error("Callback was not properly provided!");
+            }
+        });
+    }
+
+    _handleSendPin({ pin, callback }) {
+        if (!pin || pin.trim().length < 6) {
+            callback("Invalid PIN length. Minimum is 6!");
+        } else {
+            console.log(pin);
+            callback(null);
+        }
     }
 
     __getPropertyValue(properties, pName) {

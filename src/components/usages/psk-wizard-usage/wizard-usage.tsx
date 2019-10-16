@@ -77,7 +77,7 @@ export class Wizard {
                                     </p>
                                 </div>
                             </div>
-                            
+
                             <div class="card mt-4 border-light">
                                 <div class="card-header">
                                     <h5 class="card-title"><code>finishWizard</code></h5>
@@ -93,7 +93,7 @@ export class Wizard {
                                     </p>
                                 </div>
                             </div>
-                            
+
                             <div class="card mt-4 border-light">
                                 <div class="card-header">
                                     <h5 class="card-title"><code>needWizardConfiguration</code></h5>
