@@ -1,4 +1,4 @@
-import { Component, h, Listen, State } from "@stencil/core";
+import { Component, h, State } from "@stencil/core";
 
 @Component({
     tag: 'pin-popup-usage',
@@ -6,14 +6,7 @@ import { Component, h, Listen, State } from "@stencil/core";
     shadow: true,
 })
 export class PinPopupUsage {
-    @State() pin: string;
-
-    @Listen('sendPin')
-    listenPinExample(evt: CustomEvent) {
-        evt.stopImmediatePropagation();
-        const { pin } = evt.detail;
-        this.pin = pin;
-    }
+    @State() openPin: boolean = false;
 
     render() {
         return (
@@ -33,7 +26,9 @@ export class PinPopupUsage {
                         </div>
                         <div class="card-body">
                             <p>This component is intended to be used when a PIN is required from the user.</p>
-                            <p>When the popup need to be closed, an event (<code>closeModal</code>) is triggered and the Application Controller should listen to this, so the popup can be closed withing the controller.</p>
+                            <p>When the popup needs to be closed, an event (<code>closeModal</code>) is triggered and the Application Controller should listen to this, so a custom logic can be provided in order to get a result.</p>
+                            <p>The controller will call the function provided by the event emitter <code>(callback)</code> and it is able to send error messages in case the PIN entered by the user is not the expected one.</p>
+                            <p>If the popup can be closed after the user submites the PIN, the parameter from the <code>callback</code> should be <code>null</code>.</p>
                         </div>
                     </div>
 
@@ -90,13 +85,12 @@ export class PinPopupUsage {
                             <h5 class="card-title">Usage Example</h5>
                         </div>
                         <div class="card-body">
-                            <p><i><b>
-                                The pip popup is above displayed. Once closed, you need to refresh the page.
-                                <br />
-                                Write some text and then click on "Send PIN" to see the text below in the page.
-                            </b></i></p>
-                            <psk-pin-popup opened={true} />
-                            <p>The written PIN is: {this.pin}</p>
+                            <p>Click the bellow button to open the PIN Popup</p>
+                            <p>Write some text and then click on "Send PIN" to see the text below in the page.</p>
+                            <p>The written PIN is displayed in console (only for testing purposes).</p>
+                            <p>Each implementation and usage of this component should define its own logic of how to use the PIN, inside the controller.</p>
+                            <button class="btn btn-primary" onClick={() => { this.openPin = true; }}>Open PIN Popup</button>
+                            <psk-pin-popup opened={this.openPin} />
                         </div>
                     </div>
                 </div>

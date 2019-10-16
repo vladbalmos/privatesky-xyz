@@ -14,6 +14,12 @@ export class AttachmentListUsage {
         this.fileList = files;
     }
 
+    removeFileFromList = (index: number): void => {
+        let tempFileList = [...this.fileList];
+        tempFileList.splice(index, 1);
+        this.fileList = [...tempFileList];
+    }
+
     render() {
         return (
             <div class="card">
@@ -92,7 +98,7 @@ export class AttachmentListUsage {
                                 />
                             </div>
                             <p>See below the selected files using <a href="/psk-components/attach-list"><code>Attachments List</code></a> component.</p>
-                            <psk-attachments-list files={this.fileList} />
+                            <psk-attachments-list files={this.fileList} removeFileFromList={this.removeFileFromList.bind(this)} />
                         </div>
                     </div>
                 </div>
