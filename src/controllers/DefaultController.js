@@ -1,7 +1,7 @@
 import { getElement } from "@stencil/core";
 import appNavigationStructure from "../global/app-navigation-structure";
 import wizardConfiguration from "../global/wizard-structure";
-
+const PluginPagesURL = "https://raw.githubusercontent.com/PrivateSky/pwc-apps/master/src/pages/pages-structure.json";
 export default class DefaultController {
 
     constructor(view) {
@@ -17,14 +17,42 @@ export default class DefaultController {
             this.element.dispatchEvent(changePathEvt);
         });
 
+        /*this.element.addEventListener('pageInstall', (e) => {
+
+        });*/
+
         this.element.addEventListener("needMenuItems", (e) => {
 
+         let prepareNavigationStructure = function(appNavigationStructure){
             let callback = e.detail;
             if (callback && typeof callback === "function") {
-                callback(appNavigationStructure);
+              callback(appNavigationStructure);
             } else {
-                console.error("Callback was not properly provided!");
+              console.error("Callback was not properly provided!");
             }
+          };
+
+         let xhr = new XMLHttpRequest();
+
+          xhr.open("GET",PluginPagesURL);
+
+          xhr.onload = () => {
+            if (xhr.status != 200) {
+              prepareNavigationStructure(appNavigationStructure);
+            } else {
+              let pagesNavigation = JSON.parse(xhr.responseText);
+              console.log(appNavigationStructure.concat(pagesNavigation));
+              prepareNavigationStructure(appNavigationStructure.concat(pagesNavigation));
+            }
+          };
+
+          xhr.onerror = () => {
+            prepareNavigationStructure(appNavigationStructure);
+          };
+
+          xhr.send();
+
+
         });
 
         this.element.addEventListener("getUserInfo", (e) => {
