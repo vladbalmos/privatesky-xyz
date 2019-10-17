@@ -3,18 +3,12 @@
     "name": "Controllers",
     "path": "/controllers",
     "icon": "fa-cog",
-    "componentProps": {
-      "pageUrl": "https://raw.githubusercontent.com/PrivateSky/pwc-apps/master/src/pages/Controllers/index.html"
-    },
-    "exact": true
+    "pageSrc": "Controllers/index.html"
   },
   {
     "name": "Themes",
     "path": "/themes",
     "parent": "PSK Components",
-    "componentProps": {
-      "pageUrl": "https://raw.githubusercontent.com/PrivateSky/pwc-apps/master/src/pages/Themes/index.html"
-    },
-    "exact": true
+    "pageSrc": "Themes/index.html"
   }
 ]
