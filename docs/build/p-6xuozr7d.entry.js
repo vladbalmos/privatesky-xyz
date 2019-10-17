@@ -1,1 +1,0 @@
-import{r as t,h as s}from"./p-94bfe925.js";const r=class{constructor(s){t(this,s),this.blobData=null,this.filename=""}render(){let t=window.URL.createObjectURL(this.blobData);return s("a",{class:"btn btn-primary",href:t,role:"button",download:this.filename},this.filename)}};export{r as psk_blob_downloader};
