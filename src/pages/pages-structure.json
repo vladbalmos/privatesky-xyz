@@ -8,7 +8,12 @@
   {
     "name": "Themes",
     "path": "/themes",
-    "parent": "PSK Components",
     "pageSrc": "Themes/index.html"
+  },
+  {
+    "name": "AppMenuFromPage",
+    "parent": "PSK Components",
+    "path": "app-menu2",
+    "pageSrc": "Components/app-menu/index.html"
   }
 ]
