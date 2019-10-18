@@ -9,7 +9,6 @@
     "name": "PrivateSky",
     "path": "/PrivateSky",
     "icon": "fa-cog",
-    "abstract": true,
     "children": [{
       "name": "Main Innovations",
       "icon": "fa-cog",
@@ -46,7 +45,6 @@
     "name": "UI Components",
     "path": "/UIComponents",
     "icon": "fa-cog",
-    "abstract": true,
     "children": [
       {
         "name": "Themes",
