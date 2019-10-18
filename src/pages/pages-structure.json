@@ -32,7 +32,7 @@
       {
         "name": "Installation",
         "icon": "fa-cog",
-        "pageSrc": "PrivateSky/Installation.html"
+        "pageSrc": "PrivateSky/installation.html"
       },
       {
         "name": "Code Examples",
@@ -42,30 +42,155 @@
     ]
   },
   {
-    "name": "UI Components",
-    "path": "/UIComponents",
+    "name": "Encrypted Distributed File System",
+    "path": "/EDFS",
     "icon": "fa-cog",
     "children": [
       {
-        "name": "Themes",
-        "path": "/themes",
-        "pageSrc": "Themes/index.html"
+        "name": "EDFS",
+        "icon": "fa-cog",
+        "pageSrc": "EDFS/EDFS.html"
+      },
+      {
+        "name": "BAR: Brick ARchives",
+        "pageSrc": "EDFS/bar.html"
+      },
+      {
+        "name": "CSB: Cloud Safe Box concept",
+        "icon": "fa-cog",
+        "pageSrc": "EDFS/CSB.html"
+      }
+    ]
+  },
+  {
+    "name": "Development",
+    "path": "/Development",
+    "icon": "fa-cog",
+    "children": [
+      {
+        "name": "Developement style",
+        "icon": "fa-cog",
+        "pageSrc": "Development/Guide.html"
+      },
+      {
+        "name": "Unit testing map",
+        "pageSrc": "Development/UnitTesting.html"
+      },
+      {
+        "name": "Node Modules",
+        "icon": "fa-cog",
+        "pageSrc": "Development/Modules.html"
+      },
+      {
+        "name": "Workers and Isolates",
+        "icon": "fa-cog",
+        "pageSrc": "Development/Workers.html"
+      },
+      {
+        "name": "Communication",
+        "icon": "fa-cog",
+        "pageSrc": "Development/VirtualMQ.html"
+      }
+    ]
+  },
+  {
+    "name": "Tools",
+    "path": "/Tools",
+    "icon": "fa-cog",
+    "children": [
+      {
+        "name": "List of tools",
+        "icon": "fa-cog",
+        "pageSrc": "Tools/List.html"
+      },
+      {
+        "name": "bar",
+        "icon": "fa-cog",
+        "pageSrc": "Tools/Bar.html"
+      },
+      {
+        "name": "pskadmin",
+        "icon": "fa-cog",
+        "pageSrc": "Tools/Pskadmin.html"
+      },
+      {
+        "name": "pskwallet",
+        "icon": "fa-cog",
+        "pageSrc": "Tools/Pskwallet.html"
+      },
+      {
+        "name": "CSBWizzard",
+        "icon": "fa-cog",
+        "pageSrc": "Tools/CSBWizzard.html"
+      },
+      {
+        "name": "PSKMonitor",
+        "icon": "fa-cog",
+        "pageSrc": "Tools/PSKMonitor.html"
+      },
+      {
+        "name": "Governance",
+        "icon": "fa-cog",
+        "pageSrc": "Tools/Governance.html"
+      }
+    ]
+  },
+  {
+    "name": "Web Components MVC",
+    "path": "/MVC",
+    "icon": "fa-cog",
+    "children": [
+      {
+        "name": "Web Components MVC",
+        "icon": "fa-cog",
+        "pageSrc": "MVC/MiniFramework.html"
       },
       {
         "name": "Controllers",
         "path": "/controllers",
         "icon": "fa-cog",
         "pageSrc": "Controllers/index.html"
+      },
+      {
+        "name": "Themes",
+        "path": "/themes",
+        "pageSrc": "Themes/index.html"
+      },
+      {
+        "name": "Events",
+        "path": "/events",
+        "pageSrc": "Controllers/events.html"
       }
     ]
   },
-
   {
-    "name": "How to write pages",
-    "path": "/Help",
-    "pageSrc": "Help/HowToWrite.html"
+    "name": "About",
+    "path": "/About",
+    "icon": "fa-cog",
+    "children": [
+      {
+        "name": "How to write pages",
+        "pageSrc": "Help/HowToWrite.html"
+      },
+      {
+        "name": "How to create a new site with this approach",
+        "pageSrc": "Help/HowToCreateASite.html"
+      },
+      {
+        "name": "Contributors",
+        "pageSrc": "Help/Contributors.html"
+      },
+      {
+        "name": "Copyright",
+        "pageSrc": "Help/Copyright.html"
+      }
+    ]
   },
-
+  {
+    "name": "Glossary",
+    "path": "/glossary",
+    "pageSrc": "Help/Glossary.html"
+  },
   {
     "name": "Nu sterge",
     "parent": "PSK Components",
