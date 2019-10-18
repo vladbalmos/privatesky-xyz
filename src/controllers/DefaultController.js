@@ -39,11 +39,16 @@ export default class DefaultController {
               page[prop] = appConfig.defaultPageProp[prop];
             }
           }
+
           if(page.component === "psk-page-loader"){
             if(!page.componentProps) {
               page.componentProps = {};
             }
             page.componentProps.pageUrl = appConfig.basePagesUrl+page.pageSrc;
+          }
+
+          if (!page.path) {
+            page.path = page.name;
           }
         });
       };
@@ -62,7 +67,7 @@ export default class DefaultController {
           let rootPages = appStructure.map(rootPage => rootPage.name);
 
           navigationPages.forEach((page, index) => {
-            if (page.parent) {
+            if (page.parent>-1) {
               let parentIndex = rootPages.indexOf(page.parent);
               if (parentIndex) {
                 if (!appStructure[parentIndex].children) {
