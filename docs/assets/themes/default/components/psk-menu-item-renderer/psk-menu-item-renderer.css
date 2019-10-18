@@ -90,7 +90,6 @@ span.icon{
 }
 .dropdown.isOpened div.children{
   display: block;
-  z-index:100;
 }
 span.fa-caret-down{
   padding-left: 10px;
