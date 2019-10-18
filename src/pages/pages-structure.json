@@ -15,7 +15,7 @@
     "name": "Main Innovations",
     "icon": "fa-cog",
     "parent": "PrivateSky",
-    "pageSrc": "PrivateSky/innovations.html"
+    "pageSrc": "PrivateSky/Innovations.html"
   },
   {
     "name": "Architecture",
@@ -33,13 +33,13 @@
     "name": "Swarms Explained",
     "icon": "fa-cog",
     "parent": "PrivateSky",
-    "pageSrc": "PrivateSky/swarms.html"
+    "pageSrc": "PrivateSky/Swarms.html"
   },
   {
     "name": "Installation",
     "icon": "fa-cog",
     "parent": "PrivateSky",
-    "pageSrc": "PrivateSky/installation.html"
+    "pageSrc": "PrivateSky/Installation.html"
   },
   {
     "name": "Code Examples",
