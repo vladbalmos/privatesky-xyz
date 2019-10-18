@@ -9,63 +9,59 @@
     "name": "PrivateSky",
     "path": "/PrivateSky",
     "icon": "fa-cog",
-    "abstract": true
-  },
-  {
-    "name": "Main Innovations",
-    "icon": "fa-cog",
-    "parent": "PrivateSky",
-    "pageSrc": "PrivateSky/Innovations.html"
-  },
-  {
-    "name": "Architecture",
-    "icon": "fa-cog",
-    "parent": "PrivateSky",
-    "pageSrc": "PrivateSky/Architecture.html"
-  },
-  {
-    "name": "Developer Map",
-    "icon": "fa-cog",
-    "parent": "PrivateSky",
-    "pageSrc": "PrivateSky/DevMap.html"
-  },
-  {
-    "name": "Swarms Explained",
-    "icon": "fa-cog",
-    "parent": "PrivateSky",
-    "pageSrc": "PrivateSky/Swarms.html"
-  },
-  {
-    "name": "Installation",
-    "icon": "fa-cog",
-    "parent": "PrivateSky",
-    "pageSrc": "PrivateSky/Installation.html"
-  },
-  {
-    "name": "Code Examples",
-    "icon": "fa-cog",
-    "parent": "PrivateSky",
-    "pageSrc": "PrivateSky/Examples.html"
+    "abstract": true,
+    "children": [{
+      "name": "Main Innovations",
+      "icon": "fa-cog",
+      "pageSrc": "PrivateSky/innovations.html"
+    },
+      {
+        "name": "Architecture",
+        "icon": "fa-cog",
+        "pageSrc": "PrivateSky/Architecture.html"
+      },
+      {
+        "name": "Developer Map",
+        "icon": "fa-cog",
+        "pageSrc": "PrivateSky/DevMap.html"
+      },
+      {
+        "name": "Swarms Explained",
+        "icon": "fa-cog",
+        "pageSrc": "PrivateSky/swarms.html"
+      },
+      {
+        "name": "Installation",
+        "icon": "fa-cog",
+        "pageSrc": "PrivateSky/installation.html"
+      },
+      {
+        "name": "Code Examples",
+        "icon": "fa-cog",
+        "pageSrc": "PrivateSky/Examples.html"
+      }
+    ]
   },
   {
     "name": "UI Components",
     "path": "/UIComponents",
     "icon": "fa-cog",
-    "abstract": true
+    "abstract": true,
+    "children": [
+      {
+        "name": "Themes",
+        "path": "/themes",
+        "pageSrc": "Themes/index.html"
+      },
+      {
+        "name": "Controllers",
+        "path": "/controllers",
+        "icon": "fa-cog",
+        "pageSrc": "Controllers/index.html"
+      }
+    ]
   },
-  {
-    "name": "Controllers",
-    "path": "/controllers",
-    "icon": "fa-cog",
-    "parent": "UI Components",
-    "pageSrc": "Controllers/index.html"
-  },
-  {
-    "name": "Themes",
-    "path": "/themes",
-    "parent": "UI Components",
-    "pageSrc": "Themes/index.html"
-  },
+
   {
     "name": "How to write pages",
     "path": "/Help",
