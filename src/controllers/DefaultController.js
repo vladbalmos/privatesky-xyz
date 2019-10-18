@@ -40,7 +40,7 @@ export default class DefaultController {
           }
 
           if (pathPrefix) {
-            page.path = pathPrefix + page.path;
+            page.path = pathPrefix + "/"+page.path;
           }
 
           if (page.children) {
