@@ -67,9 +67,8 @@
     "pageSrc": "Themes/index.html"
   },
   {
-    "name": "Menu from Page",
-    "parent": "PSK Components",
-    "path": "/app-menu2",
-    "pageSrc": "Components/app-menu/index.html"
+    "name": "How to write pages",
+    "path": "/Help",
+    "pageSrc": "Help/HowToWrite.html"
   }
 ]
