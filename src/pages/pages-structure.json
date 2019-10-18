@@ -66,5 +66,12 @@
     "name": "How to write pages",
     "path": "/Help",
     "pageSrc": "Help/HowToWrite.html"
+  },
+
+  {
+    "name": "Nu sterge",
+    "parent": "PSK Components",
+    "path": "/app-menu2",
+    "pageSrc": "Components/app-menu/index.html"
   }
 ]
