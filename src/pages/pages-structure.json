@@ -109,12 +109,12 @@
         "pageSrc": "Tools/Bar.html"
       },
       {
-        "name": "pskadmin",
+        "name": "PSKAdmin",
         "icon": "fa-cog",
         "pageSrc": "Tools/Pskadmin.html"
       },
       {
-        "name": "pskwallet",
+        "name": "PSKWallet",
         "icon": "fa-cog",
         "pageSrc": "Tools/Pskwallet.html"
       },
