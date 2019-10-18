@@ -1,13 +1,5 @@
 [
   {
-    "name": "Home",
-    "path": "/home",
-    "icon": "fa-home",
-    "type": "route",
-    "component": "app-home",
-    "exact": true
-  },
-  {
     "name": "PSK Components",
     "path": "/psk-components",
     "icon": "fa-bars",

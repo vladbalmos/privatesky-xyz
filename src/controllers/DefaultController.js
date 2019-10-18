@@ -31,24 +31,40 @@ export default class DefaultController {
         }
       };
 
-      let fillOptionalProps = (navigationPages) => {
+      let fillOptionalProps = (navigationPages, pathPrefix) => {
 
         navigationPages.forEach(page => {
-          for (let prop in appConfig.defaultPageProp) {
-            if (!page[prop]) {
-              page[prop] = appConfig.defaultPageProp[prop];
-            }
-          }
-
-          if(page.component === "psk-page-loader"){
-            if(!page.componentProps) {
-              page.componentProps = {};
-            }
-            page.componentProps.pageUrl = appConfig.basePagesUrl+page.pageSrc;
-          }
 
           if (!page.path) {
             page.path = page.name;
+          }
+
+          if (pathPrefix) {
+            page.path = pathPrefix + page.path;
+          }
+
+          if (page.children) {
+            page.type = "abstract";
+            if (!page.icon) {
+              page.icon = appConfig.defaultPageProp.icon;
+            }
+          } else {
+            for (let prop in appConfig.defaultPageProp) {
+              if (!page[prop]) {
+                page[prop] = appConfig.defaultPageProp[prop];
+              }
+            }
+
+            if (page.component === "psk-page-loader") {
+              if (!page.componentProps) {
+                page.componentProps = {};
+              }
+              page.componentProps.pageUrl = appConfig.basePagesUrl + page.pageSrc;
+            }
+          }
+
+          if (page.children) {
+            fillOptionalProps(page.children, page.path);
           }
         });
       };
@@ -67,7 +83,7 @@ export default class DefaultController {
           let rootPages = appStructure.map(rootPage => rootPage.name);
 
           navigationPages.forEach((page, index) => {
-            if (page.parent>-1) {
+            if (page.parent > -1) {
               let parentIndex = rootPages.indexOf(page.parent);
               if (parentIndex) {
                 if (!appStructure[parentIndex].children) {
@@ -80,7 +96,9 @@ export default class DefaultController {
             }
           });
 
-          prepareNavigationStructure(appStructure.concat(navigationPages));
+
+
+          prepareNavigationStructure(navigationPages.concat(appStructure));
         }
       };
 

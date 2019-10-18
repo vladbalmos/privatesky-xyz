@@ -12,7 +12,7 @@
     "children": [{
       "name": "Main Innovations",
       "icon": "fa-cog",
-      "pageSrc": "PrivateSky/innovations.html"
+      "pageSrc": "PrivateSky/Innovations.html"
     },
       {
         "name": "Architecture",
@@ -27,7 +27,7 @@
       {
         "name": "Swarms Explained",
         "icon": "fa-cog",
-        "pageSrc": "PrivateSky/swarms.html"
+        "pageSrc": "PrivateSky/Swarms.html"
       },
       {
         "name": "Installation",
