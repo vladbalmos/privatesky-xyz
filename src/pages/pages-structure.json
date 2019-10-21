@@ -32,7 +32,7 @@
       {
         "name": "Installation",
         "icon": "fa-cog",
-        "pageSrc": "PrivateSky/installation.html"
+        "pageSrc": "PrivateSky/Installation.html"
       },
       {
         "name": "Code Examples",
