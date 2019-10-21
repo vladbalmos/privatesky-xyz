@@ -1,7 +1,7 @@
 [
   {
     "name": "Home",
-    "path": "/home",
+    "path": "/",
     "icon": "fa-home",
     "pageSrc": "index.html"
   },
