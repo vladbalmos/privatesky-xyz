@@ -8,14 +8,14 @@
     <meta name="theme-color" content="#16161d">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta http-equiv="x-ua-compatible" content="IE=Edge">
-      <link rel="modulepreload" href="/build/p-swdbgfsx.js">
-      <link rel="modulepreload" href="/build/p-aa67fb06.js">
-      <link rel="modulepreload" href="/build/p-ca344ecc.js">
-      <link rel="modulepreload" href="/build/p-cb87a2fc.js">
-      <link rel="modulepreload" href="/build/p-d76f0ca1.js">
-      <link rel="modulepreload" href="/build/p-fwomd2lp.entry.js">
-      <script type="module" src="/build/p-swdbgfsx.js" data-resources-url="/build/" data-stencil-namespace="app"></script>
-      <script nomodule="" src="/build/app.js"></script>
+      <link rel="modulepreload" href="/build/p-6vxztqin.js">
+        <link rel="modulepreload" href="/build/p-aa67fb06.js">
+        <link rel="modulepreload" href="/build/p-ca344ecc.js">
+        <link rel="modulepreload" href="/build/p-cb87a2fc.js">
+        <link rel="modulepreload" href="/build/p-d76f0ca1.js">
+        <link rel="modulepreload" href="/build/p-v9420gld.entry.js">
+        <script type="module" src="/build/p-6vxztqin.js" data-resources-url="/build/" data-stencil-namespace="app"></script>
+        <script nomodule="" src="/build/app.js"></script>
     <style>
         body {
             margin: 0;
