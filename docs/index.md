@@ -38,7 +38,7 @@
     <link rel="icon" type="image/x-icon" href="/assets/icon/favicon.ico">
     <link rel="manifest" href="/manifest.json"> </head>
 
-<body>
+<body>test
     <script>
         globalConfig = {
             theme: "default"
