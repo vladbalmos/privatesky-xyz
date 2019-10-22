@@ -7,8 +7,8 @@ export default {
     exact: true
   },
   profile: {
-    username: "PSK Components",
-    email: "info@privatesky.ro",
-    avatar: "https://i.ibb.co/ZTcVc3L/psk-component.png"
+    username: "PrivateSky",
+    email: "privatesky@axiologic.net",
+    avatar: "https://privatesky.xyz/assets/icon/privatesky.png"
   }
 }
