@@ -3,19 +3,19 @@
 <head>
     <meta charset="utf-8">
     <title>PrivateSky Development Hub</title>
-    <meta name="Description" content="Welcome to the Stencil App Starter. You can use this starter to build entire apps all with web components using Stencil!">
+    <meta name="Description" content="PrivateSky: A bridge between blockchains and cloud or enterprise software">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
     <meta name="theme-color" content="#16161d">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta http-equiv="x-ua-compatible" content="IE=Edge">
-     <link rel="modulepreload" href="/build/p-fejwgi47.js">
-     <link rel="modulepreload" href="/build/p-aa67fb06.js">
-     <link rel="modulepreload" href="/build/p-ca344ecc.js">
-     <link rel="modulepreload" href="/build/p-cb87a2fc.js">
-     <link rel="modulepreload" href="/build/p-d76f0ca1.js">
-     <link rel="modulepreload" href="/build/p-m0e0prdr.entry.js">
-     <script type="module" src="/build/p-fejwgi47.js" data-resources-url="/build/" data-stencil-namespace="app"></script>
-     <script nomodule="" src="/build/app.js"></script>
+       <link rel="modulepreload" href="/build/p-jb3vtmyk.js">
+       <link rel="modulepreload" href="/build/p-aa67fb06.js">
+       <link rel="modulepreload" href="/build/p-ca344ecc.js">
+       <link rel="modulepreload" href="/build/p-cb87a2fc.js">
+       <link rel="modulepreload" href="/build/p-d76f0ca1.js">
+       <link rel="modulepreload" href="/build/p-m0e0prdr.entry.js">
+       <script type="module" src="/build/p-jb3vtmyk.js" data-resources-url="/build/" data-stencil-namespace="app"></script>
+       <script nomodule="" src="/build/app.js"></script>
     <style>
         body {
             margin: 0;
