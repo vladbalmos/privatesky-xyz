@@ -30,6 +30,8 @@ aside {
   display: flex;
   flex-direction: column;
   overflow: auto;
+  scrollbar-color: #4e73df #E5E5E5;
+  scrollbar-width: thin;
 }
 
 .nav-footer{
@@ -50,6 +52,8 @@ section{
   flex-direction: column;
   height:100%;
   overflow:hidden auto;
+  scrollbar-color: #4e73df #E5E5E5;
+  scrollbar-width: thin;
 }
 
 app-menu,
@@ -72,3 +76,27 @@ section{
 order:2;
 flex: 8;
 }
+
+aside::-webkit-scrollbar,
+section::-webkit-scrollbar{
+  background-color:#fff;
+  width:8px;
+}
+
+/* background of the scrollbar except button or resizer */
+aside::-webkit-scrollbar-track,
+section::-webkit-scrollbar-track{
+  background-color:#E5E5E5;
+}
+
+/* scrollbar itself */
+aside::-webkit-scrollbar-thumb,
+section::-webkit-scrollbar-thumb
+{
+  background-color:#4e73df;
+  border-radius:8px;
+  border:2px solid #FFF ;
+}
+
+/* set button(top and bottom of the scrollbar) */
+aside::-webkit-scrollbar-button {display:none}
