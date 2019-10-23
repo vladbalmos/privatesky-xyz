@@ -46,7 +46,6 @@ export class AppRoot {
         </aside>
 
         <section>
-          <nav></nav>
           <psk-app-router failRedirectTo="/home" historyType="hash"> </psk-app-router>
           {this.mobileLayout === true ?<div class="nav-footer bottom-stick">version 0.1</div>:null}
         </section>
