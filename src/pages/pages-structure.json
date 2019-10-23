@@ -205,7 +205,7 @@
         "children": [{
             "name": "Page not found",
             "icon": "fa-cog",
-            "path": "/psk-components-documentation/page-not-found",
+            "path": "page-not-found",
             "pageSrc": "Components/psk-page-not-found/index.html"
         }]
     }
