@@ -193,12 +193,6 @@
         "pageSrc": "Help/Glossary.html"
     },
     {
-        "name": "Nu sterge",
-        "parent": "PSK Components",
-        "path": "/app-menu2",
-        "pageSrc": "Components/app-menu/index.html"
-    },
-    {
         "name": "PSK Components Documentation",
         "path": "/psk-components-documentation",
         "icon": "fa-cog",
@@ -207,6 +201,10 @@
             "icon": "fa-cog",
             "path": "page-not-found",
             "pageSrc": "Components/psk-page-not-found/index.html"
+        },{
+            "name": "App Menu",
+            "path": "/app-menu",
+            "pageSrc": "Components/app-menu/index.html"
         }]
     }
 ]
