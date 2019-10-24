@@ -1,4 +1,4 @@
-import {getElement} from "@stencil/core";
+import { getElement } from "@stencil/core";
 import appConfig from "../app-config";
 import appNavigationStructure from "../global/app-navigation-structure";
 import wizardConfiguration from "../global/wizard-structure";
@@ -9,6 +9,7 @@ export default class DefaultController {
 
   constructor(view) {
     this.element = getElement(view);
+    this.openFeedbackRequest = null;
 
     this.element.addEventListener('menuEvent', (e) => {
       e.stopImmediatePropagation();
@@ -16,7 +17,7 @@ export default class DefaultController {
         window.location.href = e.detail.path;
       }
       let menuItem = e.detail;
-      let changePathEvt = new CustomEvent("routeChanged", {bubbles: true, cancelable: false, detail: menuItem});
+      let changePathEvt = new CustomEvent("routeChanged", { bubbles: true, cancelable: false, detail: menuItem });
       this.element.dispatchEvent(changePathEvt);
     });
 
@@ -40,7 +41,7 @@ export default class DefaultController {
           }
 
           if (pathPrefix) {
-            page.path = pathPrefix + "/"+page.path;
+            page.path = pathPrefix + "/" + page.path;
           }
 
           if (page.children) {
@@ -137,6 +138,12 @@ export default class DefaultController {
         console.error("Callback was not properly provided!");
       }
     });
+    this.element.addEventListener('openFeedback', (e) => {
+      this.openFeedbackRequest = e.detail
+    })
+    this.element.addEventListener('showFeedback', (e) => {
+      this.openFeedbackRequest(e.detail.message, e.detail.name, e.detail.type)
+    })
 
     this.element.addEventListener("sendPin", (evt) => {
       let callback = evt.detail.callback;
@@ -148,7 +155,7 @@ export default class DefaultController {
     });
   }
 
-  _handleSendPin({pin, callback}) {
+  _handleSendPin({ pin, callback }) {
     if (!pin || pin.trim().length < 6) {
       callback("Invalid PIN length. Minimum is 6!");
     } else {
@@ -174,8 +181,8 @@ export default class DefaultController {
     if (index < 0 || index >= wizardSteps.length) {
       errorMessage = "Index has no valid value";
     } else if (index <= activeStep.stepIndex) {
-      wizardSteps[activeStep.stepIndex] = {...activeStep};
-      activeStep = {...wizardSteps[index]};
+      wizardSteps[activeStep.stepIndex] = { ...activeStep };
+      activeStep = { ...wizardSteps[index] };
     } else {
       switch (activeStep.stepProperties.stepPhase) {
         case 'csb-name': {
@@ -184,8 +191,8 @@ export default class DefaultController {
             errorMessage = "CSB Name is empty";
           } else {
             activeStep.stepCompleted = true;
-            wizardSteps[activeStep.stepIndex] = {...activeStep};
-            activeStep = {...wizardSteps[index]};
+            wizardSteps[activeStep.stepIndex] = { ...activeStep };
+            activeStep = { ...wizardSteps[index] };
           }
           break;
         }
@@ -195,8 +202,8 @@ export default class DefaultController {
             errorMessage = "CSB Type is empty";
           } else {
             activeStep.stepCompleted = true;
-            wizardSteps[activeStep.stepIndex] = {...activeStep};
-            activeStep = {...wizardSteps[index]};
+            wizardSteps[activeStep.stepIndex] = { ...activeStep };
+            activeStep = { ...wizardSteps[index] };
           }
           break;
         }
@@ -206,8 +213,8 @@ export default class DefaultController {
             errorMessage = "Recovery phase property is not sent";
           } else {
             activeStep.stepCompleted = true;
-            wizardSteps[activeStep.stepIndex] = {...activeStep};
-            activeStep = {...wizardSteps[index]};
+            wizardSteps[activeStep.stepIndex] = { ...activeStep };
+            activeStep = { ...wizardSteps[index] };
           }
           break;
         }

@@ -78,14 +78,6 @@
         "exact": true
       },
       {
-        "name": "Feedback Alert",
-        "path": "/psk-components/ui-feedback",
-        "icon": "fa-bars",
-        "type": "route",
-        "component": "feedback-alert-usage",
-        "exact": true
-      },
-      {
         "name": "Feedback List",
         "path": "/psk-components/list-feedback",
         "icon": "fa-bars",
