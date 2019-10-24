@@ -1,3 +1,4 @@
+const pagesStructureUrls = ["./src/pages/pages-structure.json","./src/global/app-navigation-strucutre.json"];
 const fs = require("fs");
 const path = require("path");
 const child_process = require('child_process');
@@ -66,7 +67,23 @@ let makeWebsite = function () {
   });
 };
 
-makeWebsite();
+let mergePagesStructure = function(){
+  pagesStructureUrls.forEach(pageStructureUrl=>{
+
+
+      fs.readFile(path.resolve(pageStructureUrl), (err, data) => {
+        if (err)
+          cb(err)
+        else
+          cb(null, JSON.parse(data))
+      })
+
+    let pageStructure = require(pageStructureUrl);
+  })
+}
+
+//makeWebsite();
+mergePagesStructure();
 
 
 
