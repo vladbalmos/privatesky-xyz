@@ -14,7 +14,11 @@
             <li>
               getSecret(readList, callback): returns a plain test secret extracted from the readList, assuming that the Security Context has access to a private key with witch the secret was encrypted
             </li>
-
+            
+            <li>
+              generateSecret(): returns an EncryptedSecret instance that contains an encrypted text and the agent that generated the text
+            </li>
+            
             <li>
               sign(digest, writeList, [all,] callback): returns a PSkSignature instance that contains a signature for the digest signed by the first agent known to current security Context. If all is present, returns an array of PSkSignature objects for all the known agents of teh current Security Context.
             </li>
