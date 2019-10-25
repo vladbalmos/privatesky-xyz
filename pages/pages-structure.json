@@ -193,6 +193,24 @@
         ]
     },
     {
+      "name": "About2",
+      "path": "/Despre",
+      "icon": "fa-cog",
+      "children": [{
+        "name": "How to write pages"
+      },
+        {
+          "name": "How to create a new site with this approach"
+        },
+        {
+          "name": "Contributors"
+        },
+        {
+          "name": "Copyright"
+        }
+      ]
+    },
+    {
         "name": "Glossary",
         "path": "/glossary",
         "pageSrc": "Help/Glossary.html"
