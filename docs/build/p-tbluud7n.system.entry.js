@@ -1,1 +1,0 @@
-System.register(["./p-24276ee4.system.js"],(function(t){"use strict";var e,i;return{setters:[function(t){e=t.r;i=t.h}],execute:function(){var s=t("psk_description",function(){function t(t){e(this,t);this.title="Description"}t.prototype.render=function(){return i("psk-chapter",{title:this.title},i("div",{class:"psk-description"},i("slot",null)))};return t}())}}}));

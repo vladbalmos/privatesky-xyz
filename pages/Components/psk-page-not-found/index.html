@@ -29,14 +29,22 @@
     </psk-chapter>
 
     <psk-chapter title="Code Examples">
-        <span class="nt">&lt;psk-page-not-found basePath=&#123;"/"&#125; /&gt;</span><br />
-        <span class="nt">&lt;psk-page-not-found urlDestination=&#123;"/path/to/destination"&#125; /&gt;</span><br />
-        <span class="nt">&lt;psk-page-not-found pageRenderer=&#123;"some-custom-renderer"&#125; /&gt;</span><br />
-        <span class="nt">&lt;psk-page-not-found /&gt;</span>
+        <psk-tag>
+            <psk-page-not-found base-path="/"></psk-page-not-found>
+        </psk-tag>
+        <psk-tag>
+            <psk-page-not-found url-destination="/path/to/destination"></psk-page-not-found>
+        </psk-tag>
+        <psk-tag>
+            <psk-page-not-found page-renderer="my-custom-page-renderer"></psk-page-not-found>
+        </psk-tag>
+        <psk-tag>
+            <psk-page-not-found></psk-page-not-found>
+        </psk-tag>
     </psk-chapter>
 
 
-    <psk-example title="Usage Preview with the default pageRenderer">
+    <psk-example title="Usage Preview with the default page-renderer">
         <psk-page-not-found />
     </psk-example>
 </psk-page>
