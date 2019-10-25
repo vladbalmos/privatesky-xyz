@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const child_process = require('child_process');
-const navigationPages = "./src/pages/pages-structure.json";
+const navigationPages = "./pages/pages-structure.json";
 const globalNavigation = "./src/global/app-navigation-structure.json";
 const websiteUrlBase = "https://privatesky.xyz/#";
 
