@@ -194,7 +194,7 @@
     },
     {
       "name": "About2",
-      "path": "/About2",
+      "path": "/Despre",
       "icon": "fa-cog",
       "children": [{
         "name": "How to write pages"
