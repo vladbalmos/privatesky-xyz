@@ -1,4 +1,4 @@
-import { getElement } from "@stencil/core";
+import {getElement} from "@stencil/core";
 import appConfig from "../app-config";
 import appNavigationStructure from "../global/app-navigation-structure";
 import wizardConfiguration from "../global/wizard-structure";
@@ -17,7 +17,7 @@ export default class DefaultController {
         window.location.href = e.detail.path;
       }
       let menuItem = e.detail;
-      let changePathEvt = new CustomEvent("routeChanged", { bubbles: true, cancelable: false, detail: menuItem });
+      let changePathEvt = new CustomEvent("routeChanged", {bubbles: true, cancelable: false, detail: menuItem});
       this.element.dispatchEvent(changePathEvt);
     });
 
@@ -38,8 +38,8 @@ export default class DefaultController {
 
           if (!page.path) {
             let pageName = page.name.toLowerCase();
-            let pagePath = pageName.toLowerCase().replace(/\s+/g,'-');
-            pagePath = pagePath.replace(/[:\/]/g,'');
+            let pagePath = pageName.toLowerCase().replace(/\s+/g, '-');
+            pagePath = pagePath.replace(/[:\/]/g, '');
             page.path = pagePath;
           }
 
@@ -63,7 +63,19 @@ export default class DefaultController {
               if (!page.componentProps) {
                 page.componentProps = {};
               }
-              page.componentProps.pageUrl = appConfig.basePagesUrl + page.pageSrc;
+              if (page.pageSrc) {
+                page.componentProps.pageUrl = appConfig.basePagesUrl + page.pageSrc;
+              } else {
+
+                let filename = page.name.replace(/\s(.)/g, function ($1) {
+                  return $1.toUpperCase();
+                }).replace(/\s/g, '');
+
+                let prefix = pathPrefix.replace(/^\//, '');
+                page.componentProps.pageUrl = appConfig.basePagesUrl + prefix + "/" + filename + ".html";
+              }
+
+
             }
           }
 
@@ -99,7 +111,6 @@ export default class DefaultController {
               }
             }
           });
-
 
 
           prepareNavigationStructure(navigationPages.concat(appStructure));
@@ -158,7 +169,7 @@ export default class DefaultController {
     });
   }
 
-  _handleSendPin({ pin, callback }) {
+  _handleSendPin({pin, callback}) {
     if (!pin || pin.trim().length < 6) {
       callback("Invalid PIN length. Minimum is 6!");
     } else {
@@ -184,8 +195,8 @@ export default class DefaultController {
     if (index < 0 || index >= wizardSteps.length) {
       errorMessage = "Index has no valid value";
     } else if (index <= activeStep.stepIndex) {
-      wizardSteps[activeStep.stepIndex] = { ...activeStep };
-      activeStep = { ...wizardSteps[index] };
+      wizardSteps[activeStep.stepIndex] = {...activeStep};
+      activeStep = {...wizardSteps[index]};
     } else {
       switch (activeStep.stepProperties.stepPhase) {
         case 'csb-name': {
@@ -194,8 +205,8 @@ export default class DefaultController {
             errorMessage = "CSB Name is empty";
           } else {
             activeStep.stepCompleted = true;
-            wizardSteps[activeStep.stepIndex] = { ...activeStep };
-            activeStep = { ...wizardSteps[index] };
+            wizardSteps[activeStep.stepIndex] = {...activeStep};
+            activeStep = {...wizardSteps[index]};
           }
           break;
         }
@@ -205,8 +216,8 @@ export default class DefaultController {
             errorMessage = "CSB Type is empty";
           } else {
             activeStep.stepCompleted = true;
-            wizardSteps[activeStep.stepIndex] = { ...activeStep };
-            activeStep = { ...wizardSteps[index] };
+            wizardSteps[activeStep.stepIndex] = {...activeStep};
+            activeStep = {...wizardSteps[index]};
           }
           break;
         }
@@ -216,8 +227,8 @@ export default class DefaultController {
             errorMessage = "Recovery phase property is not sent";
           } else {
             activeStep.stepCompleted = true;
-            wizardSteps[activeStep.stepIndex] = { ...activeStep };
-            activeStep = { ...wizardSteps[index] };
+            wizardSteps[activeStep.stepIndex] = {...activeStep};
+            activeStep = {...wizardSteps[index]};
           }
           break;
         }
