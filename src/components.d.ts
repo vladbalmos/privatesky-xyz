@@ -56,7 +56,6 @@ export namespace Components {
     'timeMeasure': string;
     'timeSinceCreation': number;
   }
-  interface PageNotFoundUsage {}
   interface PinPopupUsage {}
   interface PskThemes {}
   interface SaveRecoveryPhrase {
@@ -163,12 +162,6 @@ declare global {
     new (): HTMLMyToastRendererElement;
   };
 
-  interface HTMLPageNotFoundUsageElement extends Components.PageNotFoundUsage, HTMLStencilElement {}
-  var HTMLPageNotFoundUsageElement: {
-    prototype: HTMLPageNotFoundUsageElement;
-    new (): HTMLPageNotFoundUsageElement;
-  };
-
   interface HTMLPinPopupUsageElement extends Components.PinPopupUsage, HTMLStencilElement {}
   var HTMLPinPopupUsageElement: {
     prototype: HTMLPinPopupUsageElement;
@@ -231,7 +224,6 @@ declare global {
     'modal-usage': HTMLModalUsageElement;
     'my-alert-renderer': HTMLMyAlertRendererElement;
     'my-toast-renderer': HTMLMyToastRendererElement;
-    'page-not-found-usage': HTMLPageNotFoundUsageElement;
     'pin-popup-usage': HTMLPinPopupUsageElement;
     'psk-themes': HTMLPskThemesElement;
     'save-recovery-phrase': HTMLSaveRecoveryPhraseElement;
@@ -287,7 +279,6 @@ declare namespace LocalJSX {
     'timeMeasure'?: string;
     'timeSinceCreation'?: number;
   }
-  interface PageNotFoundUsage {}
   interface PinPopupUsage {}
   interface PskThemes {}
   interface SaveRecoveryPhrase {
@@ -321,7 +312,6 @@ declare namespace LocalJSX {
     'modal-usage': ModalUsage;
     'my-alert-renderer': MyAlertRenderer;
     'my-toast-renderer': MyToastRenderer;
-    'page-not-found-usage': PageNotFoundUsage;
     'pin-popup-usage': PinPopupUsage;
     'psk-themes': PskThemes;
     'save-recovery-phrase': SaveRecoveryPhrase;
@@ -353,7 +343,6 @@ declare module "@stencil/core" {
       'modal-usage': LocalJSX.ModalUsage & JSXBase.HTMLAttributes<HTMLModalUsageElement>;
       'my-alert-renderer': LocalJSX.MyAlertRenderer & JSXBase.HTMLAttributes<HTMLMyAlertRendererElement>;
       'my-toast-renderer': LocalJSX.MyToastRenderer & JSXBase.HTMLAttributes<HTMLMyToastRendererElement>;
-      'page-not-found-usage': LocalJSX.PageNotFoundUsage & JSXBase.HTMLAttributes<HTMLPageNotFoundUsageElement>;
       'pin-popup-usage': LocalJSX.PinPopupUsage & JSXBase.HTMLAttributes<HTMLPinPopupUsageElement>;
       'psk-themes': LocalJSX.PskThemes & JSXBase.HTMLAttributes<HTMLPskThemesElement>;
       'save-recovery-phrase': LocalJSX.SaveRecoveryPhrase & JSXBase.HTMLAttributes<HTMLSaveRecoveryPhraseElement>;

@@ -171,30 +171,8 @@
         ]
     },
     {
-        "name": "About",
-        "path": "/About",
-        "icon": "fa-cog",
-        "children": [{
-                "name": "How to write pages",
-                "pageSrc": "Help/HowToWrite.html"
-            },
-            {
-                "name": "How to create a new site with this approach",
-                "pageSrc": "Help/HowToCreateASite.html"
-            },
-            {
-                "name": "Contributors",
-                "pageSrc": "Help/Contributors.html"
-            },
-            {
-                "name": "Copyright",
-                "pageSrc": "Help/Copyright.html"
-            }
-        ]
-    },
-    {
       "name": "About2",
-      "path": "/Despre",
+      "path": "/About",
       "icon": "fa-cog",
       "children": [{
         "name": "How to write pages"
@@ -213,7 +191,7 @@
     {
         "name": "Glossary",
         "path": "/glossary",
-        "pageSrc": "Help/Glossary.html"
+        "pageSrc": "About/Glossary.html"
     },
     {
         "name": "PSK Components Documentation",
