@@ -84,6 +84,11 @@
                 "pageSrc": "Development/Workers.html"
             },
             {
+              "name": "Encrypted Choreographies",
+              "icon": "fa-cog",
+              "pageSrc": "Development/EncryptedChoreographies.html"
+            },
+            {
                 "name": "Communication",
                 "icon": "fa-cog",
                 "pageSrc": "Development/VirtualMQ.html"

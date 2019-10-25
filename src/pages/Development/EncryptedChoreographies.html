@@ -1,0 +1,32 @@
+<psk-page title="SecurityContext: Encryption in PrivateSky for encrypted choreographies">
+  <psk-chapter title="Not available">
+    We proposed the concept of encrypted choreographies as a method to make easy to use cryptography methods with swarms communication.
+
+    <ol>
+      Understanding  encrypted choreographies is PrivateSky there are the following concepts:
+      <li> SecurityContext is a global variable in $$.SecurityContext offering encryption functionality as part of the swarm execution engine
+
+          <ol> The list of functions offered by SecurityContext is:
+            <li>
+              getCurrentAgentIdentity(): returns the main agent identity in current Security Context
+            </li>
+
+            <li>
+              getSecret(readList, callback): returns a plain test secret extracted from the readList, assuming that the Security Context has access to a private key with witch the secret was encrypted
+            </li>
+
+            <li>
+              sign(digest, writeList, [first,] callback): returns a PSkSignature instance that contains a signature for the digest  and
+            </li>
+          </ol>
+      </li>
+
+      <li> PskSignature type is a JSON {message, signature, type, agentId}</li>
+      <li> EncryptedSecret type contains a JSON {encryptedText, agentId } </li>
+      <li> readList type: is an array of encrypted secrets (as EncryptedSecret type)  </li>
+      <li> writeList type is an array with agent identities (as strings) </li>
+      <li> Declarations of the secure blocks in swarm descriptions (te be explained)</li>
+    </ol>
+
+  </psk-chapter>
+</psk-page>
