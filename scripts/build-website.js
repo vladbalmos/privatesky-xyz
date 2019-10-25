@@ -76,7 +76,10 @@ let buildSitemap = function () {
     navigationPages.forEach(page => {
 
       if (!page.path) {
-        page.path = page.name;
+        let pageName = page.name.toLowerCase();
+        let pagePath = pageName.toLowerCase().replace(/\s+/g,'-');
+        pagePath = pagePath.replace(/[:\/]/g,'');
+        page.path = pagePath;
       }
 
       if (pathPrefix) {
