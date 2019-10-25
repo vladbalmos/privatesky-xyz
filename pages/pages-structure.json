@@ -194,7 +194,7 @@
     },
     {
       "name": "About2",
-      "path": "/About",
+      "path": "/About2",
       "icon": "fa-cog",
       "children": [{
         "name": "How to write pages"
