@@ -1,5 +1,5 @@
 export default {
-  basePagesUrl: "https://raw.githubusercontent.com/PrivateSky/pwc-apps/master/src/pages/",
+  basePagesUrl: globalConfig.pagesBasePath?globalConfig.pagesBasePath:"https://raw.githubusercontent.com/PrivateSky/pwc-apps/master/pages/",
   defaultPageProp: {
     icon: "fa-bars",
     type: "route",
