@@ -1,7 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const child_process = require('child_process');
-const navigationPages = "./src/pages/pages-structure.json";
+const navigationPages = "./pages/pages-structure.json";
 const globalNavigation = "./src/global/app-navigation-structure.json";
 const websiteUrlBase = "https://privatesky.xyz/#";
 
@@ -76,7 +76,10 @@ let buildSitemap = function () {
     navigationPages.forEach(page => {
 
       if (!page.path) {
-        page.path = page.name;
+        let pageName = page.name.toLowerCase();
+        let pagePath = pageName.toLowerCase().replace(/\s+/g,'-');
+        pagePath = pagePath.replace(/[:\/]/g,'');
+        page.path = pagePath;
       }
 
       if (pathPrefix) {

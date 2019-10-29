@@ -97,7 +97,7 @@ export class AttachmentListUsage {
                                     onFilesSelect={this.filesHandler.bind(this)}
                                 />
                             </div>
-                            <p>See below the selected files using <a href="/psk-components/attach-list"><code>Attachments List</code></a> component.</p>
+                            <p>See below the selected files using <psk-link page="psk components / attachments list">Attachments List</psk-link> component.</p>
                             <psk-attachments-list files={this.fileList} removeFileFromList={this.removeFileFromList.bind(this)} />
                         </div>
                     </div>
