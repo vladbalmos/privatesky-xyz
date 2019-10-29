@@ -244,67 +244,67 @@ declare global {
 }
 
 declare namespace LocalJSX {
-  interface AppHome {}
-  interface AppMenuUsage {}
-  interface AppProfile {
+  interface AppHome extends JSXBase.HTMLAttributes<HTMLAppHomeElement> {}
+  interface AppMenuUsage extends JSXBase.HTMLAttributes<HTMLAppMenuUsageElement> {}
+  interface AppProfile extends JSXBase.HTMLAttributes<HTMLAppProfileElement> {
     'getMyName'?: Function;
     'lastName'?: string;
     'match'?: MatchResults;
   }
-  interface AppRoot {
+  interface AppRoot extends JSXBase.HTMLAttributes<HTMLAppRootElement> {
     'controller'?: any;
     'history'?: RouterHistory;
     'onRouteChanged'?: (event: CustomEvent<any>) => void;
   }
-  interface AppRouterUsage {}
-  interface AttachmentListUsage {}
-  interface EnterCsbName {
+  interface AppRouterUsage extends JSXBase.HTMLAttributes<HTMLAppRouterUsageElement> {}
+  interface AttachmentListUsage extends JSXBase.HTMLAttributes<HTMLAttachmentListUsageElement> {}
+  interface EnterCsbName extends JSXBase.HTMLAttributes<HTMLEnterCsbNameElement> {
     'onPropertiesChange'?: Function;
     'stepProperties'?: any;
   }
-  interface ExpandableRenderer {
+  interface ExpandableRenderer extends JSXBase.HTMLAttributes<HTMLExpandableRendererElement> {
     'active'?: boolean;
     'somethingChanged'?: boolean;
     'url'?: any;
   }
-  interface FeedbackListUsage {
+  interface FeedbackListUsage extends JSXBase.HTMLAttributes<HTMLFeedbackListUsageElement> {
     'onShowFeedback'?: (event: CustomEvent<any>) => void;
   }
-  interface FilesChooserUsage {}
-  interface FinishPage {}
-  interface ModalUsage {}
-  interface MyAlertRenderer {
+  interface FilesChooserUsage extends JSXBase.HTMLAttributes<HTMLFilesChooserUsageElement> {}
+  interface FinishPage extends JSXBase.HTMLAttributes<HTMLFinishPageElement> {}
+  interface ModalUsage extends JSXBase.HTMLAttributes<HTMLModalUsageElement> {}
+  interface MyAlertRenderer extends JSXBase.HTMLAttributes<HTMLMyAlertRendererElement> {
     'message'?: any;
     'onCloseFeedback'?: (event: CustomEvent<any>) => void;
     'styleCustomisation'?: StyleCustomisation;
     'timeAlive'?: any;
     'typeOfAlert'?: string;
   }
-  interface MyToastRenderer {
+  interface MyToastRenderer extends JSXBase.HTMLAttributes<HTMLMyToastRendererElement> {
     'message'?: any;
     'onCloseFeedback'?: (event: CustomEvent<any>) => void;
     'styleCustomisation'?: StyleCustomisation;
     'timeMeasure'?: string;
     'timeSinceCreation'?: number;
   }
-  interface PageNotFoundUsage {}
-  interface PinPopupUsage {}
-  interface PskThemes {}
-  interface SaveRecoveryPhrase {
+  interface PageNotFoundUsage extends JSXBase.HTMLAttributes<HTMLPageNotFoundUsageElement> {}
+  interface PinPopupUsage extends JSXBase.HTMLAttributes<HTMLPinPopupUsageElement> {}
+  interface PskThemes extends JSXBase.HTMLAttributes<HTMLPskThemesElement> {}
+  interface SaveRecoveryPhrase extends JSXBase.HTMLAttributes<HTMLSaveRecoveryPhraseElement> {
     'onPropertiesChange'?: Function;
     'stepProperties'?: any;
   }
-  interface SelectCsbType {
+  interface SelectCsbType extends JSXBase.HTMLAttributes<HTMLSelectCsbTypeElement> {
     'onPropertiesChange'?: Function;
     'stepProperties'?: any;
   }
-  interface SidebarRenderer {
+  interface SidebarRenderer extends JSXBase.HTMLAttributes<HTMLSidebarRendererElement> {
     'active'?: boolean;
     'value'?: MenuItem;
   }
-  interface UiLoaderUsage {}
-  interface UserProfileUsage {}
-  interface WizardUsage {}
+  interface UiLoaderUsage extends JSXBase.HTMLAttributes<HTMLUiLoaderUsageElement> {}
+  interface UserProfileUsage extends JSXBase.HTMLAttributes<HTMLUserProfileUsageElement> {}
+  interface WizardUsage extends JSXBase.HTMLAttributes<HTMLWizardUsageElement> {}
 
   interface IntrinsicElements {
     'app-home': AppHome;
@@ -338,31 +338,7 @@ export { LocalJSX as JSX };
 
 declare module "@stencil/core" {
   export namespace JSX {
-    interface IntrinsicElements {
-      'app-home': LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
-      'app-menu-usage': LocalJSX.AppMenuUsage & JSXBase.HTMLAttributes<HTMLAppMenuUsageElement>;
-      'app-profile': LocalJSX.AppProfile & JSXBase.HTMLAttributes<HTMLAppProfileElement>;
-      'app-root': LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
-      'app-router-usage': LocalJSX.AppRouterUsage & JSXBase.HTMLAttributes<HTMLAppRouterUsageElement>;
-      'attachment-list-usage': LocalJSX.AttachmentListUsage & JSXBase.HTMLAttributes<HTMLAttachmentListUsageElement>;
-      'enter-csb-name': LocalJSX.EnterCsbName & JSXBase.HTMLAttributes<HTMLEnterCsbNameElement>;
-      'expandable-renderer': LocalJSX.ExpandableRenderer & JSXBase.HTMLAttributes<HTMLExpandableRendererElement>;
-      'feedback-list-usage': LocalJSX.FeedbackListUsage & JSXBase.HTMLAttributes<HTMLFeedbackListUsageElement>;
-      'files-chooser-usage': LocalJSX.FilesChooserUsage & JSXBase.HTMLAttributes<HTMLFilesChooserUsageElement>;
-      'finish-page': LocalJSX.FinishPage & JSXBase.HTMLAttributes<HTMLFinishPageElement>;
-      'modal-usage': LocalJSX.ModalUsage & JSXBase.HTMLAttributes<HTMLModalUsageElement>;
-      'my-alert-renderer': LocalJSX.MyAlertRenderer & JSXBase.HTMLAttributes<HTMLMyAlertRendererElement>;
-      'my-toast-renderer': LocalJSX.MyToastRenderer & JSXBase.HTMLAttributes<HTMLMyToastRendererElement>;
-      'page-not-found-usage': LocalJSX.PageNotFoundUsage & JSXBase.HTMLAttributes<HTMLPageNotFoundUsageElement>;
-      'pin-popup-usage': LocalJSX.PinPopupUsage & JSXBase.HTMLAttributes<HTMLPinPopupUsageElement>;
-      'psk-themes': LocalJSX.PskThemes & JSXBase.HTMLAttributes<HTMLPskThemesElement>;
-      'save-recovery-phrase': LocalJSX.SaveRecoveryPhrase & JSXBase.HTMLAttributes<HTMLSaveRecoveryPhraseElement>;
-      'select-csb-type': LocalJSX.SelectCsbType & JSXBase.HTMLAttributes<HTMLSelectCsbTypeElement>;
-      'sidebar-renderer': LocalJSX.SidebarRenderer & JSXBase.HTMLAttributes<HTMLSidebarRendererElement>;
-      'ui-loader-usage': LocalJSX.UiLoaderUsage & JSXBase.HTMLAttributes<HTMLUiLoaderUsageElement>;
-      'user-profile-usage': LocalJSX.UserProfileUsage & JSXBase.HTMLAttributes<HTMLUserProfileUsageElement>;
-      'wizard-usage': LocalJSX.WizardUsage & JSXBase.HTMLAttributes<HTMLWizardUsageElement>;
-    }
+    interface IntrinsicElements extends LocalJSX.IntrinsicElements {}
   }
 }
 
