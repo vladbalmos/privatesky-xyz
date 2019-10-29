@@ -14,10 +14,10 @@
             <code><span class="nt">&lt;psk-ui-alert/&gt;</span></code>.</p>
         <p>For beggining you could send a <code>message</code> or an array of <code>message</code> which are separated
             in distinctive notifications(the <code>message</code> is not mandatory) and a <code>name</code> for each
-            message(again,this is not mandatory).</p>
-            <psk-tag>
-                this.showFeedbackHandler.emit({ message: 'Example', name: 'Example-Name', type: 'toast' })
-            </psk-tag>
+            message(again,this is not mandatory) and the type of feedback you want to show.</p>
+        <psk-tag>
+            this.showFeedbackHandler.emit({ message: 'Example', name: 'Example-Name', type: 'toast' })
+        </psk-tag>
         <p>The alerts are stackable and they will only show a specific number of them(only on toast type notifications).
         </p>
         <p>When the <strong>X</strong> button is pressed(when a <code>Toast</code> pool is used) an
@@ -28,18 +28,19 @@
     <psk-chapter title="Supported properties">
         <psk-list-feedbacks data-define-props={true} />
     </psk-chapter>
-    <psk-chapter title="Event Parameters">
-
+    <psk-chapter title="Event Description">
+        <psk-list-feedbacks data-define-events={true} />
     </psk-chapter>
     <psk-chapter title="HTML Children">
         <p>This component has no HTML children.</p>
     </psk-chapter>
 
     <psk-chapter title="Code Examples">
-        <psk-tag>
-            <psk-list-feedbacks messages-to-display={5} time-alive={5000} toast-renderer="my-toast-renderer"></psk-list-feedbacks>
+        <psk-tag title="Toast Renderer Example">
+            <psk-list-feedbacks messages-to-display={5} time-alive={5000} toast-renderer="my-toast-renderer">
+            </psk-list-feedbacks>
         </psk-tag>
-        <psk-tag>
+        <psk-tag title="Alert Renderer + styleCustomisation Example">
             <psk-list-feedbacks messages-to-display={5} time-alive={5000} alert-renderer="my-alert-renderer"
                 styleCustomisation="{{
                 toast: {
