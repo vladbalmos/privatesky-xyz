@@ -213,6 +213,36 @@
             "path": "app-router",
             "pageSrc": "Components/psk-app-router/index.html"
         },{
+            "name": "Attachments List",
+            "icon": "fa-cog",
+            "path": "attachments-list",
+            "pageSrc": "Components/psk-attachments-list/index.html"
+        },{
+            "name": "File Chooser",
+            "icon": "fa-cog",
+            "path": "file-chooser",
+            "pageSrc": "Components/psk-file-chooser/index.html"
+        },{
+            "name": "Modal",
+            "icon": "fa-cog",
+            "path": "modal",
+            "pageSrc": "Components/psk-modal/index.html"
+        },{
+            "name": "Pin Popup",
+            "icon": "fa-cog",
+            "path": "pin-popup",
+            "pageSrc": "Components/psk-pin-popup/index.html"
+        },{
+            "name": "User Interface Loader",
+            "icon": "fa-cog",
+            "path": "ui-loader",
+            "pageSrc": "Components/psk-ui-loader/index.html"
+        },{
+            "name": "User Profile",
+            "icon": "fa-cog",
+            "path": "user-profile",
+            "pageSrc": "Components/psk-user-profile/index.html"
+        },{
             "name": "App Menu",
             "pageSrc": "Components/app-menu/index.html"
         }]
