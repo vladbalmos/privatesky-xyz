@@ -203,6 +203,11 @@
             "path": "page-not-found",
             "pageSrc": "Components/psk-page-not-found/index.html"
         },{
+            "name": "Feedback Pool",
+            "icon": "fa-cog",
+            "path": "list feedbacks",
+            "pageSrc": "Components/psk-list-feedbacks/index.html"
+        },{
             "name": "App Menu",
             "pageSrc": "Components/app-menu/index.html"
         }]
