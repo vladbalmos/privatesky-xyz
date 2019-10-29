@@ -205,8 +205,13 @@
         },{
             "name": "Feedback Pool",
             "icon": "fa-cog",
-            "path": "list feedbacks",
+            "path": "list-feedbacks",
             "pageSrc": "Components/psk-list-feedbacks/index.html"
+        },{
+            "name": "Application Router",
+            "icon": "fa-cog",
+            "path": "app-router",
+            "pageSrc": "Components/psk-app-router/index.html"
         },{
             "name": "App Menu",
             "pageSrc": "Components/app-menu/index.html"
