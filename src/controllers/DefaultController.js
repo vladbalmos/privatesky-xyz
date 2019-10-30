@@ -34,7 +34,7 @@ export default class DefaultController {
             if (callback && typeof callback === "function") {
                 let interval = setInterval(() => {
                     if (this.pagesStructure) {
-                        callback(this.pagesStructure);
+                        callback(null, this.pagesStructure);
                         stopInterval();
                     }
                 }, 100);
