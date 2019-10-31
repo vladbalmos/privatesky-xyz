@@ -243,6 +243,11 @@
             "path": "user-profile",
             "pageSrc": "Components/psk-user-profile/index.html"
         }, {
+            "name": "Wizad",
+            "icon": "fa-cog",
+            "path": "wizard",
+            "pageSrc": "Components/psk-wizard/index.html"
+        }, {
             "name": "App Menu",
             "pageSrc": "Components/app-menu/index.html"
         }]
