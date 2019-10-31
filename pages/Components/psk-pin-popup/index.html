@@ -8,8 +8,10 @@
 
     <psk-description>
         <p>This component is intended to be used when a PIN is required from the user.</p>
-        <p>When the popup needs to be closed, an event (closeModal) is triggered and the Application Controller should listen to this, so a custom logic can be provided in order to get a result.</p>
-        <p>The controller will call the function provided by the event emitter (callback) and it is able to send error messages in case the PIN entered by the user is not the expected one.</p>
+        <p>When the popup needs to be closed, an event (closeModal) is triggered and the Application Controller should
+            listen to this, so a custom logic can be provided in order to get a result.</p>
+        <p>The controller will call the function provided by the event emitter (callback) and it is able to send error
+            messages in case the PIN entered by the user is not the expected one.</p>
         <p>If the popup can be closed after the user submites the PIN, the parameter from the callback should be null.
         </p>
     </psk-description>
@@ -25,6 +27,8 @@
     </psk-chapter>
 
     <psk-chapter title="Code Examples">
-        <psk-pin-popup opened="true"></psk-pin-popup>
+        <psk-tag>
+            <psk-pin-popup opened="true"></psk-pin-popup>
+        </psk-tag>
     </psk-chapter>
 </psk-page>

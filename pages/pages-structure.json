@@ -218,7 +218,7 @@
             "path": "attachments-list",
             "pageSrc": "Components/psk-attachments-list/index.html"
         }, {
-            "name": "File Chooser",
+            "name": "Files Chooser",
             "icon": "fa-cog",
             "path": "file-chooser",
             "pageSrc": "Components/psk-file-chooser/index.html"
