@@ -1,1 +1,0 @@
-const a="definedProperties",e="definedEvents",s="data-define-props",d="data-define-events",i="Copy to clipboard",n="Copied!",t={startTag:/<([a-z]|-|!|<|>| )+>/gim,endTag:/<\/([a-z]|-)+>/gim,inlineTag:/.*<([a-z]|-|!|<|>| )+>.*<\/([a-z]|-)+>.*/gim};export{s as D,t as P,n as T,a,d as b,e as c,i as d};
