@@ -4,9 +4,6 @@
         </psk-pin-popup>
     </psk-tag>
     <psk-toc title="PSK Pin Popup"></psk-toc>
-    <psk-chapter>
-        <psk-pin-popup opened="true"></psk-pin-popup>
-    </psk-chapter>
 
     <psk-description>
         <p>This component is intended to be used when a PIN is required from the user.</p>
@@ -17,15 +14,15 @@
         <p>If the popup can be closed after the user submites the PIN, the parameter from the callback should be null.
         </p>
     </psk-description>
-    
+
     <psk-property-descriptor title="Supported properties">
         <psk-pin-popup data-define-props="true" />
     </psk-property-descriptor>
-    
+
     <psk-event-descriptor title="Event Description">
         <psk-pin-popup data-define-events="true" />
     </psk-event-descriptor>
-<!-- 
+    <!-- 
     <psk-controller-descriptor>
         <psk-pin-popup data-define-controller="true" />
     </psk-controller-descriptor> -->
@@ -39,4 +36,9 @@
             <psk-pin-popup opened="true"></psk-pin-popup>
         </psk-tag>
     </psk-chapter>
+    
+    <psk-example>
+        <psk-pin-popup opened="true"></psk-pin-popup>
+    </psk-example>
+
 </psk-page>
