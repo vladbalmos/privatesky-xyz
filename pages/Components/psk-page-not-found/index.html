@@ -45,8 +45,9 @@
         <psk-code language="javascript">
             const varName = someFunction(param1, param2);
             someFuncProgCalls.map((el, index) => el + index * index + index / el)
-                             .filter(el => el % 2 === 0)
-                             .join(" *\^_^/*);
+                             // ES6 looks weird...
+                             .filter(function(el) { return el % 2 === 0; })
+                             .join("*\^_^/*");
         </psk-code>
       
         <psk-code language="json">
