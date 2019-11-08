@@ -1,9 +1,9 @@
 {
-  "basePagesUrl": "http://localhost:8000/pages/",
+  "basePagesUrl": "https://privatesky.xyz/pages/",
   "profile": {
     "username": "PrivateSky Core",
     "email": "privatesky@axiologic.net",
-    "avatar": "https://privatesky.xyz/assets/icon/privatesky.png"
+    "avatar": "https://privatesky.xyz/assets/images/privatesky.png"
   },
   "menu": {
     "defaultMenuConfig": {
