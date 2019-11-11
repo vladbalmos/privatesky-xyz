@@ -4,9 +4,7 @@
         </psk-floating-menu>
     </psk-tag>
 
-    <psk-example title="Floating menu example">
-        <psk-floating-menu menuItems="{[{label :'orice',href: 'ceva'}]}", opened="true">
-        </psk-floating-menu>
+    
     </psk-example>
     <psk-toc title="PSK - Floating Menu "></psk-toc>
 
@@ -15,4 +13,17 @@
         <p>b</p>
     </psk-description>
 
+    <psk-property-descriptor title= "Supported properties">
+        <psk-floating-menu data-define-props="true">
+        </psk-floating-menu>
+    </psk-property-descriptor>
+
+    <psk-example title="Floating menu example">
+        <psk-floating-menu opened="true" menuItems="[{
+            'name': 'Feedback List',
+            'icon': 'fa-cog',
+            'path': 'list-feedbacks',
+            'pageSrc': 'Components/psk-list-feedbacks/index.html'
+        }]">
+        </psk-floating-menu>
 </psk-page>
