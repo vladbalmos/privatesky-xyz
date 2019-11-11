@@ -248,6 +248,11 @@
             "path": "wizard",
             "pageSrc": "Components/psk-wizard/index.html"
         }, {
+            "name": "Floating Menu",
+            "icon": "fa-cog",
+            "path": "floating-menu",
+            "pageSrc": "Components/psk-floating-menu/index.html"
+        }, {
             "name": "App Menu",
             "pageSrc": "Components/app-menu/index.html"
         }]

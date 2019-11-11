@@ -1,0 +1,1 @@
+import{r as s,h as e}from"./p-2972acc2.js";const r=class{constructor(e){s(this,e)}render(){return e("div",{class:"psk-themes"},e("p",null,"App Themes"))}};export{r as psk_themes};
