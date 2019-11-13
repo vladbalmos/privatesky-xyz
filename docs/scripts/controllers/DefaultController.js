@@ -137,11 +137,10 @@ export default class DefaultController {
             let addPathPrefix = function (pages) {
                 pages.forEach(page => {
                     let suffix = page.path;
-                    // if(page.path.indexOf("/")===0){
-                    //     suffix = page.path.substr(1);
-                    // }
-                    //page.path = `${rawConfig.menu.defaultMenuConfig.pagePrefix}${suffix}`;
-                    page.path = "/"+page.path.replace(new RegExp("/", 'g'), rawConfig.menu.defaultMenuConfig.pagePrefix);
+                    if(page.path.indexOf("/")===0){
+                        suffix = page.path.substr(1);
+                    }
+                    page.path = "/"+`${rawConfig.menu.defaultMenuConfig.pagePrefix}${suffix}`;
                     if (page.children) {
                         addPathPrefix(page.children);
                     }
