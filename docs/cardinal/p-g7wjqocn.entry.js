@@ -1,1 +1,0 @@
-import{r,h as e}from"./p-a1b3783e.js";const t=class{constructor(e){r(this,e)}render(){return e("div",null,"Github Pages router here")}};export{t as github_pages_router};

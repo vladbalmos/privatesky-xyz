@@ -1,1 +1,0 @@
-System.register(["./p-0b2166d8.system.js"],(function(t){"use strict";var e,r;return{setters:[function(t){e=t.r;r=t.h}],execute:function(){var n=t("github_pages_router",function(){function t(t){e(this,t)}t.prototype.render=function(){return r("div",null,"Github Pages router here")};return t}())}}}));

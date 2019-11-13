@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://privatesky.xyz/sitemap.xml
