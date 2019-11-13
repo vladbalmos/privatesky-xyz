@@ -24,7 +24,7 @@ export default class DefaultController {
         element.addEventListener("getUserInfo", this._provideConfig("profile"));
         element.addEventListener("validateUrl", (e) => {
             e.stopImmediatePropagation();
-            let { sourceUrl, callback } = e.detail;
+            let {sourceUrl, callback} = e.detail;
             if (callback && typeof callback === "function") {
                 this._parseSourceUrl(sourceUrl, callback);
             } else {
@@ -45,7 +45,7 @@ export default class DefaultController {
                     }
                     callback(null, this.configuration[configName]);
                 } else {
-                    this.pendingRequests.push({ configName: configName, callback: callback });
+                    this.pendingRequests.push({configName: configName, callback: callback});
                 }
             }
         }
@@ -72,7 +72,7 @@ export default class DefaultController {
         }
 
 
-        let fillOptionalPageProps = function(navigationPages, pathPrefix) {
+        let fillOptionalPageProps = function (navigationPages, pathPrefix) {
             navigationPages.forEach(page => {
 
                 if (!page.path) {
@@ -110,7 +110,7 @@ export default class DefaultController {
                             page.componentProps.pageUrl = basePagesUrl + page.pageSrc;
                         } else {
 
-                            let filename = page.name.replace(/\s(.)/g, function($1) {
+                            let filename = page.name.replace(/\s(.)/g, function ($1) {
                                 return $1.toUpperCase();
                             }).replace(/\s/g, '');
 
@@ -132,12 +132,29 @@ export default class DefaultController {
 
 
         configuration.menu = fillOptionalPageProps(rawConfig.menu.pages);
+
+        if (rawConfig.menu.defaultMenuConfig.pagePrefix) {
+            let addPathPrefix = function (pages) {
+                pages.forEach(page => {
+                    let suffix = page.path;
+                    // if(page.path.indexOf("/")===0){
+                    //     suffix = page.path.substr(1);
+                    // }
+                    page.path = `${rawConfig.menu.defaultMenuConfig.pagePrefix}${suffix}`;
+                    if (page.children) {
+                        addPathPrefix(page.children);
+                    }
+                });
+            };
+            addPathPrefix(configuration.menu);
+        }
+
         configuration.pagesHierarchy = this._prepareMenuTree(configuration.menu);
         return configuration;
     }
 
     _prepareMenuTree(menuPages) {
-        let leafSearch = function(menu) {
+        let leafSearch = function (menu) {
             let tree = {};
             menu.forEach((leaf) => {
                 let pageName = leaf.name.replace(/(\s+)/g, '').toLowerCase();
@@ -164,8 +181,8 @@ export default class DefaultController {
 
         let root = this.configuration.pagesHierarchy;
         for (let i = 0; i < paths.length; i++) {
-            if (!root[paths[i]]) {
-                return callback(`${sourceUrl} is not a valid path in the application!`);
+            if(!root[paths[i]]){
+                return  callback(`${sourceUrl} is not a valid path in the application!`);
             }
 
             if (root[paths[i]].children && i !== paths.length) {
