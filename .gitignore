@@ -2,7 +2,7 @@ dist/
 !www/favicon.ico
 www/
 
-*~
+
 *.sw[mnpcod]
 *.log
 *.lock

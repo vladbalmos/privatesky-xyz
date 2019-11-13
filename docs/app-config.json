@@ -11,7 +11,7 @@
       "type": "route",
       "component": "psk-page-loader",
       "exact": true,
-	   "pagePrefix": "/page/~"
+	   "pagePrefix": "/#!"
     },
     "pages": [{
       "name": "Home",
