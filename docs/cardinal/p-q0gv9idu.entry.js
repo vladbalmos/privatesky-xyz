@@ -1,1 +1,0 @@
-import{r,h as n}from"./p-bd5842d7.js";const s=class{constructor(n){r(this,n)}render(){return n("app-menu",null)}};export{s as app_container};
