@@ -140,7 +140,7 @@ export default class DefaultController {
                     if(page.path.indexOf("/")===0){
                         suffix = page.path.substr(1);
                     }
-                    page.path = "/"+`${rawConfig.menu.defaultMenuConfig.pagePrefix}${suffix}`;
+                    page.path = `${rawConfig.menu.defaultMenuConfig.pagePrefix}${suffix}`;
                     if (page.children) {
                         addPathPrefix(page.children);
                     }
