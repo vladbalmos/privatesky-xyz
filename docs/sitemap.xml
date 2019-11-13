@@ -1,158 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
                  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
                  <url>
-        <loc>https://privatesky.xyz/#/home</loc>
+        <loc>https://privatesky.xyz/?home</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/PrivateSky</loc>
+        <loc>https://privatesky.xyz/?PrivateSky/main-innovations</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/PrivateSky/main-innovations</loc>
+        <loc>https://privatesky.xyz/?PrivateSky/architecture</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/PrivateSky/architecture</loc>
+        <loc>https://privatesky.xyz/?PrivateSky/developer-map</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/PrivateSky/developer-map</loc>
+        <loc>https://privatesky.xyz/?PrivateSky/swarms-explained</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/PrivateSky/swarms-explained</loc>
+        <loc>https://privatesky.xyz/?PrivateSky/installation</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/PrivateSky/installation</loc>
+        <loc>https://privatesky.xyz/?PrivateSky/code-examples</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/PrivateSky/code-examples</loc>
+        <loc>https://privatesky.xyz/?EDFS/edfs</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/EDFS</loc>
+        <loc>https://privatesky.xyz/?EDFS/bar-brick-archives</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/EDFS/edfs</loc>
+        <loc>https://privatesky.xyz/?EDFS/csb-cloud-safe-box-concept</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/EDFS/bar-brick-archives</loc>
+        <loc>https://privatesky.xyz/?Development/developement-style</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/EDFS/csb-cloud-safe-box-concept</loc>
+        <loc>https://privatesky.xyz/?Development/unit-testing-map</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/Development</loc>
+        <loc>https://privatesky.xyz/?Development/node-modules</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/Development/developement-style</loc>
+        <loc>https://privatesky.xyz/?Development/workers-and-isolates</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/Development/unit-testing-map</loc>
+        <loc>https://privatesky.xyz/?Development/encrypted-choreographies</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/Development/node-modules</loc>
+        <loc>https://privatesky.xyz/?Development/communication</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/Development/workers-and-isolates</loc>
+        <loc>https://privatesky.xyz/?Tools/list-of-tools</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/Development/encrypted-choreographies</loc>
+        <loc>https://privatesky.xyz/?Tools/bar</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/Development/communication</loc>
+        <loc>https://privatesky.xyz/?Tools/pskadmin</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/Tools</loc>
+        <loc>https://privatesky.xyz/?Tools/pskwallet</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/Tools/list-of-tools</loc>
+        <loc>https://privatesky.xyz/?Tools/csbwizzard</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/Tools/bar</loc>
+        <loc>https://privatesky.xyz/?Tools/pskmonitor</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/Tools/pskadmin</loc>
+        <loc>https://privatesky.xyz/?Tools/governance</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/Tools/pskwallet</loc>
+        <loc>https://privatesky.xyz/?MVC/web-components-mvc</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/Tools/csbwizzard</loc>
+        <loc>https://privatesky.xyz/?MVC/controllers</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/Tools/pskmonitor</loc>
+        <loc>https://privatesky.xyz/?MVC/themes</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/Tools/governance</loc>
+        <loc>https://privatesky.xyz/?MVC/events</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/MVC</loc>
+        <loc>https://privatesky.xyz/?MVC/services</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/MVC/web-components-mvc</loc>
+        <loc>https://privatesky.xyz/?About/how-to-write-pages</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/MVC//controllers</loc>
+        <loc>https://privatesky.xyz/?About/how-to-create-a-new-site-with-this-approach</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/MVC//themes</loc>
+        <loc>https://privatesky.xyz/?About/contributors</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/MVC//events</loc>
+        <loc>https://privatesky.xyz/?About/copyright</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/MVC//services</loc>
+        <loc>https://privatesky.xyz/?glossary</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/About</loc>
+        <loc>https://privatesky.xyz/?psk-documentation-components</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/About/how-to-write-pages</loc>
+        <loc>https://privatesky.xyz/?psk-documentation-components/psk-card</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/About/how-to-create-a-new-site-with-this-approach</loc>
+        <loc>https://privatesky.xyz/?psk-documentation-components/psk-chapter</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/About/contributors</loc>
+        <loc>https://privatesky.xyz/?psk-documentation-components/psk-code</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/About/copyright</loc>
+        <loc>https://privatesky.xyz/?psk-documentation-components/psk-copy-clipboard</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/glossary</loc>
+        <loc>https://privatesky.xyz/?psk-documentation-components/psk-description</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-documentation-components</loc>
+        <loc>https://privatesky.xyz/?psk-documentation-components/psk-example</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-documentation-components/psk-card</loc>
+        <loc>https://privatesky.xyz/?psk-documentation-components/psk-img</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-documentation-components/psk-chapter</loc>
+        <loc>https://privatesky.xyz/?psk-documentation-components/psk-link</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-documentation-components/psk-code</loc>
+        <loc>https://privatesky.xyz/?psk-documentation-components/psk-list</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-documentation-components/psk-copy-clipboard</loc>
+        <loc>https://privatesky.xyz/?psk-documentation-components/psk-page</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-documentation-components/psk-description</loc>
+        <loc>https://privatesky.xyz/?psk-documentation-components/psk-table</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-documentation-components/psk-example</loc>
+        <loc>https://privatesky.xyz/?psk-documentation-components/psk-tag</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-documentation-components/psk-img</loc>
+        <loc>https://privatesky.xyz/?psk-documentation-components/psk-toc</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-documentation-components/psk-link</loc>
+        <loc>https://privatesky.xyz/?psk-web-components/page-not-found</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-documentation-components/psk-list</loc>
+        <loc>https://privatesky.xyz/?psk-web-components/list-feedbacks</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-documentation-components/psk-page</loc>
+        <loc>https://privatesky.xyz/?psk-web-components/app-router</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-documentation-components/psk-table</loc>
+        <loc>https://privatesky.xyz/?psk-web-components/attachments-list</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-documentation-components/psk-tag</loc>
+        <loc>https://privatesky.xyz/?psk-web-components/file-chooser</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-documentation-components/psk-toc</loc>
+        <loc>https://privatesky.xyz/?psk-web-components/modal</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-web-components</loc>
+        <loc>https://privatesky.xyz/?psk-web-components/pin-popup</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-web-components/page-not-found</loc>
+        <loc>https://privatesky.xyz/?psk-web-components/ui-loader</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-web-components/list-feedbacks</loc>
+        <loc>https://privatesky.xyz/?psk-web-components/user-profile</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-web-components/app-router</loc>
+        <loc>https://privatesky.xyz/?psk-web-components/wizard</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-web-components/attachments-list</loc>
+        <loc>https://privatesky.xyz/?psk-web-components/floating-menu</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-web-components/file-chooser</loc>
+        <loc>https://privatesky.xyz/?psk-web-components/app-menu</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-web-components/modal</loc>
+        <loc>https://privatesky.xyz/?psk-components/app-menu</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-web-components/pin-popup</loc>
+        <loc>https://privatesky.xyz/?psk-components/app-router</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-web-components/ui-loader</loc>
+        <loc>https://privatesky.xyz/?psk-components/attach-list</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-web-components/user-profile</loc>
+        <loc>https://privatesky.xyz/?psk-components/files-chooser</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-web-components/wizard</loc>
+        <loc>https://privatesky.xyz/?psk-components/modal</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-web-components/floating-menu</loc>
+        <loc>https://privatesky.xyz/?psk-components/pin-popup</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-web-components/app-menu</loc>
+        <loc>https://privatesky.xyz/?psk-components/ui-loader</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-components</loc>
+        <loc>https://privatesky.xyz/?psk-components/user-profile</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-components/app-menu</loc>
+        <loc>https://privatesky.xyz/?psk-components/list-feedback</loc>
       </url><url>
-        <loc>https://privatesky.xyz/#/psk-components/app-router</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/#/psk-components/attach-list</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/#/psk-components/files-chooser</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/#/psk-components/modal</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/#/psk-components/pin-popup</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/#/psk-components/ui-loader</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/#/psk-components/user-profile</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/#/psk-components/list-feedback</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/#/psk-components/wizard</loc>
+        <loc>https://privatesky.xyz/?psk-components/wizard</loc>
       </url>
                  </urlset>
