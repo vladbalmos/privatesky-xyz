@@ -194,62 +194,139 @@
         "pageSrc": "About/Glossary.html"
     },
     {
-        "name": "PSK Components Documentation",
-        "path": "/psk-components-documentation",
+        "name": "PSK Documentation Components",
+        "path": "/psk-documentation-components",
+        "icon":"fa-bolt",
+        "children": [{
+            "name": "psk-card",
+            "icon": "fa-cog",
+            "path": "psk-card",
+            "pageSrc": "DocumentationComponents/psk-card/index.html"
+        },{
+            "name": "psk-chapter",
+            "icon": "fa-cog",
+            "path": "psk-chapter",
+            "pageSrc": "DocumentationComponents/psk-chapter/index.html"
+        },{
+            "name": "psk-code",
+            "icon": "fa-cog",
+            "path": "psk-code",
+            "pageSrc": "DocumentationComponents/psk-code/index.html"
+        },{
+            "name": "psk-copy-clipboard",
+            "icon": "fa-cog",
+            "path": "psk-copy-clipboard",
+            "pageSrc": "DocumentationComponents/psk-copy-clipboard/index.html"
+        },{
+            "name": "psk-description",
+            "icon": "fa-cog",
+            "path": "psk-description",
+            "pageSrc": "DocumentationComponents/psk-description/index.html"
+        },{
+            "name": "psk-example",
+            "icon": "fa-cog",
+            "path": "psk-example",
+            "pageSrc": "DocumentationComponents/psk-example/index.html"
+        },{
+            "name": "psk-img",
+            "icon": "fa-cog",
+            "path": "psk-img",
+            "pageSrc": "DocumentationComponents/psk-img/index.html"
+        },{
+            "name": "psk-link",
+            "icon": "fa-cog",
+            "path": "psk-link",
+            "pageSrc": "DocumentationComponents/psk-link/index.html"
+        },{
+            "name": "psk-list",
+            "icon": "fa-cog",
+            "path": "psk-list",
+            "pageSrc": "DocumentationComponents/psk-list/index.html"
+        },{
+            "name": "psk-page",
+            "icon": "fa-cog",
+            "path": "psk-page",
+            "pageSrc": "DocumentationComponents/psk-page/index.html"
+        },{
+            "name": "psk-table",
+            "icon": "fa-cog",
+            "path": "psk-table",
+            "pageSrc": "DocumentationComponents/psk-table/index.html"
+        },{
+            "name": "psk-tag",
+            "icon": "fa-cog",
+            "path": "psk-tag",
+            "pageSrc": "DocumentationComponents/psk-tag/index.html"
+        },{
+            "name": "psk-toc",
+            "icon": "fa-cog",
+            "path": "psk-toc",
+            "pageSrc": "DocumentationComponents/psk-toc/index.html"
+        }
+    ]
+    }
+    ,{
+        "name": "PSK Web Components",
+        "path": "/psk-web-components",
         "icon": "fa-cog",
         "children": [{
             "name": "Page not found",
             "icon": "fa-cog",
             "path": "page-not-found",
-            "pageSrc": "Components/psk-page-not-found/index.html"
+            "pageSrc": "WebComponents/psk-page-not-found/index.html"
         }, {
             "name": "Feedback List",
             "icon": "fa-cog",
             "path": "list-feedbacks",
-            "pageSrc": "Components/psk-list-feedbacks/index.html"
+            "pageSrc": "WebComponents/psk-list-feedbacks/index.html"
         }, {
             "name": "App Router",
             "icon": "fa-cog",
             "path": "app-router",
-            "pageSrc": "Components/psk-app-router/index.html"
+            "pageSrc": "WebComponents/psk-app-router/index.html"
         }, {
             "name": "Attachments List",
             "icon": "fa-cog",
             "path": "attachments-list",
-            "pageSrc": "Components/psk-attachments-list/index.html"
+            "pageSrc": "WebComponents/psk-attachments-list/index.html"
         }, {
             "name": "Files Chooser",
             "icon": "fa-cog",
             "path": "file-chooser",
-            "pageSrc": "Components/psk-file-chooser/index.html"
+            "pageSrc": "WebComponents/psk-file-chooser/index.html"
         }, {
             "name": "Modal",
             "icon": "fa-cog",
             "path": "modal",
-            "pageSrc": "Components/psk-modal/index.html"
+            "pageSrc": "WebComponents/psk-modal/index.html"
         }, {
             "name": "PIN Popup",
             "icon": "fa-cog",
             "path": "pin-popup",
-            "pageSrc": "Components/psk-pin-popup/index.html"
+            "pageSrc": "WebComponents/psk-pin-popup/index.html"
         }, {
             "name": "UI Loader",
             "icon": "fa-cog",
             "path": "ui-loader",
-            "pageSrc": "Components/psk-ui-loader/index.html"
+            "pageSrc": "WebComponents/psk-ui-loader/index.html"
         }, {
             "name": "User Profile",
             "icon": "fa-cog",
             "path": "user-profile",
-            "pageSrc": "Components/psk-user-profile/index.html"
+            "pageSrc": "WebComponents/psk-user-profile/index.html"
         }, {
             "name": "Wizard",
             "icon": "fa-cog",
             "path": "wizard",
-            "pageSrc": "Components/psk-wizard/index.html"
+            "pageSrc": "WebComponents/psk-wizard/index.html"
+        }, {
+            "name": "Floating Menu",
+            "icon": "fa-cog",
+            "path": "floating-menu",
+            "pageSrc": "WebComponents/psk-floating-menu/index.html"
         }, {
             "name": "App Menu",
-            "pageSrc": "Components/app-menu/index.html"
+            "pageSrc": "WebComponents/app-menu/index.html"
         }]
     }
 ]

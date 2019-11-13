@@ -13,16 +13,14 @@
   var scriptElm = doc.createElement('script');
   scriptElm.setAttribute('type', 'module');
   scriptElm.src = url + '/cardinal.esm.js';
-  warn.push(scriptElm.outerHTML);
-  scriptElm.setAttribute('data-stencil-namespace', 'cardinal');
   doc.head.appendChild(scriptElm);
+  warn.push(scriptElm.outerHTML);
 
   scriptElm = doc.createElement('script');
   scriptElm.setAttribute('nomodule', '');
   scriptElm.src = url + '/cardinal.js';
-  warn.push(scriptElm.outerHTML);
-  scriptElm.setAttribute('data-stencil-namespace', 'cardinal');
   doc.head.appendChild(scriptElm);
+  warn.push(scriptElm.outerHTML);
 
   console.warn(warn.join('\n'));
 
