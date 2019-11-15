@@ -1,20 +1,16 @@
 {
-  "name": "pwc-apps",
+  "name": "privatesky-xyz",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "PrivateSky Development Hub",
   "scripts": {
-    "build": "stencil build",
-    "build-website": "node ./scripts/build-website.js",
-    "start": "stencil build --dev --watch --serve",
-    "test": "stencil test --spec --e2e",
-    "test.watch": "stencil test --spec --e2e --watchAll",
-    "generate": "stencil generate"
+    "generate-sitemap": "node ./bin/generate-sitemap.js",
+    "web-server": "ws --spa ./index.html",
+	"update-cardinal"
   },
-  "dependencies": {
-    "@stencil/core": "^1.7.5",
-    "@stencil/router": "^1.0.1",
-    "webcomponents": "file:../pskwebcomponents"
+   "devDependencies": {
+    "local-web-server": "^3.0.7",
   },
+  
   "license": "MIT"
 }
