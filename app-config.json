@@ -169,24 +169,20 @@
           },
           {
             "name": "Controllers",
-            "path": "/controllers",
             "icon": "fa-cog",
             "pageSrc": "MVC/Controllers.html"
           },
           {
             "name": "Themes",
-            "path": "/themes",
             "pageSrc": "MVC/Themes.html"
           },
           {
             "name": "Events",
-            "path": "/events",
             "icon": "fa-bolt",
             "pageSrc": "MVC/Events.html"
           },
           {
             "name": "Services",
-            "path": "/services",
             "icon": "fa-server",
             "pageSrc": "MVC/Services.html"
           }
