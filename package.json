@@ -6,11 +6,10 @@
   "scripts": {
     "generate-sitemap": "node ./bin/generate-sitemap.js",
     "web-server": "ws --spa ./index.html",
-	"update-cardinal"
+    "update-cardinal": "node ./bin/update-cardinal.js"
   },
-   "devDependencies": {
-    "local-web-server": "^3.0.7",
+  "devDependencies": {
+    "local-web-server": "^3.0.7"
   },
-  
   "license": "MIT"
 }
