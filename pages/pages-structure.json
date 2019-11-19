@@ -41,7 +41,7 @@
         ]
     },
     {
-        "name": "Encrypted Distributed File System",
+        "name": "EDFS",
         "path": "/EDFS",
         "icon": "fa-cog",
         "children": [{
@@ -92,6 +92,11 @@
                 "name": "Communication",
                 "icon": "fa-cog",
                 "pageSrc": "Development/VirtualMQ.html"
+            },
+            {
+                "name": "Advanced",
+                "icon": "fa-cog",
+                "pageSrc": "Development/Advanced.html"
             }
         ]
     },
@@ -137,7 +142,7 @@
         ]
     },
     {
-        "name": "Web Components MVC",
+        "name": "Cardinal",
         "path": "/MVC",
         "icon": "fa-cog",
         "children": [{
@@ -194,7 +199,7 @@
         "pageSrc": "About/Glossary.html"
     },
     {
-        "name": "PSK Documentation Components",
+        "name": "PSK Wiki",
         "path": "/psk-documentation-components",
         "icon":"fa-bolt",
         "children": [{
@@ -266,7 +271,7 @@
     ]
     }
     ,{
-        "name": "PSK Web Components",
+        "name": "Web Components",
         "path": "/psk-web-components",
         "icon": "fa-cog",
         "children": [{
