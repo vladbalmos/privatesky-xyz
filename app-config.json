@@ -14,68 +14,48 @@
       "pagePrefix": "?",
       "historyType":"query"
     },
-    "pages": [
-      {
-        "name": "Home",
-        "path": "/home",
-        "icon": "fa-home",
-        "pageSrc": "index.html"
-      },
+    "pages": [{
+      "name": "Home",
+      "path": "/home",
+      "icon": "fa-home",
+      "pageSrc": "index.html"
+    },
       {
         "name": "PrivateSky",
         "path": "/PrivateSky",
         "icon": "fa-cog",
-        "children": [
+        "children": [{
+          "name": "Main Innovations"
+        },
           {
-            "name": "Main Innovations",
-            "icon": "fa-cog",
-            "pageSrc": "PrivateSky/Innovations.html"
+            "name": "Architecture"
           },
           {
-            "name": "Architecture",
-            "icon": "fa-cog",
-            "pageSrc": "PrivateSky/Architecture.html"
+            "name": "Development Vision"
           },
           {
-            "name": "Developer Map",
-            "icon": "fa-cog",
-            "pageSrc": "PrivateSky/DevMap.html"
+            "name": "Swarms Explained"
           },
           {
-            "name": "Swarms Explained",
-            "icon": "fa-cog",
-            "pageSrc": "PrivateSky/Swarms.html"
+            "name": "Installation"
           },
           {
-            "name": "Installation",
-            "icon": "fa-cog",
-            "pageSrc": "PrivateSky/Installation.html"
-          },
-          {
-            "name": "Code Examples",
-            "icon": "fa-cog",
-            "pageSrc": "PrivateSky/Examples.html"
+            "name": "Code Examples"
           }
         ]
       },
       {
-        "name": "Encrypted Distributed File System",
+        "name": "EDFS",
         "path": "/EDFS",
         "icon": "fa-cog",
-        "children": [
+        "children": [{
+          "name": "EDFS"
+        },
           {
-            "name": "EDFS",
-            "icon": "fa-cog",
-            "pageSrc": "EDFS/EDFS.html"
+            "name": "Brick Archives"
           },
           {
-            "name": "BAR: Brick Archives",
-            "pageSrc": "EDFS/BAR.html"
-          },
-          {
-            "name": "CSB: Cloud Safe Box concept",
-            "icon": "fa-cog",
-            "pageSrc": "EDFS/CSB.html"
+            "name": "Cloud Safe Boxes "
           }
         ]
       },
@@ -83,35 +63,26 @@
         "name": "Development",
         "path": "/Development",
         "icon": "fa-cog",
-        "children": [
+        "children": [{
+          "name": "Coding style"
+        },
           {
-            "name": "Developement style",
-            "icon": "fa-cog",
-            "pageSrc": "Development/Guide.html"
+            "name": "Unit testing map"
           },
           {
-            "name": "Unit testing map",
-            "pageSrc": "Development/UnitTesting.html"
+            "name": "Node Modules"
           },
           {
-            "name": "Node Modules",
-            "icon": "fa-cog",
-            "pageSrc": "Development/Modules.html"
+            "name": "Workers and Isolates"
           },
           {
-            "name": "Workers and Isolates",
-            "icon": "fa-cog",
-            "pageSrc": "Development/Workers.html"
+            "name": "Encrypted Choreographies"
           },
           {
-            "name": "Encrypted Choreographies",
-            "icon": "fa-cog",
-            "pageSrc": "Development/EncryptedChoreographies.html"
+            "name": "Communication"
           },
           {
-            "name": "Communication",
-            "icon": "fa-cog",
-            "pageSrc": "Development/VirtualMQ.html"
+            "name": "Advanced"
           }
         ]
       },
@@ -119,72 +90,47 @@
         "name": "Tools",
         "path": "/Tools",
         "icon": "fa-cog",
-        "children": [
+        "children": [{
+          "name": "Tool List"
+        },
           {
-            "name": "List of tools",
-            "icon": "fa-cog",
-            "pageSrc": "Tools/List.html"
+            "name": "bar"
           },
           {
-            "name": "bar",
-            "icon": "fa-cog",
-            "pageSrc": "Tools/Bar.html"
+            "name": "PSKAdmin"
           },
           {
-            "name": "PSKAdmin",
-            "icon": "fa-cog",
-            "pageSrc": "Tools/Pskadmin.html"
+            "name": "PSKWallet"
           },
           {
-            "name": "PSKWallet",
-            "icon": "fa-cog",
-            "pageSrc": "Tools/Pskwallet.html"
+            "name": "CSBWizzard"
           },
           {
-            "name": "CSBWizzard",
-            "icon": "fa-cog",
-            "pageSrc": "Tools/CSBWizzard.html"
+            "name": "PSKMonitor"
           },
           {
-            "name": "PSKMonitor",
-            "icon": "fa-cog",
-            "pageSrc": "Tools/PSKMonitor.html"
-          },
-          {
-            "name": "Governance",
-            "icon": "fa-cog",
-            "pageSrc": "Tools/Governance.html"
+            "name": "Governance"
           }
         ]
       },
       {
-        "name": "Web Components MVC",
-        "path": "/MVC",
+        "name": "Cardinal",
+        "path": "/Cardinal",
         "icon": "fa-cog",
-        "children": [
+        "children": [{
+          "name": "Web Components MVC"
+        },
           {
-            "name": "Web Components MVC",
-            "icon": "fa-cog",
-            "pageSrc": "MVC/MiniFramework.html"
+            "name": "Controllers"
           },
           {
-            "name": "Controllers",
-            "icon": "fa-cog",
-            "pageSrc": "MVC/Controllers.html"
+            "name": "Themes"
           },
           {
-            "name": "Themes",
-            "pageSrc": "MVC/Themes.html"
+            "name": "Events"
           },
           {
-            "name": "Events",
-            "icon": "fa-bolt",
-            "pageSrc": "MVC/Events.html"
-          },
-          {
-            "name": "Services",
-            "icon": "fa-server",
-            "pageSrc": "MVC/Services.html"
+            "name": "Services"
           }
         ]
       },
@@ -192,10 +138,9 @@
         "name": "About",
         "path": "/About",
         "icon": "fa-cog",
-        "children": [
-          {
-            "name": "How to write pages"
-          },
+        "children": [{
+          "name": "How to write pages"
+        },
           {
             "name": "How to create a new site with this approach"
           },
@@ -210,169 +155,70 @@
       {
         "name": "Glossary",
         "path": "/glossary",
-        "pageSrc": "About/Glossary.html"
+        "pageSrc": "About/glossary.html"
       },
       {
-        "name": "PSK Documentation Components",
-        "path": "/psk-documentation-components",
-        "icon": "fa-bolt",
-        "children": [
-          {
-            "name": "psk-card",
-            "icon": "fa-cog",
-            "path": "psk-card",
-            "pageSrc": "DocumentationComponents/psk-card/index.html"
-          },
-          {
-            "name": "psk-chapter",
-            "icon": "fa-cog",
-            "path": "psk-chapter",
-            "pageSrc": "DocumentationComponents/psk-chapter/index.html"
-          },
-          {
-            "name": "psk-code",
-            "icon": "fa-cog",
-            "path": "psk-code",
-            "pageSrc": "DocumentationComponents/psk-code/index.html"
-          },
-          {
-            "name": "psk-copy-clipboard",
-            "icon": "fa-cog",
-            "path": "psk-copy-clipboard",
-            "pageSrc": "DocumentationComponents/psk-copy-clipboard/index.html"
-          },
-          {
-            "name": "psk-description",
-            "icon": "fa-cog",
-            "path": "psk-description",
-            "pageSrc": "DocumentationComponents/psk-description/index.html"
-          },
-          {
-            "name": "psk-example",
-            "icon": "fa-cog",
-            "path": "psk-example",
-            "pageSrc": "DocumentationComponents/psk-example/index.html"
-          },
-          {
-            "name": "psk-img",
-            "icon": "fa-cog",
-            "path": "psk-img",
-            "pageSrc": "DocumentationComponents/psk-img/index.html"
-          },
-          {
-            "name": "psk-link",
-            "icon": "fa-cog",
-            "path": "psk-link",
-            "pageSrc": "DocumentationComponents/psk-link/index.html"
-          },
-          {
-            "name": "psk-list",
-            "icon": "fa-cog",
-            "path": "psk-list",
-            "pageSrc": "DocumentationComponents/psk-list/index.html"
-          },
-          {
-            "name": "psk-page",
-            "icon": "fa-cog",
-            "path": "psk-page",
-            "pageSrc": "DocumentationComponents/psk-page/index.html"
-          },
-          {
-            "name": "psk-table",
-            "icon": "fa-cog",
-            "path": "psk-table",
-            "pageSrc": "DocumentationComponents/psk-table/index.html"
-          },
-          {
-            "name": "psk-tag",
-            "icon": "fa-cog",
-            "path": "psk-tag",
-            "pageSrc": "DocumentationComponents/psk-tag/index.html"
-          },
-          {
-            "name": "psk-toc",
-            "icon": "fa-cog",
-            "path": "psk-toc",
-            "pageSrc": "DocumentationComponents/psk-toc/index.html"
-          }
+        "name": "PSK Wiki",
+        "path": "/psk-wiki",
+        "icon":"fa-bolt",
+        "children": [{
+          "name": "psk-card"
+        },{
+          "name": "psk-chapter"
+        },{
+          "name": "psk-code"
+        },{
+          "name": "psk-copy-clipboard"
+        },{
+          "name": "psk-description"
+        },{
+          "name": "psk-example"
+        },{
+          "name": "psk-img"
+        },{
+          "name": "psk-link"
+        },{
+          "name": "psk-list"
+        },{
+          "name": "psk-page"
+        },{
+          "name": "psk-table"
+        },{
+          "name": "psk-tag"
+        },{
+          "name": "psk-toc"
+        }
         ]
       },
       {
-        "name": "PSK Web Components",
+        "name": "Web Components",
         "path": "/psk-web-components",
         "icon": "fa-cog",
-        "children": [
-          {
-            "name": "Page not found",
-            "icon": "fa-cog",
-            "path": "page-not-found",
-            "pageSrc": "WebComponents/psk-page-not-found/index.html"
-          },
-          {
-            "name": "Feedback List",
-            "icon": "fa-cog",
-            "path": "list-feedbacks",
-            "pageSrc": "WebComponents/psk-list-feedbacks/index.html"
-          },
-          {
-            "name": "App Router",
-            "icon": "fa-cog",
-            "path": "app-router",
-            "pageSrc": "WebComponents/psk-app-router/index.html"
-          },
-          {
-            "name": "Attachments List",
-            "icon": "fa-cog",
-            "path": "attachments-list",
-            "pageSrc": "WebComponents/psk-attachments-list/index.html"
-          },
-          {
-            "name": "Files Chooser",
-            "icon": "fa-cog",
-            "path": "file-chooser",
-            "pageSrc": "WebComponents/psk-file-chooser/index.html"
-          },
-          {
-            "name": "Modal",
-            "icon": "fa-cog",
-            "path": "modal",
-            "pageSrc": "WebComponents/psk-modal/index.html"
-          },
-          {
-            "name": "PIN Popup",
-            "icon": "fa-cog",
-            "path": "pin-popup",
-            "pageSrc": "WebComponents/psk-pin-popup/index.html"
-          },
-          {
-            "name": "UI Loader",
-            "icon": "fa-cog",
-            "path": "ui-loader",
-            "pageSrc": "WebComponents/psk-ui-loader/index.html"
-          },
-          {
-            "name": "User Profile",
-            "icon": "fa-cog",
-            "path": "user-profile",
-            "pageSrc": "WebComponents/psk-user-profile/index.html"
-          },
-          {
-            "name": "Wizard",
-            "icon": "fa-cog",
-            "path": "wizard",
-            "pageSrc": "WebComponents/psk-wizard/index.html"
-          },
-          {
-            "name": "Floating Menu",
-            "icon": "fa-cog",
-            "path": "floating-menu",
-            "pageSrc": "WebComponents/psk-floating-menu/index.html"
-          },
-          {
-            "name": "App Menu",
-            "pageSrc": "WebComponents/app-menu/index.html"
-          }
-        ]
+        "children": [{
+          "name": "Page not found"
+        }, {
+          "name": "Feedback List"
+        }, {
+          "name": "App Router"
+        }, {
+          "name": "Attachments List"
+        }, {
+          "name": "Files Chooser"
+        }, {
+          "name": "Modal"
+        }, {
+          "name": "PIN Popup"
+        }, {
+          "name": "UI Loader"
+        }, {
+          "name": "User Profile"
+        }, {
+          "name": "Wizard"
+        }, {
+          "name": "Floating Menu"
+        }, {
+          "name": "App Menu"
+        }]
       }
     ]
   }
