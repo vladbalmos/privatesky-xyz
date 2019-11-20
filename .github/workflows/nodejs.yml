@@ -27,6 +27,6 @@ jobs:
         git add sitemap.xml
         git commit -m "GithubRunner:sitemap.xml was updated"
         export GITHUB_TOKEN=$token
-        git push origin sitemap-test
+        git push --set-upstream origin sitemap-test
       env:
         CI: true
