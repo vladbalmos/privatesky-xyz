@@ -31,7 +31,6 @@ jobs:
         git add sitemap.xml
         git commit -m "GithubRunner:sitemap.xml was updated"
         git status
-        git config url."git@github.com:".insteadOf "https://github.com/"
-        git push --dry-run
+        git push
       env:
         CI: true
