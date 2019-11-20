@@ -14,19 +14,17 @@ jobs:
         node-version: [12.x]
 
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@sitemap-test
     - name: Create local changes
-      run: |
-        ...
+      run: npm run generate-sitemap --if-present
     - name: Commit files
-      run: |
+      run: 
         git config --local user.email "mastaleru.rafael@gmail.com"
         git config --local user.name "Mastaleru Rafael"
-         npm run generate-sitemap --if-present
         git add sitemap.xml
         git commit -m "GithubRunner:sitemap.xml was updated"
     - name: Push changes
-      uses: ad-m/github-push-action@master
+      uses: ad-m/github-push-action@sitemap-test
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
   
