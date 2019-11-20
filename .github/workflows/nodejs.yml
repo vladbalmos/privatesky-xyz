@@ -3,7 +3,7 @@ name: Sitemap Generator
 on:
   push:
     paths:
-      - 'app-config.js'
+      - 'app-config.json'
 jobs:
   build:
 
