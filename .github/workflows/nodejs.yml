@@ -13,6 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
@@ -26,8 +28,7 @@ jobs:
         git config --global user.name "Mastaleru"
         git add sitemap.xml
         git commit -m "GithubRunner:sitemap.xml was updated"
-        export GITHUB_TOKEN=$token
         git status
-        git push --set-upstream origin sitemap-test
+        git push
       env:
         CI: true
