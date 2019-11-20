@@ -14,7 +14,7 @@ jobs:
         node-version: [12.x]
 
     steps:
-    - uses: actions/checkout@sitemap-test
+    - uses: actions/checkout@master
     - name: Create local changes
       run: npm run generate-sitemap --if-present
     - name: Commit files
@@ -24,7 +24,7 @@ jobs:
         git add sitemap.xml
         git commit -m "GithubRunner:sitemap.xml was updated"
     - name: Push changes
-      uses: ad-m/github-push-action@sitemap-test
+      uses: ad-m/github-push-action@master
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
   
