@@ -31,6 +31,6 @@ jobs:
         git add sitemap.xml
         git commit -m "GithubRunner:sitemap.xml was updated"
         git status
-        git push
+        git push --dry-run
       env:
         CI: true
