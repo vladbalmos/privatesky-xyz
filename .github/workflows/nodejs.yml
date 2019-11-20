@@ -1,7 +1,9 @@
-name: Node CI
+name: Sitemap Generator
 
-on: [push]
-
+on:
+  push:
+    paths:
+      'app-config.js'
 jobs:
   build:
 
