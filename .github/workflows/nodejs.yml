@@ -16,11 +16,11 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Create local changes
-      run:
+      run: |
         npm ci 
         npm run generate-sitemap --if-present
     - name: Commit files
-      run: 
+      run: |
         git config --local user.email "mastaleru.rafael@gmail.com"
         git config --local user.name "Mastaleru Rafael"
         git add sitemap.xml
