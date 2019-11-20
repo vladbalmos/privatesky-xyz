@@ -59,9 +59,9 @@ let buildSiteMap = function () {
             if (err) {
                 console.log("An error occurred while generating the sitemap");
             } else {
+                console.log("CWD is "+process.cwd());
                 console.log("Sitemap was successfully generated");
             }
-
         })
     })
 };
