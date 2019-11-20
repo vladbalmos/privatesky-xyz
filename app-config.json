@@ -23,7 +23,7 @@
     },
       {
         "name": "PrivateSky",
-        "path": "/PrivateSky5",
+        "path": "/PrivateSkys5",
         "icon": "fa-cog",
         "children": [{
           "name": "Main Innovations"
