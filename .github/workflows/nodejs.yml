@@ -24,7 +24,13 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm ci
+
+
+        git remote rm origin
+        git remote add origin https://mastaleru:$GITHUB_TOKEN@github.com/PrivateSky/privatesky-xyz.git
+
         git checkout sitemap-test
+
         npm run generate-sitemap --if-present
         git config user.name "Mastaleru Rafael"
         git config user.email "mastaleru.rafael@gmail.com"
@@ -32,8 +38,11 @@ jobs:
         git commit -m "GithubRunner:sitemap.xml was updated"
         echo "here";
         echo $SITEMAP_TOKEN
+        echo GITHUB_TOKEN
         git config url."git@github.com:".insteadOf "https://github.com/"
+
         git push --dry-run
       env:
         CI: true
         SITEMAP_TOKEN: ${{ secrets.SITEMAP_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
