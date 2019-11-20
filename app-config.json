@@ -22,8 +22,8 @@
       "pageSrc": "index.html"
     },
       {
-        "name": "PrivateSky-Tes",
-        "path": "/PrivateSky",
+        "name": "PrivateSky",
+        "path": "/PrivateSkyTest",
         "icon": "fa-cog",
         "children": [{
           "name": "Main Innovations"
