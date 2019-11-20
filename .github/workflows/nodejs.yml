@@ -16,7 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
       with:
-        repo-token: "${{secrets.SITEMAP_TOKEN}}"
+        repo-token: "${{ secrets.SITEMAP_TOKEN }}"
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
@@ -37,4 +37,4 @@ jobs:
         git push --dry-run
       env:
         CI: true
-        SITEMAP_TOKEN: ${{ secrets.SITEMAP_TOKEN }}
+        SITEMAP_TOKEN: ${{ secrets.GITHUB_TOKEN }}
