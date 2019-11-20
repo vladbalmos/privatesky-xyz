@@ -14,29 +14,19 @@ jobs:
         node-version: [12.x]
 
     steps:
-    - uses: actions/checkout@v1
-      with:
-        repo-token: "${{ secrets.SITEMAP_TOKEN }}"
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - name: npm install, build, and test
+    - uses: actions/checkout@master
+    - name: Create local changes
       run: |
-        npm ci
-        git remote rm origin
-        git remote add origin https://mastaleru:$GITHUB_TOKEN@github.com/PrivateSky/privatesky-xyz.git
-
-        npm run generate-sitemap --if-present
+        ...
+    - name: Commit files
+      run: |
+        git config --local user.email "mastaleru.rafael@gmail.com"
+        git config --local user.name "Mastaleru Rafael"
+         npm run generate-sitemap --if-present
         git add sitemap.xml
         git commit -m "GithubRunner:sitemap.xml was updated"
-        echo "here";
-        echo $SITEMAP_TOKEN
-        echo GITHUB_TOKEN
-        git config url."git@github.com:".insteadOf "https://github.com/"
-
-        git push --dry-run
-      env:
-        CI: true
-        SITEMAP_TOKEN: ${{ secrets.SITEMAP_TOKEN }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+  
