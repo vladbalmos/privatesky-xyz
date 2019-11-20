@@ -21,6 +21,8 @@ jobs:
       run: |
         npm ci
         npm run generate-sitemap --if-present
-        git status
+        git add sitemap.xml
+        git commit -m "GithubRunner:sitemap.xml was updated"
+        git push
       env:
         CI: true

@@ -22,7 +22,7 @@
       "pageSrc": "index.html"
     },
       {
-        "name": "PrivateSky",
+        "name": "PrivateSky-Test",
         "path": "/PrivateSky",
         "icon": "fa-cog",
         "children": [{
