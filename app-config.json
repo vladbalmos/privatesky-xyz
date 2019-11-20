@@ -23,7 +23,7 @@
     },
       {
         "name": "PrivateSky",
-        "path": "/PrivateSkyTest",
+        "path": "/PrivateSkyTesst",
         "icon": "fa-cog",
         "children": [{
           "name": "Main Innovations"
