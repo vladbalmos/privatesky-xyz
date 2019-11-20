@@ -26,6 +26,7 @@ jobs:
         npm ci
         git checkout sitemap-test
         npm run generate-sitemap --if-present
+        git config user.email "mastaleru.rafael@gmail.com"
         git add sitemap.xml
         git commit -m "GithubRunner:sitemap.xml was updated"
         git status
