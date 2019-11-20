@@ -21,5 +21,6 @@ jobs:
       run: |
         npm ci
         npm run generate-sitemap --if-present
+        git status
       env:
         CI: true
