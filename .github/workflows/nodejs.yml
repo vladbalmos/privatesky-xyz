@@ -20,7 +20,7 @@ jobs:
     - name: npm install, build, and test
       run: |
         npm ci
-        git checkout master
+        git checkout sitemap-test
         npm run generate-sitemap --if-present
         git config --global user.email "mastaleru.rafael@gmail.com"
         git config --global user.name "Mastaleru Rafael"
