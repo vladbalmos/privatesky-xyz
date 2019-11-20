@@ -23,7 +23,7 @@ jobs:
         git checkout sitemap-test
         npm run generate-sitemap --if-present
         git config --global user.email "mastaleru.rafael@gmail.com"
-        git config --global user.name "Mastaleru Rafael"
+        git config --global user.name "mastaleru"
         git add sitemap.xml
         git commit -m "GithubRunner:sitemap.xml was updated"
         git push origin sitemap-test
