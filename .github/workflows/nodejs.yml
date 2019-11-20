@@ -30,10 +30,11 @@ jobs:
         git config user.email "mastaleru.rafael@gmail.com"
         git add sitemap.xml
         git commit -m "GithubRunner:sitemap.xml was updated"
+        echo "here";
         echo $SITEMAP_TOKEN
         echo $GITHUB_TOKEN
         git config url."git@github.com:".insteadOf "https://github.com/"
         git push --dry-run
       env:
         CI: true
-        SITEMAP_TOKEN: "${{secrets.SITEMAP_TOKEN}}"
+        SITEMAP_TOKEN: ${{secrets.SITEMAP_TOKEN}}
