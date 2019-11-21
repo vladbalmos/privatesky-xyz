@@ -35,5 +35,5 @@ jobs:
       run: |
         curl --request POST \
         --url https://api.github.com/repos/PrivateSky/privatesky-xyz/pages/builds \
-        --header 'authorization: Bearer ${{ secrets.SITEMAP_TOKEN }}'
+        --header 'authorization: Bearer eb8495a7d8e6015c7202b47d5f77aa040560c6ee'
   
