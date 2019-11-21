@@ -4,8 +4,14 @@
     </psk-toc>
 
     <psk-description>
-        <p>This component is creating another <code>psk-card</code> in which he uses the <code>title
+        <p>This component is creating another <psk-link page="psk-wiki/psk-card">psk-card</psk-link> in which he uses
+            the
+            <code>title
             </code> as the card header title.</p>
+        <p>This component creates a guid(a 32 characters string in a <b>xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx</b> format
+            )</p>
+        <p>Every time a chapter is created the event is triggered and an children components
+            hierarchy is created(or updated if it was already created)</p>
     </psk-description>
 
     <psk-property-descriptor title="Supported properties">
@@ -19,29 +25,27 @@
     </psk-event-descriptor>
 
     <psk-chapter title="HTML Children">
-        <p>This component has no HTML children.</p>
+        <p>This component has one slot in the newly created <code>psk-card</code></p>
     </psk-chapter>
 
     <psk-chapter title="Code Example">
         <psk-code>
-            <psk-chapter title="Psk Chapter Title Example">
+            <psk-chapter title="JavaScript history">
+                <p>JavaScript was created by Brendan Eich in 1995 during his time at Netscape Communications. It was
+                    inspired by Java, Scheme and Self.</p>
+                <p>Eich continued to oversee the development of SpiderMonkey, the specific implementation of JavaScript
+                    in Navigator.</p>
             </psk-chapter>
         </psk-code>
 
-        <psk-tag title="GuId Example">
-            <psk-chapter guid="321021">
-            </psk-chapter>
-        </psk-tag>
     </psk-chapter>
 
     <psk-example title="Live Example">
-        <psk-chapter title="PSK-chapter Example">
-            <p>Lorem ipsum dolor sit amet, pellentesque nec aenean quam, et lorem suscipit quisque, eget lorem
-                aliquam et vestibulum suscipit id, euismod amet, sem mollit dolor nullam lacus accumsan sed. Sem
-                vitae aliquet, nec tempus interdum morbi, ac id facilis.</p>
-            <p>Nascetur enim id metus et, nulla velit sit bibendum vestibulum, aenean repudiandae nec id risus
-                vestibulum lobortis, nostra nunc enim donec ut in sit. Sit aperiam, blandit elit donec litora
-                convallis.</p>
+        <psk-chapter title="JavaScript history">
+            <p>JavaScript was created by Brendan Eich in 1995 during his time at Netscape Communications. It was
+                inspired by Java, Scheme and Self.</p>
+            <p>Eich continued to oversee the development of SpiderMonkey, the specific implementation of JavaScript
+                in Navigator.</p>
         </psk-chapter>
     </psk-example>
 
