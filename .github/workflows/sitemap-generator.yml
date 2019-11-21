@@ -35,7 +35,7 @@ jobs:
       env: 
         SITEMAP_TOKEN: ${{ secrets.SITEMAP }}
       run: |
-        echo Hello world ${SITEMAP_TOKEN}
+        echo $SITEMAP_TOKEN
         curl --request POST \
         --url https://api.github.com/repos/PrivateSky/privatesky-xyz/pages/builds \
         --header 'authorization: Bearer ${{ SITEMAP_TOKEN }}'
