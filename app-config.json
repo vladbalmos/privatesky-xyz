@@ -13,21 +13,23 @@
       "component": "psk-page-loader",
       "exact": true,
       "pagePrefix": "?",
-      "historyType":"query"
+      "historyType": "query"
     },
-    "pages": [{
-      "name": "Home",
-      "path": "/home",
-      "icon": "fa-home",
-      "pageSrc": "index.html"
-    },
+    "pages": [
+      {
+        "name": "Home",
+        "path": "/home",
+        "icon": "fa-home",
+        "pageSrc": "index.html"
+      },
       {
         "name": "PrivateSky",
         "path": "/PrivateSky",
         "icon": "fa-cog",
-        "children": [{
-          "name": "Main Innovations"
-        },
+        "children": [
+          {
+            "name": "Main Innovations"
+          },
           {
             "name": "Architecture"
           },
@@ -49,9 +51,10 @@
         "name": "EDFS",
         "path": "/EDFS",
         "icon": "fa-cog",
-        "children": [{
-          "name": "EDFS"
-        },
+        "children": [
+          {
+            "name": "EDFS"
+          },
           {
             "name": "Brick Archives"
           },
@@ -64,9 +67,10 @@
         "name": "Development",
         "path": "/Development",
         "icon": "fa-cog",
-        "children": [{
-          "name": "Coding style"
-        },
+        "children": [
+          {
+            "name": "Coding style"
+          },
           {
             "name": "Unit testing map"
           },
@@ -91,9 +95,10 @@
         "name": "Tools",
         "path": "/Tools",
         "icon": "fa-cog",
-        "children": [{
-          "name": "Tool List"
-        },
+        "children": [
+          {
+            "name": "Tool List"
+          },
           {
             "name": "bar"
           },
@@ -118,9 +123,10 @@
         "name": "Cardinal",
         "path": "/Cardinal",
         "icon": "fa-cog",
-        "children": [{
-          "name": "Web Components MVC"
-        },
+        "children": [
+          {
+            "name": "Web Components MVC"
+          },
           {
             "name": "Controllers"
           },
@@ -139,9 +145,10 @@
         "name": "About",
         "path": "/About",
         "icon": "fa-cog",
-        "children": [{
-          "name": "How to write pages"
-        },
+        "children": [
+          {
+            "name": "How to write pages"
+          },
           {
             "name": "How to create a new site with this approach"
           },
@@ -161,65 +168,94 @@
       {
         "name": "PSK Wiki",
         "path": "/psk-wiki",
-        "icon":"fa-bolt",
-        "children": [{
-          "name": "psk-card"
-        },{
-          "name": "psk-chapter"
-        },{
-          "name": "psk-code"
-        },{
-          "name": "psk-copy-clipboard"
-        },{
-          "name": "psk-description"
-        },{
-          "name": "psk-example"
-        },{
-          "name": "psk-img"
-        },{
-          "name": "psk-link"
-        },{
-          "name": "psk-list"
-        },{
-          "name": "psk-page"
-        },{
-          "name": "psk-table"
-        },{
-          "name": "psk-tag"
-        },{
-          "name": "psk-toc"
-        }
+        "icon": "fa-bolt",
+        "children": [
+          {
+            "name": "psk-card"
+          },
+          {
+            "name": "psk-chapter"
+          },
+          {
+            "name": "psk-code"
+          },
+          {
+            "name": "psk-copy-clipboard"
+          },
+          {
+            "name": "psk-description"
+          },
+          {
+            "name": "psk-example"
+          },
+          {
+            "name": "psk-img"
+          },
+          {
+            "name": "psk-link"
+          },
+          {
+            "name": "psk-list"
+          },
+          {
+            "name": "psk-page"
+          },
+          {
+            "name": "psk-table"
+          },
+          {
+            "name": "psk-tag"
+          },
+          {
+            "name": "psk-toc"
+          }
         ]
       },
       {
         "name": "Web Components",
         "path": "/psk-web-components",
         "icon": "fa-cog",
-        "children": [{
-          "name": "Page not found"
-        }, {
-          "name": "Feedback List"
-        }, {
-          "name": "App Router"
-        }, {
-          "name": "Attachments List"
-        }, {
-          "name": "Files Chooser"
-        }, {
-          "name": "Modal"
-        }, {
-          "name": "PIN Popup"
-        }, {
-          "name": "UI Loader"
-        }, {
-          "name": "User Profile"
-        }, {
-          "name": "Wizard"
-        }, {
-          "name": "Floating Menu"
-        }, {
-          "name": "App Menu"
-        }]
+        "children": [
+          {
+            "name": "Page not found"
+          },
+          {
+            "name": "Feedback List"
+          },
+          {
+            "name": "App Router"
+          },
+          {
+            "name": "Attachments List"
+          },
+          {
+            "name": "Files Chooser"
+          },
+          {
+            "name": "Modal"
+          },
+          {
+            "name": "PIN Popup"
+          },
+          {
+            "name": "UI Loader"
+          },
+          {
+            "name": "User Profile"
+          },
+          {
+            "name": "Wizard"
+          },
+          {
+            "name": "Floating Menu"
+          },
+          {
+            "name": "Icon"
+          },
+          {
+            "name": "App Menu"
+          }
+        ]
       }
     ]
   }
