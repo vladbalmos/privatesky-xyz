@@ -11,6 +11,6 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@releases/v3
       with:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BASE_BRANCH: sitemap-tests # The branch the action should deploy from.
-        BRANCH: sitemap-tests # The branch the action should deploy to.
+        BASE_BRANCH: sitemap-test # The branch the action should deploy from.
+        BRANCH: sitemap-test # The branch the action should deploy to.
         FOLDER: . # The folder the action should deploy.
