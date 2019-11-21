@@ -217,7 +217,7 @@
         "icon": "fa-cog",
         "children": [
           {
-            "name": "Page not found"
+            "name": "Page Not Found"
           },
           {
             "name": "Feedback List"
