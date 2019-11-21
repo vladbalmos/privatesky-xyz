@@ -4,9 +4,12 @@
     </psk-toc>
 
     <psk-description>
-        <p>This component is creating another <psk-link page="psk-wiki/psk-chapter">psk-chapter</psk-link> in which he
-            uses the <code>title</code> as the header title and the language as the coding language.</p>
-        <p>The component has the HTML language the default one in case no other is given.</p>
+        <span>This component is creating another <psk-link page="psk-wiki/psk-chapter">psk-chapter</psk-link> in which
+            he uses the <code>title</code> as the header title and the language as the coding language.</span>
+        <p>The component has the xml(HTML, XML, Markup, SVG.) language the default one in case no other is given.</p>
+        <p>It uses one of the most popular libraries out there: <code>PrismJs</code></p>
+        <p>For a more detailed list of languages supported you can access:</p>
+        <a href="https://prismjs.com/#supported-languages">Language list</a>
     </psk-description>
 
     <psk-property-descriptor title="Supported properties">
@@ -15,7 +18,8 @@
     </psk-property-descriptor>
 
     <psk-chapter title="HTML Children">
-        <p>This component has no HTML children.</p>
+        <p>The data written betweeen tags is rendered in a <code>code</code> component with the language sent as
+            property.</p>
     </psk-chapter>
 
     <psk-chapter title="Code Example">
@@ -27,7 +31,7 @@
                 });
             </psk-code>
         </psk-code>
-  
+
     </psk-chapter>
 
     <psk-example title="Live Example">

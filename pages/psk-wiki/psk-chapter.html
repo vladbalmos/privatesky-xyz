@@ -4,14 +4,15 @@
     </psk-toc>
 
     <psk-description>
-        <p>This component is creating another <psk-link page="psk-wiki/psk-card">psk-card</psk-link> in which he uses
-            the
-            <code>title
-            </code> as the card header title.</p>
-        <p>This component creates a guid(a 32 characters string in a <b>xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx</b> format
-            )</p>
+        <span>This component is creating another <psk-link page="psk-wiki/psk-card">psk-card</psk-link> in which he uses
+            the <code>title </code> as the card header title.</span>
+        <p>This component creates a guid(a 32 characters string in a <b>xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx</b>
+            format) that will pe passed along</p>
         <p>Every time a chapter is created the event is triggered and an children components
-            hierarchy is created(or updated if it was already created)</p>
+            hierarchy is created(or updated if it was already created).</p>
+        <span>All info sent by the <code> sendChapter</code> event will be passed to the <psk-link
+                page="psk-wiki/psk-page">psk-page</psk-link> and collected by the <psk-link page="psk-wiki/psk-toc">
+                psk-toc</psk-link> so it can be displayed to the user.</span>
     </psk-description>
 
     <psk-property-descriptor title="Supported properties">
@@ -25,7 +26,8 @@
     </psk-event-descriptor>
 
     <psk-chapter title="HTML Children">
-        <p>This component has one slot in the newly created <code>psk-card</code></p>
+        <p>This component one slot, as a HTML child, in the newly created <code>psk-card</code> which will render the
+            text between tags.</p>
     </psk-chapter>
 
     <psk-chapter title="Code Example">

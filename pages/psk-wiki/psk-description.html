@@ -4,8 +4,11 @@
     </psk-toc>
 
     <psk-description>
-        <p>This component creates a <psk-link page ="psk-wiki/psk-chapter">psk-chapter</psk-link> using the title property.</p>
-        <p>It's role is to create a good looking description for the documentaion.  </p>
+        <span>This component creates a <psk-link page="psk-wiki/psk-chapter">psk-chapter</psk-link> using the title
+            property.</span>
+        <p>It's role is to create a good looking description for the documentaion. </p>
+        <span>If the title property is not given than the component will create a <psk-link page="psk-wiki/psk-card">
+                psk-card</psk-link> instead of a <code>psk-chapter</code></span>
     </psk-description>
 
     <psk-property-descriptor title="Supported properties">
@@ -14,24 +17,26 @@
     </psk-property-descriptor>
 
     <psk-chapter title="HTML Children">
-        <p>This component has no HTML children.</p>
+        <p>This component has one <code>slot</code> as a HTML child in which the data between tags will be rendered
+            inside the :</p>
+        <p><code>psk-chapter</code>(if the title is given) or <code>psk-card</code>(if it is not given)</p>
     </psk-chapter>
 
     <psk-chapter title="Code Example">
         <psk-code>
-            <psk-description title="Title Example">
+            <psk-description title="PSK-description Example">
+                <p>Minus 40 degrees Celsius is exactly the same as minus 40 degrees Fahrenheit.</p>
+                <p>A lion's roar can be heard from eight kilometres away.</p>
+                <p>Cats can hear ultrasound.</p>
             </psk-description>
         </psk-code>
     </psk-chapter>
 
     <psk-example title="Live Example">
         <psk-description title="PSK-description Example">
-            <p>Lorem ipsum dolor sit amet, pellentesque nec aenean quam, et lorem suscipit quisque, eget lorem
-                aliquam et vestibulum suscipit id, euismod amet, sem mollit dolor nullam lacus accumsan sed. Sem
-                vitae aliquet, nec tempus interdum morbi, ac id facilis.</p>
-            <p>Nascetur enim id metus et, nulla velit sit bibendum vestibulum, aenean repudiandae nec id risus
-                vestibulum lobortis, nostra nunc enim donec ut in sit. Sit aperiam, blandit elit donec litora
-                convallis.</p>
+            <p>Minus 40 degrees Celsius is exactly the same as minus 40 degrees Fahrenheit.</p>
+            <p>A lion's roar can be heard from eight kilometres away.</p>
+            <p>Cats can hear ultrasound.</p>
         </psk-description>
     </psk-example>
 </psk-page>

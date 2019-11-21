@@ -5,9 +5,9 @@
 
     <psk-description>
         <p>This component is the most important component for documentation as it renders the entire page.</p>
-        <p>This component renders everything on screen based on it's <code>title</code> and <code>history
-            </code> properties.</p>
-        <p>For loading it uses <code>psk-ui-loader</code> as a mean to mark the loading process.</p>
+        <p>This component renders everything on UI based on it's <code>title</code> property.</p>
+        <span>For loading it uses <psk-link page="psk-web-components/ui-loader">psk-ui-loader</psk-link> as a mean to
+            mark the loading process.</span>
     </psk-description>
 
     <psk-property-descriptor title="Supported properties">
@@ -16,16 +16,14 @@
     </psk-property-descriptor>
 
     <psk-chapter title="HTML Children">
-        <p>This component has no HTML children.</p>
+        <p>If the loading has finished then the information between the two tags will be rendered on the UI in a slot
+            child.
+        </p>
     </psk-chapter>
 
     <psk-chapter title="Code Example">
         <psk-code>
             <psk-page title="Title Example">
-            </psk-page>
-        </psk-code>
-        <psk-code>
-            <psk-page tocTitle="tocTitle Example">
             </psk-page>
         </psk-code>
     </psk-chapter>
