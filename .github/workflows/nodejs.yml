@@ -31,5 +31,11 @@ jobs:
       run: |
         remote_repo="https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
         git push "${remote_repo}" HEAD:${GITHUB_REF} --follow-tags;
-       
+    - name: Build and Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BASE_BRANCH: sitemap-test # The branch the action should deploy from.
+        BRANCH: sitemap-test # The branch the action should deploy to.
+        FOLDER: . # The folder the action should deploy.  
   
