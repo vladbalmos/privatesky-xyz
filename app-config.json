@@ -48,8 +48,8 @@
         ]
       },
       {
-        "name": "DFS",
-        "path": "/DFS",
+        "name": "FS",
+        "path": "/DsS",
         "icon": "fa-cog",
         "children": [
           {
