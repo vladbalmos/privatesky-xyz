@@ -50,7 +50,7 @@
         "path": "/EDFS",
         "icon": "fa-cog",
         "children": [{
-          "name": "EDFS"
+          "name": "EDF"
         },
           {
             "name": "Brick Archives"
