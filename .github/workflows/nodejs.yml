@@ -14,7 +14,7 @@ jobs:
         node-version: [12.x]
 
     steps:
-    - uses: actions/checkout@master
+    - uses: actions/checkout@v1
     - name: Create local changes
       run: |
         npm ci 
@@ -26,8 +26,15 @@ jobs:
         git add sitemap.xml
         git commit -m "GithubRunner:sitemap.xml was updated"
     - name: Push changes
-      uses: ad-m/github-push-action@master
-      with:
+      run: |
+        git config --local user.email "mastaleru.rafael@gmail.com"
+        git config --local user.name "Mastaleru Rafael"
+        git add sitemap.xml
+        git commit -m "GithubRunner:sitemap.xml was updated"
+        remote_repo="https://${GITHUB_ACTOR}:${INPUT_GITHUB_TOKEN}@github.com/${REPOSITORY}.git"
+        echo $remote_repo
+        git push "${remote_repo}" HEAD:${INPUT_BRANCH} --follow-tags $_FORCE_OPTION;
+      env:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         branch: 'sitemap-test' 
   
