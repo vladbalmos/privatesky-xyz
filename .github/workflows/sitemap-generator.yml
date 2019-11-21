@@ -32,11 +32,8 @@ jobs:
         remote_repo="https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
         git push "${remote_repo}" HEAD:${GITHUB_REF} --follow-tags;
     - name: Trigger GitHubPage rebuild
-      env: 
-        SITEMAP_TOKEN: ${{ secrets.SITEMAP }}
       run: |
-        echo $SITEMAP_TOKEN
         curl --request POST \
         --url https://api.github.com/repos/PrivateSky/privatesky-xyz/pages/builds \
-        --header 'authorization: Bearer ${{ SITEMAP_TOKEN }}'
+        --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}'
   
