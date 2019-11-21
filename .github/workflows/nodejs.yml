@@ -27,8 +27,7 @@ jobs:
         git commit -m "GithubRunner:sitemap.xml was updated"
     - name: Push changes
       run: |
-        git config --local user.email "mastaleru.rafael@gmail.com"
-        git config --local user.name "Mastaleru Rafael"
+        git remote rm origin
         git add sitemap.xml
         git commit -m "GithubRunner:sitemap.xml was updated"
         remote_repo="https://${GITHUB_ACTOR}:${INPUT_GITHUB_TOKEN}@github.com/${REPOSITORY}.git"
