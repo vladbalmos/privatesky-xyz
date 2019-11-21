@@ -1,0 +1,35 @@
+name: Sitemap Generator
+
+on:
+  push:
+    paths:
+      - 'app-config.json'
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Create local changes
+      run: |
+        npm ci 
+        npm run generate-sitemap --if-present
+    - name: Commit files
+      run: |
+        git config --local user.email "mastaleru.rafael@gmail.com"
+        git config --local user.name "Mastaleru Rafael"
+        git add sitemap.xml
+        git commit -m "[GitHubBotRunner] Sitemap.xml was updated."
+    - name: Push changes
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        remote_repo="https://${GITHUB_ACTOR}:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+        git push "${remote_repo}" HEAD:${GITHUB_REF} --follow-tags;
+       
+  
