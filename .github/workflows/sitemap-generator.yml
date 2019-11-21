@@ -33,7 +33,7 @@ jobs:
         git push "${remote_repo}" HEAD:${GITHUB_REF} --follow-tags;
     - name: Trigger GitHubPage rebuild
       env: 
-        SITEMAP_TOKEN : ${{ secrets.SITEMAP }}
+        SITEMAP_TOKEN: ${{ secrets.SITEMAP }}
       run: |
         echo Hello world $SITEMAP_TOKEN
         curl --request POST \
