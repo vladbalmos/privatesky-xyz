@@ -23,8 +23,8 @@
         "pageSrc": "index.html"
       },
       {
-        "name": "PrivateSky",
-        "path": "/PrivateSky",
+        "name": "PrivateSkys",
+        "path": "/PrivateSkys",
         "icon": "fa-cog",
         "children": [
           {
