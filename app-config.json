@@ -23,8 +23,8 @@
         "pageSrc": "index.html"
       },
       {
-        "name": "PrivateSkys",
-        "path": "/PrivateSkys",
+        "name": "PrivateSky",
+        "path": "/PrivateSky",
         "icon": "fa-cog",
         "children": [
           {
@@ -48,8 +48,8 @@
         ]
       },
       {
-        "name": "EDFS",
-        "path": "/EDFS",
+        "name": "EDFsSs",
+        "path": "/EDsFSs",
         "icon": "fa-cog",
         "children": [
           {
