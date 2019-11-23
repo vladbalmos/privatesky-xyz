@@ -33,6 +33,6 @@ jobs:
         git push "${remote_repo}" HEAD:${GITHUB_REF} --follow-tags;
     - name: Trigger GitHubPage rebuild
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       run: |
         curl -XPOST -H"Authorization: token ${GITHUB_TOKEN}" https://api.github.com/repos/${GITHUB_REPOSITORY}/pages/builds   
