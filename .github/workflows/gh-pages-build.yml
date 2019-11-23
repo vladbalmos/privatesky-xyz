@@ -1,6 +1,8 @@
 name: Build and Deploy
 on:
-  fork:
+  push:
+     paths:
+      - 'app-config1.json'
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
