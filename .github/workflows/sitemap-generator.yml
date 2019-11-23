@@ -36,4 +36,10 @@ jobs:
         curl --request POST \
         --url https://api.github.com/repos/PrivateSky/privatesky-xyz/pages/builds \
         --header 'authorization: Bearer ${{ secrets.GITHUB_TOKEN }}'
-  
+    - name: Third party github build 
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:     
+        GITHUB_TOKEN : ${{ secrets.GITHUB_TOKEN  }}  
+        BASE_BRANCH: master # The branch the action should deploy from.
+        BRANCH: master # The branch the action should deploy to.
+        FOLDER: . # The folder the action should deploy.
