@@ -48,7 +48,7 @@
         ]
       },
       {
-        "name": "EDSR",
+        "name": "EDSRs",
         "path": "/EDSRsssd",
         "icon": "fa-cog",
         "children": [
