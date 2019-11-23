@@ -35,4 +35,4 @@ jobs:
       env:
         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
       run: |
-        curl -XPOST -H"Authorization: token ${GITHUB_TOKEN}" https://api.github.com/repos/${GITHUB_REPOSITORY}/pages/builds   
+        curl -XPOST -H"Authorization: token ${ACCESS_TOKEN}" https://api.github.com/repos/${GITHUB_REPOSITORY}/pages/builds   
