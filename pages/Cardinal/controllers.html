@@ -5,6 +5,8 @@
 
 </psk-description>
 
+<button class="btn btn-primary" rv-on-click="controller.addItem">ADD ITEM IN STATE</button>
+
     <psk-container>
 		<psk-controller>
 			var state = {
@@ -13,17 +15,6 @@
 			};
 			controller.setState(state);
 			controller.bind(state);
-			
-			setTimeout(function() {
-				console.log('aaaaaaaaaaaa');
-				state.cardList.push({
-					name: "Tender name is just a name --------------- ",
-					active: Math.random() < 0.5,
-					receiveNotification: Math.random() < 0.5,
-					description: "This is a description is just a description.....",
-					startDate: new Date().toJSON().slice(0, 10)
-				});
-			}, 2000);
 		</psk-controller>
 		
 		<psk-code language="js" lines="5">
