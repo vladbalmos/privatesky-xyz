@@ -1,23 +1,144 @@
-<psk-page title="Tenders list">
-<psk-container >
+<psk-page title="Controllers. Integration with Rivets.Js">
 
-  <psk-controller>
-      controller.state = {myName:"Catalin",cardList:[{name:"Tender1", status:"active"},{name:"Tender2", status:"inactive"}]};
-      controller.receive("eventName",(data)=>{console.log(data)});
-      controller.send("eventName",data);
-  </psk-controller>
+<psk-description>
+	This page is intending to display how <strong>Controllers</strong> are written in this framework and how it is combined with <a href="http://rivetsjs.com/" title="Rivets.Js">Rivets.Js</a>, a framework used for data-binding.
+</psk-description>
 
-  <psk-html>
-        <psk-toolbar actions=""></psk-toolbar>
-        <psk-cards data="cardList">
-          <psk-renderer>
-            <psk-table>
-              <psk-img></psk-img>| {name} | <psk-icon  icon="circle" rf-if="status| eq active"></psk-icon>
-              ^| <psk-button eventName="view" ></psk-button>
-            </psk-table>
-          </psk-renderer>
-        </psk-cards>
-  </psk-html>
+    <psk-container>
+		<psk-controller>
+			var state = {
+				name: "Catalin",
+				cardList: controller.generateList(5)
+			};
+			   controller.setState(state);
+			   controller.bind(state);
+		</psk-controller>
+		
+		<psk-code language="js">
+			class Controller {
+				constructor(element) {
+					this._element = element;
+				}
+				
+				bind(data) {
+					if (!data || !this._element) {
+						return;
+					}
+					rivets.bind(this._element, { data: data });
+				}
+				
+				setState(newState) {
+					this._state = newState;
+				}
+				
+				getState() {
+					return this._state;
+				}
+				
+				receive(eventName, callback) {
+					if (!eventName || eventName.trim().length === 0 ||
+						!callback || typeof callback !== 'function' ||
+						!this._element || !this._element.addEventListener) {
+						return;
+					}
+					this._element.addEventListener(eventName, callback);
+				}
 
-</psk-container>
+				send(eventName, data) {
+					if (!eventName || eventName.trim().length === 0 || !this._element ||
+						!this._element || !this._element.dispatchEvent) {
+						return;
+					}
+						this._element.dispatchEvent(new CustomEvent(eventName, {
+						bubbles: true,
+						cancelable: true,
+						composed: true,
+						detail: data
+					}));
+				}
+				executeScript(controller, script) {
+					if (controller && typeof script === 'string' && script.trim().length > 0) {
+						new Function('controller', script)(controller);
+					}
+					return null;
+				}
+			}
+		</psk-code>
+		
+		<psk-code language="js">
+			var state = {
+				name: "Controllers. Integration with Rivets.Js",
+				cardList: controller.generateList(5)
+			};
+			controller.setState(state);
+			controller.bind(state);
+		</psk-code>
+
+		<psk-chapter>
+		<psk-code>
+			<psk-grid columns="2">
+				<psk-card rv-each-card="data.cardList" rv-title="card.name">
+					<psk-toolbar slot="toolbar" actions="view, edit, cancel" rv-event="card">
+					</psk-toolbar>
+					{card.startDate}
+				</psk-card>
+			</psk-grid>
+		</psk-code>
+		</psk-chapter>
+		
+		<psk-grid columns="2">
+			<psk-card rv-each-card="data.cardList" rv-title="card.name">
+				<psk-toolbar slot="toolbar" actions="view, edit, cancel" rv-event="card">
+				</psk-toolbar>
+				{card.startDate}
+			</psk-card>
+		</psk-grid>
+			
+		<psk-code>
+			<psk-grid columns="3">
+				<psk-card rv-each-card="data.cardList" rv-title="card.name">
+					<psk-toolbar slot="toolbar" actions="active, notifications">
+						<psk-icon slot="active" rv-remove="card.active | neq true" icon="check-circle" title="Active Tender"></psk-icon>
+						<psk-icon slot="active" rv-remove="card.active | neq false" icon="circle" title="Inactive Tender"disable-color="true" ></psk-icon>
+						
+						<psk-icon slot="notifications" rv-remove="card.receiveNotification | neq true" icon="circle" title="Receive notifications"></psk-icon>
+						<psk-icon slot="notifications" rv-remove="card.receiveNotification | neq false" icon="circle" disable-color="true" title="Without notifications"></psk-icon>
+					</psk-toolbar>
+					{card.startDate}
+				</psk-card>
+			</psk-grid>
+		</psk-code>
+		
+		<psk-grid columns="3">
+			<psk-card rv-each-card="data.cardList" rv-title="card.name">
+				<psk-toolbar slot="toolbar" actions="active, notifications">
+					<psk-icon slot="active" rv-remove="card.active | neq true" icon="check-circle" title="Active Tender"></psk-icon>
+					<psk-icon slot="active" rv-remove="card.active | neq false" icon="circle" title="Inactive Tender"disable-color="true" ></psk-icon>
+					
+					<psk-icon slot="notifications" rv-remove="card.receiveNotification | neq true" icon="circle" title="Receive notifications"></psk-icon>
+					<psk-icon slot="notifications" rv-remove="card.receiveNotification | neq false" icon="circle" disable-color="true" title="Without notifications"></psk-icon>
+					</psk-toolbar>
+				{card.startDate}
+			</psk-card>
+		</psk-grid>
+		
+		<psk-code>
+			<psk-grid columns="4">
+				<psk-card rv-each-card="data.cardList" rv-title="card.name">
+					<psk-toolbar slot="toolbar" actions="view, edit, cancel" rv-event="card" icons="true">
+					</psk-toolbar>
+					{sssssrtDate}
+				</psk-card>
+			</psk-grid>
+		</psk-code>
+		
+		<psk-grid columns="4">
+			<psk-card rv-each-card="data.cardList" rv-title="card.name">
+				<psk-toolbar slot="toolbar" actions="view, edit, cancel" rv-event="card" icons="true">
+				</psk-toolbar>
+				{card.startDate}
+			</psk-card>
+		</psk-grid>
+	
+    </psk-container>
 </psk-page>
