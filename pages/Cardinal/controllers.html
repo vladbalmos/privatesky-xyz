@@ -2,7 +2,7 @@
 
 <psk-description>
 	<p>This page is intending to display how <strong>Controllers</strong> are written in this framework and how it is combined with <a href="http://rivetsjs.com/" title="Rivets.Js">Rivets.Js</a>, a framework used for data-binding.</p>
-	<p>
+
 </psk-description>
 
     <psk-container>
@@ -17,10 +17,10 @@
 			setTimeout(function() {
 				console.log('aaaaaaaaaaaa');
 				state.cardList.push({
-					name: `Tender name is just a name --------------- `,
+					name: "Tender name is just a name --------------- ",
 					active: Math.random() < 0.5,
 					receiveNotification: Math.random() < 0.5,
-					description: `This is a description is just a description.....`,
+					description: "This is a description is just a description.....",
 					startDate: new Date().toJSON().slice(0, 10)
 				});
 			}, 2000);
