@@ -213,7 +213,7 @@
       },
       {
         "name": "Web Components",
-        "path": "/psk-web-components",
+        "path": "/web-components",
         "icon": "fa-cog",
         "children": [
           {
