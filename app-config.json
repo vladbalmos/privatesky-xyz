@@ -204,9 +204,6 @@
             "name": "psk-table"
           },
           {
-            "name": "psk-tag"
-          },
-          {
             "name": "psk-toc"
           }
         ]
