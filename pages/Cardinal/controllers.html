@@ -5,8 +5,6 @@
 
 </psk-description>
 
-<button class="btn btn-primary" rv-on-click="controller.addItem">ADD ITEM IN STATE</button>
-
     <psk-container>
 		<psk-controller>
 			var state = {
@@ -16,6 +14,8 @@
 			controller.setState(state);
 			controller.bind(state);
 		</psk-controller>
+
+		<button class="btn btn-primary" rv-on-click="controller.addItem">ADD ITEM IN STATE</button>
 		
 		<psk-code language="js" lines="5">
 			class Controller {
