@@ -49,7 +49,7 @@
       },
       {
         "name": "EDFS",
-        "path": "/EDFS-5",
+        "path": "/EDFS",
         "icon": "fa-cog",
         "children": [
           {
