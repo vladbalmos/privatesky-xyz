@@ -1,7 +1,8 @@
 <psk-page title="Controllers. Integration with Rivets.Js">
 
 <psk-description>
-	This page is intending to display how <strong>Controllers</strong> are written in this framework and how it is combined with <a href="http://rivetsjs.com/" title="Rivets.Js">Rivets.Js</a>, a framework used for data-binding.
+	<p>This page is intending to display how <strong>Controllers</strong> are written in this framework and how it is combined with <a href="http://rivetsjs.com/" title="Rivets.Js">Rivets.Js</a>, a framework used for data-binding.</p>
+	<p>
 </psk-description>
 
     <psk-container>
@@ -10,11 +11,22 @@
 				name: "Catalin",
 				cardList: controller.generateList(5)
 			};
-			   controller.setState(state);
-			   controller.bind(state);
+			controller.setState(state);
+			controller.bind(state);
+			
+			setTimeout(function() {
+				console.log('aaaaaaaaaaaa');
+				state.cardList.push({
+					name: `Tender name is just a name --------------- `,
+					active: Math.random() < 0.5,
+					receiveNotification: Math.random() < 0.5,
+					description: `This is a description is just a description.....`,
+					startDate: new Date().toJSON().slice(0, 10)
+				});
+			}, 2000);
 		</psk-controller>
 		
-		<psk-code language="js">
+		<psk-code language="js" lines="5">
 			class Controller {
 				constructor(element) {
 					this._element = element;
@@ -65,7 +77,7 @@
 			}
 		</psk-code>
 		
-		<psk-code language="js">
+		<psk-code language="js" lines="5">
 			var state = {
 				name: "Controllers. Integration with Rivets.Js",
 				cardList: controller.generateList(5)
@@ -75,7 +87,7 @@
 		</psk-code>
 
 		<psk-chapter>
-		<psk-code>
+		<psk-code lines="5">
 			<psk-grid columns="2">
 				<psk-card rv-each-card="data.cardList" rv-title="card.name">
 					<psk-toolbar slot="toolbar" actions="view, edit, cancel" rv-event="card">
@@ -94,7 +106,7 @@
 			</psk-card>
 		</psk-grid>
 			
-		<psk-code>
+		<psk-code lines="5">
 			<psk-grid columns="3">
 				<psk-card rv-each-card="data.cardList" rv-title="card.name">
 					<psk-toolbar slot="toolbar" actions="active, notifications">
@@ -122,7 +134,7 @@
 			</psk-card>
 		</psk-grid>
 		
-		<psk-code>
+		<psk-code lines="5">
 			<psk-grid columns="4">
 				<psk-card rv-each-card="data.cardList" rv-title="card.name">
 					<psk-toolbar slot="toolbar" actions="view, edit, cancel" rv-event="card" icons="true">
