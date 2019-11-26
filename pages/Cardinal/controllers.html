@@ -8,80 +8,26 @@
     </psk-description>
 
     <psk-container>
-		<psk-controller>
-			var state = {
-				name: "Controllers. Integration with Rivets.Js",
-				cardList: controller.generateList(1)
-			};
-			controller.setState(state);
-			controller.bind(state);
-		</psk-controller>
-	    
-	    	<psk-chapter rv-title="data.name">
+        <psk-controller>
+            var state = { 
+                name: "Controllers. Integration with Rivets.Js", 
+                cardList: controller.generateList(1) 
+            }; 
+            controller.setState(state); 
+            controller.bind(state);
+        </psk-controller>
+        <button class="btn btn-primary" rv-on-click="controller.addItem">ADD ITEM IN STATE</button>
 
-		<button class="btn btn-primary" rv-on-click="controller.addItem">ADD ITEM IN STATE</button>
-		
-		<psk-code language="js" lines="5">
-			class Controller {
-				constructor(element) {
-					this._element = element;
-				}
-				
-				bind(data) {
-					if (!data || !this._element) {
-						return;
-					}
-					rivets.bind(this._element, { data: data });
-				}
-				
-				setState(newState) {
-					this._state = newState;
-				}
-				
-				getState() {
-					return this._state;
-				}
-				
-				receive(eventName, callback) {
-					if (!eventName || eventName.trim().length === 0 ||
-						!callback || typeof callback !== 'function' ||
-						!this._element || !this._element.addEventListener) {
-						return;
-					}
-					this._element.addEventListener(eventName, callback);
-				}
+        <psk-code language="js" lines="5">
+            var state = { 
+                name: "Controllers. Integration with Rivets.Js", 
+                cardList: controller.generateList(1) 
+            }; 
+            controller.setState(state); 
+            controller.bind(state);
+        </psk-code>
 
-				send(eventName, data) {
-					if (!eventName || eventName.trim().length === 0 || !this._element ||
-						!this._element || !this._element.dispatchEvent) {
-						return;
-					}
-						this._element.dispatchEvent(new CustomEvent(eventName, {
-						bubbles: true,
-						cancelable: true,
-						composed: true,
-						detail: data
-					}));
-				}
-				executeScript(controller, script) {
-					if (controller && typeof script === 'string' && script.trim().length > 0) {
-						new Function('controller', script)(controller);
-					}
-					return null;
-				}
-			}
-		</psk-code>
-		
-		<psk-code language="js" lines="5">
-			var state = {
-				name: "Controllers. Integration with Rivets.Js",
-				cardList: controller.generateList(5)
-			};
-			controller.setState(state);
-			controller.bind(state);
-		</psk-code>
-
-		<psk-code lines="5">
+        <psk-code lines="5">
             <psk-grid columns="2">
                 <psk-card rv-each-card="data.cardList" rv-title="card.name">
                     <psk-toolbar slot="toolbar" actions="view, edit, cancel" rv-event="card">
@@ -150,6 +96,6 @@
                 <psk-description>{card.description}</psk-description>
             </psk-card>
         </psk-grid>
-	</psk-chapter>
+        </psk-chapter>
     </psk-container>
 </psk-page>
