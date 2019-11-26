@@ -1,9 +1,11 @@
 <psk-page title="Controllers. Integration with Rivets.Js">
 
-<psk-description>
-	<p>This page is intending to display how <strong>Controllers</strong> are written in this framework and how it is combined with <a href="http://rivetsjs.com/" title="Rivets.Js">Rivets.Js</a>, a framework used for data-binding.</p>
-
-</psk-description>
+    <psk-description>
+        <p>This page is intending to display how <strong>Controllers</strong> are written in this framework and how it is combined with <a href="http://rivetsjs.com/" title="Rivets.Js">Rivets.Js</a>, a framework used for data-binding.</p>
+        <p>In this page, we will display 3 examples of templates, all of them being displayed using the same defined model.</p>
+        <p>On the top of the container, stands a button which is responsable for manipulating the model. So, everytime when that button is clicked, a new card is added in the page.</p>
+        <p>A great feature from Rivets is that you can customize the view as you want, so for all these examples, some custom binders and formatter have been implemented.</p>
+    </psk-description>
 
     <psk-container>
 		<psk-controller>
@@ -77,71 +79,75 @@
 			controller.bind(state);
 		</psk-code>
 
-		<psk-chapter>
 		<psk-code lines="5">
-			<psk-grid columns="2">
-				<psk-card rv-each-card="data.cardList" rv-title="card.name">
-					<psk-toolbar slot="toolbar" actions="view, edit, cancel" rv-event="card">
-					</psk-toolbar>
-					{card.startDate}
-				</psk-card>
-			</psk-grid>
-		</psk-code>
-		</psk-chapter>
-		
-		<psk-grid columns="2">
-			<psk-card rv-each-card="data.cardList" rv-title="card.name">
-				<psk-toolbar slot="toolbar" actions="view, edit, cancel" rv-event="card">
-				</psk-toolbar>
-				{card.startDate}
-			</psk-card>
-		</psk-grid>
-			
-		<psk-code lines="5">
-			<psk-grid columns="3">
-				<psk-card rv-each-card="data.cardList" rv-title="card.name">
-					<psk-toolbar slot="toolbar" actions="active, notifications">
-						<psk-icon slot="active" rv-remove="card.active | neq true" icon="check-circle" title="Active Tender"></psk-icon>
-						<psk-icon slot="active" rv-remove="card.active | neq false" icon="circle" title="Inactive Tender"disable-color="true" ></psk-icon>
-						
-						<psk-icon slot="notifications" rv-remove="card.receiveNotification | neq true" icon="circle" title="Receive notifications"></psk-icon>
-						<psk-icon slot="notifications" rv-remove="card.receiveNotification | neq false" icon="circle" disable-color="true" title="Without notifications"></psk-icon>
-					</psk-toolbar>
-					{card.startDate}
-				</psk-card>
-			</psk-grid>
-		</psk-code>
-		
-		<psk-grid columns="3">
-			<psk-card rv-each-card="data.cardList" rv-title="card.name">
-				<psk-toolbar slot="toolbar" actions="active, notifications">
-					<psk-icon slot="active" rv-remove="card.active | neq true" icon="check-circle" title="Active Tender"></psk-icon>
-					<psk-icon slot="active" rv-remove="card.active | neq false" icon="circle" title="Inactive Tender"disable-color="true" ></psk-icon>
-					
-					<psk-icon slot="notifications" rv-remove="card.receiveNotification | neq true" icon="circle" title="Receive notifications"></psk-icon>
-					<psk-icon slot="notifications" rv-remove="card.receiveNotification | neq false" icon="circle" disable-color="true" title="Without notifications"></psk-icon>
-					</psk-toolbar>
-				{card.startDate}
-			</psk-card>
-		</psk-grid>
-		
-		<psk-code lines="5">
-			<psk-grid columns="4">
-				<psk-card rv-each-card="data.cardList" rv-title="card.name">
-					<psk-toolbar slot="toolbar" actions="view, edit, cancel" rv-event="card" icons="true">
-					</psk-toolbar>
-					{sssssrtDate}
-				</psk-card>
-			</psk-grid>
-		</psk-code>
-		
-		<psk-grid columns="4">
-			<psk-card rv-each-card="data.cardList" rv-title="card.name">
-				<psk-toolbar slot="toolbar" actions="view, edit, cancel" rv-event="card" icons="true">
-				</psk-toolbar>
-				{card.startDate}
-			</psk-card>
-		</psk-grid>
+            <psk-grid columns="2">
+                <psk-card rv-each-card="data.cardList" rv-title="card.name">
+                    <psk-toolbar slot="toolbar" actions="view, edit, cancel" rv-event="card">
+                    </psk-toolbar>
+                    {card.startDate}
+                    <psk-description>{card.description}</psk-description>
+                </psk-card>
+            </psk-grid>
+        </psk-code>
+
+        <psk-grid columns="2">
+            <psk-card rv-each-card="data.cardList" rv-title="card.name">
+                <psk-toolbar slot="toolbar" actions="view, edit, cancel" rv-event="card">
+                </psk-toolbar>
+                {card.startDate}
+                <psk-description>{card.description}</psk-description>
+            </psk-card>
+        </psk-grid>
+
+        <psk-code lines="5">
+            <psk-grid columns="3">
+                <psk-card rv-each-card="data.cardList" rv-title="card.name">
+                    <psk-toolbar slot="toolbar" actions="active, notifications">
+                        <psk-icon slot="active" rv-remove="card.active | neq true" icon="check-circle" title="Active Tender"></psk-icon>
+                        <psk-icon slot="active" rv-remove="card.active | neq false" icon="circle" title="Inactive Tender" disable-color="true"></psk-icon>
+
+                        <psk-icon slot="notifications" rv-remove="card.receiveNotification | neq true" icon="circle" title="Receive notifications"></psk-icon>
+                        <psk-icon slot="notifications" rv-remove="card.receiveNotification | neq false" icon="circle" disable-color="true" title="Without notifications"></psk-icon>
+                    </psk-toolbar>
+                    {card.startDate}
+                    <psk-description>{card.description}</psk-description>
+                </psk-card>
+            </psk-grid>
+        </psk-code>
+
+        <psk-grid columns="3">
+            <psk-card rv-each-card="data.cardList" rv-title="card.name">
+                <psk-toolbar slot="toolbar" actions="active, notifications">
+                    <psk-icon slot="active" rv-remove="card.active | neq true" icon="check-circle" title="Active Tender"></psk-icon>
+                    <psk-icon slot="active" rv-remove="card.active | neq false" icon="circle" title="Inactive Tender" disable-color="true"></psk-icon>
+
+                    <psk-icon slot="notifications" rv-remove="card.receiveNotification | neq true" icon="circle" title="Receive notifications"></psk-icon>
+                    <psk-icon slot="notifications" rv-remove="card.receiveNotification | neq false" icon="circle" disable-color="true" title="Without notifications"></psk-icon>
+                </psk-toolbar>
+                {card.startDate}
+                <psk-description>{card.description}</psk-description>
+            </psk-card>
+        </psk-grid>
+
+        <psk-code lines="5">
+            <psk-grid columns="4">
+                <psk-card rv-each-card="data.cardList" rv-title="card.name">
+                    <psk-toolbar slot="toolbar" actions="view, edit, cancel" rv-event="card" icons="true">
+                    </psk-toolbar>
+                    {card.startDate}
+                    <psk-description>{card.description}</psk-description>
+                </psk-card>
+            </psk-grid>
+        </psk-code>
+
+        <psk-grid columns="4">
+            <psk-card rv-each-card="data.cardList" rv-title="card.name">
+                <psk-toolbar slot="toolbar" actions="view, edit, cancel" rv-event="card" icons="true">
+                </psk-toolbar>
+                {card.startDate}
+                <psk-description>{card.description}</psk-description>
+            </psk-card>
+        </psk-grid>
 	
     </psk-container>
 </psk-page>
