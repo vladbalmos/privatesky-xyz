@@ -17,9 +17,10 @@
     </psk-property-descriptor>
 
     <psk-chapter title="HTML Children">
-        <p>This component consumes the HTML children in this way:</p>
+        <p>This component consumes properties inside the HTML children in this way:</p>
         <ul>
-            <li>psk-icon: will be transformed in a </li>
+            <li>If the slot has the same name as one of the actions, then a new slot with that name is created.</li>
+            <li>The icon sent as property will be rendered just like a normal <code>psk-icon</code>.</li>
         </ul>
     </psk-chapter>
 
