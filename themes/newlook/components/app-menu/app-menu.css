@@ -1,0 +1,15 @@
+@import url("/themes/newlook/assets/bootstrap/css/bootstrap.min.css");
+:host{
+  width: 100%;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+.navbar {
+padding:.5rem 1rem .5rem 0;
+}
+
+.navbar-brand{
+  padding: 5px;
+}

@@ -1,0 +1,39 @@
+
+#tooltip {
+    display: inline !important;
+    color: #fff;
+    cursor: pointer;
+}
+
+#tooltip:hover .tooltip {
+    opacity: 1;
+    background-color: #354F9B;
+}
+
+.tooltip {
+    margin-top: 10px;
+    margin-right: 35px;
+    padding: 6px 12px;
+    color: rgba(255, 255, 255, .7);
+    font-size: 11px;
+    border-radius: 4px;
+}
+
+.tooltip.copied {
+    color: rgba(255, 255, 255, 1);
+}
+
+.tooltip:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-left: 0px;
+    border-width: 5px;
+    margin-top: -5px;
+    border-style: solid;
+    border-color: transparent transparent transparent #224abe;
+} 
+#tooltip>.mark{
+    display: none;
+}

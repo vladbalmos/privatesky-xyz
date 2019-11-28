@@ -1,0 +1,83 @@
+
+.card.psk-card {
+    margin-bottom: 20px;
+    background: none;
+    border: none;
+    width:85ch;
+} 
+
+
+/** first level*/
+
+.psk-card .card-header{
+    background: none;
+    border-bottom: none;   
+    padding-bottom: 0;
+}
+.psk-card .card-header h5 {
+    font-size:21px;
+    font-weight: bold;
+    color:#5E7FE1;
+}
+
+/** second level*/
+
+ .psk-card .psk-card .card-header h5{
+    color:#565656;
+    font-weight: bold;
+    font-size: 16px;
+} 
+
+
+/** more than two levels*/
+
+ .psk-card .psk-card .psk-card .card-header {
+    font-size: 1rem;
+}
+
+
+.psk-card .card-body{
+    padding-top:10px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.psk-card p.subtitle {
+    color:#008A64;
+    margin-top: -10px;
+}
+
+.psk-card b{
+    border:1px solid #4C71DE;
+    padding:10px;
+    font-weight: 400;
+    font-style: italic;
+    display: flex;
+    justify-content: flex-start;
+}
+.psk-card b::before{
+    content: "";
+    background-color: #4C71DE;
+    width: 30px;
+    height: auto;
+    margin: -10px 10px -10px -10px;
+}
+
+.table-of-content .psk-card{
+    width:40ch;
+    position: fixed;
+    right:0;
+    top:auto;
+    
+}
+.table-of-content .card-header h5{
+    font-weight: bold;
+    color:#354F9B;
+    border-bottom: 2px solid #354F9B;
+}
+.table-of-content .card-body span
+{
+    font-size: 16px;
+    font-weight: bold;
+    color:#4C71DE;
+}

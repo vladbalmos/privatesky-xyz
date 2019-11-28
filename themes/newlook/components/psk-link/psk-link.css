@@ -1,0 +1,32 @@
+
+.btn-link,
+.btn-link:focus,
+.btn-link:active,
+.btn-link:hover {
+    padding: 0;
+    text-decoration: none;
+}
+
+.btn-link.invalid-url:hover,
+.btn-link.invalid-url:focus,
+.btn-link.invalid-url:active {
+    color: #999;
+    cursor: initial;
+    text-decoration: none;
+    transition: color .5s ease-in;
+}
+
+
+div>.mark,
+div>.mark:visited {
+    display:none;
+    background-color: transparent;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: .5rem;
+    font-size: 150%;
+}
+
+
+
