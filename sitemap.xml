@@ -59,13 +59,11 @@
       </url><url>
         <loc>https://privatesky.xyz/?Cardinal/services</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?About/how-to-write-pages</loc>
+        <loc>https://privatesky.xyz/?About/about</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?About/how-to-create-a-new-site-with-this-approach</loc>
+        <loc>https://privatesky.xyz/?About/how-to-create-a-new-site-with-cardinal</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?About/contributors</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?About/copyright</loc>
+        <loc>https://privatesky.xyz/?About/how-to-write-documentation-pages</loc>
       </url><url>
         <loc>https://privatesky.xyz/?glossary</loc>
       </url><url>
@@ -101,7 +99,7 @@
       </url><url>
         <loc>https://privatesky.xyz/?web-components/attachments-list</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?web-components/file-chooser</loc>
+        <loc>https://privatesky.xyz/?web-components/files-chooser</loc>
       </url><url>
         <loc>https://privatesky.xyz/?web-components/modal</loc>
       </url><url>

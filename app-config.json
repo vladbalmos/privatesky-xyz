@@ -147,16 +147,13 @@
         "icon": "fa-cog",
         "children": [
           {
-            "name": "How to write pages"
+            "name": "About"
           },
           {
-            "name": "How to create a new site with this approach"
+            "name": "How to create a new site with Cardinal"
           },
           {
-            "name": "Contributors"
-          },
-          {
-            "name": "Copyright"
+            "name": "How to write documentation pages"
           }
         ]
       },
@@ -226,7 +223,7 @@
             "name": "Attachments List"
           },
           {
-            "name": "File Chooser"
+            "name": "Files Chooser"
           },
           {
             "name": "Modal"
