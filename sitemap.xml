@@ -3,6 +3,12 @@
                  <url>
         <loc>https://privatesky.xyz/?home</loc>
       </url><url>
+        <loc>https://privatesky.xyz/?About/about</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?About/how-to-create-a-new-site-with-cardinal</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?About/how-to-write-documentation-pages</loc>
+      </url><url>
         <loc>https://privatesky.xyz/?PrivateSky/main-innovations</loc>
       </url><url>
         <loc>https://privatesky.xyz/?PrivateSky/architecture</loc>
@@ -14,12 +20,6 @@
         <loc>https://privatesky.xyz/?PrivateSky/installation</loc>
       </url><url>
         <loc>https://privatesky.xyz/?PrivateSky/code-examples</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?EDFS/edfs</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?EDFS/brick-archives</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?EDFS/cloud-safe-boxes</loc>
       </url><url>
         <loc>https://privatesky.xyz/?Development/coding-style</loc>
       </url><url>
@@ -34,6 +34,14 @@
         <loc>https://privatesky.xyz/?Development/communication</loc>
       </url><url>
         <loc>https://privatesky.xyz/?Development/advanced</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?EDFS/edfs</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?EDFS/brick-archives</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?EDFS/cloud-safe-boxes</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?EDFS/ssapps</loc>
       </url><url>
         <loc>https://privatesky.xyz/?Tools/tool-list</loc>
       </url><url>
@@ -58,14 +66,6 @@
         <loc>https://privatesky.xyz/?Cardinal/events</loc>
       </url><url>
         <loc>https://privatesky.xyz/?Cardinal/services</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?About/about</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?About/how-to-create-a-new-site-with-cardinal</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?About/how-to-write-documentation-pages</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?glossary</loc>
       </url><url>
         <loc>https://privatesky.xyz/?psk-wiki/psk-card</loc>
       </url><url>
@@ -122,5 +122,7 @@
         <loc>https://privatesky.xyz/?web-components/toolbar</loc>
       </url><url>
         <loc>https://privatesky.xyz/?web-components/app-menu</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?glossary</loc>
       </url>
                  </urlset>
