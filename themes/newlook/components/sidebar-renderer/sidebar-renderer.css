@@ -36,13 +36,13 @@ a,
 
  /* adding pointer */
 a.active .item_name::before{
-  /* font-family:"FontAwesome";
+  font-family:"FontAwesome";
   content:"\f0a4";
   color: #fff;
   font-size: 1rem;
   margin-left:-21px; 
-  padding-right: 5px; */
-  content:"<i class="fas fa-hand-point-right"></i>";
+  padding-right: 5px;
+  /* content:"<i class="fas fa-hand-point-right"></i>"; */
   
 }
 

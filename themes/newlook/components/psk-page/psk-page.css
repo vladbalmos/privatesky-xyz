@@ -12,13 +12,12 @@
     
 }
 .page-content {
-    padding: 30px;
+    padding-top: 30px;
     color: #565656;
-}
-.page-content slot{
-    display: flex;
-    flex-direction: column;
-  
+    position: relative;
+    left: calc(50% - 17ch);
+    margin-left: -45ch;
+
 }
 
 nav {
