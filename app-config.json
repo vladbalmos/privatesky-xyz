@@ -28,9 +28,6 @@
         "icon": "fa-cog",
         "children": [
           {
-            "name": "Intro"
-          },
-          {
             "name": "Main Innovations"
           },
           {
