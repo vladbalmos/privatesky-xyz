@@ -1,9 +1,9 @@
 
-.btn-link,
+.card-body .btn-link,
 .btn-link:focus,
 .btn-link:active,
 .btn-link:hover {
-    padding: 0;
+    padding: 0; 
     text-decoration: none;
 }
 
@@ -27,6 +27,7 @@ div>.mark:visited {
     padding: .5rem;
     font-size: 150%;
 }
+
 
 
 

@@ -32,7 +32,7 @@ aside {
   scrollbar-width: thin;
 }
 
-#side-app-menu{
+aside .hydrated{
   display:flex;
   flex-direction: column;
   justify-content: center;
@@ -54,8 +54,6 @@ aside {
 }
 
 section{
-  display: flex;
-  flex-direction: column;
   height:100%;
   overflow:hidden auto;
   scrollbar-color: #354F9B #E5E5E5;

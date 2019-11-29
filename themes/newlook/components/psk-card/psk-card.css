@@ -1,9 +1,8 @@
 
 .card.psk-card {
-    margin-bottom: 20px;
     background: none;
     border: none;
-    width:85ch;
+    width:90ch;
 } 
 
 
@@ -18,6 +17,7 @@
     font-size:21px;
     font-weight: bold;
     color:#5E7FE1;
+    margin:0;
 }
 
 /** second level*/
@@ -37,7 +37,7 @@
 
 
 .psk-card .card-body{
-    padding-top:10px;
+    padding:10px 20px 20px 20px;
     line-height: 1.6;
     font-size: 16px;
 }
@@ -47,6 +47,7 @@
     margin-top: -10px;
 }
 
+/* Note coponent rules for b tag */
 .psk-card b{
     border:1px solid #4C71DE;
     padding:10px;
@@ -55,6 +56,7 @@
     display: flex;
     justify-content: flex-start;
 }
+
 .psk-card b::before{
     content: "";
     background-color: #4C71DE;
@@ -63,17 +65,19 @@
     margin: -10px 10px -10px -10px;
 }
 
+/* toc  */
 .table-of-content .psk-card{
-    width:40ch;
+    width:35ch;
     position: fixed;
-    right:0;
-    top:auto;
+    right:10px;
+    top:200px; 
     
 }
 .table-of-content .card-header h5{
     font-weight: bold;
     color:#354F9B;
     border-bottom: 2px solid #354F9B;
+    padding-bottom:8px;
 }
 .table-of-content .card-body span
 {
