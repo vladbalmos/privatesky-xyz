@@ -3,6 +3,8 @@
                  <url>
         <loc>https://privatesky.xyz/?home</loc>
       </url><url>
+        <loc>https://privatesky.xyz/?PrivateSky/intro</loc>
+      </url><url>
         <loc>https://privatesky.xyz/?PrivateSky/main-innovations</loc>
       </url><url>
         <loc>https://privatesky.xyz/?PrivateSky/architecture</loc>
@@ -59,13 +61,11 @@
       </url><url>
         <loc>https://privatesky.xyz/?Cardinal/services</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?About/how-to-write-pages</loc>
+        <loc>https://privatesky.xyz/?About/about</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?About/how-to-create-a-new-site-with-this-approach</loc>
+        <loc>https://privatesky.xyz/?About/how-to-create-a-new-site-with-cardinal</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?About/contributors</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?About/copyright</loc>
+        <loc>https://privatesky.xyz/?About/how-to-write-documentation-pages</loc>
       </url><url>
         <loc>https://privatesky.xyz/?glossary</loc>
       </url><url>
