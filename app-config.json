@@ -23,6 +23,22 @@
         "pageSrc": "index.html"
       },
       {
+        "name": "About",
+        "path": "/About",
+        "icon": "fa-cog",
+        "children": [
+          {
+            "name": "About"
+          },
+          {
+            "name": "How to create a new site with Cardinal"
+          },
+          {
+            "name": "How to write documentation pages"
+          }
+        ]
+      },
+      {
         "name": "PrivateSky",
         "path": "/PrivateSky",
         "icon": "fa-cog",
@@ -44,22 +60,6 @@
           },
           {
             "name": "Code Examples"
-          }
-        ]
-      },
-      {
-        "name": "EDFS",
-        "path": "/EDFS",
-        "icon": "fa-cog",
-        "children": [
-          {
-            "name": "EDFS"
-          },
-          {
-            "name": "Brick Archives"
-          },
-          {
-            "name": "Cloud Safe Boxes"
           }
         ]
       },
@@ -88,6 +88,25 @@
           },
           {
             "name": "Advanced"
+          }
+        ]
+      },
+      {
+        "name": "EDFS",
+        "path": "/EDFS",
+        "icon": "fa-cog",
+        "children": [
+          {
+            "name": "EDFS"
+          },
+          {
+            "name": "Brick Archives"
+          },
+          {
+            "name": "Cloud Safe Boxes"
+          },
+          {
+            "name": "SSApps"
           }
         ]
       },
@@ -140,27 +159,6 @@
             "name": "Services"
           }
         ]
-      },
-      {
-        "name": "About",
-        "path": "/About",
-        "icon": "fa-cog",
-        "children": [
-          {
-            "name": "About"
-          },
-          {
-            "name": "How to create a new site with Cardinal"
-          },
-          {
-            "name": "How to write documentation pages"
-          }
-        ]
-      },
-      {
-        "name": "Glossary",
-        "path": "/glossary",
-        "pageSrc": "About/glossary.html"
       },
       {
         "name": "PSK Wiki",
@@ -259,6 +257,11 @@
             "name": "App Menu"
           }
         ]
+      },
+      {
+        "name": "Glossary",
+        "path": "/glossary",
+        "pageSrc": "About/glossary.html"
       }
     ]
   }
