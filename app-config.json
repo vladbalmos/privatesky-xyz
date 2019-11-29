@@ -226,7 +226,7 @@
             "name": "Attachments List"
           },
           {
-            "name": "Files Chooser"
+            "name": "File Chooser"
           },
           {
             "name": "Modal"
@@ -248,6 +248,15 @@
           },
           {
             "name": "Icon"
+          },
+          {
+            "name": "Grid"
+          },
+          {
+            "name": "Container"
+          },
+          {
+            "name": "Toolbar"
           },
           {
             "name": "App Menu"

@@ -101,7 +101,7 @@
       </url><url>
         <loc>https://privatesky.xyz/?web-components/attachments-list</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?web-components/files-chooser</loc>
+        <loc>https://privatesky.xyz/?web-components/file-chooser</loc>
       </url><url>
         <loc>https://privatesky.xyz/?web-components/modal</loc>
       </url><url>
@@ -116,6 +116,12 @@
         <loc>https://privatesky.xyz/?web-components/floating-menu</loc>
       </url><url>
         <loc>https://privatesky.xyz/?web-components/icon</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?web-components/grid</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?web-components/container</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?web-components/toolbar</loc>
       </url><url>
         <loc>https://privatesky.xyz/?web-components/app-menu</loc>
       </url>
