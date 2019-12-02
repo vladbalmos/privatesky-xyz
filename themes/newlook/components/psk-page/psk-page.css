@@ -12,12 +12,10 @@
     
 }
 .page-content {
-    padding-top: 30px;
+    padding-top: 2rem;
     color: #565656;
-    position: relative;
-    left: calc(50% - 17ch);
-    margin-left: -45ch;
-
+    margin-right: 20rem;
+    width: auto;
 }
 
 nav {

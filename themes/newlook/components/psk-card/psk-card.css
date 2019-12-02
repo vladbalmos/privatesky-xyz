@@ -1,8 +1,8 @@
-
 .card.psk-card {
     background: none;
     border: none;
-    width:90ch;
+    padding-left:20px;
+    padding-right:20px;
 } 
 
 
@@ -14,7 +14,7 @@
     padding-bottom: 0;
 }
 .psk-card .card-header h5 {
-    font-size:21px;
+    font-size:1.3125rem;
     font-weight: bold;
     color:#5E7FE1;
     margin:0;
@@ -25,7 +25,7 @@
  .psk-card .psk-card .card-header h5{
     color:#565656;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 1rem;
 } 
 
 
@@ -39,7 +39,7 @@
 .psk-card .card-body{
     padding:10px 20px 20px 20px;
     line-height: 1.6;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .psk-card p.subtitle {
@@ -66,22 +66,34 @@
 }
 
 /* toc  */
-.table-of-content .psk-card{
-    width:35ch;
+.table-of-content{
+    width:20rem;
     position: fixed;
-    right:10px;
-    top:200px; 
-    
+    right:0;
 }
+
+.table-of-content .psk-card .card-body,
+.table-of-content .psk-card .card-header
+{
+ padding-left:0;
+ padding-right: 40px;
+}
+
+.table-of-content .psk-card{
+    padding:0;
+}
+
 .table-of-content .card-header h5{
     font-weight: bold;
     color:#354F9B;
     border-bottom: 2px solid #354F9B;
     padding-bottom:8px;
 }
+
 .table-of-content .card-body span
 {
     font-size: 16px;
     font-weight: bold;
     color:#4C71DE;
 }
+
