@@ -1,6 +1,11 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css");
 
-.table-of-content ul li {
+.table-of-content .psk-card ul{
+    padding-left:20px;
+    padding-top:0px;
+}
+
+.table-of-content .psk-card ul li {
     list-style: none;
     cursor: pointer;
     text-decoration: none !important;
@@ -18,8 +23,8 @@
     color:#4C71DE;
 }
 
-.table-of-content ul li:hover{
-    font-weight: 400;
+.table-of-content ul li::before{
+    content:"";
 }
 
 .table-of-content ul li:first-of-type::before{
@@ -27,8 +32,8 @@
     content:"\f0a4";
     color:#354F9B;
     font-size: 1rem;
-    margin-left:-21px; 
-    padding-right: 5px;
+    margin-right:2px;
+    margin-left:-16px;
    
 }
 

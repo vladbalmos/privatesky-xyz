@@ -1,8 +1,7 @@
 .card.psk-card {
     background: none;
     border: none;
-    padding-left:20px;
-    padding-right:20px;
+    padding:30px 20px 10px;
 } 
 
 
@@ -11,7 +10,7 @@
 .psk-card .card-header{
     background: none;
     border-bottom: none;   
-    padding-bottom: 0;
+    padding: 10px 20px 0;
 }
 .psk-card .card-header h5 {
     font-size:1.3125rem;
@@ -29,17 +28,14 @@
 } 
 
 
-/** more than two levels*/
-
- .psk-card .psk-card .psk-card .card-header {
+.psk-card .card-body{
+    padding:10px 20px 0;
+    line-height: 1.6;
     font-size: 1rem;
 }
 
-
-.psk-card .card-body{
-    padding:10px 20px 20px 20px;
-    line-height: 1.6;
-    font-size: 1rem;
+.psk-card .card-body div{
+    padding-top:16px;
 }
 
 .psk-card p.subtitle {
@@ -47,8 +43,8 @@
     margin-top: -10px;
 }
 
-/* Note coponent rules for b tag */
-.psk-card b{
+/* Note coponent rules for b tag / b-tag needs to be replaced*/
+/* .psk-card b{
     border:1px solid #4C71DE;
     padding:10px;
     font-weight: 400;
@@ -63,13 +59,14 @@
     width: 30px;
     height: auto;
     margin: -10px 10px -10px -10px;
-}
+} */
 
 /* toc  */
 .table-of-content{
     width:20rem;
     position: fixed;
     right:0;
+    top:150px;
 }
 
 .table-of-content .psk-card .card-body,
@@ -85,6 +82,7 @@
 
 .table-of-content .card-header h5{
     font-weight: bold;
+    font-size:1.125rem;
     color:#354F9B;
     border-bottom: 2px solid #354F9B;
     padding-bottom:8px;
@@ -92,8 +90,45 @@
 
 .table-of-content .card-body span
 {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 1rem;
     color:#4C71DE;
 }
 
+.table-of-content .card-body span:hover{
+    font-weight: 600;
+}
+
+
+/* code tag */
+.psk-card .card-body p code,
+.psk-card .card-body ul code{
+    color:#008A64;
+    font-size:100%;
+    padding:0 3px;
+}
+
+/* list style */
+
+.psk-card ul,
+.psk-card ol
+{
+ padding-top:16px;
+ padding-bottom: 16px;
+}
+
+.psk-card ol{
+    counter-reset: li;
+    list-style-type: none;
+}
+
+ ol li::before{
+    content: counter(li) ". "; 
+    counter-increment: li;
+    color:#4C71DE;
+    font-weight: bold; 
+    width: 1rem;
+    margin-left: -1.5rem;
+    margin-right: 0.5rem; 
+    text-align: right; 
+    direction: rtl;
+}
