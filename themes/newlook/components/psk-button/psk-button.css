@@ -1,1 +1,4 @@
 @import url("../../assets/bootstrap/css/bootstrap.min.css");
+.btn.btn-primary{
+    background-color: #4C71DE;
+}

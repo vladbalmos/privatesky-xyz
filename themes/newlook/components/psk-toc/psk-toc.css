@@ -1,4 +1,39 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css");
+.table-of-content{
+    width:20rem;
+    position: fixed;
+    right:0;
+    top:150px;
+}
+
+.table-of-content .psk-card .card-body,
+.table-of-content .psk-card .card-header
+{
+ padding-left:0;
+ padding-right: 40px;
+}
+
+.table-of-content .psk-card{
+    padding:0;
+}
+
+.table-of-content .card-header h5{
+    font-weight: bold;
+    font-size:1.125rem;
+    color:#354F9B;
+    border-bottom: 2px solid #354F9B;
+    padding-bottom:8px;
+}
+
+.table-of-content .card-body span
+{
+    font-size: 1rem;
+    color:#4C71DE;
+}
+
+.table-of-content .card-body span:hover{
+    font-weight: 600;
+}
 
 .table-of-content .psk-card ul{
     padding-left:20px;

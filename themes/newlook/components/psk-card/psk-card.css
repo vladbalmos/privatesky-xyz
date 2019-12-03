@@ -101,7 +101,8 @@
 
 /* code tag */
 .psk-card .card-body p code,
-.psk-card .card-body ul code{
+.psk-card .card-body ul code,
+.psk-card .card-body .psk-description code {
     color:#008A64;
     font-size:100%;
     padding:0 3px;
