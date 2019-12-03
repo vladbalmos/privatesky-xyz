@@ -161,3 +161,30 @@
     background-color: #5E7FE1;
     border-style:none;
 }
+
+/* page not-available */
+
+.psk-card#not-available .card-header h5{
+    font-size:2.3125rem;
+    color:#F44336;
+    font-weight: bold;
+    text-align:center;
+}
+
+.psk-card#not-available .card-body{
+    font-size:1.3125rem;
+    text-align: center;
+}
+
+.psk-card#not-available{
+    position: relative;
+    left: 10rem;
+    background-image: url('/themes/newlook/components/psk-card/404.png');
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position:top;
+    padding-top: 130px;
+    margin-top:5rem;
+}
+
+
