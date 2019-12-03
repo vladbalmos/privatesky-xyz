@@ -16,12 +16,14 @@
     border-bottom: none;   
     padding: 10px 20px 0;
 }
+
 .psk-card .card-header h5 {
     font-size:1.3125rem;
     font-weight: bold;
     color:#5E7FE1;
     margin:0;
 }
+
 .psk-card h1{
     color:#354F9B;
     font-size:2.3125rem;
@@ -89,7 +91,7 @@
     padding:0;
 }
 
-.table-of-content .card-header h5{
+.table-of-content .psk-card .card-header h5{
     font-weight: bold;
     font-size:1.125rem;
     color:#354F9B;
@@ -105,6 +107,10 @@
 
 .table-of-content .card-body span:hover{
     font-weight: 600;
+}
+
+.psk-card .table-of-content{
+   position:static;
 }
 
 
