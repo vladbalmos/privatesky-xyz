@@ -1,9 +1,13 @@
-.card.psk-card {
+.card.psk-card,
+.image_container {
     background: none;
     border: none;
     padding:30px 20px 10px;
 } 
 
+.image_wrapper{
+    padding: 10px 20px 0;
+}
 
 /** first level*/
 
@@ -17,6 +21,11 @@
     font-weight: bold;
     color:#5E7FE1;
     margin:0;
+}
+.psk-card h1{
+    color:#354F9B;
+    font-size:2.3125rem;
+    font-weight: bold;
 }
 
 /** second level*/
@@ -132,4 +141,23 @@
     margin-right: 0.5rem; 
     text-align: right; 
     direction: rtl;
+}
+
+/* buttons */
+.btn.btn-primary{   
+    background-color: #4C71DE;
+    border-style:none;
+    box-shadow: rgba(76, 113, 222, 0.35) 0px 18px 25px -12px;
+    padding: 8px 16px;
+}
+
+.btn.btn-primary:focus,
+.btn.btn-primary:not(:disabled):not(.disabled):active{
+    background-color: #354F9B;
+    border-style:none;
+}
+
+.btn.btn-primary:hover{
+    background-color: #5E7FE1;
+    border-style:none;
 }

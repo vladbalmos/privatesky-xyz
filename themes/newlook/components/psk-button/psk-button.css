@@ -1,4 +1,19 @@
 @import url("../../assets/bootstrap/css/bootstrap.min.css");
-.btn.btn-primary{
+.btn.btn-primary
+{
     background-color: #4C71DE;
+    border-style:none;
+    box-shadow: rgba(76, 113, 222, 0.35) 0px 18px 25px -12px;
+    padding: 8px 16px;
+}
+
+.btn.btn-primary:focus,
+.btn.btn-primary:not(:disabled):not(.disabled):active{
+    background-color: #354F9B;
+    border-style:none;
+}
+
+.btn.btn-primary:hover{
+    background-color: #5E7FE1;
+    border-style:none;
 }
