@@ -67,6 +67,37 @@
         ]
       },
       {
+        "name": "APIs",
+        "path": "/API",
+        "icon": "fa-cog",
+        "children": [
+          {
+            "name": "PrivateSky  APIs"
+          },
+          {
+            "name": "Swarms"
+          },
+          {
+            "name": "Interactions"
+          },
+          {
+            "name": "Error Handling"
+          },
+          {
+            "name": "Domains"
+          },
+          {
+            "name": "Blockchain"
+          },
+          {
+            "name": "BARs"
+          },
+          {
+            "name": "CSBs"
+          }
+        ]
+      },
+      {
         "name": "Development",
         "path": "/Development",
         "icon": "fa-cog",
