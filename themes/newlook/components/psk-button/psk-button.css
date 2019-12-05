@@ -5,6 +5,7 @@
     border-style:none;
     box-shadow: rgba(76, 113, 222, 0.35) 0px 18px 25px -12px;
     padding: 8px 16px;
+    margin: 0 10px;
 }
 
 .btn.btn-primary:focus,
