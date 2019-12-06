@@ -1,11 +1,25 @@
 const fs = require("fs");
 const path = require("path");
 const appConfig = "./app-config.json";
-const websiteBase = "https://privatesky.xyz";
 import DefaultController from "../scripts/controllers/DefaultController";
 
-
 let buildSiteMap = function () {
+
+    const isValidUrl = (string) => {
+        try {
+            new URL(string);
+            return true;
+        } catch (_) {
+            return false;
+        }
+    };
+
+    let websiteBase = process.argv.slice(2);
+
+    if (!isValidUrl(websiteBase)) {
+        throw new Error("Invalid base path.")
+    }
+
 
     let readFileData = function (pageStructureUrl, callback) {
         fs.readFile(path.resolve(pageStructureUrl), (err, data) => {
