@@ -10,8 +10,14 @@ export default class DefaultController extends Controller {
         this.pendingRequests = [];
 
         this._getAppConfiguration(configUrl, (err, _configuration) => {
-
-            this.configuration = DefaultController._prepareConfiguration(_configuration);
+            let basePath;
+            if(window && window.location && window.location.origin){
+                basePath = window.location.origin;
+            }
+            else{
+                basePath = _configuration.baseUrl;
+            }
+            this.configuration = DefaultController._prepareConfiguration(_configuration, basePath);
             this.configIsLoaded = true;
             while (this.pendingRequests.length) {
                 let request = this.pendingRequests.pop();
@@ -55,20 +61,11 @@ export default class DefaultController extends Controller {
         }
     }
 
-    static _prepareConfiguration(rawConfig) {
+    static _prepareConfiguration(rawConfig, websiteBase) {
 
         let configuration = {};
-
-        if (!rawConfig.basePagesUrl) {
-            throw new Error("Pages Base url missing");
-        }
-
-        if (!rawConfig.baseUrl) {
-            throw new Error("Base url missing");
-        }
-        configuration.baseUrl = rawConfig.baseUrl;
-
-        let basePagesUrl = rawConfig.basePagesUrl;
+        configuration.baseUrl = websiteBase;
+        let basePagesUrl = websiteBase + rawConfig.basePagesUrl;
 
         if (!rawConfig.menu || !rawConfig.menu.defaultMenuConfig) {
             throw new Error("Default menu configuration is missing");

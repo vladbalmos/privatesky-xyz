@@ -1,6 +1,7 @@
 const fs = require("fs");
 const path = require("path");
 const appConfig = "./app-config.json";
+const websiteBase = "https://privatesky.xyz";
 import DefaultController from "../scripts/controllers/DefaultController";
 
 
@@ -17,11 +18,11 @@ let buildSiteMap = function () {
     }
 
     readFileData(appConfig, function (globalNavigation) {
-        let configuration = DefaultController._prepareConfiguration(globalNavigation);
+        let configuration = DefaultController._prepareConfiguration(globalNavigation, websiteBase);
 
         let siteMap = "";
         let historyType = configuration.historyType;
-        let realBase = configuration.baseUrl;
+        let realBase = websiteBase;
 
         switch (historyType) {
             case "query":
