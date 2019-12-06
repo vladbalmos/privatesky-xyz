@@ -1,0 +1,1 @@
+import{r as o}from"./p-bd5842d7.js";import"./p-11ec80fb.js";import{i as s}from"./p-c2b42fe0.js";import"./p-4bed3927.js";const r=class{constructor(s){o(this,s)}componentWillLoad(){console.log("ere"),this.history.push(this.url,{})}};s(r);export{r as psk_route_redirect};

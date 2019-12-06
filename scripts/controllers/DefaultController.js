@@ -1,7 +1,11 @@
+import Controller from "./Controller.js";
+
 const configUrl = "/app-config.json";
-export default class DefaultController {
+
+export default class DefaultController extends Controller {
 
     constructor(element) {
+        super(element);
         this.configIsLoaded = false;
         this.pendingRequests = [];
 
@@ -18,6 +22,7 @@ export default class DefaultController {
             }
         });
 
+        element.addEventListener("needRoutes", this._provideConfig("routes"));
         element.addEventListener("needMenuItems", this._provideConfig("menu"));
         element.addEventListener("getUserInfo", this._provideConfig("profile"));
         element.addEventListener("getHistoryType", this._provideConfig("historyType"));
@@ -75,6 +80,18 @@ export default class DefaultController {
             configuration.profile = rawConfig.profile;
         }
 
+        let filterIndexedItems = function (menuItems) {
+            for(let i = 0; i<menuItems.length; i++){
+                if (menuItems[i].children) {
+                    filterIndexedItems(menuItems[i].children);
+                } else {
+                    if (menuItems[i].indexed === false) {
+                        menuItems.splice(i,1) ;
+                    }
+                }
+            }
+            return menuItems;
+        };
 
         let fillOptionalPageProps = function (navigationPages, pathPrefix) {
             navigationPages.forEach(page => {
@@ -101,7 +118,7 @@ export default class DefaultController {
                     }
                 } else {
                     for (let prop in defaultMenuConfig) {
-                        if (!page[prop]) {
+                        if (!page.hasOwnProperty(prop)) {
                             page[prop] = defaultMenuConfig[prop];
                         }
                     }
@@ -113,7 +130,7 @@ export default class DefaultController {
                         if (page.pageSrc) {
                             page.componentProps.pageUrl = basePagesUrl + page.pageSrc;
                         } else {
-                            let filename = page.name.replace(/[:.!?]/g,"").replace(/\s/g, '-').toLowerCase();
+                            let filename = page.name.replace(/[:.!?]/g, "").replace(/\s/g, '-').toLowerCase();
 
                             let prefix = "";
                             if (pathPrefix) {
@@ -131,8 +148,7 @@ export default class DefaultController {
             return navigationPages
         };
 
-
-        configuration.menu = fillOptionalPageProps(rawConfig.menu.pages);
+        configuration.routes = fillOptionalPageProps(rawConfig.menu.pages);
 
         configuration.historyType = "browser";
         let historyType = rawConfig.menu.defaultMenuConfig.historyType;
@@ -158,18 +174,20 @@ export default class DefaultController {
                     }
                 });
             };
-            addPathPrefix(configuration.menu);
+            addPathPrefix(configuration.routes);
         }
 
-        configuration.pagesHierarchy = DefaultController._prepareMenuTree(configuration.menu, historyType);
+        let routes = Object.assign([], configuration.routes);
+        configuration.menu = filterIndexedItems(routes);
+        configuration.pagesHierarchy = DefaultController._prepareRoutesTree(configuration.routes, historyType);
         return configuration;
     }
 
-    static _prepareMenuTree(menuPages, historyType) {
+    static _prepareRoutesTree(menuPages, historyType) {
         let leafSearch = function (menu) {
             let tree = {};
             menu.forEach((leaf) => {
-                let pageName = leaf.name.replace(/[\s+-]/g, '').toLowerCase();
+                let pageName = leaf.name.replace(/(\s+|-)/g, '').toLowerCase();
 
                 if (!tree[pageName]) {
                     let leafPath = leaf.path;
@@ -198,19 +216,20 @@ export default class DefaultController {
     }
 
     _parseSourceUrl(sourceUrl, callback) {
-        sourceUrl = sourceUrl.replace(/[\s+-]/g, '').toLowerCase();
+        sourceUrl = sourceUrl.replace(/(\s+|-)/g, '').toLowerCase();
         let paths = sourceUrl.split("/");
+
         let root = this.configuration.pagesHierarchy;
         for (let i = 0; i < paths.length; i++) {
             if (!root[paths[i]]) {
-                return callback(`${sourceUrl} is not a valid path in the application!`);
+                callback(`${sourceUrl} is not a valid path in the application!`);
             }
 
             if (root[paths[i]].children && i !== paths.length) {
                 root = root[paths[i]].children;
                 continue;
             }
-            return callback(null, root[paths[i]].path)
+            callback(null, root[paths[i]].path)
         }
     }
 
