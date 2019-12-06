@@ -1,146 +1,148 @@
 <?xml version="1.0" encoding="UTF-8"?>
                  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
                  <url>
-        <loc>https://privatesky.xyz/?home</loc>
+        <loc>http://127.0.0.1:8000/?home</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?About/about</loc>
+        <loc>http://127.0.0.1:8000/?About/about</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?About/how-to-create-a-new-site-with-cardinal</loc>
+        <loc>http://127.0.0.1:8000/?About/how-to-create-a-new-site-with-cardinal</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?About/how-to-write-documentation-pages</loc>
+        <loc>http://127.0.0.1:8000/?About/how-to-write-documentation-pages</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?PrivateSky/main-innovations</loc>
+        <loc>http://127.0.0.1:8000/?PrivateSky/main-innovations</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?PrivateSky/architecture</loc>
+        <loc>http://127.0.0.1:8000/?PrivateSky/architecture</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?PrivateSky/development-vision</loc>
+        <loc>http://127.0.0.1:8000/?PrivateSky/development-vision</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?PrivateSky/swarms-explained</loc>
+        <loc>http://127.0.0.1:8000/?PrivateSky/swarms-explained</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?PrivateSky/interactions</loc>
+        <loc>http://127.0.0.1:8000/?PrivateSky/interactions</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?PrivateSky/installation</loc>
+        <loc>http://127.0.0.1:8000/?PrivateSky/installation</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?PrivateSky/code-examples</loc>
+        <loc>http://127.0.0.1:8000/?PrivateSky/code-examples</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?API/privatesky-apis</loc>
+        <loc>http://127.0.0.1:8000/?API/privatesky-apis</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?API/swarms</loc>
+        <loc>http://127.0.0.1:8000/?API/swarms</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?API/interactions</loc>
+        <loc>http://127.0.0.1:8000/?API/interactions</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?API/error-handling</loc>
+        <loc>http://127.0.0.1:8000/?API/error-handling</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?API/domains</loc>
+        <loc>http://127.0.0.1:8000/?API/domains</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?API/blockchain</loc>
+        <loc>http://127.0.0.1:8000/?API/blockchain</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?API/bars</loc>
+        <loc>http://127.0.0.1:8000/?API/bars</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?API/csbs</loc>
+        <loc>http://127.0.0.1:8000/?API/csbs</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?Development/coding-style</loc>
+        <loc>http://127.0.0.1:8000/?Development/coding-style</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?Development/unit-testing-map</loc>
+        <loc>http://127.0.0.1:8000/?Development/unit-testing-map</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?Development/node-modules</loc>
+        <loc>http://127.0.0.1:8000/?Development/node-modules</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?Development/workers-and-isolates</loc>
+        <loc>http://127.0.0.1:8000/?Development/workers-and-isolates</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?Development/encrypted-choreographies</loc>
+        <loc>http://127.0.0.1:8000/?Development/encrypted-choreographies</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?Development/communication</loc>
+        <loc>http://127.0.0.1:8000/?Development/development-guide</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?Development/advanced</loc>
+        <loc>http://127.0.0.1:8000/?Development/communication</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?EDFS/edfs</loc>
+        <loc>http://127.0.0.1:8000/?Development/advanced</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?EDFS/brick-archives</loc>
+        <loc>http://127.0.0.1:8000/?EDFS/edfs</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?EDFS/cloud-safe-boxes</loc>
+        <loc>http://127.0.0.1:8000/?EDFS/brick-archives</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?EDFS/ssapps</loc>
+        <loc>http://127.0.0.1:8000/?EDFS/cloud-safe-boxes</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?Tools/tool-list</loc>
+        <loc>http://127.0.0.1:8000/?EDFS/ssapps</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?Tools/bar</loc>
+        <loc>http://127.0.0.1:8000/?Tools/tool-list</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?Tools/pskadmin</loc>
+        <loc>http://127.0.0.1:8000/?Tools/bar</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?Tools/pskwallet</loc>
+        <loc>http://127.0.0.1:8000/?Tools/pskdomain</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?Tools/csbwizzard</loc>
+        <loc>http://127.0.0.1:8000/?Tools/pskwallet</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?Tools/pskmonitor</loc>
+        <loc>http://127.0.0.1:8000/?Tools/csbwizard</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?Tools/governance</loc>
+        <loc>http://127.0.0.1:8000/?Tools/pskmonitor</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?Cardinal/web-components-mvc</loc>
+        <loc>http://127.0.0.1:8000/?Tools/governance</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?Cardinal/controllers</loc>
+        <loc>http://127.0.0.1:8000/?Cardinal/web-components-mvc</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?Cardinal/themes</loc>
+        <loc>http://127.0.0.1:8000/?Cardinal/controllers</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?Cardinal/events</loc>
+        <loc>http://127.0.0.1:8000/?Cardinal/themes</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?Cardinal/services</loc>
+        <loc>http://127.0.0.1:8000/?Cardinal/events</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?psk-wiki/psk-card</loc>
+        <loc>http://127.0.0.1:8000/?Cardinal/services</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?psk-wiki/psk-chapter</loc>
+        <loc>http://127.0.0.1:8000/?psk-wiki/psk-card</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?psk-wiki/psk-code</loc>
+        <loc>http://127.0.0.1:8000/?psk-wiki/psk-chapter</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?psk-wiki/psk-copy-clipboard</loc>
+        <loc>http://127.0.0.1:8000/?psk-wiki/psk-code</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?psk-wiki/psk-description</loc>
+        <loc>http://127.0.0.1:8000/?psk-wiki/psk-copy-clipboard</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?psk-wiki/psk-example</loc>
+        <loc>http://127.0.0.1:8000/?psk-wiki/psk-description</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?psk-wiki/psk-img</loc>
+        <loc>http://127.0.0.1:8000/?psk-wiki/psk-example</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?psk-wiki/psk-link</loc>
+        <loc>http://127.0.0.1:8000/?psk-wiki/psk-img</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?psk-wiki/psk-list</loc>
+        <loc>http://127.0.0.1:8000/?psk-wiki/psk-link</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?psk-wiki/psk-page</loc>
+        <loc>http://127.0.0.1:8000/?psk-wiki/psk-list</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?psk-wiki/psk-table</loc>
+        <loc>http://127.0.0.1:8000/?psk-wiki/psk-page</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?psk-wiki/psk-toc</loc>
+        <loc>http://127.0.0.1:8000/?psk-wiki/psk-table</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?web-components/page-not-found</loc>
+        <loc>http://127.0.0.1:8000/?psk-wiki/psk-toc</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?web-components/feedback-list</loc>
+        <loc>http://127.0.0.1:8000/?web-components/page-not-found</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?web-components/app-router</loc>
+        <loc>http://127.0.0.1:8000/?web-components/feedback-list</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?web-components/attachments-list</loc>
+        <loc>http://127.0.0.1:8000/?web-components/app-router</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?web-components/files-chooser</loc>
+        <loc>http://127.0.0.1:8000/?web-components/attachments-list</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?web-components/modal</loc>
+        <loc>http://127.0.0.1:8000/?web-components/files-chooser</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?web-components/pin-popup</loc>
+        <loc>http://127.0.0.1:8000/?web-components/modal</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?web-components/ui-loader</loc>
+        <loc>http://127.0.0.1:8000/?web-components/pin-popup</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?web-components/user-profile</loc>
+        <loc>http://127.0.0.1:8000/?web-components/ui-loader</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?web-components/wizard</loc>
+        <loc>http://127.0.0.1:8000/?web-components/user-profile</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?web-components/floating-menu</loc>
+        <loc>http://127.0.0.1:8000/?web-components/wizard</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?web-components/icon</loc>
+        <loc>http://127.0.0.1:8000/?web-components/floating-menu</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?web-components/grid</loc>
+        <loc>http://127.0.0.1:8000/?web-components/icon</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?web-components/container</loc>
+        <loc>http://127.0.0.1:8000/?web-components/grid</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?web-components/toolbar</loc>
+        <loc>http://127.0.0.1:8000/?web-components/container</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?web-components/app-menu</loc>
+        <loc>http://127.0.0.1:8000/?web-components/toolbar</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?glossary</loc>
+        <loc>http://127.0.0.1:8000/?web-components/app-menu</loc>
+      </url><url>
+        <loc>http://127.0.0.1:8000/?glossary</loc>
       </url>
                  </urlset>
