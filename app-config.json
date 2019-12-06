@@ -1,6 +1,6 @@
 {
-  "baseUrl": "https://privatesky.xyz",
-  "basePagesUrl": "https://privatesky.xyz/pages/",
+  "baseUrl": "http://127.0.0.1:8000",
+  "basePagesUrl": "http://127.0.0.1:8000/pages/",
   "profile": {
     "username": "PrivateSky",
     "email": "privatesky@axiologic.net",
@@ -119,6 +119,9 @@
             "name": "Encrypted Choreographies"
           },
           {
+            "name": "Development guide"
+          },
+          {
             "name": "Communication"
           },
           {
@@ -157,13 +160,13 @@
             "name": "bar"
           },
           {
-            "name": "PSKAdmin"
+            "name": "PSKDomain"
           },
           {
             "name": "PSKWallet"
           },
           {
-            "name": "CSBWizzard"
+            "name": "CSBWizard"
           },
           {
             "name": "PSKMonitor"
