@@ -1,0 +1,1 @@
+System.register(["./p-226ad382.system.js"],function(r){"use strict";var t,e;return{setters:[function(r){t=r.r;e=r.h}],execute:function(){var n=r("psk_route_redirect",function(){function r(r){t(this,r)}r.prototype.render=function(){if(!this.url){return new Error("url is not provided")}return e("stencil-route-redirect",{url:this.url})};return r}())}}});

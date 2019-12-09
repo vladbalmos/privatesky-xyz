@@ -49,6 +49,8 @@
       </url><url>
         <loc>https://privatesky.xyz/?Development/encrypted-choreographies</loc>
       </url><url>
+        <loc>https://privatesky.xyz/?Development/development-guide</loc>
+      </url><url>
         <loc>https://privatesky.xyz/?Development/communication</loc>
       </url><url>
         <loc>https://privatesky.xyz/?Development/advanced</loc>
@@ -65,11 +67,11 @@
       </url><url>
         <loc>https://privatesky.xyz/?Tools/bar</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?Tools/pskadmin</loc>
+        <loc>https://privatesky.xyz/?Tools/pskdomain</loc>
       </url><url>
         <loc>https://privatesky.xyz/?Tools/pskwallet</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?Tools/csbwizzard</loc>
+        <loc>https://privatesky.xyz/?Tools/csbwizard</loc>
       </url><url>
         <loc>https://privatesky.xyz/?Tools/pskmonitor</loc>
       </url><url>

@@ -1,0 +1,41 @@
+* {
+    outline: none !important;
+}
+
+:host {
+    scroll-behavior: smooth;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    font-size: 1rem;;
+}
+thead{
+    background: rgb(94,127,225);
+    background: linear-gradient(184deg, rgba(94,127,225,1) 0%, rgba(53,79,152,1) 100%);
+    color:#fff;
+    font-weight: bold;
+}
+
+tbody{
+    background-color: #f5f5ff;
+    color:#565656;
+}
+
+tfoot{
+    background-color: #f5f5ff;
+    color:#565656;
+    font-weight: bold;
+    font-style: italic;
+}
+
+th,td{
+    padding:10px;
+    text-align: left;
+    border: 1px solid #cccccc;
+}
+
+td{
+    font-size: 90%;
+}
