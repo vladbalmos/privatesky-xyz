@@ -15,10 +15,10 @@
     	<li>With Swarms in the same process</li>
     	<li>With Swarms between processes on the same machine</li>
     	<li>With Swarms intermediate by virtualMQ</li>
-    	<li>With Swarms between service workers in browsers<li>
+    	<li>With Swarms between service workers in browsers</li>
     </ul>
     <p align="justify">From the point of view of identities (a term that symbolizes the agent in whose name a phase of the swarm is executed but also the location where it is executed) we distinguish several cases that are presented in the following table:</p>
-    <psk-table title = "Use-cases for swarms" dimensions="50|50" header="true">
+    <psk-table title = "Use-cases for swarms" dimensions="50|50" head="true">
     	<b>Case</b> | <b>How to identify the agents</b>
     	Swarms in the same process | Strings as identities
     	Swarms between processes on the same machine | Identities that through a name service translate into local process ids
@@ -38,7 +38,7 @@
     <p align="justify">These strategies are injected into SwarmEngine. SwarmEngine is used by swarm_template to implement primitives specific to swarm-type executable choreographies.</p>
     <psk-img src="/pages/Development/SwarmEngine.png" title="Swarm Engine Architecture"></psk-img>
 
-    <psk-table title = "Swarm Engine Architecture" dimensions="25|50|25" header="true">
+    <psk-table title = "Swarm Engine Architecture" dimensions="25|50|25" head="true">
     	<b>Component</b> | <b>Features</b> | <b>Caller</b>
     	SwarmEngine |                                   
     	              init(identity)
@@ -67,33 +67,33 @@
   </psk-chapter>
 
   <psk-chapter title="Types of swarms that can benefit from annotations. Approaches.">
-  	<psk-table title = "Types of swarms that can benefit from annotations. Approaches." dimensions="50|50|" header="true">
+  	<psk-table title = "Types of swarms that can benefit from annotations. Approaches." dimensions="50|50" head="true">
     	<b>Type</b> | <b>Aspects that can be programmed using AOP with annotations</b>
     	flow | checking data types
     	swarm (verifiable choreography) | checking data types
     	encrypted choreography | checking data types
-    							 automatic encryption / decryption
-    							 automatic signature / verification
+    						|	 automatic encryption / decryption
+    						|	 automatic signature / verification
         serverless choreography | checking data types
         asset | checking value data types
-        		checking reference data types
-        		generate GraphQL schemes
-        		GraphQL code generation for queries
-        		GraphQL code generation for mutations
-        		indexing assets
+        	| checking reference data types
+        	|	generate GraphQL schemes
+        	|	GraphQL code generation for queries
+        	|	GraphQL code generation for mutations
+        	|	indexing assets
         transaction | checking data types
         choreographic smart contract | checking data types
-        							   use in assets
-    </psk-table>
+        							 |  use in assets
+    </psk-table><br>
 
-    <psk-table title = "Use cases of the Annotations identified" dimensions="50|50|" header="true">
+    <psk-table title = "Use cases of the Annotations identified" dimensions="50|50" head="true">
     	<b>Use cases</b> | <b>Description</b>
     	value data types | Annotations can be used to type (validate and verify) the properties of swarms. Value type data types are int, number, string, data, JSON
     	embedded object dată types | The initial implementation can be based on the JSON value data type
     	reference data types | This type of data refers only to assets referenced from another asset (specific to smart contracts)
     	Integration with GraphQL | generate schema description (SDL)
-    							   automatic generation of Queries
-    							   automatic generation of Mutations
+    							  | automatic generation of Queries
+    							  | automatic generation of Mutations
     	encrypted choreographies and smart contracts that use encryption | The use of security contexts can be facilitated by the use of annotations that mark the fact that the data must be encrypted, decrypted, signed or authenticated.
     	indexing assets in the blockchain | assets can have fields annotated with index annotation which signals that world state cache will index assets after that field to speed query
     </psk-table>
@@ -102,30 +102,11 @@
   <psk-chapter title="Syntax of Annotations">
   	<p align="justify">We will use the EBNF (Extended Backus-Naur Form) to describe the specific syntax of the new annotation mechanisms achieved through research in collaboration with the DPO.</p>
 
-  <psk-table title = "Swarm variable syntax definition" dimensions="50|50|" header="false">
-  	identifier                  |     COMMA 
-   : [_|ALFA|NUMERIC]+ | : ,
-   ;                   | ;
-numeric                | 
-   : INT               | SEMICOL
-   : FLOAT             | : “:”
-   ;                   | ;
-                       | 
-STRING                 | OPEN_PARANTHESE
-   : CHARACTER+        | : “;”
-   ;                   | ;
-                       | 
-WS                     | CLOSE_PARANTHESE
-   : [ \r\n\t] -> skip |  : “;”
-   ;                   | ;
-                       | 
-QU                     | variable
-   : “                 | 	: WS identifier WS SEMICOL WS QU adnotations QU
-   : ‘                 | ;
-   ;
-</psk-table>
+  <psk-table title = "Swarm variable syntax definition" dimensions="50|50" head="false">
+  	identifier <br> : [_|ALFA|NUMERIC]+ <br> | : , <br> ; <br> numeric <br> : INT <br> : FLOAT <br> ; <br> STRING <br> ; <br> WS <br> : [ \r\n\t] -> skip <br> ; <br> QU <br> : “ <br> : ‘ <br> ; | COMMA <br> :, <br> ; <br> SEMICOL <br> : “:” <br> ; <br> OPEN_PARANTHESE <br> : “;” <br> ; <br>  CLOSE_PARANTHESE <br> : “;” <br> ; <br> variable <br> : WS identifier WS SEMICOL WS QU adnotations QU <br> ;
+   </psk-table>
 
-<psk-table title="Annotations syntax definition" dimensions="50|50|" header="false">
+<psk-table title="Annotations syntax definition" dimensions="50|50" head="false">
 	adnotations                 | params
 : adnotation                    | 	:OPEN_PARANTHESE valueList
 | adnotation COMMA adnotations  | CLOSE_PARANTHESE
