@@ -102,9 +102,7 @@
   <psk-chapter title="Syntax of Annotations">
   	<p align="justify">We will use the EBNF (Extended Backus-Naur Form) to describe the specific syntax of the new annotation mechanisms achieved through research in collaboration with the DPO.</p>
 
-  <psk-table title = "Swarm variable syntax definition" dimensions="50|50" head="false">
-  	identifier <br> : [_|ALFA|NUMERIC]+ <br> | : , <br> ; <br> numeric <br> : INT <br> : FLOAT <br> ; <br> STRING <br> ; <br> WS <br> : [ \r\n\t] -> skip <br> ; <br> QU <br> : “ <br> : ‘ <br> ; | COMMA <br> :, <br> ; <br> SEMICOL <br> : “:” <br> ; <br> OPEN_PARANTHESE <br> : “;” <br> ; <br>  CLOSE_PARANTHESE <br> : “;” <br> ; <br> variable <br> : WS identifier WS SEMICOL WS QU adnotations QU <br> ;
-   </psk-table>
+  <psk-img src="/pages/Development/SwarmVariableSyntax.png"></psk-img>
 
 <psk-table title="Annotations syntax definition" dimensions="50|50" head="false">
 	adnotations                 | params
