@@ -2,10 +2,10 @@
   <psk-chapter title="Strategies in the execution engine of swarms. Blockchain domains in PrivateSky.">
     <p align="justify">All applications developed using PrivateSky technologies will be run in what we call <i>"blockchain domain"</i>. A blockchain domain, it is an environment for running internal DSL JavaScript code for swarms.</p>
     <p>Our research has identified 4 PrivateSky domains, as can be seen in the following figure:</p>
-    <psk-img src="/pages/Development/TypesOfDomains.png" title="Types of domains"></psk-img><br>
+    <psk-img src="/pages/Development/TypesOfDomains.png" title="Types of domains"></psk-img>
     <p align="justify">These types of domains, if implemented with PrivateSky, require swarm communication in different ways of execution environments.</p>
     <p align="justify">We have several ways to run (execute) the PrivateSky domain code as shown in the following image:</p>
-    <psk-img src="/pages/Development/TypesOfExecutions.png" title="Types of executions in PrivateSky"></psk-img><br>
+    <psk-img src="/pages/Development/TypesOfExecutions.png" title="Types of executions in PrivateSky"></psk-img>
     <p align="justify">In the ThreadExecution execution mode, PrivateSky provides node.js workers.</p>
     <p align="justify">In IsolateExecution execution mode, PrivateSky provides a swarm communication execution environment based on Isolates technology.</p>
     <p align="justify">For the execution of self sovereign applications, the ServiceWorkerExecution execution mode is used. As the name suggests, the PrivateSky domains represented in the form of CSB (Cloud Safe Box) are executed in service workers.</p>
@@ -36,7 +36,7 @@
     </ul>
 
     <p align="justify">These strategies are injected into SwarmEngine. SwarmEngine is used by swarm_template to implement primitives specific to swarm-type executable choreographies.</p>
-    <psk-img src="/pages/Development/SwarmEngine.png" title="Swarm Engine Architecture"></psk-img><br>
+    <psk-img src="/pages/Development/SwarmEngine.png" title="Swarm Engine Architecture"></psk-img>
 
     <psk-table title = "Swarm Engine Architecture" dimensions="25|50|25" header="true">
     	<b>Component</b> | <b>Features</b> | <b>Caller</b>
@@ -143,7 +143,7 @@ adnotation                      | 	: identifier
 
 
 <psk-chapter title="Mechanism for semantic annotation implementation">
-	<psk-img src="/pages/Development/AnnotationEngine.png" title="Annotation Engine Mechanism"></psk-img><br>
+	<psk-img src="/pages/Development/AnnotationEngine.png" title="Annotation Engine Mechanism"></psk-img>
 	<p align="justify">The proposed implementation in the discussions with DPO is to have a generic Annotation Engine (AE) component capable of recording new types of annotations. We have currently identified several types of events that trigger an internal communication with AE:</p>
 	<ul>
 		<li>When uploading a scheme, it may be necessary to create certain initializations in one or more annotations registered in the AE</li>
