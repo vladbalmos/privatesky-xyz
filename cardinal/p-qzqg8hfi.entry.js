@@ -1,1 +1,0 @@
-import{r,h as t}from"./p-bd5842d7.js";const e=class{constructor(t){r(this,t)}render(){return console.log("sunt here",this.url),this.url?t("stencil-route-redirect",{url:this.url}):new Error("url is not provided")}};export{e as psk_route_redirect};

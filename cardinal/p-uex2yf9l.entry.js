@@ -1,0 +1,1 @@
+import{r as t,h as o,g as e}from"./p-bd5842d7.js";const n=class{constructor(o){t(this,o),this.model=null}componentWillLoad(){console.log(this._host),console.log("To be continued after binding implementation...")}render(){return o("slot",null)}get _host(){return e(this)}};export{n as psk_template_iterator};

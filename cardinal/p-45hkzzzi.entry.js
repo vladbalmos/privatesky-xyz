@@ -1,0 +1,1 @@
+import{r as s,h as t}from"./p-bd5842d7.js";const r=class{constructor(t){s(this,t),this.label=null,this.for=null}render(){return t("label",{htmlFor:this.for},this.label)}};export{r as psk_label};
