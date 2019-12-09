@@ -25,7 +25,7 @@
     	Swarms intermediate by virtualMQ that come from clients | Ids of agents that translate into VirtualMQ topics
     	Swarms that broadcast or communicate with other blockchain identities | Ids of agents that translate into VirtualMQ topics
     	Swarms between service workers in browsers | Strings that through a name service are reflected in localhost url to service workers
-    </psk-table>
+    </psk-table><br>
 
     <p align="justify">SwarmEngine operation is regulated by the following strategies:</p>
     <ul>
@@ -40,25 +40,24 @@
 
     <psk-table title = "Swarm Engine Architecture" dimensions="25|50|25" head="true">
     	<b>Component</b> | <b>Features</b> | <b>Caller</b>
-    	SwarmEngine |                                   
-    	              init(identity)
-    	              stop()                     | initialisation
-    	              loadBar(seed, callback)
+    	SwarmEngine | init(identity) |
+    	| stop()  | initialisation
+    	| loadBar(seed, callback) |
     	SerialisationStrategy | serialise(swarmInstance):JSON | swarm_template
-    							deserialise(JSON):swarmInstance
+    	| deserialise(JSON):swarmInstance |
         SwarmNameService | getLocation(identity):url | SwarmComm
-        				   registerLocation(identity, locationObject) | -
+        | registerLocation(identity, locationObject) | -
         SwarmCommunication | sendSwarmMessage(serialisation, toIdentity) | swarm_template
-        					 broadcastMessage(serialisation, toGroup) | 
-        					 enableSwarmExecution(callback) | SwarmEngine
-        					 loadBar(seed, callback)
+        | broadcastMessage(serialisation, toGroup) | 
+        | enableSwarmExecution(callback) | SwarmEngine
+        | loadBar(seed, callback) |
         SecurityContext | generateIdentity(callback) | 
-        				  getCurrentAgentIdentity()
-        				  getSecret(readList, callback)
-        				  shareSecret(secret, list, callback)
-        				  sign(digest, writeList, all, callback)
-        				  verify(pskSignature)
-        				  generateRandom(len = 32)
+        | getCurrentAgentIdentity() |
+        | getSecret(readList, callback) |
+        | shareSecret(secret, list, callback) |
+        | sign(digest, writeList, all, callback) |
+        | verify(pskSignature) |
+        | generateRandom(len = 32) |
     </psk-table>
   </psk-chapter>
 
@@ -71,19 +70,19 @@
     	<b>Type</b> | <b>Aspects that can be programmed using AOP with annotations</b>
     	flow | checking data types
     	swarm (verifiable choreography) | checking data types
-    	encrypted choreography | checking data types
-    						|	 automatic encryption / decryption
-    						|	 automatic signature / verification
+    	| checking data types
+    	encrypted choreography | automatic encryption / decryption
+    	| automatic signature / verification
         serverless choreography | checking data types
-        asset | checking value data types
-        	| checking reference data types
-        	|	generate GraphQL schemes
-        	|	GraphQL code generation for queries
-        	|	GraphQL code generation for mutations
-        	|	indexing assets
+        | checking value data types
+        | checking reference data types
+        asset	|	generate GraphQL schemes
+        |	GraphQL code generation for queries
+        |	GraphQL code generation for mutations
+        |	indexing assets
         transaction | checking data types
         choreographic smart contract | checking data types
-        							 |  use in assets
+        |  use in assets
     </psk-table><br>
 
     <psk-table title = "Use cases of the Annotations identified" dimensions="50|50" head="true">
@@ -92,8 +91,8 @@
     	embedded object dată types | The initial implementation can be based on the JSON value data type
     	reference data types | This type of data refers only to assets referenced from another asset (specific to smart contracts)
     	Integration with GraphQL | generate schema description (SDL)
-    							  | automatic generation of Queries
-    							  | automatic generation of Mutations
+    	| automatic generation of Queries
+    	| automatic generation of Mutations
     	encrypted choreographies and smart contracts that use encryption | The use of security contexts can be facilitated by the use of annotations that mark the fact that the data must be encrypted, decrypted, signed or authenticated.
     	indexing assets in the blockchain | assets can have fields annotated with index annotation which signals that world state cache will index assets after that field to speed query
     </psk-table>
