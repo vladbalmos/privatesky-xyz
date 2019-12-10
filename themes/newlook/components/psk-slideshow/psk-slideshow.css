@@ -42,7 +42,8 @@
   position:absolute;
   list-style:none;
   background-repeat: no-repeat;
-  background-size: contain;
+  /* background-size: contain; */
+  background-size: cover;
   background-position: center;
   left: 0;
   top: 5%;
@@ -76,17 +77,24 @@
   padding:40px;
   background-color:rgb(255,255,255);
   margin:0 40px;
-  box-shadow: rgba(76, 113, 222, 0.5) 0px 30px 30px 10px;
+  box-shadow: rgba(76, 113, 222, 0.3) 0px 20px 40px 0.1px;
 
+}
+
+@media(max-width:1200px){
+  .content{
+    padding: 5px;
+    font-size: 85%;
+  }
 }
 
 @media(max-width:960px){
   .content{
     padding: 5px;
-    font-size: 80%;
-   
+    font-size: 75%;
   }
 }
+
 
 .content .title{
   font-size: 175%;
@@ -94,7 +102,7 @@
   font-weight:bold;
 }
 .content .caption{
-  font-size: 131%;
+  font-size: 131.25%;
   color: #565656;
 
 }
