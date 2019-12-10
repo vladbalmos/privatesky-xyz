@@ -80,6 +80,14 @@
     top:150px;
 }
 
+@media(max-width:960px){
+    .table-of-content{
+    position: static;
+     margin:0 auto;
+     padding-bottom: 0;
+    }
+  }
+
 .table-of-content .psk-card .card-body,
 .table-of-content .psk-card .card-header
 {
