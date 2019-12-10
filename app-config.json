@@ -47,10 +47,15 @@
             "name": "Main Innovations"
           },
           {
+            "name": "Why",
+            "indexed": "false"
+          },
+          {
             "name": "Architecture"
           },
           {
-            "name": "Development Vision"
+            "name": "Development Vision",
+            "indexed": "false"
           },
           {
             "name": "Swarms Explained"
