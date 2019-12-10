@@ -11,10 +11,20 @@
     display: block;
     
 }
-.page-content {
+.page-content{
     color: #565656;
     margin-right: 20rem;
     width: auto;
+}
+
+@media(max-width:960px){
+    .page-content{
+     margin-right: 0;
+    }
+  }
+
+.container{
+    max-width:100%;
 }
 
 nav {
