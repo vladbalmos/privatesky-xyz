@@ -82,8 +82,8 @@ export default class DefaultController extends Controller {
                 if (menuItems[i].children) {
                     filterIndexedItems(menuItems[i].children);
                 } else {
-                    if (menuItems[i].indexed === false) {
-                        menuItems.splice(i,1) ;
+                    if (typeof menuItems[i].indexed !== "undefined" && menuItems[i].indexed.toString() === "false") {
+                        menuItems.splice(i, 1);
                     }
                 }
             }
@@ -174,7 +174,7 @@ export default class DefaultController extends Controller {
             addPathPrefix(configuration.routes);
         }
 
-        let routes = Object.assign([], configuration.routes);
+        let routes = JSON.parse(JSON.stringify(configuration.routes));
         configuration.menu = filterIndexedItems(routes);
         configuration.pagesHierarchy = DefaultController._prepareRoutesTree(configuration.routes, historyType);
         return configuration;

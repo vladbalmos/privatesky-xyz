@@ -26,7 +26,7 @@ aside {
   min-width: 320px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: safe center;
   overflow: auto;
   scrollbar-color:#fff #354f98;
   scrollbar-width: thin;
@@ -35,7 +35,8 @@ aside {
 aside .hydrated{
   display:flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: safe center;
+
 
 }
 
@@ -51,6 +52,7 @@ aside .hydrated{
 .nav-footer.bottom-stick{
  color:#FFF;
   background: #ffffff1a;
+
 }
 
 section{
