@@ -130,6 +130,12 @@
           },
           {
             "name": "Advanced"
+          },
+          {
+            "name": "Swarm Engine"
+          },
+          {
+            "name": "Annotation Engine"
           }
         ]
       },
