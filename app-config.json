@@ -129,7 +129,8 @@
             "name": "Communication"
           },
           {
-            "name": "Advanced"
+            "name": "Advanced",
+            "indexed": "false"
           },
           {
             "name": "Swarm Engine"
