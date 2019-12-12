@@ -1,3 +1,6 @@
+:host{
+  margin-top:19px;
+}
 .card-body img{
   float:left;
   margin-right: 10px;
@@ -9,6 +12,6 @@
 }
 
 .profile{
-  padding: 5px;
+  padding-left: 20px;
 }
 
