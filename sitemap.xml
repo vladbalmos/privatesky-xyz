@@ -11,11 +11,7 @@
       </url><url>
         <loc>https://privatesky.xyz/?PrivateSky/main-innovations</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?PrivateSky/why</loc>
-      </url><url>
         <loc>https://privatesky.xyz/?PrivateSky/architecture</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?PrivateSky/development-vision</loc>
       </url><url>
         <loc>https://privatesky.xyz/?PrivateSky/swarms-explained</loc>
       </url><url>
@@ -55,7 +51,9 @@
       </url><url>
         <loc>https://privatesky.xyz/?Development/communication</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?Development/advanced</loc>
+        <loc>https://privatesky.xyz/?Development/swarm-engine</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?Development/annotation-engine</loc>
       </url><url>
         <loc>https://privatesky.xyz/?EDFS/edfs</loc>
       </url><url>
@@ -140,6 +138,8 @@
         <loc>https://privatesky.xyz/?web-components/grid</loc>
       </url><url>
         <loc>https://privatesky.xyz/?web-components/container</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?web-components/slideshow</loc>
       </url><url>
         <loc>https://privatesky.xyz/?web-components/toolbar</loc>
       </url><url>
