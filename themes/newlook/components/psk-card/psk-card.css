@@ -80,14 +80,6 @@
     top:150px;
 }
 
-@media(max-width:960px){
-    .table-of-content{
-    position: static;
-     margin:0 auto;
-     padding-bottom: 0;
-    }
-  }
-
 .table-of-content .psk-card .card-body,
 .table-of-content .psk-card .card-header
 {
@@ -200,5 +192,48 @@
     padding-top: 130px;
     margin-top:5rem;
 }
+@media(max-width:960px){
+    .table-of-content{
+     position: static;
+     margin:0 auto;
+     padding-bottom: 0;
+    }
+    .table-of-content .card-body span{
+        font-size: 0.875rem;
+    }
+    .table-of-content .psk-card ul{
+        margin:0;
+        padding-bottom: 0;
+    }
+
+    .card.psk-card,
+    .image_container {
+        padding:20px 5px 5px;
+    } 
+      /** first level*/
+    .psk-card .card-header{ 
+        padding: 5px 10px;
+    }
+    .psk-card .card-header h5 {
+        font-size:1.125rem;
+    }
+    .psk-card h1{
+        font-size:1.3125rem;
+    }
+    /** second level*/
+     .psk-card .psk-card .card-header h5{
+        font-size: 0.875rem;
+    } 
+    .psk-card .card-body{
+        padding:5px 10px;
+        font-size: 0.875rem;
+    }
+    .psk-card .card-body div{
+        padding-top:8px;
+    }
+    .psk-card#not-available{
+        left:0;
+    }
+  }
 
 

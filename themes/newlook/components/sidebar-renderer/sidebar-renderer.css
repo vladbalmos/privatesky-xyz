@@ -96,6 +96,8 @@ display: block;
   background: none;
   top:10px;
   width:100%;
+  padding-bottom: 15px;
+  margin-top: -10px;
 }
 
 :host([hamburger]) div.children .item_container{
@@ -107,3 +109,6 @@ display: block;
   width: 100%;
 }
 
+:host([hamburger]) .wrapper_container{
+  padding-right:40px;
+}
