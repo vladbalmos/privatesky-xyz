@@ -156,6 +156,9 @@
           },
           {
             "name": "SSApps"
+          },
+          {
+            "name": "Secret Smart Contracts"
           }
         ]
       },
@@ -196,16 +199,19 @@
             "name": "Web Components MVC"
           },
           {
-            "name": "Controllers"
+            "name": "Models"
           },
           {
-            "name": "Themes"
+            "name": "Views"
+          },
+          {
+            "name": "Controllers"
           },
           {
             "name": "Events"
           },
           {
-            "name": "Services"
+            "name": "Themes"
           }
         ]
       },

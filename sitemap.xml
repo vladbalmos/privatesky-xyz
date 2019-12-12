@@ -63,6 +63,8 @@
       </url><url>
         <loc>https://privatesky.xyz/?EDFS/ssapps</loc>
       </url><url>
+        <loc>https://privatesky.xyz/?EDFS/secret-smart-contracts</loc>
+      </url><url>
         <loc>https://privatesky.xyz/?Tools/tool-list</loc>
       </url><url>
         <loc>https://privatesky.xyz/?Tools/bar</loc>
@@ -79,13 +81,15 @@
       </url><url>
         <loc>https://privatesky.xyz/?Cardinal/web-components-mvc</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?Cardinal/controllers</loc>
+        <loc>https://privatesky.xyz/?Cardinal/models</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?Cardinal/themes</loc>
+        <loc>https://privatesky.xyz/?Cardinal/views</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?Cardinal/controllers</loc>
       </url><url>
         <loc>https://privatesky.xyz/?Cardinal/events</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?Cardinal/services</loc>
+        <loc>https://privatesky.xyz/?Cardinal/themes</loc>
       </url><url>
         <loc>https://privatesky.xyz/?psk-wiki/psk-card</loc>
       </url><url>
