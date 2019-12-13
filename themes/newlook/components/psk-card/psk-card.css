@@ -2,11 +2,11 @@
 .image_container {
     background: none;
     border: none;
-    padding:30px 20px 10px;
+    padding:30px 0px 10px;
 } 
 
 .image_wrapper{
-    padding: 10px 20px 0;
+    padding-top: 10px;
 }
 
 /** first level*/
@@ -14,7 +14,8 @@
 .psk-card .card-header{
     background: none;
     border-bottom: none;   
-    padding: 10px 20px 0;
+    padding:10px 0 0;
+    
 }
 
 .psk-card .card-header h5 {
@@ -40,7 +41,7 @@
 
 
 .psk-card .card-body{
-    padding:10px 20px 0;
+    padding:10px 0 0;
     line-height: 1.6;
     font-size: 1rem;
 }
@@ -106,12 +107,15 @@
 }
 
 .table-of-content .card-body span:hover{
-    font-weight: 600;
+    color:#00289c;
+    font-weight: 500;
 }
 
 .psk-card .table-of-content{
    position:static;
 }
+
+
 
 
 /* code tag */
@@ -225,7 +229,7 @@
         font-size: 0.875rem;
     } 
     .psk-card .card-body{
-        padding:5px 10px;
+        padding:5px 0px;
         font-size: 0.875rem;
     }
     .psk-card .card-body div{

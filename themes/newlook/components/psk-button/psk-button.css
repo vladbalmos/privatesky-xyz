@@ -18,3 +18,17 @@
     background-color: #5E7FE1;
     border-style:none;
 }
+
+/* first page */
+.btn.btn-primary{
+    background-color: transparent;
+    color:#354F9B;
+    font-weight: 700;
+    font-size: 1.3125rem;
+    width:200px;
+}
+.btn.btn-primary:hover{
+    background-color: #5E7FE1;
+    border-style:none;
+    color:#fff;
+}

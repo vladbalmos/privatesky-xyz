@@ -41,7 +41,7 @@ https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javasc
  code[class*="language-"]::-moz-selection,
  code[class*="language-"] ::-moz-selection {
      text-shadow: none;
-     background: #b3d4fc;
+     background: #DEEDFF;
  }
  
  pre[class*="language-"]::selection,
@@ -49,7 +49,7 @@ https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javasc
  code[class*="language-"]::selection,
  code[class*="language-"] ::selection {
      text-shadow: none;
-     background: #b3d4fc;
+     background: #DEEDFF;
  }
  
  @media print {

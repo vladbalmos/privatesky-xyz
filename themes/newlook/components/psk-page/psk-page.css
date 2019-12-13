@@ -15,11 +15,13 @@
     color: #565656;
     margin-right: 20rem;
     width: auto;
+    padding:0 60px;
 }
 
 @media(max-width:960px){
     .page-content{
      margin-right: 0;
+     padding:0 15px;
     }
   }
 
@@ -33,11 +35,24 @@ nav {
     background-color: #fff;
     box-shadow: 0 .15rem 1rem 0 rgba(58, 59, 69, .2);
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
 }
 
 nav h3 {
-    display:none;
+    color:rgb(94, 127, 225);
+    font-weight: 600;
+    text-align: left center;
+    margin:0;
+    padding-left:60px;
+    font-size: 2.3125rem;
 }
+@media(max-width:960px){
+    nav h3{
+     padding:0 15px;
+     font-size: 1.3125rem;
+    }
+  }
 
 /* a,
 *:hover,

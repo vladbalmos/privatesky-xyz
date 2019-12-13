@@ -50,7 +50,8 @@ a:hover,
 .item_container:hover > .item_name,
 .children .item_container .item_name:hover,
 a.active .item_name{
-  font-weight: 800;
+
+opacity: 85%;
 }
 
 /* no lines on subcategory */

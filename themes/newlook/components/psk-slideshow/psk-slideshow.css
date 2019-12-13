@@ -2,6 +2,7 @@
   box-sizing: border-box;
 }
 
+
 .psk-slideshow-container {
   margin:0 auto;
   overflow:hidden;
@@ -42,7 +43,6 @@
   position:absolute;
   list-style:none;
   background-repeat: no-repeat;
-  /* background-size: contain; */
   background-size: cover;
   background-position: center;
   left: 0;
@@ -81,21 +81,6 @@
 
 }
 
-@media(max-width:1200px){
-  .content{
-    padding: 5px;
-    font-size: 85%;
-  }
-}
-
-@media(max-width:960px){
-  .content{
-    padding: 5px;
-    font-size: 75%;
-  }
-}
-
-
 .content .title{
   font-size: 175%;
   color: #354F9B;
@@ -116,5 +101,26 @@
   text-align: center;
 }
 
+@media(max-width:1200px){
+  .content{
+    padding: 20px 10px;
+    font-size: 85%;
+  }
+}
 
-
+@media(max-width:960px){
+  
+  .content{
+    padding: 20px 10px;
+    font-size: 75%;
+    margin:40px 20px;
+    position: absolute;
+    top:0;
+  }
+  .content .actions{
+    margin-top:0px;
+    display:flex;
+    flex-direction: column;
+  }
+  
+}
