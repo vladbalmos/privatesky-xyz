@@ -2,11 +2,16 @@
 .image_container {
     background: none;
     border: none;
-    padding:30px 0px 10px;
+    padding:20px 0px 10px;
 } 
 
 .image_wrapper{
     padding-top: 10px;
+}
+
+.psk-card p{
+ margin:0;
+ padding:0.5rem 0;
 }
 
 /** first level*/
@@ -216,7 +221,7 @@
     } 
       /** first level*/
     .psk-card .card-header{ 
-        padding: 5px 10px;
+        padding: 5px 0px;
     }
     .psk-card .card-header h5 {
         font-size:1.125rem;
@@ -237,6 +242,12 @@
     }
     .psk-card#not-available{
         left:0;
+    }
+    .psk-card#not-available .card-header h5{
+        font-size: 1.3125rem;
+    }
+    .psk-card#not-available .card-body{
+        font-size: 1rem;
     }
   }
 

@@ -33,7 +33,7 @@
         left:0px;
     }
     .card .card-body p,
-    .card .card-header h5{
+    .card .card-header h2{
         font-size: 70%;
     }
 }
