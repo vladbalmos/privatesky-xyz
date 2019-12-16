@@ -23,12 +23,18 @@ aside {
   color: white;
   order:1;
   flex: 1;
+  display: grid;
+  grid-template-rows: auto 1fr 40px;
   min-width: 320px;
-  display: flex;
-  flex-direction: column;
   overflow: auto;
   scrollbar-color:#fff #354f98;
   scrollbar-width: thin;
+}
+@media(max-width:960px){
+  aside{
+    grid-template-rows:auto;
+  }
+  
 }
 
 aside .hydrated{
@@ -54,7 +60,7 @@ aside .hydrated{
 
 section{
   height:100%;
-  overflow:hidden auto;
+  overflow:auto;
   scrollbar-color: #354F9B #E5E5E5;
   scrollbar-width: thin;
 }
