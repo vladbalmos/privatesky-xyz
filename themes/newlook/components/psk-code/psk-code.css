@@ -70,7 +70,7 @@ https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javasc
  
  :not(pre)>code[class*="language-"],
  pre[class*="language-"] {
-     background: #E8E8FF;
+     background: #eceff1;
  }
  
  
