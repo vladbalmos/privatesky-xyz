@@ -3,7 +3,8 @@
     width:20rem;
     position: fixed;
     right:0;
-    top:150px;
+    top:125px;
+    overflow: auto;
 }
 
 .table-of-content .psk-card .card-body,
@@ -68,8 +69,7 @@
 }
 .table-of-content .card-body li span:hover
 {
-    color:#00289c;
-    font-weight: 500;
+    color:#0029b4;
 }
 
 
