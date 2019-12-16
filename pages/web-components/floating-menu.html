@@ -5,6 +5,9 @@
     <psk-description>
         <p>This component is providing page options in a Floating Menu style.</p>
         <p>It is mandatory in order to not make the site too cramped up.</p>
+        <p>Each element of this menu is a direct redirect to that page if it exists, else it redirect to the page you
+            were before.</p>
+        <p>It uses the name and the path in order to create a <code>href</code> that redirects to that page.</p>
     </psk-description>
 
     <psk-property-descriptor title="Supported properties">
@@ -18,13 +21,58 @@
 
     <psk-chapter title="Floating Menu code example">
         <psk-code>
-            <psk-floating-menu opened="true" menuItems="[{
-                    'name': 'Feedback List',
-                    'icon': 'fa-cog',
-                    'path': 'list-feedbacks',
-                    'pageSrc': 'Components/psk-list-feedbacks/index.html'
-                }]">
+            <psk-floating-menu menu-items="[{
+                    " name": "Main Innovations" , "path" : "?PrivateSky/main-innovations" , "icon" : "fa-bars" , "type"
+                : "route" , "component" : "psk-page-loader" , "exact" : true, "indexed" : true, "pagePrefix" : "?"
+                , "historyType" : "query" , "componentProps" : { "pageUrl"
+                : "http://localhost:8000/pages/PrivateSky/main-innovations.html" }},{ " name" : "Main Innovations"
+                , "path" : "?PrivateSky/main-innovations" , "icon" : "fa-bars" , "type" : "route" , "component"
+                : "psk-page-loader" , "exact" : true, "indexed" : true, "pagePrefix" : "?" , "historyType" : "query"
+                , "componentProps" : { "pageUrl" : "http://localhost:8000/pages/PrivateSky/main-innovations.html" }}]">
             </psk-floating-menu>
         </psk-code>
-        </psk-chapther>
+    </psk-chapter>
+    <psk-example title="Live example">
+        <psk-container>
+            Too see the exemple again you just need to refresh!
+            <script>
+                let menuItems = [{
+                    "name": "Main Innovations",
+                    "path": "?PrivateSky/main-innovations",
+                    "icon": "fa-bars",
+                    "type": "route",
+                    "component": "psk-page-loader",
+                    "exact": true,
+                    "indexed": true,
+                    "pagePrefix": "?",
+                    "historyType": "query",
+                    "componentProps": {
+                        "pageUrl": "http://localhost:8000/pages/PrivateSky/main-innovations.html"
+                    }
+                },
+                {
+                    "name": "Architecture",
+                    "icon": "fa-bars",
+                    "type": "abstract",
+                    "path": "?PrivateSky/architecture",
+                    "type": "route",
+                    "component": "psk-page-loader",
+                    "exact": true,
+                    "indexed": true,
+                    "pagePrefix": "?",
+                    "historyType": "query",
+                    "componentProps": {
+                        "pageUrl": "http://localhost:8000/pages/PrivateSky/architecture.html"
+                    }
+                }]
+                controller.receive("needMenuItems", function (evt) {
+                    evt.stopImmediatePropagation();
+                    callback = evt.detail;
+                    callback(null, menuItems)
+                })
+            </script>
+            <psk-floating-menu opened="true">
+            </psk-floating-menu>
+        </psk-container>
+    </psk-example>
 </psk-page>
