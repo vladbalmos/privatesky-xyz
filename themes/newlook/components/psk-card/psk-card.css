@@ -14,6 +14,13 @@
  padding:0.5rem 0;
 }
 
+.psk-card p,
+.psk-card li,
+.psk-card .card-body,
+.psk-card .card-header {
+    text-align: justify;
+}
+
 /** first level*/
 
 .psk-card .card-header{
@@ -120,6 +127,10 @@
    position:static;
 }
 
+.table-of-content .card-body ul li{
+    text-align: left;
+}
+
 
 
 
@@ -140,6 +151,7 @@
  padding-top:16px;
  padding-bottom: 16px;
 }
+
 
 .psk-card ol{
     counter-reset: li;
