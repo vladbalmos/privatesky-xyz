@@ -58,14 +58,15 @@
     content:"";
 }
 
-.table-of-content ul li:first-of-type::before{
+.table-of-content  .card-body > ul > li:first-of-type::before,
+.table-of-content  .card-body > ul li.current_view
+{
     font-family:"FontAwesome";
     content:"\f0a4";
     color:#354F9B;
     font-size: 1rem;
     margin-right:2px;
     margin-left:-16px;
-   
 }
 .table-of-content .card-body li span:hover
 {
