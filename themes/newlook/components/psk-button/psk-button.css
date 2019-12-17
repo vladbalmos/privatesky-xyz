@@ -32,3 +32,10 @@
     border-style:none;
     color:#fff;
 }
+
+@media(max-width:960px){
+    .btn.btn-primary{
+        font-size: 1rem;
+        padding:5px;
+    }
+}

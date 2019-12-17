@@ -22,7 +22,7 @@ aside {
   background-image: linear-gradient(180deg,#5E7FE1 30%,#354F9B 100%);
   color: white;
   order:1;
-  flex: 1;
+  flex: 0.5;
   display: grid;
   grid-template-rows: auto 1fr 40px;
   min-width: 320px;
@@ -32,15 +32,8 @@ aside {
 }
 @media(max-width:960px){
   aside{
-    grid-template-rows:auto;
+    grid-template-rows:auto minmax(0px, auto);
   }
-  
-}
-
-aside .hydrated{
-  margin-top:10px;
-  display:flex;
-  flex-direction: column;
 }
 
 .nav-footer{
