@@ -109,13 +109,14 @@
 }
 
 @media(max-width:960px){
-  
+  .container{
+    justify-content: start;
+  }
   .content{
     padding: 20px 10px;
     font-size: 75%;
-    margin:40px 20px;
-    position: absolute;
-    top:0;
+    margin:20px;
+    margin-top: 10%;
   }
   .content .actions{
     margin-top:0px;
