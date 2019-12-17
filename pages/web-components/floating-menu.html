@@ -21,21 +21,66 @@
 
     <psk-chapter title="Floating Menu code example">
         <psk-code>
-            <psk-floating-menu menu-items="[{
-                    " name": "Main Innovations" , "path" : "?PrivateSky/main-innovations" , "icon" : "fa-bars" , "type"
-                : "route" , "component" : "psk-page-loader" , "exact" : true, "indexed" : true, "pagePrefix" : "?"
-                , "historyType" : "query" , "componentProps" : { "pageUrl"
-                : "http://localhost:8000/pages/PrivateSky/main-innovations.html" }},{ " name" : "Main Innovations"
-                , "path" : "?PrivateSky/main-innovations" , "icon" : "fa-bars" , "type" : "route" , "component"
-                : "psk-page-loader" , "exact" : true, "indexed" : true, "pagePrefix" : "?" , "historyType" : "query"
-                , "componentProps" : { "pageUrl" : "http://localhost:8000/pages/PrivateSky/main-innovations.html" }}]">
-            </psk-floating-menu>
+            <psk-container>
+                Too see the exemple again you just need to refresh!
+                <script>
+                    let menuItems = [{
+                        "name": "Main Innovations",
+                        "path": "?PrivateSky/main-innovations",
+                        "icon": "fa-bars",
+                        "type": "route",
+                        "component": "psk-page-loader",
+                        "exact": true,
+                        "indexed": true,
+                        "pagePrefix": "?",
+                        "historyType": "query",
+                        "componentProps": {
+                            "pageUrl": "http://localhost:8000/pages/PrivateSky/main-innovations.html"
+                        }
+                    },
+                    {
+                        "name": "Architecture",
+                        "icon": "fa-bars",
+                        "type": "abstract",
+                        "path": "?PrivateSky/architecture",
+                        "type": "route",
+                        "component": "psk-page-loader",
+                        "exact": true,
+                        "indexed": true,
+                        "pagePrefix": "?",
+                        "historyType": "query",
+                        "componentProps": {
+                            "pageUrl": "http://localhost:8000/pages/PrivateSky/architecture.html"
+                        }
+                    }]
+                    controller.receive("needFloatingItems", function (evt) {
+                        evt.stopImmediatePropagation();
+                        if (evt.detail) {
+                            callback = evt.detail;
+                            if (typeof callback === 'function') {
+                                callback(null, menuItems);
+                            }
+                        }
+                    })
+                </script>
+                <psk-floating-menu opened="true">
+                </psk-floating-menu>
+            </psk-container>
         </psk-code>
     </psk-chapter>
     <psk-example title="Live example">
         <psk-container>
-            Too see the exemple again you just need to refresh!
             <script>
+                controller.receive("needFloatingMenu", function (evt) {
+                    evt.stopImmediatePropagation();
+                    if (evt.detail) {
+                        callback = evt.detail;
+                        if (typeof callback === 'function') {
+                            callback(null, menuItems);
+                        }
+                    }
+                });
+
                 let menuItems = [{
                     "name": "Main Innovations",
                     "path": "?PrivateSky/main-innovations",
@@ -65,14 +110,10 @@
                         "pageUrl": "http://localhost:8000/pages/PrivateSky/architecture.html"
                     }
                 }]
-                controller.receive("needMenuItems", function (evt) {
-                    evt.stopImmediatePropagation();
-                    callback = evt.detail;
-                    callback(null, menuItems)
-                })
             </script>
-            <psk-floating-menu opened="true">
-            </psk-floating-menu>
+
+            <psk-floating-menu> </psk-floating-menu>
         </psk-container>
     </psk-example>
+
 </psk-page>
