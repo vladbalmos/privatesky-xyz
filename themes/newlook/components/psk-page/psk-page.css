@@ -41,16 +41,16 @@ nav {
 
 nav h3 {
     color:rgb(94, 127, 225);
-    font-weight: 600;
+    font-weight: 700;
     text-align: left center;
     margin:0;
     padding-left:60px;
-    font-size: 2.3125rem;
+    font-size: 1.802rem;
 }
 @media(max-width:960px){
     nav h3{
      padding:0 15px;
-     font-size: 1.3125rem;
+     font-size: 1.424rem;
     }
   }
 
