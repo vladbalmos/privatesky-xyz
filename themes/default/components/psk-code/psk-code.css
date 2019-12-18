@@ -28,6 +28,10 @@ https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javasc
      -moz-hyphens: none;
      -ms-hyphens: none;
      hyphens: none;
+     display: block;
+     margin-left:-100px;
+     margin-bottom:-15px;
+     margin-top:-15px;
  }
  
  code.language-html,
