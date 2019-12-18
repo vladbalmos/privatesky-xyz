@@ -1,20 +1,19 @@
-
 <psk-page title="psk-list">
 
     <psk-toc title="PSK List - TOC">
     </psk-toc>
-    
+
     <psk-description>
         <p>This component will render either a undordered list(using the same special characters as in Office) or an
             ordered list, based on the values given to the properties .</p>
         <p>Every element in this list will be delimited by a enter character.</p>
     </psk-description>
-    
+
     <psk-property-descriptor title="Supported properties">
         <psk-list data-define-props="true">
         </psk-list>
     </psk-property-descriptor>
-    
+
     <psk-chapter title="HTML Children">
         <p>The info sent between the tags will be processed in this way:</p>
         <p>First of all every element delimited by enter character with a length bigger than 0 will be passed in a
@@ -23,40 +22,40 @@
         <p>If it is any of the above we check for children,in a positive case we add them to a final array that will
             be rendered, and in a negative case we add only the line to the final array.</p>
     </psk-chapter>
-    
+
     <psk-chapter title="Code Example">
         <psk-code>
             <psk-list list-type="unordered">
-                <p>First entry</p>
-                <p>Second entry</p>
-                <p>Third entry</p>
-                <p>Fourth entry</p>
+                First entry
+                Second entry
+                Third entry
+                Fourth entry
             </psk-list>
         </psk-code>
         <psk-example title="Unordered List Example">
             <psk-list list-type="unordered">
-                <p>First entry</p>
-                <p>Second entry</p>
-                <p>Third entry</p>
-                <p>Fourth entry</p>
+                First entry
+                Second entry
+                Third entry
+                Fourth entry
             </psk-list>
         </psk-example>
-    
+
         <psk-code>
             <psk-list list-type="ordered">
-                <p>First entry</p>
-                <p>Second entry</p>
-                <p>Third entry</p>
-                <p>Fourth entry</p>
+                First entry
+                Second entry
+                Third entry
+                Fourth entry
             </psk-list>
         </psk-code>
         <psk-example title="Ordered List Example">
             <psk-list list-type="ordered">
-                <p>First entry</p>
-                <p>Second entry</p>
-                <p>Third entry</p>
-                <p>Fourth entry</p>
+                First entry
+                Second entry
+                Third entry
+                Fourth entry
             </psk-list>
         </psk-example>
     </psk-chapter>
-    </psk-page>
+</psk-page>
