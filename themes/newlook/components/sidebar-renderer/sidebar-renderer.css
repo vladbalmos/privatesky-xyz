@@ -36,14 +36,17 @@ a,
 
  /* adding pointer */
 a.active .item_name::before{
-  font-family:"FontAwesome";
-  content:"\f0a4";
-  color: #fff;
-  font-size: 1rem;
-  margin-left:-21px; 
-  padding-right: 5px;
-  /* content:"<i class="fas fa-hand-point-right"></i>"; */
-  
+  content: "";
+    background-image:url(../../assets//img/hand-point.svg);
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 20px;
+    width:20px;
+    filter: invert(99%) sepia(3%) saturate(1419%) hue-rotate(225deg) brightness(123%) contrast(100%);
+    position: relative;
+    margin-left: -24px;
+    margin-right: 4px;
+    bottom: -5px;
 }
 
 a:hover,

@@ -227,7 +227,7 @@
 .psk-card#not-available{
     position: relative;
     left: 10rem;
-    background-image: url('/themes/newlook/components/psk-card/404.png');
+    background-image: url(../../assets//img/404.png);
     background-repeat: no-repeat;
     background-size: 200px;
     background-position:top;
