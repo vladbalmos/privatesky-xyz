@@ -1,6 +1,6 @@
-@import url("../../assets/fonts/font-awesome.min.css");
-@import url("../../assets/bootstrap/css/bootstrap.min.css");
- * {
+@import url(../../../commons/fonts/font-awesome.min.css);
+@import url(../../../commons/bootstrap/css/bootstrap.min.css);
+* {
     outline: none !important;
     background: #fff;
     font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -9,29 +9,29 @@
 :host {
     scroll-behavior: smooth;
     display: block;
-    
 }
-.page-content{
+
+.page-content {
     color: #565656;
     margin-right: 20rem;
     width: auto;
-    padding:0 60px 30px;
+    padding: 0 60px 30px;
 }
 
-@media(max-width:960px){
-    .page-content{
-     margin-right: 0;
-     padding:0 15px;
+@media(max-width:960px) {
+    .page-content {
+        margin-right: 0;
+        padding: 0 15px;
     }
-  }
+}
 
-.container{
-    max-width:100%;
+.container {
+    max-width: 100%;
 }
 
 nav {
     width: 100%;
-    height:80px;
+    height: 80px;
     background-color: #fff;
     box-shadow: 0 .15rem 1rem 0 rgba(58, 59, 69, .2);
     margin-bottom: 20px;
@@ -40,19 +40,21 @@ nav {
 }
 
 nav h3 {
-    color:rgb(94, 127, 225);
+    color: rgb(94, 127, 225);
     font-weight: 700;
     text-align: left center;
-    margin:0;
-    padding-left:60px;
+    margin: 0;
+    padding-left: 60px;
     font-size: 1.802rem;
 }
-@media(max-width:960px){
-    nav h3{
-     padding:0 15px;
-     font-size: 1.424rem;
+
+@media(max-width:960px) {
+    nav h3 {
+        padding: 0 15px;
+        font-size: 1.424rem;
     }
-  }
+}
+
 
 /* a,
 *:hover,
@@ -93,6 +95,7 @@ h6 span a {
     font-weight: bold;
 } */
 
+
 /* .btn-link,
 .btn-link:focus,
 .btn-link:active,
@@ -109,6 +112,7 @@ h6 span a {
     text-decoration: none;
     transition: color .5s ease-in;
 } */
+
 
 /* .image_container {
     text-align: center;
@@ -131,6 +135,7 @@ h6 span a {
 
 /** first level*/
 
+
 /* .psk-card .card-header {
     background: none;
     border-bottom: none;
@@ -146,12 +151,14 @@ h6 span a {
 
 /** second level*/
 
- /* .psk-card .psk-card .card-header {
+
+/* .psk-card .psk-card .card-header {
     font-size: 120%;
 }  */
 
 
 /** more than two levels*/
+
 
 /* .psk-card .psk-card .psk-card .card-header {
     font-size: 110%;
@@ -164,7 +171,6 @@ h6 span a {
     padding: 20px;
     background: #e9e9e9;
 } */
-
 
 
 /* .table-of-content ul li {
@@ -186,6 +192,7 @@ h6 span a {
     font-size: 90%;
     color: #4C71DE;
 } */
+
 
 /* div>.mark,
 div>.mark:visited {
@@ -209,6 +216,7 @@ psk-chapter psk-chapter .mark {
     visibility: hidden;
     opacity: 0;
 } */
+
 
 /* #tooltip {
     display: inline !important;
