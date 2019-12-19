@@ -1,37 +1,38 @@
-@import url("../../assets/fonts/font-awesome.min.css");
-@import url("../../assets/bootstrap/css/bootstrap.min.css");
-
-:host{
-  width:100%;
-}
- /* no icons */
-span.icon{
- display:none;
+@import url(../../../commons/fonts/font-awesome.min.css);
+@import url(../../../commons/bootstrap/css/bootstrap.min.css);
+:host {
+    width: 100%;
 }
 
-.wrapper_container{
-  display: inline-block;
-  padding-left:30px;
-  padding-right:30px;
-  width:100%;
-  box-sizing: border-box;
+
+/* no icons */
+
+span.icon {
+    display: none;
 }
 
-.item_container{
-  width: 100%;
-  position: relative;
-  padding: 7px 10px 7px 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.40);
+.wrapper_container {
+    display: inline-block;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.item_container {
+    width: 100%;
+    position: relative;
+    padding: 7px 10px 7px 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.40);
 }
 
 a,
-.item_container .item_name
-{
-  color: rgba(255,255,255);
-  text-decoration: none;
-  font-size: 1rem;
-  cursor: pointer;
-  font-weight: 600;
+.item_container .item_name {
+    color: rgba(255, 255, 255);
+    text-decoration: none;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
 }
 
  /* adding pointer */
@@ -50,69 +51,69 @@ a.active .item_name::before{
 }
 
 a:hover,
-.item_container:hover > .item_name,
+.item_container:hover>.item_name,
 .children .item_container .item_name:hover,
-a.active .item_name{
-
-opacity: 85%;
+a.active .item_name {
+    opacity: 85%;
 }
+
 
 /* no lines on subcategory */
-.children .item_container{
-  border-style: none;
+
+.children .item_container {
+    border-style: none;
 }
 
-.children .item_container .item_name{
-  font-weight: 400;
+.children .item_container .item_name {
+    font-weight: 400;
 }
 
-.children .wrapper_container{
-  padding: 0;
+.children .wrapper_container {
+    padding: 0;
 }
 
-.children{
-  position:relative;
-  display: none;
-  padding-left: 30px;
+.children {
+    position: relative;
+    display: none;
+    padding-left: 30px;
 }
 
-.dropdown:hover{
-  cursor: pointer;
+.dropdown:hover {
+    cursor: pointer;
 }
 
-.fa{
-  display: none;
+.fa {
+    display: none;
 }
 
 :host([active]) .children,
-.dropdown.active .wrapper_container > .children,
-.dropdown.isOpened .wrapper_container > .children{
-display: block;
+.dropdown.active .wrapper_container>.children,
+.dropdown.isOpened .wrapper_container>.children {
+    display: block;
 }
 
-:host([hamburger]) a div{
-  width:100%;
+:host([hamburger]) a div {
+    width: 100%;
 }
 
-:host([hamburger]) div.children{
-
-  position: relative;
-  background: none;
-  top:10px;
-  width:100%;
-  padding-bottom: 15px;
-  margin-top: -10px;
+:host([hamburger]) div.children {
+    position: relative;
+    background: none;
+    top: 10px;
+    width: 100%;
+    padding-bottom: 15px;
+    margin-top: -10px;
 }
 
-:host([hamburger]) div.children .item_container{
-  padding-left: 32px;
+:host([hamburger]) div.children .item_container {
+    padding-left: 32px;
 }
 
 :host([hamburger]) .wrapper_container,
-:host([hamburger]) .dropdown{
-  width: 100%;
+:host([hamburger]) .dropdown {
+    width: 100%;
 }
 
-:host([hamburger]) .wrapper_container{
-  padding-right:40px;
+:host([hamburger]) .wrapper_container {
+    padding-right: 40px;
 }

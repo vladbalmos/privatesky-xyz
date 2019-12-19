@@ -1,32 +1,31 @@
 * {
     outline: none !important;
-  }
-  
-  :host {
+}
+
+ :host {
     scroll-behavior: smooth;
-  }
-  
-  a,
-  *:hover,
-  a:active {
+}
+
+a,
+*:hover,
+a:active {
     outline: none !important;
     text-decoration: none !important;
-  }
-  
-  span a {
+}
+
+span a {
     color: #000;
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  
-  :host {
+}
+
+ :host {
     display: block;
     font-family: nunito;
-  }
-  
-  div>.mark,
-  div>.mark:visited {
+}
+
+div>.mark,
+div>.mark:visited {
     color: #707070;
     background-color: transparent;
     position: absolute;
@@ -34,51 +33,51 @@
     right: 0px;
     padding: .5rem;
     font-size: 150%;
-  }
-  
-  div>.mark:hover,
-  div>.mark:focus,
-  div>.mark:active {
+}
+
+div>.mark:hover,
+div>.mark:focus,
+div>.mark:active {
     color: #43853d;
     background: none;
-  }
-  
-  psk-chapter psk-chapter .mark {
+}
+
+psk-chapter psk-chapter .mark {
     visibility: hidden;
     opacity: 0;
-  }
-  
-  .tooltip_container {
+}
+
+.tooltip_container {
     display: inline !important;
     color: #fff;
     cursor: pointer;
     position: absolute;
-    right:0;
-  }
-  
-  .tooltip_container:hover .copy-tooltip {
+    right: 0;
+}
+
+.tooltip_container:hover .copy-tooltip {
     opacity: 1;
     background-color: #224abe;
-  }
-  
-  .copy-tooltip {
+}
+
+.copy-tooltip {
     margin-top: 10px;
     margin-right: 35px;
     padding: 6px 12px;
     color: rgba(255, 255, 255, .7);
     border-radius: 4px;
-    background:#224abe ;
+    background: #224abe;
     display: block;
     opacity: 0;
     font-size: 13px;
     position: relative;
-  }
-  
-  .copy-tooltip.copied {
+}
+
+.copy-tooltip.copied {
     color: rgba(255, 255, 255, 1);
-  }
-  
-  .copy-tooltip:after {
+}
+
+.copy-tooltip:after {
     content: "";
     position: absolute;
     top: 50%;
@@ -88,9 +87,10 @@
     margin-top: -5px;
     border-style: solid;
     border-color: transparent transparent transparent #224abe;
-  }
-  
+}
+
 .copy-tooltip,
-.mark,div.tooltip_container{
-   display:none;
+.mark,
+div.tooltip_container {
+    display: none;
 }
