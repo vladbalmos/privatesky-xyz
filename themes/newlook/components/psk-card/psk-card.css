@@ -253,6 +253,11 @@ ol li::before {
     .table-of-content .psk-card ul {
         margin: 0;
         padding-bottom: 0;
+        padding-left:2px;
+    }
+    .table-of-content  .card-body > ul > li:first-of-type::before,
+    .table-of-content  .card-body > ul li.current_view{
+        display: none;
     }
     .card.psk-card,
     .image_container,
