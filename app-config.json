@@ -72,78 +72,6 @@
         ]
       },
       {
-        "name": "APIs",
-        "path": "/API",
-        "icon": "fa-cog",
-        "children": [
-          {
-            "name": "PrivateSky APIs"
-          },
-          {
-            "name": "Swarms"
-          },
-          {
-            "name": "Interactions"
-          },
-          {
-            "name": "Error Handling"
-          },
-          {
-            "name": "Domains"
-          },
-          {
-            "name": "Blockchain"
-          },
-          {
-            "name": "BARs"
-          },
-          {
-            "name": "CSBs"
-          }
-        ]
-      },
-      {
-        "name": "Development",
-        "path": "/Development",
-        "icon": "fa-cog",
-        "children": [
-          {
-            "name": "Coding style"
-          },
-          {
-            "name": "Unit testing map"
-          },
-          {
-            "name": "Node Modules"
-          },
-          {
-            "name": "Workers and Isolates"
-          },
-          {
-            "name": "Encrypted Choreographies"
-          },
-          {
-            "name": "Development guide"
-          },
-          {
-            "name": "Communication"
-          },
-          {
-            "name": "Advanced",
-            "indexed": "false"
-          },
-          {
-            "name": "Swarm Engine"
-          },
-          {
-            "name": "Syndicate"
-          },
-          {
-            "name": "Annotation Engine"
-          }
-        ]
-      },
-      {
         "name": "EDFS",
         "path": "/EDFS",
         "icon": "fa-cog",
@@ -162,34 +90,6 @@
           },
           {
             "name": "Secret Smart Contracts"
-          }
-        ]
-      },
-      {
-        "name": "Tools",
-        "path": "/Tools",
-        "icon": "fa-cog",
-        "children": [
-          {
-            "name": "Tool List"
-          },
-          {
-            "name": "bar"
-          },
-          {
-            "name": "PSKDomain"
-          },
-          {
-            "name": "PSKWallet"
-          },
-          {
-            "name": "CSBWizard"
-          },
-          {
-            "name": "PSKMonitor"
-          },
-          {
-            "name": "Governance"
           }
         ]
       },
@@ -316,6 +216,110 @@
           },
           {
             "name": "App Menu"
+          }
+        ]
+      },
+      {
+        "name": "Tools",
+        "path": "/Tools",
+        "icon": "fa-cog",
+        "children": [
+          {
+            "name": "Tool List"
+          },
+          {
+            "name": "bar"
+          },
+          {
+            "name": "PSKDomain"
+          },
+          {
+            "name": "PSKWallet"
+          },
+          {
+            "name": "CSBWizard"
+          },
+          {
+            "name": "PSKMonitor"
+          },
+          {
+            "name": "Governance"
+          }
+        ]
+      },
+      {
+        "name": "Development",
+        "path": "/Development",
+        "icon": "fa-cog",
+        "children": [
+          {
+            "name": "Coding style",
+            "indexed": "false"
+          },
+          {
+            "name": "Unit testing map",
+            "indexed": "false"
+          },
+          {
+            "name": "Node Modules"
+          },
+          {
+            "name": "Workers and Isolates"
+          },
+          {
+            "name": "Encrypted Choreographies"
+          },
+          {
+            "name": "Development guide",
+            "indexed": "false"
+          },
+          {
+            "name": "Communication",
+            "indexed": "false"
+          },
+          {
+            "name": "Advanced",
+            "indexed": "false"
+          },
+          {
+            "name": "Swarm Engine"
+          },
+          {
+            "name": "Syndicate"
+          },
+          {
+            "name": "Annotation Engine"
+          }
+        ]
+      },
+      {
+        "name": "APIs",
+        "path": "/API",
+        "icon": "fa-cog",
+        "children": [
+          {
+            "name": "PrivateSky APIs"
+          },
+          {
+            "name": "Swarms"
+          },
+          {
+            "name": "Interactions"
+          },
+          {
+            "name": "Error Handling"
+          },
+          {
+            "name": "Domains"
+          },
+          {
+            "name": "Blockchain"
+          },
+          {
+            "name": "BARs"
+          },
+          {
+            "name": "CSBs"
           }
         ]
       },
