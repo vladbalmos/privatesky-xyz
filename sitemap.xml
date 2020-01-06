@@ -21,22 +21,6 @@
       </url><url>
         <loc>https://privatesky.xyz/?PrivateSky/code-examples</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?API/privatesky-apis</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?API/swarms</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?API/interactions</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?API/error-handling</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?API/domains</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?API/blockchain</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?API/bars</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?API/csbs</loc>
-      </url><url>
         <loc>https://privatesky.xyz/?EDFS/edfs</loc>
       </url><url>
         <loc>https://privatesky.xyz/?EDFS/brick-archives</loc>
@@ -146,6 +130,22 @@
         <loc>https://privatesky.xyz/?Development/syndicate</loc>
       </url><url>
         <loc>https://privatesky.xyz/?Development/annotation-engine</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?API/privatesky-apis</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?API/swarms</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?API/interactions</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?API/error-handling</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?API/domains</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?API/blockchain</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?API/bars</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?API/csbs</loc>
       </url><url>
         <loc>https://privatesky.xyz/?glossary</loc>
       </url>
