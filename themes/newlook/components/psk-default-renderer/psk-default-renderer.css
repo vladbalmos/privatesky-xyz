@@ -31,12 +31,6 @@ aside {
     scrollbar-width: thin;
 }
 
-@media(max-width:960px) {
-    aside {
-        grid-template-rows: auto minmax(0px, auto);
-    }
-}
-
 .nav-footer {
     text-align: center;
     width: 100%;
@@ -46,7 +40,14 @@ aside {
     background: #ffffff1a;
     font-size: 85%;
 }
-
+@media(max-width:960px) {
+    aside {
+        grid-template-rows: auto minmax(0px, auto);
+    }
+    .nav-footer{
+        display:none;
+     }
+}
 .nav-footer.bottom-stick {
     color: #FFF;
     background: #ffffff1a;

@@ -107,7 +107,7 @@
 
 @media(max-width:960px) {
     .container {
-        justify-content: start;
+        justify-content: center;
     }
     .content {
         padding: 20px 10px;

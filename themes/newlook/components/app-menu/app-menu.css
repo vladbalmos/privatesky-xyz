@@ -5,6 +5,7 @@
 
 .navbar {
     padding: 0;
+    position:static;
 }
 
 .navbar-brand {
@@ -12,7 +13,7 @@
 }
 
 .navbar-toggler {
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
     margin: 10px 8px 0 0;

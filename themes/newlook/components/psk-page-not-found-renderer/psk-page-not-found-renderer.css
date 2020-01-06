@@ -38,8 +38,10 @@
     .container {
         left: 0px;
     }
-    .card .card-body p,
+    .card .card-body p{
+        font-size: 1rem;
+    }
     .card .card-header h2 {
-        font-size: 70%;
+        font-size: 1.266rem;
     }
 }
