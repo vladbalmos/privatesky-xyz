@@ -77,7 +77,7 @@
         "icon": "fa-cog",
         "children": [
           {
-            "name": "PrivateSky  APIs"
+            "name": "PrivateSky APIs"
           },
           {
             "name": "Swarms"
