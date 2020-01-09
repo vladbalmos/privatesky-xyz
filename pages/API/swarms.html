@@ -1,8 +1,8 @@
 <psk-page title="PrivateSky APIs">
   <psk-chapter title="APIs for creating swarm and flow type swarms">
 
-    <psk-table head="true" footer="true">
-      <b>Swarm primitives<b> | <b>Parameters, Explanations<b>
+    <psk-table header="true">
+      Swarm primitives | Parameters, Explanations
       describe | $$.flow.describe(swarmTypeName, description)
                | $$.swarm.describe(swarmTypeName, description)
                | Create  a swarm description named swarmTypeName and register in the specific name space
@@ -16,7 +16,7 @@
                | $$.swarm.continue(swarmTypeName, initialValues)
                | Continue a swarm with a serialisation initialValues. Useful to model workflows (serialised swarms or flows)
       inline | $$.flow.inline(description, ctor, ...args)
-             | Start a swarm based on a description, without registering and giving a name.
+             | Start a swarm based on a description, without registering and giving a name
     </psk-table>
 
  <p align="justify">Note that the most used APIs are <i>described</i> and <i>start</i>.</p>

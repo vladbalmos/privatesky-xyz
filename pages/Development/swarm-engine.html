@@ -19,8 +19,8 @@
     	<li>With Swarms between service workers in browsers</li>
     </ul>
     <p align="justify">From the point of view of identities (a term that symbolizes the agent in whose name a phase of the swarm is executed but also the location where it is executed) we distinguish several cases that are presented in the following table:</p>
-    <psk-table title = "Use-cases for swarms" dimensions="50|50" head="true">
-    	<b>Case</b> | <b>How to identify the agents</b>
+    <psk-table title = "Use-cases for swarms" dimensions="50|50" header="true">
+      Case| How to identify the agents
     	Swarms in the same process | Strings as identities
     	Swarms between processes on the same machine | Identities that through a name service translate into local process ids
     	Swarms intermediate by virtualMQ that come from clients | Ids of agents that translate into VirtualMQ topics
@@ -39,8 +39,8 @@
     <p align="justify">These strategies are injected into SwarmEngine. SwarmEngine is used by swarm_template to implement primitives specific to swarm-type executable choreographies.</p>
     <psk-img src="/assets/images/developnent/SwarmEngine.png" title="Swarm Engine Architecture"></psk-img>
 
-    <psk-table title = "Swarm Engine Architecture" dimensions="25|50|25" head="true">
-    	<b>Component</b> | <b>Features</b> | <b>Caller</b>
+    <psk-table title = "Swarm Engine Architecture" dimensions="25|50|25" header="true">
+    	Component | Features | Caller
     	SwarmEngine | init(identity) |
     	| stop()  | initialisation
     	| loadBar(seed, callback) |
