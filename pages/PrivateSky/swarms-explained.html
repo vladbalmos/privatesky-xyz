@@ -94,37 +94,37 @@ Smart contract | Blockchain based  long living processes | In PrivateSky, a smar
   <psk-img title="Categories of relevant identities for  swarm communication" src="/pages/PrivateSky/IDCategories.png"></psk-img>
 
   <p align="justify">The concept of identity is used in 4 different ways, possibly generating confusion. We may be, as such, in one of the following situations:</p>
-<ul>
-  <li><b>The identity of the processing node (Nodeld).</b></li>
-  <p align="justify">This identity is an address (or URL) uniquely and accurately identifying the address where the swarm messages are sent to be executed.</p>
-  <li><b>The identity of the agent on the behalf of the processing is made (AgentId).</b></li>
-  <p align="justify">A processing node may execute code on behalf of more users. The users on the processing nodes are represented by the name of agent or even agent identity. These agent identities are decentralized identities or self sovereign identities.</p>
-  <li><b>The collective identity of the swarm instance (SwarmId).</b></li>
-  <p align="justify">Any swarm instance has a collective identity, meaning an identity common to all the swarm’s members. The instance identity is a cryptographically generated  UID (Unique Identifier). In the cases of assets or workflows, the SwarmId is a good candidate for a primary artificial key, should a certain category of asset collection would be considered as a table.</p>
-  <li><b>The identity of a phase execution (PhaseId).</b></li>
-  <p align="justify">The execution of a swarm phase generates an object that is automatically integrated in the swarm collective identity. However, it is useful to also keep the identity of these objects, under the concept of the identity of a phase execution. This identity is also a cryptographically generated UID.</p>
-</ul>
+  <ul>
+    <li><b>The identity of the processing node (Nodeld).</b></li>
+    <p align="justify">This identity is an address (or URL) uniquely and accurately identifying the address where the swarm messages are sent to be executed.</p>
+    <li><b>The identity of the agent on the behalf of the processing is made (AgentId).</b></li>
+    <p align="justify">A processing node may execute code on behalf of more users. The users on the processing nodes are represented by the name of agent or even agent identity. These agent identities are decentralized identities or self sovereign identities.</p>
+    <li><b>The collective identity of the swarm instance (SwarmId).</b></li>
+    <p align="justify">Any swarm instance has a collective identity, meaning an identity common to all the swarm’s members. The instance identity is a cryptographically generated  UID (Unique Identifier). In the cases of assets or workflows, the SwarmId is a good candidate for a primary artificial key, should a certain category of asset collection would be considered as a table.</p>
+    <li><b>The identity of a phase execution (PhaseId).</b></li>
+    <p align="justify">The execution of a swarm phase generates an object that is automatically integrated in the swarm collective identity. However, it is useful to also keep the identity of these objects, under the concept of the identity of a phase execution. This identity is also a cryptographically generated UID.</p>
+  </ul>
 
-<p align="justify"> In PrivateSky, the swarm primitive uses AgentId as the location of a swarm phase execution by using a name service able to trace AgentId to NoteId.</p>
-<p align="justify"> An AgentId may have one or several NoteId allowing code execution based on the <b>serverless choreographies</b> model.
+  <p align="justify"> In PrivateSky, the swarm primitive uses AgentId as the location of a swarm phase execution by using a name service able to trace AgentId to NoteId.</p>
+  <p align="justify"> An AgentId may have one or several NoteId allowing code execution based on the <b>serverless choreographies</b> model.</p>
 </psk-chapter>
 
 <psk-chapter title="Swarms: Identity and Location">
-  <p align="justify">We may consider the identity and location of swarms as the identity of a swarm instance</p>
+    <p align="justify">We may consider the identity and location of swarms as the identity of a swarm instance</p>
 
-  <psk-table title = "Identity and location for swarms categories" dimensions="25|25|50" header="true">
-    Category | Identity | Location 
-    flow | The identity of a flow is slightly relevant | The location of a flow is of little relevance in programming. We may only say that a flow exist (is located) in a single memory space.
-    swarm| A swarm instance has a collective identity. A swarm (or a choreography) is built out of swarm objects instances | The objects included in the collective identity will be located on different network nodes. As such, the location is a critical concept for a swarm. The location is similar to the security context of an agent.
-    workflow| The identity of a workflow is important (cryptographically generated UID) | A workflow swarm may be instantiated in different locations in time and space.
-    asset| cryptographically generated UID | An asset instance is located in the blockchain where the asset is included.
-    transaction| Theidentity of a transaction swarm instance  is a cryptographically generated UID | During validation, the transaction is usually instantiated in all the nodes participating in consensus. Furthermore,the transaction is assigned a location in the blockchain history.
-    Embedded object| The identity of an instance is strictly linked to the identity of another “global” swarm | The location of an embedded swarm is strictly linked to the location of the “global” swarm.
-  </psk-table>
+    <psk-table title = "Identity and location for swarms categories" dimensions="25|25|50" header="true">
+      Category | Identity | Location 
+      flow | The identity of a flow is slightly relevant | The location of a flow is of little relevance in programming. We may only say that a flow exist (is located) in a single memory space.
+      swarm| A swarm instance has a collective identity. A swarm (or a choreography) is built out of swarm objects instances | The objects included in the collective identity will be located on different network nodes. As such, the location is a critical concept for a swarm. The location is similar to the security context of an agent.
+      workflow| The identity of a workflow is important (cryptographically generated UID) | A workflow swarm may be instantiated in different locations in time and space.
+      asset| cryptographically generated UID | An asset instance is located in the blockchain where the asset is included.
+      transaction| Theidentity of a transaction swarm instance  is a cryptographically generated UID | During validation, the transaction is usually instantiated in all the nodes participating in consensus. Furthermore,the transaction is assigned a location in the blockchain history.
+      Embedded object| The identity of an instance is strictly linked to the identity of another “global” swarm | The location of an embedded swarm is strictly linked to the location of the “global” swarm.
+    </psk-table>
 
-<p align="justify">When speaking about individual identity, we mean a concept has a single instance in all the history of the universe (is represented by a unique object). When speaking about collective identity, we mean that concept comprises more individually identifiable objects. As an example, a cloud is a concept encompassing a multitude of water molecules that apparently are forming a unity. A swarm of bees or a flock of migrating birds is formed by well identifiable objects, yet at the same time they borrow part of their identity from the collective identity. From the most accurately perspective, only very few concepts are holding a veritable individual identity because all objects are subjected to changes over time. Rigorously speaking, any composite concept reflecting state modifications has a collective identity (the identity of all the states over time of the object).</p>
-<p align="justify">However, in order to simplify thought processes, our mind assigns individual identity to concepts that are actually having a preponderent collective identity.</p>
-<p align="justify">By location of a swarm or an object instance we mean a method of identifying the processing node where the instance is running. A processing node has in our perspective a security context. A security context is a collection of secret data (encryption keys) and cryptographic functionalities provided to the swarm instances.</p>
+    <p align="justify">When speaking about individual identity, we mean a concept has a single instance in all the history of the universe (is represented by a unique object). When speaking about collective identity, we mean that concept comprises more individually identifiable objects. As an example, a cloud is a concept encompassing a multitude of water molecules that apparently are forming a unity. A swarm of bees or a flock of migrating birds is formed by well identifiable objects, yet at the same time they borrow part of their identity from the collective identity. From the most accurately perspective, only very few concepts are holding a veritable individual identity because all objects are subjected to changes over time. Rigorously speaking, any composite concept reflecting state modifications has a collective identity (the identity of all the states over time of the object).</p>
+    <p align="justify">However, in order to simplify thought processes, our mind assigns individual identity to concepts that are actually having a preponderent collective identity.</p>
+    <p align="justify">By location of a swarm or an object instance we mean a method of identifying the processing node where the instance is running. A processing node has in our perspective a security context. A security context is a collection of secret data (encryption keys) and cryptographic functionalities provided to the swarm instances.</p>
 </psk-chapter>
 
  <psk-chapter title="Summary: Technology neutral presentation of Swarm Communication">
@@ -140,7 +140,10 @@ Smart contract | Blockchain based  long living processes | In PrivateSky, a smar
      each party involved to describe its role in the interaction. With executable choreographies implemented with swarm communication, it is possible to achieve both maintaining
      decentralization and the ability to conduct orchestration.
    </p>
-   <ul>At an abstract level, understanding the execution model of swarms (both PrivateSky and SwarmESB) revolves around the following elements:
+   <p align="justify">
+    At an abstract level, understanding the execution model of swarms (both PrivateSky and SwarmESB) revolves around the following elements:
+   </p>
+   <ul>
    <li>
      <b>Swarm descriptions</b>: Similar to the description of an object-oriented class, the description of a swarm comprises the descriptions of all <b>phases</b>, actions and variables of swarm.
      Swarm <b>variables</b> are the way to represent the state of the swarm from the point of view of execution. The phases of the execution have a double role: they contain the code of actions

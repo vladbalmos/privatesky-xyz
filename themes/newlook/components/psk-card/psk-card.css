@@ -147,6 +147,10 @@
     text-align: left;
 }
 
+.table-of-content .psk-card ul ul li::before{
+    content:"";
+}
+
 
 /* code tag */
 
@@ -163,11 +167,16 @@
 
 .psk-card ul,
 .psk-card ol {
-    padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     margin: 0;
 }
-
+.psk-card ul ul{
+    list-style: none;
+}
+.psk-card ul ul li::before{
+    content:"-";
+    font-weight: 600;
+}
 .psk-card ol {
     counter-reset: li;
     list-style-type: none;
