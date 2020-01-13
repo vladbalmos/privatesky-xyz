@@ -26,19 +26,19 @@ span a {
 
 div>.mark,
 div>.mark:visited {
-    color: #707070;
+    color: lightgray;
     background-color: transparent;
     position: absolute;
     top: 0px;
     right: 0px;
     padding: .5rem;
-    font-size: 150%;
+    font-size: 1rem;
 }
 
 div>.mark:hover,
 div>.mark:focus,
 div>.mark:active {
-    color: #43853d;
+    color: #4C71DE;
     background: none;
 }
 
@@ -57,20 +57,20 @@ psk-chapter psk-chapter .mark {
 
 .tooltip_container:hover .copy-tooltip {
     opacity: 1;
-    background-color: #224abe;
+    background-color: #5E7FE1;
 }
 
 .copy-tooltip {
-    margin-top: 10px;
+    margin-top: 2px;
     margin-right: 35px;
     padding: 6px 12px;
-    color: rgba(255, 255, 255, .7);
+    color: #fff;
     border-radius: 4px;
-    background: #224abe;
     display: block;
     opacity: 0;
-    font-size: 13px;
+    font-size: 0.9rem;
     position: relative;
+    font-weight: 600;
 }
 
 .copy-tooltip.copied {
@@ -86,11 +86,5 @@ psk-chapter psk-chapter .mark {
     border-width: 5px;
     margin-top: -5px;
     border-style: solid;
-    border-color: transparent transparent transparent #224abe;
-}
-
-.copy-tooltip,
-.mark,
-div.tooltip_container {
-    display: none;
+    border-color: transparent transparent transparent #5E7FE1;
 }
