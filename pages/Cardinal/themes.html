@@ -1,17 +1,158 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-  <meta>
-  <script type="module" src="/build/app.esm.js"></script>
-  <script nomodule src="/build/app.js"></script>
-  </meta>
+<psk-page title="Themes">
 
-</head>
+  <psk-toc title="In this section"></psk-toc>
 
-<body>
-<h1>Work in progress</h1>
-This is a simple external page that explains how you can build your own themes!
-</body>
-</html>
+  <psk-description>
+    <p>
+      In order to build a new design system for a project that uses Cardinal, we need to create a new theme. By adding a new theme to the project, all web components provided by CardinalJs can be customized according to the desired design.
+    </p>
+  </psk-description>
+
+  <psk-chapter title="New theme set-up">
+   <p>
+    By default, Cardinal has a folder named “themes” where we can find a standard theme for the web components. The first step in creating a new theme is to add a new theme folder. For example, besides the default theme, we can add a new folder called “newlook”. 
+   </p>
+   <p>
+    Every theme folder  contains an assets and a components subfolder. In the assets we can add different fonts, icons, images or libraries that are necessary for the new design system. The assets subfolder can be empty, but the components subfolder is absolutely necessary in order to make the new theme. In “components” we will have to add a folder for every web component and assign to each one a css file with the same name. This will help us customize each web component separately by changing the css properties according to the new design system.
+  </p>
+   <p>
+    After creating the new theme folder, we need to modify the <b>index.html</b> file. In <code>globalConfig</code> we have to specify which theme we want to render. Below you can see how to change the theme to “newlook”.
+   </p>
+    <psk-code>
+          <script>
+            globalConfig = {
+                theme: "newlook"
+            }
+          </script>
+    </psk-code>
+  
+  </psk-chapter>
+
+  <psk-chapter  title="Customize web components">
+    <p>
+      As we said above in order to customize a web component we need to change the css file that has the same name as the component. Through css we can change the layout structure, color schemes, topography styles and others. Below you can find examples on how to customize different web components.
+    </p>
+
+    <psk-chapter title="psk-card">
+      <p>
+        An important thing to remember about the psk-card is that this component is used to build up other components such as psk-chapter, psk-toc, psk-description or others. If we want to have the same design for all the psk-card components we will have to only change the <b>psk-card.css</b> file. If we want a different psk-card style based on the parent component we will have to change the parent css file ( for example <b>psk-chapter.css</b>).
+      </p>
+      <p>
+        A psk-card returns the following html structure:
+      </p>
+      <psk-code>
+        <div class="card psk-card" >
+          <div class="card-header">
+              <h5>
+              </h5>
+          </div>
+          <div class="card-body">
+          </div>
+        </div>        
+      </psk-code>
+      <p>
+        Based on this structure, we can use the automatically generated classes to customize the header and the body, as well as any other html elements that may be included in the body section, by the parent component.
+      </p>
+    </psk-chapter>
+    <psk-chapter title="psk-code">
+      <p>
+        For customizing the <b>psk-code</b> component we can use <a href=”https://prismjs.com/”>PrismJS </a>. Prism is a lightweight, extensible syntax highlighter, built with modern web standards, that can help us generate all the css we need. We have the option of choosing between downloading the developer version or the minified one. Prism also offers us multiple themes for the code style of a lot of programming languages. By downloading the developer version you can easily modified the predefined theme to make it match your design.
+      </p>
+     </psk-chapter>
+    <psk-chapter title="psk-img">
+      <p>
+        Different designs might require different ways of displaying images. From the image size to the image description there are a lot of possibilities for customization. If we want to customize the  <b>psk-img</b> component we will have to change the css file with the same name.
+      </p>
+      <p>
+        This component returns the following html structure:
+      </p>
+      <psk-code>
+        <div class=image_container>
+          <div class=image_wrapper>
+            <img class=img-fluid>
+          </div>
+          <div class=image_description>
+          </div>
+        </div>        
+      </psk-code>
+      <p>
+        Based on the <b>image_container</b>, <b>image_wrapper</b>, <b>image_description</b> and <b>img-fluid</b> classes we can target specific elements of this component.
+      </p>
+    </psk-chapter>
+    <psk-chapter title="psk-link">
+      <p>
+        This component role is to create a link that will redirect the user on another page inside the website. In order to customize this component we have to take into account the html structure that is rendered.
+      </p>
+      <psk-code>
+        <div class=”psk-link”>
+          <a class="btn btn-link"> 
+          </a>
+        </div>          
+      </psk-code>
+      <p>
+        Using the <b>psk-link</b>, <b>btn</b> and <b>btn-link</b> classes, we can style this component as any other link or we can style it totally different.
+      </p>
+    </psk-chapter>
+    <psk-chapter title="psk-list">
+      <p>
+        This component returns a normal ordered or unordered html list structure, depending on the <code>listType</code> property. The resulting list can be styled by changing the <b>psk-list.css</b> file, using the <code>ul</code>, <code>ol</code> and <code>li</code> tags.
+      </p>
+    </psk-chapter>
+    <psk-chapter title="psk-page"> 
+      <p>
+        This component is extremely useful in creating a page template for a website. The psk-page component returns the following html structure:
+      </p>
+      <psk-code>
+        <div>
+          <nav>
+            <h3></h3>
+          </nav>
+          <div class='page-content container'>
+          </div>
+        </div>        
+      </psk-code>
+      <p>
+        The automatically generated html structure and css classes can help us in changing the page layout and style.
+      </p>
+    </psk-chapter>
+    <psk-chapter title="psk-table">
+      <p>
+        An important component for the overall look of the new design is the psk-table. The table look can vary in many ways, but fortunately the html structure of this component makes the design process easy.
+      </p>
+      <p>
+        A psk-table returns the following html structure:
+      </p>
+      <psk-code>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>
+          </tfoot>
+        </table>
+      </psk-code>
+
+      <p>
+        Divided into three different section, by the <code>thead</code>, <code>tbody</code> and <code>tfoot</code> tags, the table can be easily customized.
+      </p>
+    </psk-chapter>
+    
+  </psk-chapter>
+</psk-page>
