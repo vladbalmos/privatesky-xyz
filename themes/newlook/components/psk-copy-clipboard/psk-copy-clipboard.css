@@ -29,10 +29,10 @@ div>.mark:visited {
     color: lightgray;
     background-color: transparent;
     position: absolute;
-    top: 0px;
+    top: -1px;
     right: 0px;
-    padding: .5rem;
-    font-size: 1rem;
+    padding: 0 0.5rem;
+    font-size: 1.25rem;
 }
 
 div>.mark:hover,
@@ -43,8 +43,13 @@ div>.mark:active {
 }
 
 psk-chapter psk-chapter .mark {
-    visibility: hidden;
     opacity: 0;
+}
+psk-chapter psk-chapter .mark:hover{
+    opacity: 1;
+}
+psk-chapter psk-chapter .copy-tooltip {
+    top:-12px;
 }
 
 .tooltip_container {
@@ -53,6 +58,7 @@ psk-chapter psk-chapter .mark {
     cursor: pointer;
     position: absolute;
     right: 0;
+    top:30;
 }
 
 .tooltip_container:hover .copy-tooltip {
@@ -61,7 +67,6 @@ psk-chapter psk-chapter .mark {
 }
 
 .copy-tooltip {
-    margin-top: 2px;
     margin-right: 35px;
     padding: 6px 12px;
     color: #fff;
@@ -71,6 +76,7 @@ psk-chapter psk-chapter .mark {
     font-size: 0.9rem;
     position: relative;
     font-weight: 600;
+    top:-4px;
 }
 
 .copy-tooltip.copied {
