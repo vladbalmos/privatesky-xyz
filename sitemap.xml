@@ -101,6 +101,34 @@
       </url><url>
         <loc>https://privatesky.xyz/?web-components/app-menu</loc>
       </url><url>
+        <loc>https://privatesky.xyz/?forms/using-forms</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?forms/psk-form</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?forms/psk-form-row</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?forms/psk-label</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?forms/psk-input</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?forms/psk-date-input</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?forms/psk-text-input</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?forms/psk-password-input</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?forms/psk-number-input</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?forms/psk-email-input</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?forms/psk-select</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?forms/psk-radio</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?forms/psk-checkbox</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?forms/psk-for-each</loc>
+      </url><url>
         <loc>https://privatesky.xyz/?Tools/tool-list</loc>
       </url><url>
         <loc>https://privatesky.xyz/?Tools/bar</loc>
