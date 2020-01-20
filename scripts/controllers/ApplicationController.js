@@ -1,7 +1,6 @@
 export default class ApplicationController {
     constructor(element) {
         this._element = element;
-        console.log('ApplicationController');
     }
 
     receive(eventName, htmlElement, callback) {

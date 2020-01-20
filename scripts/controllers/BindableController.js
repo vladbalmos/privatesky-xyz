@@ -6,7 +6,6 @@ export default class BindableController extends ApplicationController {
 
     constructor(element) {
         super(element);
-        console.log('BindableController', PskBindableModel);
         this.setModel = PskBindableModel.setModel;
 
         this.__initGetModelEventListener();
