@@ -7,7 +7,7 @@
     <p align="justify">A SSApp is the equivalent of the Decentralised Applications (DApps) in PrivateSky. This new name is useful because in a sense a SSApp is built just like a normal web app but instead of running on a server it is stored in a CSB. The CSB will therefore store secret smart contracts, asset definitions and transactions necessary for SSApp operation, and even the associated user interface.</p>
     <p align="justify">The SSApps are a replacement (especially regarding the protection of confidential data) of decentralised apps  (Dapps) from other blockchains. As such, the SSApps are contributing to the achievement of a higher layer of decentralization, as they enable users to control their data through encryption of which they control the decryption keys.</p>
 
-    <psk-img src="/assets/images/edfs/seq.png"></psk-img>
+    <psk-img src="/assets/images/newlook/seq.png"></psk-img>
 
     <p align="justify">WeldGalaxy DLT allows the creation of SSApps that support:</p>
     <ul>
@@ -36,7 +36,7 @@
   	<p align="justify">A service worker capable of request interception requires a dispatcher that is efficient in serving the right handler for the desired functionality. Here comes the need of a middleware service whose job is to simplify the development of the service workers fetching event listeners. We used an Express.js framework approach so that the developers can easily adapt their existing code to build serverless apps and, more specifically, SSApps. The middleware exposes the same APIs as Express.js as exemplified in Appendix 7.</p>
   	<p align="justify">To expose an “express” like API, we defined two wrapper objects: EventRequest and EventResponse that are based on the FetchEvent object and implement all the methods needed for providing the same behaviour. In the following diagram the Middleware integration with service workers architecture is explained.</p>
 
-  	<psk-img src="/assets/images/edfs/figure1.png"></psk-img>
+  	<psk-img src="/assets/images/newlook/figure1.png"></psk-img>
 
   </psk-chapter>
 
@@ -63,7 +63,7 @@
   <psk-chapter title="Building Web Controllers">
   	<p align="justify">Usually SSApps are small applications with well-defined specifications. Their behaviour is similar to each other, but due to privacy and security issues that can emerge from using services, it is preferable to keep each app in a sandboxed iframe. In this case, it is important to have a simple architecture that aims at separating the user interface from the business logic: Model-View-View-Model (MVVM). A data flow diagram could be presented as follows.</p>
 
-  	<psk-img src="/assets/images/edfs/figure2.png"></psk-img>
+  	<psk-img src="/assets/images/newlook/figure2.png"></psk-img>
 
   	<p align="justify">In the code snippet in Appendix 5 a controller is registered and passed to a View Model which will present the given model. Each component should receive some custom attributes: a controller reference, an action for the provided controller and some controller parameters that could be related to View Model. The controller will have a public reference for the view that it is controlled and sometimes can be inherited from parent controllers from the dependency tree.</p>
   </psk-chapter>

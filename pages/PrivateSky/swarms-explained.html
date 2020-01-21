@@ -12,7 +12,7 @@
   <p align="justify"> Also in everyday use, a phenomenon is a name assigned to situations when the causality relationship between the observed events is not fully understood or even unobservable. Basically, a phenomenon is something that is not understood in detail or it is the result of a process with unobservable internal states (difficult to observe or not relevant enough to be observed). As such, any phenomenon tends to be a concept quite vague. An investigation conducted on the Internet or perusing the literature may return contradictory definitions or impressions, however, the most widely used sense in science is that a phenomenon is actually a process, or at least it is aimed at defining the phenomenon as  precisely as possible as a process.</p>
   <p align="justify">  We may accurately enough state that programming is the activity of translating into a code readable by a computer certain processes or phenomena considered processes. This process modeling requires the development of programming artefacts that are syntactically described in code, holding at the same time semantics and pragmatics specific to the programmer mind and to the computer. As examples of programming artefacts (fundamental concepts) one may mention: the definitions of functions, class description, services,  calling functions, instantiating objects, calling and composing services.</p>
 
-   <psk-img title="Programming paradigms" src="/assets/images/swarmsExplained/ProgrammingParadigms.png"></psk-img>
+   <psk-img title="Programming paradigms" src="/assets/images/newlook/ProgrammingParadigms.png"></psk-img>
 
 <p align="justify"> Our team has been focused on studying the programming mechanisms under the magnifying glass, underlying
 their character as processes and refining them in order to achieve conceptual unity, good composability of artificial concepts difficult to compose, or to achieve other pragmatic benefits.</p>
@@ -32,7 +32,7 @@ their character as processes and refining them in order to achieve conceptual un
 <psk-chapter title="Swarm communication">
 <p align="justify">More concisely, the swarm communication concept may be perceived as a generalization of object oriented programming. Instead of class description we have the concept of swarm description. A swarm description is instantiated upon running into a swarm. A swarm is made out of a multitude of objects also called “bees”. A “bee” is an implemented object (data fields and methods). The identity of a swarm instance is determined by the collection of bees.</p>
 
-<psk-img title="Swarm Description and set of bees with shared identity as instances" src="/assets/images/swarmsExplained/SwarmDescription.png"></psk-img>
+<psk-img title="Swarm Description and set of bees with shared identity as instances" src="/assets/images/newlook/SwarmDescription.png"></psk-img>
 
 <p align="justify">An important aspect of the swarm communication programming model is that every “bee” instance is associated to a phase in swarm description. A phase is implemented as a function. A bee is thus running a functions and only one, on a machine available to the swarm (a location).</p>
 <p align="justify">After the introduction of the swarm communication concept, our team began gradually to understand that the swarm concept may replace many categories of programming artefacts that are apparently not related. As such, the swarm concept is a practical and direct approach to address: object oriented programming, asynchronicity control techniques in asynchronous programming, integration techniques (orchestration, choreography), business processes modelling, smart contract modelling.</p>
@@ -41,14 +41,14 @@ their character as processes and refining them in order to achieve conceptual un
 <psk-chapter title="Why is swarm communication useful?">
   <p align="justify">  This chapter covers the main arguments in favour of including “swarm communication” in the list of fundamental programming concepts. We are aware that we could not always properly underline the major benefits inherent to the swarm communication perspective.</p>
 
-  <psk-img title="Major benefits" src="/assets/images/swarmsExplained/MajorBenefits.png"></psk-img>
+  <psk-img title="Major benefits" src="/assets/images/newlook/MajorBenefits.png"></psk-img>
 
   <p align="justify">The above picture summarizes the 4 major benefits of swarm communication:</p>
   <ul>
     <li align="justify"> <b>Simplification of code through accurate abstractization.</b> </li>
      <p align="justify"> Swarm communication enables the generation of a single concept out of the individual communication lines towards the actors (objects) involved in a process. Swarm communications translates the processes’ behaviours into explicit descriptions observable at a single location. The picture down below visually exemplifies how from a complex communication between 3 actors we may extract a swarm description hiding the non-essential details for the whole image of the system. </p>
 
-    <psk-img title="Swarm Description and set of bees with shared identity as instances" src="/assets/images/swarmsExplained/SwarmDescription2.png"></psk-img>
+    <psk-img title="Swarm Description and set of bees with shared identity as instances" src="/assets/images/newlook/SwarmDescription2.png"></psk-img>
 
       <p align="justify">In swarm communication, the actors of the OOP model (or of the actor model theory) are replaced by phases of swarm communication. Actually, this happens in order for the actors to not exist outside space and time. Swarm communications is better at abstractization than the metaphor of direct messages communication between actors because the actors have a location in time and space. The intuition of phase is better of evidentiating the location (a concept that unifies the space where the computing takes place and the stage/ moment a.k.a. the time). The actors with a location in time and space are becoming just phases of the communication process between actors, the actors themselves being just functionality providers to the swarm, and not decisionmakers.  As per the bee metaphor: the actors are the flowers providing the nectar, while the bees swarm decides what flowers to be visited and in what order. The decisions concerning the communication flux (the order and content of the messages) are described in swarm and not in the actors’ code. These enables the actors to provide generic functionalities, reusable, while the swarm code may accurately describe the unified behaviour as the result of the actors’ interactions.</p>
       <p align="justify">It is worth mentioning, as well, that the message-passing model the swarm communication aims at improving does not easily allow modelling the situation when a query may receive multiple answers (e.g. a random number of answers). The similarity with a function calling thus dissipates, rather shifting to an observer pattern model, with the inherent complications. Swarm communication provides easily comprehensible abstractization by eliminating the operation with explicit messages. In the above picture, the actors may communicate in arbitrarily complex ways, however, for the programmer the whole communication process is reduced to modelling the logic of such a complex messages flux by a single “swarm description”.</p>
@@ -65,7 +65,7 @@ their character as processes and refining them in order to achieve conceptual un
 <psk-chapter title="Swarm categories">
   <p align="justify"> In our perspective on swarm programming, a class definition is a particular case of swarm description, as the classes instances (objects) are a particular case of degenerate swarm ( a swarm with a single object). We may observe that the concept of an instance of an object is not applicable to the persistent objects (objects serialized into a database and subsequently deserialized). That is because in order to be accurate, such a serializable object has actually more instances (usually these instances are not present at the same time but at different moments). Although this debate may seem overly academic and lacking practicality at first, our research has shown that this perspective enables unification of a larger set of concepts, brought together under the concept of swarm categories. These swarm categories are built to model different processes categories.</p>
 
-<psk-img title="Swarm categories"  src="/assets/images/swarmsExplained/SwarmCategories.png"></psk-img>
+<psk-img title="Swarm categories"  src="/assets/images/newlook/SwarmCategories.png"></psk-img>
 
 <p align="justify">It is worth mentioning that our preceding articles are also identifying 3 executable choreographies categories:</p>
 <ul>
@@ -91,7 +91,7 @@ Smart contract | Blockchain based  long living processes | In PrivateSky, a smar
 </psk-chapter>
 
 <psk-chapter title="Different kinds of identities">
-  <psk-img title="Categories of relevant identities for  swarm communication" src="/pages/PrivateSky/IDCategories.png"></psk-img>
+  <psk-img title="Categories of relevant identities for  swarm communication" src="assets/images/newlook/IDCategories.png"></psk-img>
 
   <p align="justify">The concept of identity is used in 4 different ways, possibly generating confusion. We may be, as such, in one of the following situations:</p>
   <ul>
