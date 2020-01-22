@@ -251,6 +251,9 @@
                         "name": "psk-radio"
                     },
                     {
+                        "name": "psk-radio-group"
+                    },
+                    {
                         "name": "psk-checkbox"
                     },
                     {

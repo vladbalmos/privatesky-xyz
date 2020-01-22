@@ -1,4 +1,4 @@
-<psk-page title="Psk-Radio & Psk-Radio-Group Components">
+<psk-page title="Psk-Radio">
 
     <psk-toc title="Table of Contents">
     </psk-toc>
@@ -23,15 +23,10 @@
         </psk-radio>
     </psk-property-descriptor>
 
-    <psk-property-descriptor title="Supported properties for Psk-Radio-Group">
-        <psk-radio-group data-define-props="true">
-        </psk-radio-group>
-    </psk-property-descriptor>
-
     <psk-example title="Code Examples">
         <psk-chapter title="Source Code">
-<psk-chapter title="JavaScript Model">
-<psk-code language="js">
+            <psk-chapter title="JavaScript Model">
+                <psk-code language="js">
     gender: {
         label: "Select your gender",
         required: true,
@@ -44,24 +39,24 @@
             }
         ]
     }
-</psk-code>
-</psk-chapter>
+                </psk-code>
+            </psk-chapter>
 
-<psk-chapter title="Component usage with model">
-<psk-code>
-    <psk-form-row>
-        <psk-radio-group view-model="gender"> </psk-radio-group>
-    </psk-form-row>
-</psk-code>
-</psk-chapter>
+            <psk-chapter title="Component usage with model">
+                <psk-code>
+                    <psk-form-row>
+                        <psk-radio-group view-model="gender"> </psk-radio-group>
+                    </psk-form-row>
+                </psk-code>
+            </psk-chapter>
 
-</psk-chapter>
+        </psk-chapter>
 
         <psk-chapter title="Visual example">
             <psk-form controller-name="TestFormController" actions=" ">
-				<psk-form-row>
-					<psk-radio-group view-model="gender"> </psk-radio-group>
-				</psk-form-row>
+                <psk-form-row>
+                    <psk-radio-group view-model="gender"> </psk-radio-group>
+                </psk-form-row>
             </psk-form>
         </psk-chapter>
 
