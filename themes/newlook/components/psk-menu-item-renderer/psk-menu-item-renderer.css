@@ -6,6 +6,7 @@ div {
 
 div.item_container {
     padding: 9px 20px 9px 9px;
+    text-align:left;
 }
 
 a.active div,
@@ -40,10 +41,10 @@ span.icon {
 
 .children {
     position: absolute;
-    top: 56px;
     left: 0;
     display: none;
     background: #051130;
+    z-index:100;
 }
 
 .children .wrapper_container {
