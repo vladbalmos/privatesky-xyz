@@ -21,42 +21,6 @@
       </url><url>
         <loc>https://privatesky.xyz/?PrivateSky/code-examples</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?API/privatesky-apis</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?API/swarms</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?API/interactions</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?API/error-handling</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?API/domains</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?API/blockchain</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?API/bars</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?API/csbs</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?Development/coding-style</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?Development/unit-testing-map</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?Development/node-modules</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?Development/workers-and-isolates</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?Development/encrypted-choreographies</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?Development/development-guide</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?Development/communication</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?Development/swarm-engine</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?Development/syndicate</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?Development/annotation-engine</loc>
-      </url><url>
         <loc>https://privatesky.xyz/?EDFS/edfs</loc>
       </url><url>
         <loc>https://privatesky.xyz/?EDFS/brick-archives</loc>
@@ -66,20 +30,6 @@
         <loc>https://privatesky.xyz/?EDFS/ssapps</loc>
       </url><url>
         <loc>https://privatesky.xyz/?EDFS/secret-smart-contracts</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?Tools/tool-list</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?Tools/bar</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?Tools/pskdomain</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?Tools/pskwallet</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?Tools/csbwizard</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?Tools/pskmonitor</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?Tools/governance</loc>
       </url><url>
         <loc>https://privatesky.xyz/?Cardinal/web-components-mvc</loc>
       </url><url>
@@ -150,6 +100,80 @@
         <loc>https://privatesky.xyz/?web-components/toolbar</loc>
       </url><url>
         <loc>https://privatesky.xyz/?web-components/app-menu</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?forms/using-forms</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?forms/psk-form</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?forms/psk-form-row</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?forms/psk-label</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?forms/psk-input</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?forms/psk-date-input</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?forms/psk-text-input</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?forms/psk-password-input</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?forms/psk-number-input</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?forms/psk-email-input</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?forms/psk-select</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?forms/psk-radio</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?forms/psk-checkbox</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?forms/psk-for-each</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?Tools/tool-list</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?Tools/bar</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?Tools/pskdomain</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?Tools/pskwallet</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?Tools/csbwizard</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?Tools/pskmonitor</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?Tools/governance</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?Development/unit-testing-map</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?Development/node-modules</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?Development/workers-and-isolates</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?Development/encrypted-choreographies</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?Development/communication</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?Development/swarm-engine</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?Development/syndicate</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?Development/annotation-engine</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?API/privatesky-apis</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?API/swarms</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?API/interactions</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?API/error-handling</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?API/domains</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?API/blockchain</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?API/bars</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?API/csbs</loc>
       </url><url>
         <loc>https://privatesky.xyz/?glossary</loc>
       </url>

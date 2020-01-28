@@ -13,7 +13,7 @@
     "esm": "^3.2.25"
   },
   "dependencies": {
-    "cardinal-updater": "PrivateSky/cardinal-updater"
+    "cardinal-updater": "github:PrivateSky/cardinal-updater"
   },
   "license": "MIT"
 }

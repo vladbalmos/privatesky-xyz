@@ -1,13 +1,13 @@
 <psk-page title="Advanced topics">
-    <psk-toc></psk-toc>
+    <psk-toc title="Annotation engine"></psk-toc>
 
   <psk-chapter title="Annotations and aspect-oriented programming">
   	<p align="justify"><b>Aspect-oriented programming (AOP)</b> is a programming paradigm that extends modularization due to the fact that it allows the separation of deep cross-cutting relationships into orthogonal aspects of behaviors. Traditional modules encapsulate participants (actors) and contain the code necessary for them to implement system services. Aspect-oriented programming modules contain the code required to implement a single service of the system, taking into account all possible actors. In other words, the aspect-oriented modules cross-cut the usage methods. The UAIC team, together with DPO researchers, is investigating ways to apply AOP for programming swarm-type executable choreographies.</p>
   </psk-chapter>
 
   <psk-chapter title="Types of swarms that can benefit from annotations. Approaches.">
-  	<psk-table title = "Types of swarms that can benefit from annotations. Approaches." dimensions="50|50" head="true">
-    	<b>Type</b> | <b>Aspects that can be programmed using AOP with annotations</b>
+  	<psk-table title = "Types of swarms that can benefit from annotations. Approaches." dimensions="50|50" header="true">
+    	Type | Aspects that can be programmed using AOP with annotations
     	flow | checking data types
     	swarm (verifiable choreography) | checking data types
     	encrypted choreography | checking data types
@@ -25,7 +25,7 @@
         |  use in assets
     </psk-table><br>
 
-    <psk-table title = "Use cases of the Annotations identified" dimensions="50|50" head="true">
+    <psk-table title = "Use cases of the Annotations identified" dimensions="50|50" header="true">
     	<b>Use cases</b> | <b>Description</b>
     	value data types | Annotations can be used to type (validate and verify) the properties of swarms. Value type data types are int, number, string, data, JSON
     	embedded object dată types | The initial implementation can be based on the JSON value data type
@@ -41,14 +41,14 @@
   <psk-chapter title="Syntax of Annotations">
   	<p align="justify">We will use the EBNF (Extended Backus-Naur Form) to describe the specific syntax of the new annotation mechanisms achieved through research in collaboration with the DPO.</p>
 
-  <psk-img title="Swarm variable syntax definition" src="/assets/images/developnent/SwarmVariableSyntax.PNG"></psk-img>
-  <psk-img title="Annotations syntax definition" src="/assets/images/developnent/Annotations.PNG"></psk-img>
+  <psk-img title="Swarm variable syntax definition" src="/assets/images/newlook/SwarmVariableSyntax.svg"></psk-img>
+  <psk-img title="Annotations syntax definition" src="/assets/images/newlook/Annotations.svg"></psk-img>
 
 </psk-chapter>
 
 
 <psk-chapter title="Mechanism for semantic annotation implementation">
-	<psk-img src="/assets/images/developnent/AnnotationEngine.png" title="Annotation Engine Mechanism"></psk-img>
+	<psk-img src="/assets/images/newlook/AnnotationEngine.png" title="Annotation Engine Mechanism"></psk-img>
 	<p align="justify">The proposed implementation in the discussions with DPO is to have a generic Annotation Engine (AE) component capable of recording new types of annotations. We have currently identified several types of events that trigger an internal communication with AE:</p>
 	<ul>
 		<li>When uploading a scheme, it may be necessary to create certain initializations in one or more annotations registered in the AE</li>

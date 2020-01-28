@@ -1,332 +1,376 @@
 {
-  "basePagesUrl": "/pages/",
-  "profile": {
-    "username": "PrivateSky",
-    "email": "privatesky@axiologic.net",
-    "avatar": "https://privatesky.xyz/assets/images/privatesky.png"
-  },
-  "menu": {
-    "defaultMenuConfig": {
-      "icon": "fa-bars",
-      "type": "route",
-      "component": "psk-page-loader",
-      "exact": true,
-      "indexed": true,
-      "pagePrefix": "?",
-      "historyType": "query"
+    "basePagesUrl": "/pages/",
+    "profile": {
+        "username": "PrivateSky",
+        "email": "privatesky@axiologic.net",
+        "avatar": "https://privatesky.xyz/assets/images/privatesky.png"
     },
-    "pages": [
-      {
-        "name": "Home",
-        "path": "/home",
-        "icon": "fa-home",
-        "pageSrc": "index.html"
-      },
-      {
-        "name": "About",
-        "path": "/About",
-        "icon": "fa-cog",
-        "children": [
-          {
-            "name": "About"
-          },
-          {
-            "name": "How to create a new site with Cardinal"
-          },
-          {
-            "name": "How to write documentation pages"
-          }
+    "menu": {
+        "defaultMenuConfig": {
+            "icon": "fa-bars",
+            "type": "route",
+            "component": "psk-page-loader",
+            "exact": true,
+            "indexed": true,
+            "pagePrefix": "?",
+            "historyType": "query"
+        },
+        "pages": [{
+                "name": "Home",
+                "path": "/home",
+                "icon": "fa-home",
+                "pageSrc": "index.html"
+            },
+            {
+                "name": "About",
+                "path": "/About",
+                "icon": "fa-cog",
+                "children": [{
+                        "name": "About"
+                    },
+                    {
+                        "name": "How to create a new site with Cardinal"
+                    },
+                    {
+                        "name": "How to write documentation pages"
+                    }
+                ]
+            },
+            {
+                "name": "PrivateSky",
+                "path": "/PrivateSky",
+                "icon": "fa-cog",
+                "children": [{
+                        "name": "Main Innovations"
+                    },
+                    {
+                        "name": "Why",
+                        "indexed": "false"
+                    },
+                    {
+                        "name": "Architecture"
+                    },
+                    {
+                        "name": "Development Vision",
+                        "indexed": "false"
+                    },
+                    {
+                        "name": "Swarms Explained"
+                    },
+                    {
+                        "name": "Interactions"
+                    },
+                    {
+                        "name": "Installation"
+                    },
+                    {
+                        "name": "Code Examples"
+                    }
+                ]
+            },
+            {
+                "name": "EDFS",
+                "path": "/EDFS",
+                "icon": "fa-cog",
+                "children": [{
+                        "name": "EDFS"
+                    },
+                    {
+                        "name": "Brick Archives"
+                    },
+                    {
+                        "name": "Cloud Safe Boxes"
+                    },
+                    {
+                        "name": "SSApps"
+                    },
+                    {
+                        "name": "Secret Smart Contracts"
+                    }
+                ]
+            },
+            {
+                "name": "Cardinal",
+                "path": "/Cardinal",
+                "icon": "fa-cog",
+                "children": [{
+                        "name": "Web Components MVC"
+                    },
+                    {
+                        "name": "Models"
+                    },
+                    {
+                        "name": "Views"
+                    },
+                    {
+                        "name": "Controllers"
+                    },
+                    {
+                        "name": "Events"
+                    },
+                    {
+                        "name": "Themes"
+                    }
+                ]
+            },
+            {
+                "name": "PSK Wiki",
+                "path": "/psk-wiki",
+                "icon": "fa-bolt",
+                "children": [{
+                        "name": "psk-card"
+                    },
+                    {
+                        "name": "psk-chapter"
+                    },
+                    {
+                        "name": "psk-code"
+                    },
+                    {
+                        "name": "psk-copy-clipboard"
+                    },
+                    {
+                        "name": "psk-description"
+                    },
+                    {
+                        "name": "psk-example"
+                    },
+                    {
+                        "name": "psk-img"
+                    },
+                    {
+                        "name": "psk-link"
+                    },
+                    {
+                        "name": "psk-list"
+                    },
+                    {
+                        "name": "psk-page"
+                    },
+                    {
+                        "name": "psk-table"
+                    },
+                    {
+                        "name": "psk-toc"
+                    }
+                ]
+            },
+            {
+                "name": "Web Components",
+                "path": "/web-components",
+                "icon": "fa-cog",
+                "children": [{
+                        "name": "Page Not Found"
+                    },
+                    {
+                        "name": "Feedback List"
+                    },
+                    {
+                        "name": "App Router"
+                    },
+                    {
+                        "name": "Attachments List"
+                    },
+                    {
+                        "name": "Files Chooser"
+                    },
+                    {
+                        "name": "Modal"
+                    },
+                    {
+                        "name": "PIN Popup"
+                    },
+                    {
+                        "name": "UI Loader"
+                    },
+                    {
+                        "name": "User Profile"
+                    },
+                    {
+                        "name": "Wizard"
+                    },
+                    {
+                        "name": "Floating Menu"
+                    },
+                    {
+                        "name": "Icon"
+                    },
+                    {
+                        "name": "Grid"
+                    },
+                    {
+                        "name": "Container"
+                    },
+                    {
+                        "name": "Slideshow"
+                    },
+                    {
+                        "name": "Toolbar"
+                    },
+                    {
+                        "name": "App Menu"
+                    }
+                ]
+            },
+            {
+                "name": "Forms",
+                "children": [{
+                        "name": "Using Forms"
+                    },
+                    {
+                        "name": "psk-form"
+                    },
+                    {
+                        "name": "psk-form-row"
+                    },
+                    {
+                        "name": "psk-label"
+                    },
+                    {
+                        "name": "psk-input"
+                    },
+                    {
+                        "name": "psk-date-input"
+                    },
+                    {
+                        "name": "psk-text-input"
+                    },
+                    {
+                        "name": "psk-password-input"
+                    },
+                    {
+                        "name": "psk-number-input"
+                    },
+                    {
+                        "name": "psk-email-input"
+                    },
+                    {
+                        "name": "psk-select"
+                    },
+                    {
+                        "name": "psk-radio"
+                    },
+                    {
+                        "name": "psk-radio-group"
+                    },
+                    {
+                        "name": "psk-checkbox"
+                    },
+                    {
+                        "name": "psk-for-each"
+                    }
+                ]
+            },
+            {
+                "name": "Tools",
+                "path": "/Tools",
+                "icon": "fa-cog",
+                "children": [{
+                        "name": "Tool List"
+                    },
+                    {
+                        "name": "bar"
+                    },
+                    {
+                        "name": "PSKDomain"
+                    },
+                    {
+                        "name": "PSKWallet"
+                    },
+                    {
+                        "name": "CSBWizard"
+                    },
+                    {
+                        "name": "PSKMonitor"
+                    },
+                    {
+                        "name": "Governance"
+                    }
+                ]
+            },
+            {
+                "name": "Development",
+                "path": "/Development",
+                "icon": "fa-cog",
+                "children": [
+                    {
+                        "name": "Coding style"
+                    },
+                    {
+                        "name": "Unit testing map",
+                        "indexed": "false"
+                    },
+                    {
+                        "name": "Node Modules"
+                    },
+                    {
+                        "name": "Workers and Isolates"
+                    },
+                    {
+                        "name": "Encrypted Choreographies"
+                    },
+                    {
+                        "name": "Development guide",
+                        "indexed": "false"
+                    },
+                    {
+                        "name": "Communication",
+                        "indexed": "false"
+                    },
+                    {
+                        "name": "Advanced",
+                        "indexed": "false"
+                    },
+                    {
+                        "name": "Swarm Engine"
+                    },
+                    {
+                        "name": "Syndicate"
+                    },
+                    {
+                        "name": "Annotation Engine"
+                    }
+                ]
+            },
+            {
+                "name": "APIs",
+                "path": "/API",
+                "icon": "fa-cog",
+                "children": [{
+                        "name": "PrivateSky APIs"
+                    },
+                    {
+                        "name": "Swarms"
+                    },
+                    {
+                        "name": "Interactions"
+                    },
+                    {
+                        "name": "Error Handling"
+                    },
+                    {
+                        "name": "Domains"
+                    },
+                    {
+                        "name": "Blockchain"
+                    },
+                    {
+                        "name": "BARs"
+                    },
+                    {
+                        "name": "CSBs"
+                    }
+                ]
+            },
+            {
+                "name": "Glossary",
+                "path": "/glossary",
+                "pageSrc": "About/glossary.html"
+            },
+            {
+                "name": "404",
+                "indexed": false
+            }
         ]
-      },
-      {
-        "name": "PrivateSky",
-        "path": "/PrivateSky",
-        "icon": "fa-cog",
-        "children": [
-          {
-            "name": "Main Innovations"
-          },
-          {
-            "name": "Why",
-            "indexed": "false"
-          },
-          {
-            "name": "Architecture"
-          },
-          {
-            "name": "Development Vision",
-            "indexed": "false"
-          },
-          {
-            "name": "Swarms Explained"
-          },
-          {
-            "name": "Interactions"
-          },
-          {
-            "name": "Installation"
-          },
-          {
-            "name": "Code Examples"
-          }
-        ]
-      },
-      {
-        "name": "APIs",
-        "path": "/API",
-        "icon": "fa-cog",
-        "children": [
-          {
-            "name": "PrivateSky  APIs"
-          },
-          {
-            "name": "Swarms"
-          },
-          {
-            "name": "Interactions"
-          },
-          {
-            "name": "Error Handling"
-          },
-          {
-            "name": "Domains"
-          },
-          {
-            "name": "Blockchain"
-          },
-          {
-            "name": "BARs"
-          },
-          {
-            "name": "CSBs"
-          }
-        ]
-      },
-      {
-        "name": "Development",
-        "path": "/Development",
-        "icon": "fa-cog",
-        "children": [
-          {
-            "name": "Coding style"
-          },
-          {
-            "name": "Unit testing map"
-          },
-          {
-            "name": "Node Modules"
-          },
-          {
-            "name": "Workers and Isolates"
-          },
-          {
-            "name": "Encrypted Choreographies"
-          },
-          {
-            "name": "Development guide"
-          },
-          {
-            "name": "Communication"
-          },
-          {
-            "name": "Advanced",
-            "indexed": "false"
-          },
-          {
-            "name": "Swarm Engine"
-          },
-          {
-            "name": "Syndicate"
-          },
-          {
-            "name": "Annotation Engine"
-          }
-        ]
-      },
-      {
-        "name": "EDFS",
-        "path": "/EDFS",
-        "icon": "fa-cog",
-        "children": [
-          {
-            "name": "EDFS"
-          },
-          {
-            "name": "Brick Archives"
-          },
-          {
-            "name": "Cloud Safe Boxes"
-          },
-          {
-            "name": "SSApps"
-          },
-          {
-            "name": "Secret Smart Contracts"
-          }
-        ]
-      },
-      {
-        "name": "Tools",
-        "path": "/Tools",
-        "icon": "fa-cog",
-        "children": [
-          {
-            "name": "Tool List"
-          },
-          {
-            "name": "bar"
-          },
-          {
-            "name": "PSKDomain"
-          },
-          {
-            "name": "PSKWallet"
-          },
-          {
-            "name": "CSBWizard"
-          },
-          {
-            "name": "PSKMonitor"
-          },
-          {
-            "name": "Governance"
-          }
-        ]
-      },
-      {
-        "name": "Cardinal",
-        "path": "/Cardinal",
-        "icon": "fa-cog",
-        "children": [
-          {
-            "name": "Web Components MVC"
-          },
-          {
-            "name": "Models"
-          },
-          {
-            "name": "Views"
-          },
-          {
-            "name": "Controllers"
-          },
-          {
-            "name": "Events"
-          },
-          {
-            "name": "Themes"
-          }
-        ]
-      },
-      {
-        "name": "PSK Wiki",
-        "path": "/psk-wiki",
-        "icon": "fa-bolt",
-        "children": [
-          {
-            "name": "psk-card"
-          },
-          {
-            "name": "psk-chapter"
-          },
-          {
-            "name": "psk-code"
-          },
-          {
-            "name": "psk-copy-clipboard"
-          },
-          {
-            "name": "psk-description"
-          },
-          {
-            "name": "psk-example"
-          },
-          {
-            "name": "psk-img"
-          },
-          {
-            "name": "psk-link"
-          },
-          {
-            "name": "psk-list"
-          },
-          {
-            "name": "psk-page"
-          },
-          {
-            "name": "psk-table"
-          },
-          {
-            "name": "psk-toc"
-          }
-        ]
-      },
-      {
-        "name": "Web Components",
-        "path": "/web-components",
-        "icon": "fa-cog",
-        "children": [
-          {
-            "name": "Page Not Found"
-          },
-          {
-            "name": "Feedback List"
-          },
-          {
-            "name": "App Router"
-          },
-          {
-            "name": "Attachments List"
-          },
-          {
-            "name": "Files Chooser"
-          },
-          {
-            "name": "Modal"
-          },
-          {
-            "name": "PIN Popup"
-          },
-          {
-            "name": "UI Loader"
-          },
-          {
-            "name": "User Profile"
-          },
-          {
-            "name": "Wizard"
-          },
-          {
-            "name": "Floating Menu"
-          },
-          {
-            "name": "Icon"
-          },
-          {
-            "name": "Grid"
-          },
-          {
-            "name": "Container"
-          },
-          {
-            "name": "Slideshow"
-          },
-          {
-            "name": "Toolbar"
-          },
-          {
-            "name": "App Menu"
-          }
-        ]
-      },
-      {
-        "name": "Glossary",
-        "path": "/glossary",
-        "pageSrc": "About/glossary.html"
-      },{
-        "name": "404",
-        "indexed": false
-      }
-    ]
-  }
+    }
 }

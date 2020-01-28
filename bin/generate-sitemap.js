@@ -1,9 +1,9 @@
 const fs = require("fs");
 const path = require("path");
 const appConfig = "./app-config.json";
-import DefaultController from "../scripts/controllers/DefaultController";
+import DefaultController from "../scripts/controllers/DefaultApplicationController";
 
-let buildSiteMap = function () {
+let buildSiteMap = function() {
 
     const isValidUrl = (string) => {
         try {
@@ -21,7 +21,7 @@ let buildSiteMap = function () {
     }
 
 
-    let readFileData = function (pageStructureUrl, callback) {
+    let readFileData = function(pageStructureUrl, callback) {
         fs.readFile(path.resolve(pageStructureUrl), (err, data) => {
             if (err) {
                 console.log(err);
@@ -31,8 +31,8 @@ let buildSiteMap = function () {
         })
     }
 
-    readFileData(appConfig, function (globalNavigation) {
-        let configuration = DefaultController._prepareConfiguration(globalNavigation, websiteBase);
+    readFileData(appConfig, function(globalNavigation) {
+        let configuration = DefaultApplicationController._prepareConfiguration(globalNavigation, websiteBase);
 
         let siteMap = "";
         let historyType = configuration.historyType;
@@ -47,7 +47,7 @@ let buildSiteMap = function () {
                 break;
         }
 
-        let buildXMLTag = function (websitePages) {
+        let buildXMLTag = function(websitePages) {
 
             websitePages.forEach(page => {
 
@@ -70,7 +70,7 @@ let buildSiteMap = function () {
                  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
                  ${siteMap}
                  </urlset>`;
-        fs.writeFile("./sitemap.xml", siteMap, function (err) {
+        fs.writeFile("./sitemap.xml", siteMap, function(err) {
             if (err) {
                 console.log("An error occurred while generating the sitemap");
             } else {
@@ -82,7 +82,3 @@ let buildSiteMap = function () {
 };
 
 buildSiteMap();
-
-
-
-

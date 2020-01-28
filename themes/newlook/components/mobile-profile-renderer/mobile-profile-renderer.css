@@ -1,17 +1,18 @@
-:host{
-  margin-top:19px;
-}
-.card-body img{
-  float:left;
-  margin-right: 10px;
+:host {
+    height: 55px;
+    display: block;
 }
 
-.card-body span{
-  float:left;
-  line-height: 50px;
+.card-body img {
+    float: left;
+    margin-right: 10px;
 }
 
-.profile{
-  padding-left: 20px;
+.card-body span {
+    float: left;
+    line-height: 50px;
 }
 
+.profile {
+    margin: 5px 0 5px 20px;
+}
