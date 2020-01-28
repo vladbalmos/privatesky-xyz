@@ -292,9 +292,9 @@
                 "name": "Development",
                 "path": "/Development",
                 "icon": "fa-cog",
-                "children": [{
-                        "name": "Coding style",
-                        "indexed": "false"
+                "children": [
+                    {
+                        "name": "Coding style"
                     },
                     {
                         "name": "Unit testing map",
