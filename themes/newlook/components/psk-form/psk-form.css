@@ -2,5 +2,6 @@
 @import url(../../../commons/bootstrap/css/bootstrap.min.css);
 #actions {
     display: flex;
-    justify-content: center;
+    justify-content: start;
+    margin-left:-10px;
 }
