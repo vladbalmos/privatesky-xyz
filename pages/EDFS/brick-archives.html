@@ -75,21 +75,25 @@
                 allows to specify the file system that stores the files added to the archive, the brick storage, the
                 brick size and the type of encryption and/or compression used, through the following interface:
             </p>
-            <ul>
+             <p> 
                 <psk-code language="JavaScript">registerStorageProvider (storageProviderName, factory)</psk-code>
-                <br>
+                
                 <p allign="justify">Associates to <i>storageProviderName</i> the function factory which generates
                     instances of the brick
                     storage having the name <i>storageProviderName</i>.
                 </p>
+            </p>  
+            <p>
                 <psk-code>registerFsAdapter (fsAdapterName, factory)</psk-code>
-                <br>
+                
                 <p allign="justify">
                     Associates to <i>fsAdapterName</i> the function factory which generates instances of the file system
                     adapter having the name <i>fsAdapterName</i>.
                 </p>
+            </p>
+            <p>
                 <psk-code>setStorageProvider (storageProviderName, ...args)</psk-code>
-                <br>
+                
                 <p allign="justify">Calls the function factory associated with the brick storage provider <i>storageProviderName</i>
                     (by
                     calling registerStorageProvider)in order to generate an instance of the <i>storageProviderName</i>
@@ -97,24 +101,30 @@
                     is kept inside the ArchiveConfigurator instance. <i>...args</i> is an array of arguments passed to
                     function factory.
                 </p>
+            </p>
+            <p>
                 <psk-code>setFsAdapter(fsAdapterName, ...args)</psk-code>
-                <br>
+                
                 <p allign="justify">
                     Calls the function factory associated with the file system adapter <i>fsAdapterName</i> (by calling
                     <i>registerFsAdapter</i>)in order to generate an instance of the <i>storageProviderName</i> that is
                     kept inside the ArchiveConfigurator instance. <i>...args</i> is an array of arguments passed to
                     function factory.
                 </p>
+            </p>
+            <p>
                 <psk-code>setEncryptionAlgorithm(algorithm)</psk-code>
-                <br>
+                
                 <p allign="justify">
                     Sets the encryption algorithm used when encrypting the archive. The <i>algorithm</i> argument is the
                     name
                     of the encryption algorithm used. If this function is called, then implicitly the archive is
                     considered encrypted and subsequently all bricks will be encrypted with its own cryptographic key.
                 </p>
+            </p>
+            <p>
                 <psk-code>setCompressionAlgorithm(algorithm)</psk-code>
-                <br>
+                
                 <p allign="justify">
                     Sets the compression algorithm used when compressing the archive. The <i>algorithm</i> argument is
                     the name
@@ -122,59 +132,74 @@
                     then implicitly the archive is considered compressed and subsequently all bricks will be compressed
                     using the compression algorithm specified.
                 </p>
+            </p>
 
-            </ul>
         </psk-chapter>
         <psk-chapter title="Archive class">
             <p allign="justify">
                 <i>Archive</i> is the main class of the BAR library and contains the methods that form the BAR library’s
                 API. Below are described <i>Archive</i>’s methods:
             </p>
-            <ul>
+            <p>
                 <psk-code language="JavaScript">addFolder(fsFolderPath, barPath, callback)</psk-code>
-                <br>
+                
                 <p allign="justify">
                     Adds the folder at <i>fsFolderPath</i> to the current archive at <i>barPath</i>.
                 </p>
+            </p>
+            <p>
                 <psk-code language="JavaScript">addFile(fsFilePath, barPath, callback)</psk-code>
-                <br>
+                
                 <p allign="justify">
                     Adds the file at <i>fsFilePath</i> to the current archive at <i>barPath</i>.
                 </p>
+            </p>
+            <p>
                 <psk-code language="JavaScript">extractFolder(fsFolderPath, barPath, callback)</psk-code>
-                <br>
+                
                 <p allign="justify">
                     Extracts the folder, stored inside the current archive at <i>barPath</i>, to local path <i>fsFolderPath</i>.
                 </p>
+            </p>
+            <p>
                 <psk-code language="JavaScript">extractFile(fsFilePath, barPath, callback)</psk-code>
-                <br>
+                
                 <p allign="justify">
                     Extracts the file, stored inside the current archive at <i>barPath</i>, to local path
                     <i>fsFilePath</i>.
                 </p>
+            </p>
+            <p>
                 <psk-code language="JavaScript">writeFile(barPath, data, callback)</psk-code>
-                <br>
+                
                 <p allign="justify">
                     Stores the bytes in <i>data</i> argument in the current archive at <i>barPath</i>.
                 </p>
+            </p>
+            <p>
                 <psk-code language="JavaScript">readFile(barPath, callback)</psk-code>
-                <br>
+                
                 <p allign="justify">
                     Extracts and returns data stored inside the current archive at <i>barPath</i>.
                 </p>
+            </p>
+            <p>
                 <psk-code language="JavaScript">getSeed()</psk-code>
-                <br>
+                
                 <p allign="justify">
                     Returns the <i>SEED</i> serialization of the current <i>Archive</i> instance. The <i>SEED</i> will
                     be later used when extracting the archive to localize and decrypt the archive’s bar map
                 </p>
+            </p>
+            <p>
                 <psk-code language="JavaScript">setSeed(seedSerialization)</psk-code>
-                <br>
+                
                 <p allign="justify">
                   This function is called before extracting the archive. The <i>seedSerialization</i> argument is used to
                     localize and decrypt the archive’s bar map.
                 </p>
-            </ul>
+            </p>
+            
         </psk-chapter>
     </psk-chapter>
 
