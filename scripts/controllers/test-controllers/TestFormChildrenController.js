@@ -1,4 +1,4 @@
-import DefaultFormController from "../DefaultFormController.js";
+import DefaultFormController from "../base-controllers/DefaultFormController.js";
 
 export default class TestFormChildrenController extends DefaultFormController {
     constructor(element) {
@@ -38,13 +38,5 @@ export default class TestFormChildrenController extends DefaultFormController {
                 }
             }
         });
-
-        this._element.addEventListener('my-submit', (event) => {
-            event.preventDefault();
-            event.stopImmediatePropagation();
-            /**
-             * Custom implementation here...
-             */
-        }, true);
     }
 }
