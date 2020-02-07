@@ -4,10 +4,14 @@
     </psk-toc>
 
     <psk-description>
-        <p>This component is dividing the layout in page down to the number that was given to the <code>columns</code>
-            property.</p>
-        <p>As a reference we used the bootstrap documentation:</p>
-        <a href="https://getbootstrap.com/docs/4.1/layout/grid/">bootstrap grid.</a>
+        <p>Every web-site is trying to have a very nice layout of elements inside the page and also to to be responsive. Psk-grid is intending to do so. The scope of the component is to set up the layout according to a minimal setup:
+            <code>number of columns</code>and the
+            <code>layout rules</code>.
+        </p>
+        <p>This component is dividing the inner content into columns and applies the layour rules, both set up within the <code>columns</code> and <code>layout</code> attributes. </p>
+        <p>As a reference we used the bootstrap documentation: <a href="https://getbootstrap.com/docs/4.1/layout/grid/">bootstrap grid.</a></p>
+        <p>It is very important to keep in mind that if the number of columns is not the same with the number of the values for a layout rule, that rule will be ignored. The bolow examples will show how this component works.</p>
+        <p>The last example for this component will show what will happen if the values are not according to the rules for <code>layout</code> attribute.</p>
     </psk-description>
 
     <psk-property-descriptor title="Supported properties">
@@ -16,104 +20,155 @@
     </psk-property-descriptor>
 
     <psk-chapter title="HTML Children">
-        <p>This component will render the complete text between the tags in the same number of columns as the property .
+        <p>This component will render the complete text between the tags in the same number of columns as the property.
         </p>
     </psk-chapter>
 
     <psk-chapter title="Code Example">
-        <psk-code>
-            <psk-grid columns="6">
-                <p>6 columns grid</p>
-                <p>6 columns grid</p>
-                <p>6 columns grid</p>
-                <p>6 columns grid</p>
-                <p>6 columns grid</p>
-                <p>6 columns grid</p>
-                <p>6 columns grid</p>
-                <p>6 columns grid</p>
-                <p>6 columns grid</p>
-                <p>6 columns grid</p>
-                <p>6 columns grid</p>
-                <p>6 columns grid</p>
-            </psk-grid>
-        </psk-code>
         <psk-example title="Six Columns Example">
-            <psk-grid columns="6">
-                <p>6 columns grid</p>
-                <p>6 columns grid</p>
-                <p>6 columns grid</p>
-                <p>6 columns grid</p>
-                <p>6 columns grid</p>
-                <p>6 columns grid</p>
-                <p>6 columns grid</p>
-                <p>6 columns grid</p>
-                <p>6 columns grid</p>
-                <p>6 columns grid</p>
-                <p>6 columns grid</p>
-                <p>6 columns grid</p>
-            </psk-grid>
+            <psk-chapter title="Source code">
+                <psk-code>
+                    <psk-grid columns="6">
+                        <p>6 columns grid</p>
+                        <p>6 columns grid</p>
+                        <p>6 columns grid</p>
+                        <p>6 columns grid</p>
+                        <p>6 columns grid</p>
+                        <p>6 columns grid</p>
+                        <p>6 columns grid</p>
+                        <p>6 columns grid</p>
+                        <p>6 columns grid</p>
+                        <p>6 columns grid</p>
+                        <p>6 columns grid</p>
+                        <p>6 columns grid</p>
+                    </psk-grid>
+                </psk-code>
+            </psk-chapter>
+            <psk-chapter title="Visual example">
+                <psk-grid columns="6">
+                    <p>6 columns grid</p>
+                    <p>6 columns grid</p>
+                    <p>6 columns grid</p>
+                    <p>6 columns grid</p>
+                    <p>6 columns grid</p>
+                    <p>6 columns grid</p>
+                    <p>6 columns grid</p>
+                    <p>6 columns grid</p>
+                    <p>6 columns grid</p>
+                    <p>6 columns grid</p>
+                    <p>6 columns grid</p>
+                    <p>6 columns grid</p>
+                </psk-grid>
+            </psk-chapter>
         </psk-example>
-        <psk-code>
-            <psk-grid columns="4">
-                <p>4 columns grid</p>
-                <p>4 columns grid</p>
-                <p>4 columns grid</p>
-                <p>4 columns grid</p>
-                <p>4 columns grid</p>
-                <p>4 columns grid</p>
-                <p>4 columns grid</p>
-                <p>4 columns grid</p>
-                <p>4 columns grid</p>
-                <p>4 columns grid</p>
-                <p>4 columns grid</p>
-                <p>4 columns grid</p>
-        </psk-code>
         <psk-example title="Four Columns Example">
-            <psk-grid columns="4">
-                <p>4 columns grid</p>
-                <p>4 columns grid</p>
-                <p>4 columns grid</p>
-                <p>4 columns grid</p>
-                <p>4 columns grid</p>
-                <p>4 columns grid</p>
-                <p>4 columns grid</p>
-                <p>4 columns grid</p>
-                <p>4 columns grid</p>
-                <p>4 columns grid</p>
-                <p>4 columns grid</p>
-                <p>4 columns grid</p>
-            </psk-grid>
+            <psk-chapter title="Source code">
+                <psk-code>
+                    <psk-grid columns="4">
+                        <p>4 columns grid</p>
+                        <p>4 columns grid</p>
+                        <p>4 columns grid</p>
+                        <p>4 columns grid</p>
+                        <p>4 columns grid</p>
+                        <p>4 columns grid</p>
+                        <p>4 columns grid</p>
+                        <p>4 columns grid</p>
+                        <p>4 columns grid</p>
+                        <p>4 columns grid</p>
+                        <p>4 columns grid</p>
+                        <p>4 columns grid</p>
+                    </psk-grid>
+                </psk-code>
+            </psk-chapter>
+            <psk-chapter title="Visual example">
+                <psk-grid columns="4">
+                    <p>4 columns grid</p>
+                    <p>4 columns grid</p>
+                    <p>4 columns grid</p>
+                    <p>4 columns grid</p>
+                    <p>4 columns grid</p>
+                    <p>4 columns grid</p>
+                    <p>4 columns grid</p>
+                    <p>4 columns grid</p>
+                    <p>4 columns grid</p>
+                    <p>4 columns grid</p>
+                    <p>4 columns grid</p>
+                    <p>4 columns grid</p>
+                </psk-grid>
+            </psk-chapter>
         </psk-example>
-        <psk-code>
-            <psk-grid columns="3">
-                <p>3 columns grid</p>
-                <p>3 columns grid</p>
-                <p>3 columns grid</p>
-                <p>3 columns grid</p>
-                <p>3 columns grid</p>
-                <p>3 columns grid</p>
-                <p>3 columns grid</p>
-                <p>3 columns grid</p>
-                <p>3 columns grid</p>
-                <p>3 columns grid</p>
-                <p>3 columns grid</p>
-                <p>3 columns grid</p>
-        </psk-code>
         <psk-example title="Three Columns Example">
-            <psk-grid columns="3">
-                <p>3 columns grid</p>
-                <p>3 columns grid</p>
-                <p>3 columns grid</p>
-                <p>3 columns grid</p>
-                <p>3 columns grid</p>
-                <p>3 columns grid</p>
-                <p>3 columns grid</p>
-                <p>3 columns grid</p>
-                <p>3 columns grid</p>
-                <p>3 columns grid</p>
-                <p>3 columns grid</p>
-                <p>3 columns grid</p>
-            </psk-grid>
+            <psk-chapter title="Source code">
+                <psk-code>
+                    <psk-grid columns="3">
+                        <p>3 columns grid</p>
+                        <p>3 columns grid</p>
+                        <p>3 columns grid</p>
+                        <p>3 columns grid</p>
+                        <p>3 columns grid</p>
+                        <p>3 columns grid</p>
+                        <p>3 columns grid</p>
+                        <p>3 columns grid</p>
+                        <p>3 columns grid</p>
+                        <p>3 columns grid</p>
+                        <p>3 columns grid</p>
+                        <p>3 columns grid</p>
+                    </psk-grid>
+                </psk-code>
+            </psk-chapter>
+            <psk-chapter title="Visual example">
+                <psk-grid columns="3">
+                    <p>3 columns grid</p>
+                    <p>3 columns grid</p>
+                    <p>3 columns grid</p>
+                    <p>3 columns grid</p>
+                    <p>3 columns grid</p>
+                    <p>3 columns grid</p>
+                    <p>3 columns grid</p>
+                    <p>3 columns grid</p>
+                    <p>3 columns grid</p>
+                    <p>3 columns grid</p>
+                    <p>3 columns grid</p>
+                    <p>3 columns grid</p>
+                </psk-grid>
+            </psk-chapter>
+        </psk-example>
+        <psk-example title="Three Columns Example - Wrong layout values">
+            <psk-chapter title="Source code">
+                <psk-code>
+                    As we see, for "s" breakpoint, the values are not according to the "layout"
+                    <psk-grid columns="3" layout="xs=[12,12,12] s=[-1 random wrong] m=[1,2,13] l=[2,3,auto]">
+                        <p>3 columns grid</p>
+                        <p>3 columns grid</p>
+                        <p>3 columns grid</p>
+                        <p>3 columns grid</p>
+                        <p>3 columns grid</p>
+                        <p>3 columns grid</p>
+                        <p>3 columns grid</p>
+                        <p>3 columns grid</p>
+                        <p>3 columns grid</p>
+                        <p>3 columns grid</p>
+                        <p>3 columns grid</p>
+                        <p>3 columns grid</p>
+                    </psk-grid>
+                </psk-code>
+            </psk-chapter>
+            <psk-chapter title="Visual example">
+                <psk-grid columns="3" layout="xs=[12,12,12] s=[-1 random wrong] m=[1,2,13] l=[2,7,3]">
+                    <p>3 columns grid</p>
+                    <p>3 columns grid</p>
+                    <p>3 columns grid</p>
+                    <p>3 columns grid</p>
+                    <p>3 columns grid</p>
+                    <p>3 columns grid</p>
+                    <p>3 columns grid</p>
+                    <p>3 columns grid</p>
+                    <p>3 columns grid</p>
+                    <p>3 columns grid</p>
+                    <p>3 columns grid</p>
+                    <p>3 columns grid</p>
+                </psk-grid>
+            </psk-chapter>
         </psk-example>
     </psk-chapter>
 
