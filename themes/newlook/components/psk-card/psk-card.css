@@ -101,7 +101,7 @@
 .table-of-content {
     width: 20rem;
     position: fixed;
-    right: 0;
+    right: 6px;
     top: 125px;
     height: 80vh;
     overflow: auto;
