@@ -23,7 +23,7 @@
                 <span>If you want to use the basic functionalities of the form, you can create your own controller by extending the <strong>DefaultFormController</strong> as in below examples <i>(Form Examples)</i></span>
 				<span>The other way to do so is by extending the BindableController and by following the exact source code below:</span>
             </psk-list>
-            <psk-code language="js">
+            <psk-code language="Javascript">
 import BindableController from "./BindableController.js";
 
 export default class MyCustomFormController extends BindableController {
@@ -60,7 +60,7 @@ export default class MyCustomFormController extends BindableController {
         <p>Binding, at it's very basic, is the process where one thing is assinged to another thing. Here, we want to assign some attributes from a model to a component.</p>
         <p>To bind the model to a component, we need set the attribute <code>view-model</code> or <code>data-view-model</code> to the component we want to bind the data. Pay attention that the attribute <code>data-view-model</code> is available only for the component <psk-link page="forms/psk-for-each">psk-for-each</psk-link>, as described in the above chapter.</p>
         <p>Let's take a look at the following source code of a controller wich loads a model, and the HTML view:</p>
-        <psk-code language="js">
+        <psk-code language="Javascript">
 import DefaultFormController from "../DefaultFormController.js";
 
 export default class TestFormChildrenController extends DefaultFormController {
@@ -104,7 +104,7 @@ export default class TestFormChildrenController extends DefaultFormController {
     }
 }
         </psk-code>
-        <psk-code>
+        <psk-code language="markup">
 <psk-form controller-name="TestFormChildrenController">
     <psk-form-row>
         <psk-label view-model="sectionTitle"></psk-label>
@@ -155,7 +155,7 @@ export default class TestFormChildrenController extends DefaultFormController {
         <p>This part is not very complicated, if you ned only to have a submition, just extend the DefaultFormController like in the above examples and let the default behaviour handle it. The form will automatically collect the form-data from and will send them to your Server or ESB or whatever you use to receive the form-data by using the attributes exposed by the <psk-link page='forms/psk-form'>psk-form</psk-link> component.</p>
         <p>If you still want to customize the submition, no problem, this is also simple enough. At the end of the form, or wherever you need, add the component <psk-link page="web-components/psk-button">psk-button</psk-link>.</p>
         <p>Here is an example:</p>
-        <psk-code>
+        <psk-code language="markup">
 <psk-form controller-name="TestFormChildrenController">
     <psk-form-row>
         <psk-label view-model="sectionTitle"></psk-label>
@@ -181,7 +181,7 @@ export default class TestFormChildrenController extends DefaultFormController {
         <p>Strong recommendation here to avoid unexpected "surprises" from the browser. Write the event name using only lower cases letters and if you want to sepparate words, use only dash(-) like in the example.</p>
         <p>You will see that one of the attributes of this component is <code>event-name</code>. This event-name is the name of your handler. So, after you added the buttons, now go back to your custom form controller and register thess events. One notice; you can add as many buttons you need in here, nothing stops you.</p>
         <p>Here is an example of a controller that does this:</p>
-        <psk-code language="js">
+        <psk-code language="Javascript">
 import DefaultFormController from "../DefaultFormController.js";
 
 export default class TestFormChildrenController extends DefaultFormController {
@@ -213,7 +213,7 @@ export default class TestFormChildrenController extends DefaultFormController {
     <psk-example title="Form Examples">
         <psk-chapter title="Simple form example">
             <psk-chapter title="Model and Controller - TestFormController">
-                <psk-code language="js">
+                <psk-code language="Javascript">
 import DefaultFormController from "../DefaultFormController.js";
 
 export default class TestFormController extends DefaultFormController {
@@ -301,7 +301,7 @@ export default class TestFormController extends DefaultFormController {
             </psk-chapter>
 
             <psk-chapter title="HTML - View - TestFormController">
-                <psk-code>
+                <psk-code language="markup">
 <psk-form controller-name="TestFormController">
     <psk-form-row>
         <psk-label view-model="sectionTitle"></psk-label>
@@ -349,7 +349,7 @@ export default class TestFormController extends DefaultFormController {
 
         <psk-chapter title="Form example using psk-for-each component">
             <psk-chapter title="Model and Controller - TestFormForEachController">
-                <psk-code language="js">
+                <psk-code language="Javascript">
 import DefaultFormController from "../DefaultFormController.js";
 
 export default class TestFormForEachController extends DefaultFormController {
@@ -468,7 +468,7 @@ export default class TestFormForEachController extends DefaultFormController {
             </psk-chapter>
 
             <psk-chapter title="HTML - View - TestFormForEachController">
-                <psk-code>
+                <psk-code language="markup">
 <psk-form controller-name="TestFormForEachController">
     <psk-for-each data-view-model="entities">
         <template>

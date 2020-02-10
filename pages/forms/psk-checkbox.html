@@ -22,7 +22,7 @@
     <psk-example title="Code Examples">
         <psk-chapter title="Source Code">
 <psk-chapter title="JavaScript Model">
-<psk-code language="js">
+<psk-code language="Javascript">
     gdpr: {
         label: "Check if you agree with GDPR regulations",
         name: "gdpr",
@@ -39,11 +39,12 @@
         checkedValue: "yes",
         uncheckedValue: "no"
     }
+
 </psk-code>
 </psk-chapter>
 
 <psk-chapter title="Component usage with model">
-<psk-code>
+<psk-code language="markup">
     <psk-form-row>
         <psk-label>Agreements</psk-label>
     </psk-form-row>
@@ -51,11 +52,12 @@
         <psk-checkbox view-model="terms"></psk-checkbox>
         <psk-checkbox view-model="gdpr"></psk-checkbox>
     </psk-form-row>
+
 </psk-code>
 </psk-chapter>
 
 <psk-chapter title="Component usage as it is">
-<psk-code>
+<psk-code language="markup">
     <psk-form-row>
         <psk-label>Choose your favorites social medias</psk-label>
     </psk-form-row>
@@ -64,6 +66,7 @@
         <psk-checkbox checkbox-label="Facebook" label="Check if you like Facebook" checked-value="facebook" unchecked-value="deny-facebook"></psk-checkbox>
         <psk-checkbox checkbox-label="Instagram" label="Check if you like Instagram" checked-value="instagram" unchecked-value="deny-instagram"></psk-checkbox>
     </psk-form-row>
+    
 </psk-code>
 </psk-chapter>
 </psk-chapter>

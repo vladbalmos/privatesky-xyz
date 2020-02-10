@@ -18,7 +18,7 @@
    <p>
     After creating the new theme folder, we need to modify the <b>index.html</b> file. In <code>globalConfig</code> we have to specify which theme we want to render. Below you can see how to change the theme to “newlook”.
    </p>
-    <psk-code>
+    <psk-code language="markup">
           <script>
             globalConfig = {
                 theme: "newlook"
@@ -34,7 +34,7 @@
     <p>
       Normally, you could add your styles in the tag name of the component just like in the example below:
     </p>
-    <psk-code>
+    <psk-code language="css">
       my-element {
         color: black;
       }
@@ -45,7 +45,7 @@
     <p>
       With Shadow DOM, CSS selectors inside the component can be simplified and the parent component can be styled using the <code>:host</code> selector. Therefore the code above could be:
     </p>
-    <psk-code>
+    <psk-code language="css">
       :host {
         color: black;
       }
@@ -56,7 +56,7 @@
     <p>
       The <code>:host</code> selector can be in handy, if you want to add style to elements based on the parent component attributes. For example, the app-menu component uses in its composition the psk-menu-item-renderer component. Using the app-menu attribute named <b>hamburger</b>, we can write in <b>psk-menu-item-renderer.css</b> file new css rules that can change the children elements of the app-menu component. In the example below, you can see how to change all the div elements width, if the attribute hamburger is set up to true:
     </p>
-    <psk-code>
+    <psk-code language="css">
       :host([hamburger]) div {
         width: 300px;
     }    
@@ -75,12 +75,13 @@
       <p>
         A psk-card returns the following html structure:
       </p>
-      <psk-code>
+      <psk-code language="markup">
         <div class="card psk-card" >
           <div class="card-header">
               <h5>
               </h5>
           </div>
+
           <div class="card-body">
           </div>
         </div>        
@@ -101,11 +102,11 @@
       <p>
         This component renders the following html structure:
       </p>
-      <psk-code>
+      <psk-code language="markup">
         <div class=row>
-          …
-          elements
-          …
+          
+          <!-- elements -->
+          
         </div>        
       </psk-code>
       <p>
@@ -119,7 +120,7 @@
       <p>
         This component returns the following html structure:
       </p>
-      <psk-code>
+      <psk-code language="markup">
         <div class=image_container>
           <div class=image_wrapper>
             <img class=img-fluid>
@@ -136,7 +137,7 @@
       <p>
         This component role is to create a link that will redirect the user on another page inside the website. In order to customize this component we have to take into account the html structure that is rendered.
       </p>
-      <psk-code>
+      <psk-code language="markup">
         <div class=psk-link>
           <a class="btn btn-link"> 
           </a>
@@ -155,7 +156,7 @@
       <p>
         This component is extremely useful in creating a page template for a website. The psk-page component returns the following html structure:
       </p>
-      <psk-code>
+      <psk-code language="markup">
         <div>
           <nav>
             <h3></h3>
@@ -175,7 +176,7 @@
       <p>
         A psk-table returns the following html structure:
       </p>
-      <psk-code>
+      <psk-code language="markup">
         <table>
           <thead>
             <tr>

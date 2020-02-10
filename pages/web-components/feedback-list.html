@@ -12,7 +12,7 @@
             in distinctive notifications(the <code>message</code> is not mandatory) and a <code>name</code> for each
             message(again,this is not mandatory)
             and the type of feedback you want to show.</p>
-        <psk-code language="javascript">
+        <psk-code language="Javascript">
             this.showFeedbackHandler.emit({ message: 'Example', name: 'Example-Name', type: 'toast' })
         </psk-code>
         <p>The alerts are stackable and they will only show a specific number of them(only on toast type notifications).
@@ -37,11 +37,11 @@
     </psk-chapter>
 
     <psk-chapter title="Code Examples">
-        <psk-code >
+        <psk-code language="markup">
             <psk-list-feedbacks messages-to-display={5} time-alive={5000} toast-renderer="my-toast-renderer">
             </psk-list-feedbacks>
         </psk-code>
-        <psk-code >
+        <psk-code language="markup">
             <psk-list-feedbacks messages-to-display={5} time-alive={5000} alert-renderer="my-alert-renderer"
                 styleCustomisation="{{
                 toast: {

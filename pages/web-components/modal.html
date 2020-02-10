@@ -21,44 +21,53 @@
     </psk-event-descriptor>
 
     <psk-chapter title="HTML Children">
-        <psk-code>
-            <p>Modal title - is the title that will be displayed on the modal.</p>
-            <p>This is a slot inside the modal component (title) and the title will be displayed only if the slot is
+        <psk-code language="markup">
+            <p>
+                Modal title - is the title that will be displayed on the modal.
+            </p>
+            <p>
+                This is a slot inside the modal component (title) and the title will be displayed only if the slot is
                 specified.
             </p>
         </psk-code>
-        <psk-code>
-            <p>Modal Content - This is the actual content of the modal. There is a blank slot in the component, so any
-                HTML content that will be passed without a slot name will be displayed here.</p>
+        <psk-code language="markup">
+            <p>
+                Modal Content - This is the actual content of the modal. There is a blank slot in the component, so any
+                HTML content that will be passed without a slot name will be displayed here.
+            </p>
         </psk-code>
-        <psk-code>
-            <p>Modal Action Container - Is the part of the modal that will display what actions can be performed when
-                the modal is opened.</p>
-            <p>This is a slot inside the modal component (confirm_action) and the actions will be displayed only if the
-                slot is specified.</p>
+        <psk-code language="markup">
+            <p>
+                Modal Action Container - Is the part of the modal that will display what actions can be performed when
+                the modal is opened.
+            </p>
+            <p>
+                This is a slot inside the modal component (confirm_action) and the actions will be displayed only if the
+                slot is specified.
+            </p>
         </psk-code>
     </psk-chapter>
 
     <psk-chapter title="Code Examples">
-        <psk-code>
+        <psk-code language="markup">
             <psk-modal opened="true">
                 <h5 slot="title">Modal Title</h5>
             </psk-modal>
         </psk-code>
-        <psk-code>
+        <psk-code language="markup">
             <psk-modal opened="true">
                 <h5 slot="title">Modal Title</h5>
                 <p>This is the content of my modal</p>
             </psk-modal>
         </psk-code>
-        <psk-code>
+        <psk-code language="markup">
             <psk-modal opened="true">
                 <h5 slot="title">Modal Title</h5>
                 <p>This is the content of my modal</p>
                 <button slot="confirm_action">Modal Action</button>
             </psk-modal>
         </psk-code>
-        <psk-code>
+        <psk-code language="markup">
             <psk-modal opened="true"></psk-modal>
         </psk-code>
     </psk-chapter>
