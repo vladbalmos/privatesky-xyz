@@ -25,63 +25,44 @@
     </psk-chapter>
 
     <psk-chapter title="Code Example">
-        <psk-example title="Six Columns Example">
-            <psk-chapter title="Source code">
-                <psk-code>
-                    <psk-grid columns="6">
-                        <p>6 columns grid</p>
-                        <p>6 columns grid</p>
-                        <p>6 columns grid</p>
-                        <p>6 columns grid</p>
-                        <p>6 columns grid</p>
-                        <p>6 columns grid</p>
-                        <p>6 columns grid</p>
-                        <p>6 columns grid</p>
-                        <p>6 columns grid</p>
-                        <p>6 columns grid</p>
-                        <p>6 columns grid</p>
-                        <p>6 columns grid</p>
-                    </psk-grid>
-                </psk-code>
-            </psk-chapter>
-            <psk-chapter title="Visual example">
-                <psk-grid columns="6">
+        <psk-chapter title="Six-Column Source code">
+            <psk-code>
+                <!-- 
+                    Here we have a grid with a 6-columns layout.
+                    The property layout will contain rules to set up the content by using these 6 columns. 
+                    For "m" breakpoint, I have chosen the values 2, 2, 2, 2, 4, 0. 
+                    By using these values I will tell the browser to take, for each element, take that parts from your possible 12 and display my element.
+                    The same rules apply for "xl" breakpoint.
+                    Also, I have chosen some of them with value 0, which means that on some devices or resolutions, these elements will be hidden.
+                    On, xs=[0,...], the element coresponding to value 0 will be hidden on mobile, while on m=[..., 0], that element will be hidden for tablets (because "m" has a higher resolution than "xs").
+                    To hide an element on desktop, we will use "xl" breakpoint.
+                    You can choose any element to set the value to 0.
+                    More details about grid and layout can be found on bootstrap documentation
+                    Highly recommended is that the sum of all numbers is a multiple of 12, so the layout can have an uniform design.
+                 -->
+                <psk-grid columns="6" layout="xs=[0,6,6,6,6,6] s=[0,6,6,6,6,6] m=[2,2,2,2,4,0] xl=[2,2,2,2,0,4]">
+                    <p>6 columns grid - Hidden on mobile</p>
                     <p>6 columns grid</p>
                     <p>6 columns grid</p>
                     <p>6 columns grid</p>
-                    <p>6 columns grid</p>
-                    <p>6 columns grid</p>
-                    <p>6 columns grid</p>
-                    <p>6 columns grid</p>
-                    <p>6 columns grid</p>
-                    <p>6 columns grid</p>
-                    <p>6 columns grid</p>
-                    <p>6 columns grid</p>
-                    <p>6 columns grid</p>
+                    <p>6 columns grid - Hidden on Desktop</p>
+                    <p>6 columns grid - Hidden on Tablet</p>
                 </psk-grid>
-            </psk-chapter>
-        </psk-example>
-        <psk-example title="Four Columns Example">
-            <psk-chapter title="Source code">
-                <psk-code>
-                    <psk-grid columns="4">
-                        <p>4 columns grid</p>
-                        <p>4 columns grid</p>
-                        <p>4 columns grid</p>
-                        <p>4 columns grid</p>
-                        <p>4 columns grid</p>
-                        <p>4 columns grid</p>
-                        <p>4 columns grid</p>
-                        <p>4 columns grid</p>
-                        <p>4 columns grid</p>
-                        <p>4 columns grid</p>
-                        <p>4 columns grid</p>
-                        <p>4 columns grid</p>
-                    </psk-grid>
-                </psk-code>
-            </psk-chapter>
-            <psk-chapter title="Visual example">
-                <psk-grid columns="4">
+            </psk-code>
+        </psk-chapter>
+        <psk-chapter title="Six-Column Visual example">
+            <psk-grid columns="6" layout="xs=[0,6,6,6,6,6] s=[0,6,6,6,6,6] m=[2,2,2,2,4,0] xl=[2,2,2,2,0,4]">
+                <p>6 columns grid - Hidden on mobile</p>
+                <p>6 columns grid</p>
+                <p>6 columns grid</p>
+                <p>6 columns grid</p>
+                <p>6 columns grid - Hidden on Desktop</p>
+                <p>6 columns grid - Hidden on Tablet</p>
+            </psk-grid>
+        </psk-chapter>
+        <psk-chapter title="Four-Column Source code">
+            <psk-code>
+                <psk-grid columns="4" layout="xs=[12,12,12,12] s=[12,12,12,12] m=[6,6,6,6] l=[3,3,3,3] xl=[3,3,3,3]">
                     <p>4 columns grid</p>
                     <p>4 columns grid</p>
                     <p>4 columns grid</p>
@@ -95,29 +76,27 @@
                     <p>4 columns grid</p>
                     <p>4 columns grid</p>
                 </psk-grid>
-            </psk-chapter>
-        </psk-example>
-        <psk-example title="Three Columns Example">
-            <psk-chapter title="Source code">
-                <psk-code>
-                    <psk-grid columns="3">
-                        <p>3 columns grid</p>
-                        <p>3 columns grid</p>
-                        <p>3 columns grid</p>
-                        <p>3 columns grid</p>
-                        <p>3 columns grid</p>
-                        <p>3 columns grid</p>
-                        <p>3 columns grid</p>
-                        <p>3 columns grid</p>
-                        <p>3 columns grid</p>
-                        <p>3 columns grid</p>
-                        <p>3 columns grid</p>
-                        <p>3 columns grid</p>
-                    </psk-grid>
-                </psk-code>
-            </psk-chapter>
-            <psk-chapter title="Visual example">
-                <psk-grid columns="3">
+            </psk-code>
+        </psk-chapter>
+        <psk-chapter title="Four-Column Visual example">
+            <psk-grid columns="4" layout="xs=[12,12,12,12] s=[12,12,12,12] m=[6,6,6,6] l=[3,3,3,3] xl=[3,3,3,3]">
+                <p>4 columns grid</p>
+                <p>4 columns grid</p>
+                <p>4 columns grid</p>
+                <p>4 columns grid</p>
+                <p>4 columns grid</p>
+                <p>4 columns grid</p>
+                <p>4 columns grid</p>
+                <p>4 columns grid</p>
+                <p>4 columns grid</p>
+                <p>4 columns grid</p>
+                <p>4 columns grid</p>
+                <p>4 columns grid</p>
+            </psk-grid>
+        </psk-chapter>
+        <psk-chapter title="Three-Column Source code">
+            <psk-code>
+                <psk-grid columns="3" layout="xs=[12,12,12,12] s=[12,12,12,12] m=[6,6,6,6] l=[3,3,3,3] xl=[3,3,3,3]">
                     <p>3 columns grid</p>
                     <p>3 columns grid</p>
                     <p>3 columns grid</p>
@@ -131,30 +110,31 @@
                     <p>3 columns grid</p>
                     <p>3 columns grid</p>
                 </psk-grid>
-            </psk-chapter>
-        </psk-example>
-        <psk-example title="Three Columns Example - Wrong layout values">
-            <psk-chapter title="Source code">
-                <psk-code>
-                    As we see, for "s" breakpoint, the values are not according to the "layout"
-                    <psk-grid columns="3" layout="xs=[12,12,12] s=[-1 random wrong] m=[1,2,13] l=[2,3,auto]">
-                        <p>3 columns grid</p>
-                        <p>3 columns grid</p>
-                        <p>3 columns grid</p>
-                        <p>3 columns grid</p>
-                        <p>3 columns grid</p>
-                        <p>3 columns grid</p>
-                        <p>3 columns grid</p>
-                        <p>3 columns grid</p>
-                        <p>3 columns grid</p>
-                        <p>3 columns grid</p>
-                        <p>3 columns grid</p>
-                        <p>3 columns grid</p>
-                    </psk-grid>
-                </psk-code>
-            </psk-chapter>
-            <psk-chapter title="Visual example">
-                <psk-grid columns="3" layout="xs=[12,12,12] s=[-1 random wrong] m=[1,2,13] l=[2,7,3]">
+            </psk-code>
+        </psk-chapter>
+        <psk-chapter title="Three-Column Visual example">
+            <psk-grid columns="3" layout="xs=[12,12,12] s=[12,12,12] m=[4,4,4] l=[4,4,4] xl=[4,4,4]">
+                <p>3 columns grid</p>
+                <p>3 columns grid</p>
+                <p>3 columns grid</p>
+                <p>3 columns grid</p>
+                <p>3 columns grid</p>
+                <p>3 columns grid</p>
+                <p>3 columns grid</p>
+                <p>3 columns grid</p>
+                <p>3 columns grid</p>
+                <p>3 columns grid</p>
+                <p>3 columns grid</p>
+                <p>3 columns grid</p>
+            </psk-grid>
+        </psk-chapter>
+        <psk-chapter title="Three-Columns - Wrong layout Example Source code">
+            <psk-code>
+                <!--  As we see, for "s" and "m" breakpoints, the values are not according to the "layout".
+            The rules for "s", -1, wrong and random are not from the allowed set of rules.
+            For the "m" breakpoint, the value 13 is not a valid one.
+            Both rules are ignored, as they do not comply with the specifications.  -->
+                <psk-grid columns="3" layout="xs=[12,12,12] s=[-1 random wrong] m=[1,2,13] l=[2,auto,3]">
                     <p>3 columns grid</p>
                     <p>3 columns grid</p>
                     <p>3 columns grid</p>
@@ -168,8 +148,24 @@
                     <p>3 columns grid</p>
                     <p>3 columns grid</p>
                 </psk-grid>
-            </psk-chapter>
-        </psk-example>
+            </psk-code>
+        </psk-chapter>
+        <psk-chapter title="Three-Columns - Wrong layout Example Visual example">
+            <psk-grid columns="3" layout="xs=[12,12,12] s=[-1 random wrong] m=[1,2,13] l=[2,auto,3]">
+                <p>3 columns grid</p>
+                <p>3 columns grid</p>
+                <p>3 columns grid</p>
+                <p>3 columns grid</p>
+                <p>3 columns grid</p>
+                <p>3 columns grid</p>
+                <p>3 columns grid</p>
+                <p>3 columns grid</p>
+                <p>3 columns grid</p>
+                <p>3 columns grid</p>
+                <p>3 columns grid</p>
+                <p>3 columns grid</p>
+            </psk-grid>
+        </psk-chapter>
     </psk-chapter>
 
 </psk-page>
