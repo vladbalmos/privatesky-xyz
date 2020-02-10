@@ -13,48 +13,63 @@
     </psk-chapter>
 
     <psk-chapter title="Options">
-        <psk-card>
-            <b>create csb </b><i>alias constitutionPath</i><br>
-            Creates a privatesky domain as a new CSB that contains the constitution at <i>constitutionPath</i>. This
-            command generates a CSB whose SEED is associated locally (inside the SeedCage) with the <i>alias</i>
+        <psk-chapter title="create csb">
+            <p class="subtitle">
+                <i>alias constitutionPath</i>
+            </p> 
+            <p>
+            Creates a privatesky domain as a new CSB that contains the constitution at <code>constitutionPath</code>. This
+            command generates a CSB whose SEED is associated locally (inside the SeedCage) with the <code>alias</code>
             argument. A prompt that requires the insertion of a PIN will appear. The provided PIN will be required for
-            all subsequent commands.<br><br>
-        </psk-card>
-        <psk-card>
-            <b>create bar </b><i>alias localPath</i><br>
-            Creates a BAR that stores the files at <i>localPath</i>. The command generates a BAR whose SEED is
-            associated locally (inside the SeedCage) with the <i>alias</i> argument.<br><br>
-        </psk-card>
-        <psk-card>
-            <b>add folder </b> <i>barAlias barPath localPath</i><br>
-            Adds the files at <i>localPath</i> to the BAR whose SEED is associated locally with the <i>barAlias</i>
-            argument. The files are added in BAR at bar <i>barPath</i>.<br><br>
-        </psk-card>
-        <psk-card>
-            <b>update constitution</b> <i>domainAlias constitutionPath</i><br>
-            Replaces the constitution in the domain whose SEED is associated with <i>domainAlias</i> with the
-            constitution at <i>constitutionPath</i>.<br><br>
-        </psk-card>
-        <psk-card>
-            <b>add agent</b> <i>domainAlias agentAlias</i><br>
-            Adds agent <i>agentAlias</i> to the domain whose SEED is associated with <i>domainAlias</i>. A prompt for
-            PIN introduction will appear.<br><br>
-        </psk-card>
-        <psk-card>
-            <b>publish</b> <i>domainAlias remoteAddress</i><br><br>
-        </psk-card>
-        <psk-card>
-            <b>set pin</b><br>
+            all subsequent commands.
+            </p>
+        </psk-chapter>
+        <psk-chapter title="create bar">
+            <p class="subtitle"><i>alias localPath</i></p>
+            <p>
+            Creates a BAR that stores the files at <code>localPath</code>. The command generates a BAR whose SEED is
+            associated locally (inside the SeedCage) with the <code>alias</code> argument.
+            </p>
+        </psk-chapter>
+        <psk-chapter title="add folder">
+            <p class="subtitle"><i>barAlias barPath localPath</i></p>
+            <p>
+            Adds the files at <code>localPath</code> to the BAR whose SEED is associated locally with the <code>barAlias</code>
+            argument. The files are added in BAR at bar <code>barPath</code>.
+            </p>
+        </psk-chapter>
+        <psk-chapter title="update constitution">
+            <p class="subtitle"><i>domainAlias constitutionPath</i></p>
+            <p>
+            Replaces the constitution in the domain whose SEED is associated with <code>domainAlias</code> with the
+            constitution at <code>constitutionPath</code>.
+            </p>
+        </psk-chapter>
+        <psk-chapter title="add agent">
+            <p class="subtitle"><i>domainAlias agentAlias</i></p>
+            <p>
+            Adds agent <code>agentAlias</code> to the domain whose SEED is associated with <code>domainAlias</code>. A prompt for
+            PIN introduction will appear.
+            </p>
+        </psk-chapter>
+        <psk-chapter title="publish">
+        <p class="subtitle"><i>domainAlias remoteAddress</i></p>
+        </psk-chapter>
+        <psk-chapter title="set pin">
+            <p>
             Allows the change of PIN. Firstly, a prompt that requires the current PIN will appear. After the PIN is
-            validated another prompt will appear for the introduction of the new PIN.<br><br>
-        </psk-card>
-        <psk-card>
-            <b>anchor</b> <i>anchoreeAlias anchoratorAlias</i><br>
-            Allows the anchoring of the domain whose SEED is associated locally with the <i>anchoreeAlias</i> argument
-            inside the domain whose SEED is associated with the <i>anchoratorAlias</i>. By anchoring it is meant that
+            validated another prompt will appear for the introduction of the new PIN.
+            </p>
+        </psk-chapter>
+        <psk-chapter title="anchor">
+            <p class="subtitle"><i>anchoreeAlias anchoratorAlias</i></p>
+            <p>
+            Allows the anchoring of the domain whose SEED is associated locally with the <code>anchoreeAlias</code> argument
+            inside the domain whose SEED is associated with the <code>anchoratorAlias</code>. By anchoring it is meant that
             “anchorator” domain contains the hash of the anchorated domain, thus reflecting each change of the latter in
-            the former.<br><br>
-        </psk-card>
+            the former.
+            </p>
+        </psk-chapter>
     </psk-chapter>
     <psk-chapter title="Concept definitions">
         <psk-table header="true">
