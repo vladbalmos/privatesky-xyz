@@ -7,7 +7,6 @@
     padding: 10px;
     font-style: italic;
     font-size: 1rem;
-    margin-bottom: 1rem;
 }
 .image_description::before{
     content:"- ";

@@ -4,11 +4,6 @@
     outline: none !important;
 }
 
-.psk-card ul,
-.psk-card ol {
-    padding-top: 16px;
-    padding-bottom: 16px;
-}
 
 .psk-card ol {
     counter-reset: li;

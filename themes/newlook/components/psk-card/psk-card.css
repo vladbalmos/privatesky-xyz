@@ -169,6 +169,7 @@
 .psk-card ul,
 .psk-card ol {
     padding-bottom: 0.5rem;
+    padding-top:0.5rem;
     margin: 0;
 }
 .psk-card ul ul{
