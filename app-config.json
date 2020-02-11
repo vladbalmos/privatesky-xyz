@@ -209,6 +209,9 @@
                     },
                     {
                         "name": "App Menu"
+                    },
+                    {
+                        "name": "PSK Button"
                     }
                 ]
             },
