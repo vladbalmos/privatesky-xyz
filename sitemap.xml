@@ -101,6 +101,8 @@
       </url><url>
         <loc>https://privatesky.xyz/?web-components/app-menu</loc>
       </url><url>
+        <loc>https://privatesky.xyz/?web-components/psk-button</loc>
+      </url><url>
         <loc>https://privatesky.xyz/?forms/using-forms</loc>
       </url><url>
         <loc>https://privatesky.xyz/?forms/psk-form</loc>
@@ -125,6 +127,8 @@
       </url><url>
         <loc>https://privatesky.xyz/?forms/psk-radio</loc>
       </url><url>
+        <loc>https://privatesky.xyz/?forms/psk-radio-group</loc>
+      </url><url>
         <loc>https://privatesky.xyz/?forms/psk-checkbox</loc>
       </url><url>
         <loc>https://privatesky.xyz/?forms/psk-for-each</loc>
@@ -143,7 +147,7 @@
       </url><url>
         <loc>https://privatesky.xyz/?Tools/governance</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?Development/unit-testing-map</loc>
+        <loc>https://privatesky.xyz/?Development/coding-style</loc>
       </url><url>
         <loc>https://privatesky.xyz/?Development/node-modules</loc>
       </url><url>
