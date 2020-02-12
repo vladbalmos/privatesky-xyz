@@ -37,6 +37,7 @@ https://prismjs.com/download.html#themes=prism-coy&languages=markup+css+clike+ja
      padding: 0;
  }
  pre[class*="language-"]>code {
+     padding: 20px;
      position: relative;
      border-left: 10px solid #358ccb;
      box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
