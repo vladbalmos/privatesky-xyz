@@ -1,29 +1,94 @@
 <psk-page title="Observable Models">
-  <psk-toc title="In this section"></psk-toc>
-  <psk-chapter title="makeObservable">
-    <psk-code language="Javascript">
-      makeObservable(oldModel) returns an observable model
+    <psk-toc title="In this section"></psk-toc>
 
-      function bind(base, el, varname) {
-      Object.defineProperty(base, varname, {
-          get: () => {
-          return el.value;
-          },
-          set: (value) => {
-          el.value = value;
-          }
-        })
-      }
-    </psk-code>
+    <psk-description title="Summary & Definition">
+        <p>In this section, we will explain what is a model, how to and where to write a model for a page, or for a controlled section inside a page.</p>
+        <p>A controlled section inside a page can be a
+            <psk-link page='forms/psk-form'>psk-form</psk-link> or a set of components wrapped inside a
+            <psk-link page='web-componentnts/container'>psk-container</psk-link>.</p>
+        <psk-chapter title="What is a model?">
+            <p>A model is data used by a program. This may be a database, file, or a simple object.</p>
+            <p>For now, each model can be defined inside a controller as in the examples found at the page
+                <psk-link page='forms/using-forms'>Using Forms</psk-link>.</p>
+            <p>In our case, the model is JavaScript object ment to handle the form changes (in case of forms), to apply some attributes for some components.</p>
+            <p>One of the most important feature that a model can provide is the support for internationalization and localization, a feature we target with the models.</p>
+        </psk-chapter>
+    </psk-description>
 
+    <psk-chapter title="Terminology">
+        <psk-list>
+            <span><strong>chain</strong> - sequence of keys to reach a value</span>
+            <span><strong>one-way binding</strong> - assigning some values to some attributes</span>
+            <span><strong>two-way binding</strong> - the process where the updates made in view, are reflected to the model</span>
+        </psk-list>
+    </psk-chapter>
 
-  </psk-chapter>
+    <psk-chapter title="One-way binding">
+        <p>This is the easiest way to use a model. You just need to have a
+            <psk-link page='web-components/container'>psk-container</psk-link> with a controller, to define a model and to apply the chain to the components to set the attributes.</p>
+        <p>The attributes can be set using the following methods:</p>
+        <p>Using "@" inside a value of an attribute.
+            <psk-link page='forms/psk-label'>psk-label</psk-link>
+        </p>
+        <psk-code>
+            <psk-label label="@customLabel">
+                <!-- customLabel must be defined inside the controller, so it can take the value -->
+            </psk-label>
 
-  <psk-chapter title="onChain">
+            <psk-label label="@languages.en.customLabel">
+                <!-- Also, can use a chain to get the value -->
+                <!-- The languages object will look something like this: -->
+                <!-- 
+				{
+					languages: {
+						en: {
+							customLabel: "Some Label to be displayed",
+							// Other attributes
+						},
+						// Other attributes
+					},
+					// Other attributes
+				}
+				 -->
+            </psk-label>
+        </psk-code>
+        <p>Using "view-model" attribute to assign more attributes.
+            <psk-link page='forms/psk-input'>psk-input</psk-link>
+        </p>
+        <psk-code>
+            <psk-input view-model="customInput">
+                <!-- customInput must be defined inside the controller, so it can take the value -->
+                <!-- All the attributes found inside customInput will be applyed to psk-input component -->
 
-    model.onChain("a.b.c", function(newValue){
-
-    });
-
-  </psk-chapter>
+                <!-- The languages object will look something like this: -->
+                <!-- 
+				{
+					customInput: {
+						label: "Some label to display",
+						placeholder: "Placeholder text",
+						required: true,
+						// And other attributes if needed
+					},
+					// Other attributes
+				}
+				 -->
+            </psk-input>
+        </psk-code>
+        <p>Using view-model-ATTRIBUTE_NAME to assign a value to ATTRIBUTE_NAME, where ATTRIBUTE_NAME can be any attribute of a component. Similar to first method.
+            <psk-link page='forms/psk-label'>psk-label</psk-link>
+        </p>
+        <psk-code>
+            <psk-label view-model-label="languages.en.customLabel">
+                <!-- Example using the same object structure as above -->
+                <!-- So, label will take the value from the chain languages.en.customLabel -->
+            </psk-label>
+        </psk-code>
+        <p>Using "data-view-model" to assign more attributes to more components. This one is used only for
+            <psk-link page='forms/psk-for-each'>psk-for-each</psk-link> component.</p>
+        <p>Intuitive examples cand be found on the following pages:
+            <psk-link page='forms/using-forms'>Using Forms</psk-link> and
+            <psk-link page='forms/psk-for-each'>psk-for-each</psk-link>
+        </p>
+        </psk-list>
+    </psk-chapter>
 </psk-page>
