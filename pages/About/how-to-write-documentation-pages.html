@@ -38,36 +38,75 @@
 		<p>One of the key names inside the file is "pages". Everything defined inside this key will be displayed in the
 			application menu, so it can be opened. The following example will also show how this page is registered.</p>
 		<psk-code language="json">
-			"pages": [{
-				"name": "Home",
-				"path": "/home",
-				"icon": "fa-home",
-				"pageSrc": "index.html"
-			},
-			{
-				"name": "About",
-				"path": "/About",
-				"icon": "fa-cog",
-				// The "children" property is defining a sub-tree of pages for the About section.
-				"children": [{
-						"name": "About"
-					},
-					{
-						"name": "How to create a new site with Cardinal"
-					},
-					{
-						// As we can see, some pages have the key "path", some do not.
-						// Also, we can see that "pageSrc" attribute is not used for this page. If you use this attribute, you can name theHTML file as you wish.
-						// In this way, the HTML file will be named how-to-write-documentation-pages.html
-						"name": "How to write documentation pages"
-					}
-				]
-			}]
+"pages": [{
+	"name": "Home",
+	"path": "/home",
+	"icon": "fa-home",
+	"pageSrc": "index.html"
+},
+{
+	"name": "About",
+	"path": "/About",
+	"icon": "fa-cog",
+	// The "children" property is defining a sub-tree of pages for the About section.
+	"children": [{
+			"name": "About"
+		},
+		{
+			"name": "How to create a new site with Cardinal"
+		},
+		{
+			// As we can see, some pages have the key "path", some do not.
+			// Also, we can see that "pageSrc" attribute is not used for this page. If you use this attribute, you can name the HTML file as you wish.
+			// In this way, the HTML file will be named how-to-write-documentation-pages.html
+			"name": "How to write documentation pages"
+		}
+	]
+}]
 		</psk-code>
 		<p>Every HTML page is written inside "pages" directory followed by the sub-tree defined in "app-config.json". In
 			the above code sample, we have The section About and this page is inside the sub-tree of the section. In
 			this way, the folder structure is the following one: <code>pages/about/how-to-write-documentation-pages.html</code>, so
 			the components will be able to load the page correctly.</p>
+		<p>So, in order to create a new page, keep in mind that the page needs to be registered in the <code>app-config.json</code> file and the HTML file needs to be placed in the folder structure as above explained.</p>
+	</psk-chapter>
+
+	<psk-chapter title="New page structure - Advices and Recommendations">
+		<psk-code>
+<!-- This is the root component. It is mandatory to start a page like this. -->
+<psk-page title="Page title">
+
+	<!-- This component is not mandatory to be written in the page. -->
+	<!-- It is also recommended to be written as it collects the titles of psk-chapter components and creates links to them. -->
+	<!-- You can also put this component anywhere you like in the page -->
+	<!-- Keep in mind that only chapters that have a defined title will be listed here, so if you add in page a component like psk-chapter, psk-example or psk-description without a title, a link to that chapter will not be created. -->
+	<psk-toc title="Table of contents title"></psk-toc>
+
+	<!-- This component is a wrapper over psk-chapter component -->
+	<!-- It helps you create special design over some important sections in the page -->
+	<psk-description title="Summary / Description title"></psk-description>
+
+	<!-- This component is also a wrapper over psk-chapter and it's purpose is to serve as examples sections -->
+	<!-- In this web site this component is mainly used to display examples of source code -->
+	<psk-example title="Example title"></psk-example>
+
+	<!-- The main component used in the web site.  -->
+	<!-- This component's purpose is to create a section in the page and to serve as a link to the section if psk-toc is present in the page -->
+	<!-- Every psk-chapter component and the derived ones are also generating a psk-copy-to-clipboard component which can be used to copy the direct link to the section. -->
+	<psk-chapter title="Chapter / Section title"></psk-chapter>
+
+	<!-- This component is kind of a container with a title, a sort of a sub-section or sub-chapter.  -->
+	<!-- The title of this component is not sent to the psk-toc component, but if you want it to do so, you need to use psk-chapter. -->
+	<!-- This component is recommended to be used inside a psk-chapter component or a derived one, but nothing stops you to do otherwise.  -->
+	<psk-card title="Card / Sub-Section title"></psk-card>
+
+	<!-- These are the most used components in out web site.  -->
+	
+	<!-- Into the next chapter, all the developed components are listed using another compnent: psk-list -->
+	<psk-list list-type="unordered / ordered"></psk-list> 
+	<!-- Default is unordered (displayed with bullets) -->
+</psk-page>
+		</psk-code>
 	</psk-chapter>
 
 	<psk-chapter title="Available tags">
