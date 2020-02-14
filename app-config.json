@@ -67,6 +67,9 @@
                         "name": "Dependencies"
                     },
                     {
+                        "name": "Build"
+                    },
+                    {
                         "name": "Code Examples"
                     }
                 ]
@@ -149,6 +152,9 @@
                     },
                     {
                         "name": "psk-page"
+                    },
+                    {
+                        "name": "psk-property-descriptor"
                     },
                     {
                         "name": "psk-table"
