@@ -1,0 +1,40 @@
+<psk-page title="PrivateSky Dependencies">
+    <psk-description>
+        PrivateSky project tries to avoid using NPM packages and NPM in general (or any other build system) for the dependencies of the project's core and that is why we have a custom script that helps with the deps.
+    </psk-description>
+    <psk-toc title="PrivateSky Dependencies">
+    </psk-toc>
+    <psk-chapter title="Dependencies Management">
+        PrivateSky project has a dedicated script that handles dependencies management (install, update etc.)<br>
+        The script that handles PrivateSky deps can be found in <b>"bin/scripts/build-devel.js"</b>.
+        <psk-code language="bash">
+            cd privatesky/bin/scripts
+            cat build-devel.js
+        </psk-code>
+        The role of <b>build-devel.js</b> file is to run a specific configuration when somebody needs to install or update a PrivateSky installation dependencies.
+        <psk-chapter title="Adding a dep">
+            To add a new dependency in a PrivateSky installation just modify the config JSON object present in <b>build-devel.js</b> accordingly.
+            If you need to add a <b>dependency from npm</b> just add something like this in the JSON:
+            <psk-code language="json">
+                {
+                "name": "name_of_npm_dependency",
+                "src": "npm",
+                "actions": ["install"]
+                }
+            </psk-code>
+            If you need to add a <b>dependency from Github</b>, just add something like this in the JSON:
+            <psk-code language="json">
+                {
+                "name": "name_of_target_folder_dependency",
+                "src": "https://github.com/name_of_organization_or_github_user/name_of_github_dependecy.git"
+                }
+            </psk-code>
+        </psk-chapter>
+        <psk-chapter title="Removing a dep">
+            If you need to remove a dependency first ensure that there is no usage into the project and only then remove the dep object from JSON config found in <b>build-devel.js</b>.
+        </psk-chapter>
+    </psk-chapter>
+    <psk-chapter title="Install dependencies">
+        Once a dependency is added, run <b>npm install</b> or <b>npm run update</b> command according to the project's status.
+    </psk-chapter>
+</psk-page>
