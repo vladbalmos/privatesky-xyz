@@ -21,6 +21,8 @@
       </url><url>
         <loc>https://privatesky.xyz/?PrivateSky/dependencies</loc>
       </url><url>
+        <loc>https://privatesky.xyz/?PrivateSky/build</loc>
+      </url><url>
         <loc>https://privatesky.xyz/?PrivateSky/code-examples</loc>
       </url><url>
         <loc>https://privatesky.xyz/?EDFS/edfs</loc>
@@ -64,6 +66,8 @@
         <loc>https://privatesky.xyz/?psk-wiki/psk-list</loc>
       </url><url>
         <loc>https://privatesky.xyz/?psk-wiki/psk-page</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?psk-wiki/psk-property-descriptor</loc>
       </url><url>
         <loc>https://privatesky.xyz/?psk-wiki/psk-table</loc>
       </url><url>
