@@ -1,5 +1,81 @@
-<psk-page title="Page not available yet">
-  <psk-chapter title="Not available">
-    Page still not available. Wait until our team will complete this! If you believe that this is an error or you want to contribute, write an email to sinica@axiologic.net
+<psk-page title="PrivateSky Installation">
+  <psk-toc title="PrivateSky Installation">
+  </psk-toc>
+  <psk-chapter title="Prerequisites">
+    <ol>
+      <li>Install or update **Node** and Npm to version **12.14.0** or newer.</li>
+      <li>Install **Python 2.7** if it is not currently installed. <a href="https://www.python.org/downloads/release/python-2716/">(download)</a></li>
+      <li>Install a C/C++ toolchain, like GCC, with support for C++14 minimum. (Instructions bellow)
+        <psk-card title="To install C/C++ toolchain on Windows">
+          Run "as administrator" the following command:
+          <psk-code language="bash">
+            npm install --global --production windows-build-tools
+          </psk-code>
+        </psk-card>
+        <psk-card title="To install C/C++ toolchain on CentOS">
+          <psk-code language="bash">
+            sudo yum install centos-release-scl-rh
+            sudo yum --enablerepo=centos-sclo-rh-testing install devtoolset-7-gcc*
+            echo "source scl_source enable devtoolset-7" >> ~/.bashrc
+            source ~/.bashrc
+          </psk-code>
+        </psk-card>
+        <psk-card title="To install C/C++ toolchain on MacOS">
+          Install Xcode.
+          You also need to install the Command Line Tools via Xcode. You can find this under the menu Xcode -> Preferences -> Locations (or by running xcode-select --install in your Terminal)
+        </psk-card>
+      </li>
+      <li>Install node-gyp by following the instruction <a href="https://github.com/nodejs/node-gyp">here</a></li>
+    </ol>
+  </psk-chapter>
+
+  <psk-chapter title="Setup">
+    <psk-description>
+      The setup process of PrivateSky <b>(contributors project version)</b> can be reduced to git clone the project and run npm install process. (steps bellow)
+    </psk-description>
+    <psk-chapter title="Install a PSK Node (contributors project version)">
+      First of all, create a local clone of the PrivateSky Github project:
+          <psk-code language="bash">
+            git clone https://github.com/PrivateSky/privatesky.git
+          </psk-code>
+      Enter into checkout folder and run the following command:
+          <psk-code language="bash">
+            cd privatesky
+            npm install
+          </psk-code>
+    </psk-chapter>
+    <psk-chapter title="Install a PSK Node (release version)">
+      First of all, create a local clone of the PrivateSky Github project:
+      <psk-code language="bash">
+        git clone https://github.com/PrivateSky/psk-release.git
+      </psk-code>
+      Enter into checkout folder and run the following command:
+      <psk-code language="bash">
+        cd privatesky
+        npm install
+      </psk-code>
+    </psk-chapter>
+  </psk-chapter>
+  <psk-chapter title="Run PSK Node">
+    The Node version is checked and if is all good the installation process begins by downloading the required dependencies. Once the installation process has finished successfully, the following command needs to be run:
+        <psk-code language="bash">
+          npm run start
+        </psk-code>
+    At this point, the PrivateSky installation is <b>done</b> and the PrivateSky Node is up and <b>ready to go!</b>
+  </psk-chapter>
+  <psk-chapter title="Run PSK Node during development">
+    <psk-description>
+      The difference is that during development PSK Node code is necessary to be rebuilt every time that source code and folders are modified according to the project's needs.
+    </psk-description>
+    During development, instead of the <b>npm run start</b> command run
+    <psk-code language="bash">
+      npm run watch
+    </psk-code>
+  </psk-chapter>
+  <psk-chapter title="Update">
+    To update an existing PrivateSky installation run command:
+    <psk-code language="bash">
+      npm run update
+    </psk-code>
   </psk-chapter>
 </psk-page>
