@@ -1,19 +1,9 @@
 label{
     text-align: start;
 }
-.row>psk-label label{
-   color:rgb(94, 127, 225);
-    font-weight:600;
-    padding-bottom: 0.5rem;
-    font-size: 1.125rem;
-}
 
 psk-label{
     display:flex;
     align-items: center;
 }
-@media(max-width:960px){
-    .row>psk-label label{
-        font-size: 1rem;
-    }
-}
+
