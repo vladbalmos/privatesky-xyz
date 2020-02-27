@@ -25,14 +25,14 @@
     <psk-chapter title="Create a controller">
         <psk-chapter title="Create a controller by creating a Javascript class">
 			<p>Javascript classes that will serve as controllers should be created in the directory <code>/src/scripts/controllers</code> in order to mentain the project structure.</p>
-			<p>Also, in the folder structure, there are also two folders, <code>base-controllers</code> and <code>test-controllers</code>. It is very important that these controllers remain not changed, as we are under development and we will provide updates from time to time.</p>
-            <p>After the creation of this class, you have two possible choises, to extend or not the base controller named <code>BindableController</code>.</p>
-            <p>The base controller has already some functionalities provided, like triggering and listening to events, and maybe in the future we will bring other features.</p>
-            <p>If you choose to extend the base controller, then the starting point of your class should look like the below one (assuming you are creating the class in the base path of controllers - <code>/src/scripts/controllers</code>):</p>
+			<p>Also, in the folder structure, there are also a folder, <code>base-controllers</code>. It is very important that these controllers remain not changed, as we are under development and we will provide updates from time to time.</p>
+            <p>After the creation of this class, you should extend the base controller named <code>BindableController</code>, like in the below example. If you chose not to extend the controller, then you will nt have to possibility to use the binding features.</p>
+            <p>The base controller has already some functionalities provided, like triggering and listening to events, binding (one-way and two-way binding) and in the future we will bring other features.</p>
+            <p>The starting point of your class should look like the below one (the class <strong>MUST</strong> be created in the base path of controllers - <code>/src/scripts/controllers</code>)</p>
 			<psk-code language="Javascript">
 				import BindableController from "./base-controllers/BindableController.js";
 
-				export default class MySuperAwesomeController extends BindableController {
+				export default class TestFormController extends BindableController {
 					constructor(element) {
 						super(element);
 					}
@@ -45,7 +45,7 @@
             <p>The source code for that product will look something like the following one:</p>
             <psk-code language="markup">
                 <!-- The controller name is not mandatory, an instance of the default controller is being attached to the container in case no controller is provided. -->
-                <psk-container controller="YourControllerName">
+                <psk-container controller-name="TestFormController">
                     <script type="text/javascript">
                         // The variable "controller" is mandatory to be used like this, named controller.
                         // The method "receive" is defined in the default controller, and it adds and event listener to the container.
@@ -82,7 +82,7 @@
                 <p>The source code of the container component should look like this:</p>
 				<psk-code language="markup">
 					<!-- In this way, your controller is instantiated on this container -->
-					<psk-container controller-name="MySuperAwesomeController">
+					<psk-container controller-name="TestFormController">
 						<!-- YOUR WEB COMPONENTS HERE -->
 					</psk-container>
 				</psk-code>
