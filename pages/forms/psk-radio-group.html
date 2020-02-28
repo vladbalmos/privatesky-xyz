@@ -15,40 +15,40 @@
 
     <psk-example title="Code Examples">
         <psk-chapter title="Source Code">
-<psk-chapter title="JavaScript Model">
-<psk-code language="Javascript">
-    gender: {
-        label: "Select your gender",
-        required: true,
-        options: [{
-                label: "Male"
-            },
-            {
-                label: "Female",
-                value: "F"
-            }
-        ]
-    }
+            <psk-chapter title="JavaScript Model">
+                <psk-code language="Javascript">
+                    gender: {
+                        label: "Select your gender",
+                        required: true,
+                        options: [{
+                                label: "Male"
+                            },
+                            {
+                                label: "Female",
+                                value: "F"
+                            }
+                        ]
+                    }
 
-</psk-code>
-</psk-chapter>
+                </psk-code>
+            </psk-chapter>
 
-<psk-chapter title="Component usage with model">
-<psk-code language="markup">
-    <psk-form controller-name="TestFormController" actions=" ">
-        <psk-form-row>
-            <psk-radio-group view-model="gender"> </psk-radio-group>
-        </psk-form-row>
-    </psk-form>
-    
-</psk-code>
-</psk-chapter>
+            <psk-chapter title="Component usage with model">
+                <psk-code language="markup">
+                    <psk-form controller-name="TestFormController" actions=" ">
+                        <psk-form-row layout="xs=[12] m=[12] l=[12] xl=[12]">
+                            <psk-radio-group view-model="gender"> </psk-radio-group>
+                        </psk-form-row>
+                    </psk-form>
+                    
+                </psk-code>
+            </psk-chapter>
 
-</psk-chapter>
+        </psk-chapter>
 
         <psk-chapter title="Visual example">
             <psk-form controller-name="TestFormController" actions=" ">
-				<psk-form-row>
+				<psk-form-row layout="xs=[12] m=[12] l=[12] xl=[12]">
 					<psk-radio-group view-model="gender"> </psk-radio-group>
 				</psk-form-row>
             </psk-form>
