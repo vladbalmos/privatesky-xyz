@@ -4,10 +4,14 @@
     </psk-toc>
 
     <psk-description title="Definition and Usage">
-        <p>Psk-Form-Row is a wrapper component used to group a list of components into a single inline row.</p>
+        <p>Psk-Form-Row is a wrapper component used to group a list of components into a single inline row, so the number of the <code>COLUMNS</code> for the inner grid is given by the number of the children components.</p>
         <p>On mobile devices, the responsive design is making all the form components to be displayed in a single column.</p>
         <p>It has no other special behaviour.</p>
     </psk-description>
+
+    <psk-property-descriptor title="Supported properties">
+        <psk-form-row data-define-props="true"></psk-form-row>
+    </psk-property-descriptor>
 
     <psk-chapter title="HTML Children">
         <p>Every form component will be rendered on a single row.</p>
@@ -16,10 +20,10 @@
 
     <psk-example title="Code Examples">
         <psk-code language="markup">
-            <psk-form-row>
+            <psk-form-row layout="xs=[12] m=[6] l=[12] xl=[4]">
                 <psk-label>Name, E-mail & Password</psk-label>
             </psk-form-row>
-            <psk-form-row>
+            <psk-form-row layout="xs=[12,12,12] m=[6,6,6] l=[12,12,12] xl=[4,4,4]">
                 <psk-text-input view-model="name"></psk-text-input>
                 <psk-email-input view-model="email"></psk-email-input>
                 <psk-password-input view-model="password"></psk-password-input>

@@ -67,15 +67,15 @@
 
         <psk-chapter title="Template example">
             <psk-code language="markup">
-                <psk-for-each data-view-model="entities">
-                        <psk-form-row>
-                            <psk-label view-model="sectionTitle"></psk-label>
-                        </psk-form-row>
+                <psk-for-each data-view-model="entities">            
+                    <psk-form-row layout="xs=[12] m=[6] l=[12] xl=[4]">
+                        <psk-label view-model="sectionTitle"></psk-label>
+                    </psk-form-row>
 
-                        <psk-form-row>
-                            <psk-text-input view-model="name"></psk-text-input>
-                            <psk-email-input view-model="email"></psk-email-input>
-                        </psk-form-row>
+                    <psk-form-row layout="xs=[12,12] m=[6,6] l=[12,12] xl=[6,6]">
+                        <psk-text-input view-model="name"></psk-text-input>
+                        <psk-email-input view-model="email"></psk-email-input>
+                    </psk-form-row>
                 </psk-for-each>
             </psk-code>
         </psk-chapter>
@@ -83,15 +83,15 @@
 		<psk-chapter title="Visual example using above model & template">
 			<psk-form controller-name="TestFormForEachController">
 				<psk-for-each data-view-model="entities">
-                        <psk-form-row>
-                            <psk-label view-model="sectionTitle"></psk-label>
-                        </psk-form-row>
+                    <psk-form-row layout="xs=[12] m=[6] l=[12] xl=[4]">
+                        <psk-label view-model="sectionTitle"></psk-label>
+                    </psk-form-row>
 
 
-                        <psk-form-row>
-                            <psk-text-input view-model="name"></psk-text-input>
-                            <psk-email-input view-model="email"></psk-email-input>
-                        </psk-form-row>
+                    <psk-form-row layout="xs=[12,12] m=[6,6] l=[12,12] xl=[6,6]">
+                        <psk-text-input view-model="name"></psk-text-input>
+                        <psk-email-input view-model="email"></psk-email-input>
+                    </psk-form-row>
                 </psk-for-each>
 			</psk-form>
 		</psk-chapter>
