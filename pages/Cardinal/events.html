@@ -1,5 +1,117 @@
 <psk-page title="Events">
-  <psk-chapter title="Not available">
-    Page still not available. Wait until our team will complete this! If you believe that this is an error or you want to contribute, write an email to sinica@axiologic.net
-  </psk-chapter>
+    <psk-toc title="In this section"></psk-toc>
+
+    <psk-description title="Summary">
+        <psk-list>
+            <span>This page is intending to display how <strong>Events</strong> are written in this framework and the ways
+                of how to use them inside components and controllers.
+            </span>
+            <span>In Cardinal framework usage of events is encouraged in order to pass data or trigger actions from view to
+                controllers and vice-versa.
+            </span>
+            <span> All implementations should respect the <a target="_blank"
+                                                          href="https://javascript.info/bubbling-and-capturing">bubbling
+                and capturing principles (external link) </a>.
+            </span>
+        </psk-list>
+    </psk-description>
+
+    <psk-chapter title="Writing an event">
+        <psk-description>
+          Cardinal events are wrapped native custom events. The wrapping was necessary for a better handling of events
+          with the same name and to avoid unwanted conflicts. Each event has a method called
+          <code>getEventType()</code> which is returning the event type. The event type is different from event name and
+          it should be carefully chosen in the development process.
+          In pure native custom events, data is passed through the <code>detail</code> property. As a convention,
+          cardinal events are storing the data on <code>data</code> property. The following code snippet is an example of
+          cardinal event.
+        </psk-description>
+        <psk-code language="JavaScript">
+            import {EVENTS_TYPES} from "../utils/constants";
+            const EVENT_TYPE = EVENTS_TYPES.PSK_BUTTON_EVT;
+            export default class PskButtonEvent extends CustomEvent {
+                public data: any;
+                public getEventType = function() {
+                    return EVENT_TYPE;
+                };
+
+                constructor(eventName: string, eventData: any, eventOptions: EventInit) {
+                super(eventName, eventOptions);
+                    this.data = eventData;
+                }
+            }
+
+        </psk-code>
+    </psk-chapter>
+
+    <psk-chapter title="Using an Event">
+        For using an event, it should be instantiated with the following parameters:
+        <psk-list>
+            &nbsp; <code>eventName</code> - <i>required</i>
+            &nbsp; <code>eventData</code> - <i>optional</i>
+            &nbsp; <code>eventOptions</code> - <i>optional</i>
+                <p>
+                    The default event options are:
+                    <psk-list>
+                        &nbsp;<code>bubbles:<i>false</i></code>
+                        &nbsp;<code>composed:<i>false</i></code>
+                        &nbsp;<code>cancelable:<i>false</i></code>
+                    </psk-list>
+                </p>
+        </psk-list>
+
+
+        <psk-description>
+         The event is dispatched using <code>elem.dispatchEvent(event)</code> to the specified target. In the following code snippet <code>PskButtonEvent</code> is used in <psk-link page="web-components/psk-button">psk-button</psk-link> to trigger an event.
+        </psk-description>
+        <psk-code language="JavaScript">
+            let pskButtonEvent = new PskButtonEvent(this.eventName, this.eventData, {
+                bubbles: true,
+                composed: true,
+                cancelable: true
+            });
+
+            let eventDispatcherElement = this.htmlElement;
+            if (this.eventDispatcher) {
+                if (ACCEPTED_DEFAULT_DISPATCHERS.indexOf(window[this.eventDispatcher]) !== -1) {
+                    eventDispatcherElement = window[this.eventDispatcher];
+                }
+            }
+            eventDispatcherElement.dispatchEvent(pskButtonEvent);
+        </psk-code>
+
+    </psk-chapter>
+
+    <psk-chapter title="Bubbling and capturing events in controllers">
+        <psk-description>
+            In controllers, usually, the event target is the <i>HTMLElement</i> parameter of the constructor.
+            In most of the cases it will be used to listen for bubbling events. If a capturing approach is needed,
+            the event target should just add <code>{capture:true}</code> or <code>true</code> as an option to
+            <code>addEventListener()</code> method.
+        </psk-description>
+        <psk-code language="JavaScript">
+            element.addEventListener("needRoutes", this._provideConfig("routes"));
+            element.addEventListener("needMenuItems", this._provideConfig("menu"));
+            element.addEventListener("getUserInfo", this._provideConfig("profile"));
+        </psk-code>
+    </psk-chapter>
+
+    <psk-chapter title="Handling events in psk-container component">
+        <psk-chapter title="controller.receive">
+            Coming soon.
+        </psk-chapter>
+
+        <psk-chapter title="controller.send">
+            Coming soon.
+        </psk-chapter>
+    </psk-chapter>
+
+    <psk-chapter title="Diagram: Event bubbling for app-menu component">
+        Coming soon.
+    </psk-chapter>
+
+    <psk-chapter title="Example: app-menu component in documentation page">
+        Coming soon.
+    </psk-chapter>
+
 </psk-page>
