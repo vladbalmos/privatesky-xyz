@@ -18,7 +18,7 @@
 
 .table-of-content .psk-card .card-header h5 {
     font-weight: bold;
-    font-size: 1.125rem;
+    font-size: 1rem;
     color: #354f9b;
     border-bottom: 2px solid #354f9b;
     padding-bottom: 8px;
@@ -31,7 +31,7 @@
 }
 
 .table-of-content .psk-card li {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #4c71de;
     list-style: none;
     cursor: pointer;
@@ -44,7 +44,7 @@
 }
 
 .table-of-content li li li {
-    font-size: 90%;
+    font-size: 0.75rem;
 }
 
 .table-of-content li::before {
@@ -67,6 +67,9 @@
 
 .table-of-content .psk-card li.active {
     font-weight: bold;
-    font-style: italic;
-    text-decoration: underline #ff0000 solid;
+    color: #354F9B;
+}
+/* bold only on arrow */
+.table-of-content .psk-card li.active li{
+    font-weight: normal;
 }

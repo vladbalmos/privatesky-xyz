@@ -127,14 +127,14 @@
 
 .table-of-content .psk-card .card-header h5 {
     font-weight: bold;
-    font-size: 1.125rem;
+    font-size: 1rem;
     color: #354F9B;
     border-bottom: 2px solid #354F9B;
     padding-bottom: 0.5rem;
 }
 
 .table-of-content .card-body span {
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #4C71DE;
 }
 
