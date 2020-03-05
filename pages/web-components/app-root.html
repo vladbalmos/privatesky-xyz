@@ -1,0 +1,97 @@
+<psk-page title="psk-app-root">
+
+    <psk-toc title="In this section"></psk-toc>
+
+    <psk-description>
+          This is the main component of your cardinal application. It should be present in your <code><i>index.html</i></code> file.
+    </psk-description>
+
+    <psk-property-descriptor title="Supported properties">
+        <psk-app-root data-define-props="true">
+        </psk-app-root>
+    </psk-property-descriptor>
+
+    <psk-chapter title="HTML Children">
+        <psk-description>
+            This component accepts children elements.
+        </psk-description>
+
+        <psk-list>
+            <psk-chapter title="This website">
+                <psk-code language="markup">
+                    <psk-app-root controller="DefaultApplicationController"></psk-app-root>
+                </psk-code>
+                <psk-description>
+                    If no children is provided, a default renderer will be used. The default render has the following layout:
+                    <psk-list list-type="ordered">
+                        left sidebar : page identity (logo, title), footer;
+                        right container : page title, page content;
+                    </psk-list>
+                    <psk-img src="/assets/images/newlook/DefaultLayout.png" title="Default web layout"></psk-img>
+                </psk-description>
+            </psk-chapter>
+            <psk-chapter title="Custom website">
+                <psk-description>
+                    For providing a custom layout, the slot of the psk-app-root could be provided as follows:
+                </psk-description>
+                <psk-code language="markup">
+                    <psk-app-root controller="DefaultApplicationController">
+                        <header>
+                            <img class="cardinal-logo" width="38px" height="38px" src="/assets/images/cardinal.png" />
+                            <app-menu></app-menu>
+                        </header>
+                        <section>
+                            <psk-app-router failRedirectTo="/home"></psk-app-router>
+                        </section>
+                    </psk-app-root>
+                </psk-code>
+                <psk-description>
+                    The related style of the slotted components or elements should be accomplished as described in <psk-link page="Cardinal/Themes">Themes</psk-link>.
+                    <psk-img src="/assets/images/newlook/CustomLayout.png" title="Custom web layout"></psk-img>
+                </psk-description>
+            </psk-chapter>
+        </psk-list>
+    </psk-chapter>
+
+    <psk-chapter title="Code Example">
+        <psk-description>
+            In the end, your <code><i>index.html</i></code> file should look like the following code example.
+        </psk-description>
+        <psk-code language="markup">
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+            <title>Cardinal.js - Mini Framework for building web applications</title>
+                <meta charset="UTF-8">
+                <link rel="icon" type="image/png" sizes="96x96" href="/favicon.png">
+                <link href="/assets/css/main.css" rel="stylesheet" type="text/css">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+                <meta name="apple-mobile-web-app-capable" content="yes">
+            &lt;/head&gt;
+            &lt;body&gt;
+            <psk-app-root controller="DefaultApplicationController">
+                <header>
+                    <img class="cardinal-logo" width="38px" height="38px" src="/assets/images/cardinal.png" />
+                    <app-menu></app-menu>
+                </header>
+                <section>
+                    <psk-app-router failRedirectTo="/home"></psk-app-router>
+                </section>
+            </psk-app-root>
+
+            <script src="/scripts/privatesky/webshims.js"></script>
+            <script src="/scripts/privatesky/bindableModel.js"></script>
+            <script type="module" src="/cardinal/cardinal.esm.js"></script>
+            <script nomodule src="/cardinal.js"></script>
+            <script>
+                globalConfig = {
+                    theme: "cardinal"
+                }
+            </script>
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </psk-code>
+    </psk-chapter>
+
+
+</psk-page>

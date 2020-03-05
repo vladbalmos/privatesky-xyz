@@ -168,14 +168,18 @@
                 "name": "Web Components",
                 "path": "/web-components",
                 "icon": "fa-cog",
-                "children": [{
+                "children": [
+                    {
+                        "name": "App Root"
+                    },
+                    {
+                        "name": "App Router"
+                    },
+                    {
                         "name": "Page Not Found"
                     },
                     {
                         "name": "Feedback List"
-                    },
-                    {
-                        "name": "App Router"
                     },
                     {
                         "name": "Attachments List"
