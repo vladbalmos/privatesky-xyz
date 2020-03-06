@@ -47,17 +47,15 @@
     <psk-chapter title="Using an Event">
         For using an event, it should be instantiated with the following parameters:
         <psk-list>
-            &nbsp; <code>eventName</code> - <i>required</i>
-            &nbsp; <code>eventData</code> - <i>optional</i>
-            &nbsp; <code>eventOptions</code> - <i>optional</i>
-                <p>
+             <code>eventName</code> - <i>required</i>
+             <code>eventData</code> - <i>optional</i>
+             <code>eventOptions</code> - <i>optional</i>
                     The default event options are:
                     <psk-list>
-                        &nbsp;<code>bubbles:<i>false</i></code>
-                        &nbsp;<code>composed:<i>false</i></code>
-                        &nbsp;<code>cancelable:<i>false</i></code>
+                        <code>bubbles:<i>false</i></code>
+                        <code>composed:<i>false</i></code>
+                        <code>cancelable:<i>false</i></code>
                     </psk-list>
-                </p>
         </psk-list>
 
 
@@ -96,8 +94,24 @@
         </psk-code>
     </psk-chapter>
 
+    <psk-chapter title="Cardinal default events">
+        <psk-table header="true">
+            Event name | Responsible controller |  Used In
+            needRoutes | DefaultApplicationController | psk-app-root
+            needMenuItems | DefaultApplicationController | app-menu
+            getUserInfo | DefaultApplicationController | psk-user-profile
+            validateUrl | DefaultApplicationController | psk-link
+        </psk-table>
+    </psk-chapter>
+
     <psk-chapter title="Handling events in psk-container component">
         <psk-chapter title="controller.receive">
+            <psk-description>
+                Coming soon.
+            </psk-description>
+        </psk-chapter>
+
+        <psk-chapter title="controller.dismiss">
             Coming soon.
         </psk-chapter>
 
@@ -106,12 +120,151 @@
         </psk-chapter>
     </psk-chapter>
 
-    <psk-chapter title="Diagram: Event bubbling for app-menu component">
-        Coming soon.
+    <psk-chapter title="Diagram: Event bubbling in psk-components">
+        <psk-description>
+            In the following diagram there are exposed 2 nested components: <b>child-component</b> and
+            <b>host-component</b>.
+            The controller of the child-component is handling only the events named <code>event-name-1</code>. In this case,
+            the event <code>event-name-2</code> will be bubbled to the <b>host-controller</b>. Please note that,
+            the events are considered to have the composed flag in order to pass from the child-component shadow DOM to the host-component.
+        </psk-description>
+        <psk-img src="/assets/images/newlook/Events.svg" title="Bubbling events through controllers"></psk-img>
     </psk-chapter>
 
-    <psk-chapter title="Example: app-menu component in documentation page">
-        Coming soon.
+    <psk-chapter title="Example: Bubbling through components">
+        <psk-chapter title="Code Example">
+            <psk-description>
+                For our example we thought at a small app that has 2 buttons:
+                <psk-list>
+                    <i>Add fruit</i> - it adds a fruit in the view.
+                    <i>Change fruit provider</i> - it is a toggle button that adds/removes the event listener for the event sent by <i>Add fruit</i> button
+                </psk-list>
+
+                Those buttons are wrapped in a container that can handle their events. The container is wrapped in another container (parent container)
+                that can handle <code>giveMeAFruit</code> event.
+            </psk-description>
+
+            <psk-code>
+                <psk-container>
+                    <script>
+                        controller.receive("giveMeAFruit", function (evt) {
+                            evt.stopImmediatePropagation();
+                            callback = evt.detail;
+                            callback(null, "apple");
+                        });
+                    </script>
+
+                    <psk-container>
+                        <script>
+                            let localProvider = false;
+                            let localProviderHandler = function (evt) {
+                                evt.stopImmediatePropagation();
+                                callback = evt.detail;
+                                callback(null, "pear");
+                            };
+
+                            controller.receive("addFruit", function () {
+                                let fruit = document.createElement("span");
+                                this.querySelector("#fruit_basket").appendChild(fruit);
+                                controller.send("giveMeAFruit", function (err, fruitName) {
+                                    if (!err) {
+                                        fruit.className += "fruits_examples " + fruitName;
+                                    }
+                                })
+                            });
+
+                            controller.receive("changeProvider", function () {
+                                localProvider = !localProvider;
+                                if (localProvider) {
+                                    return controller.receive("giveMeAFruit", localProviderHandler);
+                                }
+                                controller.dismiss("giveMeAFruit", localProviderHandler);
+                            })
+                        </script>
+
+                        <div id="fruit_basket"></div>
+
+                        <psk-button event-name="addFruit">
+                            Add Fruit
+                        </psk-button>
+                        <psk-button event-name="changeProvider">
+                            Toggle fruit provider
+                        </psk-button>
+                    </psk-container>
+
+                </psk-container>
+            </psk-code>
+
+
+        </psk-chapter>
+        <psk-chapter title="Running Example">
+
+            <psk-container>
+                <script>
+                    controller.receive("giveMeAFruit", function (evt) {
+                        evt.stopImmediatePropagation();
+                        callback = evt.detail;
+                        callback(null, "apple");
+                    });
+                </script>
+
+                <psk-container>
+                    <style>
+                        .fruits_examples {
+                            width: 72px;
+                            height: 72px;
+                            display: inline-block;
+                        }
+
+                        .fruits_examples.apple {
+                            background: url("/assets/images/examples/apple.png");
+                        }
+
+                        .fruits_examples.pear {
+                            background: url("/assets/images/examples/pear.png");
+                        }
+                    </style>
+
+                    <script>
+                        let localProvider = false;
+
+                        let localProviderHandler = function (evt) {
+                            evt.stopImmediatePropagation();
+                            callback = evt.detail;
+                            callback(null, "pear");
+                        };
+
+                        controller.receive("addFruit", function () {
+                            let fruit = document.createElement("span");
+                            this.querySelector("#fruit_basket").appendChild(fruit);
+                            controller.send("giveMeAFruit", function (err, fruitName) {
+                                if (!err) {
+                                    fruit.className += "fruits_examples " + fruitName;
+                                }
+                            })
+                        });
+
+                        controller.receive("changeProvider", function () {
+                            localProvider = !localProvider;
+                            if (localProvider) {
+                                return controller.receive("giveMeAFruit", localProviderHandler);
+                            }
+                            controller.dismiss("giveMeAFruit", localProviderHandler);
+                        })
+                    </script>
+
+                    <div id="fruit_basket"></div>
+
+                    <psk-button event-name="addFruit">
+                        Add Fruit
+                    </psk-button>
+                    <psk-button event-name="changeProvider">
+                        Change fruit provider
+                    </psk-button>
+                </psk-container>
+
+            </psk-container>
+        </psk-chapter>
     </psk-chapter>
 
 </psk-page>
