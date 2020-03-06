@@ -42,17 +42,22 @@
             </psk-list-feedbacks>
         </psk-code>
         <psk-code language="markup">
-            <psk-list-feedbacks messages-to-display={5} time-alive={5000} alert-renderer="my-alert-renderer"
-                styleCustomisation="{{
-                toast: {
-                    header: {
-                        style:
-                        {
-                            color: 'red',
-                            backgroundColor: 'purple'
+            <psk-list-feedbacks
+                    messages-to-display={5}
+                    time-alive={5000}
+                    alert-renderer="my-alert-renderer"
+                    styleCustomisation='
+                    {
+                        "toast": {
+                            "header":{
+                                "style":{
+                                    "color":"red",
+                                    "backgroundColor":"purple"
+                                }
+                            }
                         }
-                    }
-                }"></psk-list-feedbacks>
+                    }'>
+            </psk-list-feedbacks>
         </psk-code>
     </psk-chapter>
 </psk-page>
