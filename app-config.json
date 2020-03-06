@@ -29,9 +29,6 @@
                         "name": "About"
                     },
                     {
-                        "name": "How to create a new site with Cardinal"
-                    },
-                    {
                         "name": "How to write documentation pages"
                     }
                 ]
@@ -103,6 +100,9 @@
                         "name": "Web Components MVC"
                     },
                     {
+                        "name": "How to create a new site with Cardinal"
+                    },
+                    {
                         "name": "Models"
                     },
                     {
@@ -168,8 +168,7 @@
                 "name": "Web Components",
                 "path": "/web-components",
                 "icon": "fa-cog",
-                "children": [
-                    {
+                "children": [{
                         "name": "App Root"
                     },
                     {
@@ -308,8 +307,7 @@
                 "name": "Development",
                 "path": "/Development",
                 "icon": "fa-cog",
-                "children": [
-                    {
+                "children": [{
                         "name": "Coding style"
                     },
                     {
