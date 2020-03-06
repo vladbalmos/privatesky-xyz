@@ -5,8 +5,6 @@
       </url><url>
         <loc>https://privatesky.xyz/?About/about</loc>
       </url><url>
-        <loc>https://privatesky.xyz/?About/how-to-create-a-new-site-with-cardinal</loc>
-      </url><url>
         <loc>https://privatesky.xyz/?About/how-to-write-documentation-pages</loc>
       </url><url>
         <loc>https://privatesky.xyz/?PrivateSky/main-innovations</loc>
@@ -36,6 +34,8 @@
         <loc>https://privatesky.xyz/?EDFS/secret-smart-contracts</loc>
       </url><url>
         <loc>https://privatesky.xyz/?Cardinal/web-components-mvc</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?Cardinal/how-to-create-a-new-site-with-cardinal</loc>
       </url><url>
         <loc>https://privatesky.xyz/?Cardinal/models</loc>
       </url><url>
@@ -73,11 +73,13 @@
       </url><url>
         <loc>https://privatesky.xyz/?psk-wiki/psk-toc</loc>
       </url><url>
+        <loc>https://privatesky.xyz/?web-components/app-root</loc>
+      </url><url>
+        <loc>https://privatesky.xyz/?web-components/app-router</loc>
+      </url><url>
         <loc>https://privatesky.xyz/?web-components/page-not-found</loc>
       </url><url>
         <loc>https://privatesky.xyz/?web-components/feedback-list</loc>
-      </url><url>
-        <loc>https://privatesky.xyz/?web-components/app-router</loc>
       </url><url>
         <loc>https://privatesky.xyz/?web-components/attachments-list</loc>
       </url><url>
