@@ -12,9 +12,47 @@
             in distinctive notifications(the <code>message</code> is not mandatory) and a <code>name</code> for each
             message(again,this is not mandatory)
             and the type of feedback you want to show.</p>
+        <p>To display messages using this component a controller must listen for the <code>openFeedback</code> event triggered by the <code>psk-list-feedbacks</code>
+        in order to receive the callback used to send the messages:</p>
+
         <psk-code language="Javascript">
-            this.showFeedbackHandler.emit({ message: 'Example', name: 'Example-Name', type: 'toast' })
+            import BindableController from "./base-controllers/BindableController.js";
+
+            export default class DefaultController extends BindableController {
+                constructor(element) {
+                    super(element);
+
+                    this.feedbackEmitter = null;
+
+                    // Listen for the 'openFeedback' event to receive a handle to the
+                    // Feedback List emitter
+                    this.receive('openFeedback', (e) => {
+                        this.feedbackEmitter = e.detail;
+                    });
+
+                    // Show an error when something happens
+                    element.addEventListener('entity:validation-error', (e) => {
+                        const errorMessage = e.detail;
+                        // Send the actual message
+                        this.feedbackEmitter(errorMessage, 'Validation Error', 'alert-danger');
+                    });
+                }
+            }
         </psk-code>
+
+        <p>The third argument for the <code>feedbackEmitter</code> callback specifies the message type and can take one of the following options:</p>
+        <psk-list>
+            toast
+            alert-primary
+            alert-secondary
+            alert-success
+            alert-danger
+            alert-warning
+            alert-info
+            alert-light
+            alert-dark
+        </psk-list>
+
         <p>The alerts are stackable and they will only show a specific number of them(only on toast type notifications).
         </p>
         <p>When the <strong>X</strong> button is pressed(when a <code>Toast</code> pool is used) an event(
