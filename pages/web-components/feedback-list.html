@@ -31,7 +31,7 @@
                     });
 
                     // Show an error when something happens
-                    element.addEventListener('entity:validation-error', (e) => {
+                    element.addEventListener('validation-error', (e) => {
                         const errorMessage = e.detail;
                         // Send the actual message
                         this.feedbackEmitter(errorMessage, 'Validation Error', 'alert-danger');
