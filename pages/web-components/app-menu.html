@@ -90,7 +90,7 @@
                 }
               }
               ]
-            controller.receive("needMenuItems", function (evt) {
+            controller.on("needMenuItems", function (evt) {
               evt.stopImmediatePropagation();
               callback = evt.detail;
               callback(null, menuItems)
@@ -169,7 +169,7 @@
                     }
                 }
                 ]
-                controller.receive("needMenuItems", function (evt) {
+                controller.on("needMenuItems", function (evt) {
                     evt.stopImmediatePropagation();
                     callback = evt.detail;
                     callback(null, menuItems)
