@@ -95,11 +95,11 @@
     </psk-chapter>
 
     <psk-chapter title="API Definition - BindableController">
-        <psk-card class="api-title" title="controller.on()">
+        <psk-chapter   class="api-title" title="controller.on()">
             <p>The function <code>on</code> will listen for the event and when the event is triggered, the callback function given as parameter will be executed.</p>
             <p>If a HTMLElement is provided, then the listener will be attached to it, otherwise it is attached to the container where the controller is attached.</p>
             <psk-card class="api-subtitle" title="Syntax">
-                <p>controller.on(eventName: string, htmlElement: HTMLElement | Function, callback?: Function)</p>
+                <p>controller.on(eventName: string, htmlElement: HTMLElement | Function, callback?: Function, options:Object)</p>
             </psk-card>
             <psk-card class="api-subtitle" title="Parameters">
                 <psk-list>
@@ -112,8 +112,8 @@
             <psk-card class="api-subtitle" title="Return value">
                 <p>undefined</p>
             </psk-card>
-        </psk-card>
-        <psk-card class="api-title" title="controller.off()">
+        </psk-chapter >
+        <psk-chapter  class="api-title" title="controller.off()">
             <p>The function <code>off</code> will remove the provided event listener.</p>
             <p>In order to remove the correct event listener, the function should receive the same tuple (htmlElement, element, options) used when <code>on</code> is registering the event handler</p>
             <psk-card class="api-subtitle" title="Syntax">
@@ -130,8 +130,8 @@
             <psk-card class="api-subtitle" title="Return value">
                 <p>undefined</p>
             </psk-card>
-        </psk-card>
-        <psk-card class="api-title" title="controller.send()">
+        </psk-chapter >
+        <psk-chapter class="api-title" title="controller.send()">
             <p>The function <code>send</code> is resposable with triggering events by using a given name, some informations and an element that is the trigger point.</p>
             <p>The parameters <code>data</code> and <code>htmlElement</code> are optional, but eventName is mandatory.</p>
             <p>If an element is not set as trigger point, then the container where the controller is attached is the trigger point.</p>
@@ -148,8 +148,8 @@
             <psk-card class="api-subtitle" title="Return value">
                 <p>undefined</p>
             </psk-card>
-        </psk-card>
-        <psk-card class="api-title" title="controller.setModel()">
+        </psk-chapter>
+        <psk-chapter class="api-title" title="controller.setModel()">
             <p>The function <code>setModel</code> is a setter for the model. The model will be attached to the controller, so after that one-way and two-way binding can happen.</p>
             <psk-card class="api-subtitle" title="Syntax">
                 <p>controller.setModel(model: Object)</p>
@@ -162,6 +162,6 @@
             <psk-card class="api-subtitle" title="Return value">
                 <p>The proxified model</p>
             </psk-card>
-        </psk-card>
+        </psk-chapter>
     </psk-chapter>
 </psk-page>
