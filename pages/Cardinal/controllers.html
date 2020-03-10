@@ -106,6 +106,25 @@
                     <span><strong>eventName</strong> <i>(mandatory)</i> - The name of the event that needs to be listened</span>
                     <span><strong>htmlElement</strong> <i>(optional)</i> - On this element the event will be attached. Also, a callback function can be provided instead to allow the ussage of the function without providing null parameters. Instead of calling like <code>controller.on(evName, null, function()...)</code> you can call it like <code>controller.receive(evName, function()...)</code>. If this parameter is a function, then this is the callback that will be executed when the event is captured.</span>
                     <span><strong>callback</strong> <i>(optional)</i> - The function that will be executed when the event is captured.</span>
+                    <span><strong>options</strong> <i>(optional)</i> - an object that indicates the options that should be used by the <code>addEventListener</code> method</span>
+                </psk-list>
+            </psk-card>
+            <psk-card class="api-subtitle" title="Return value">
+                <p>undefined</p>
+            </psk-card>
+        </psk-card>
+        <psk-card class="api-title" title="controller.off()">
+            <p>The function <code>off</code> will remove the provided event listener.</p>
+            <p>In order to remove the correct event listener, the function should receive the same tuple (htmlElement, element, options) used when <code>on</code> is registering the event handler</p>
+            <psk-card class="api-subtitle" title="Syntax">
+                <p>controller.on(eventName: string, htmlElement: HTMLElement | Function, callback?: Function, options:Object)</p>
+            </psk-card>
+            <psk-card class="api-subtitle" title="Parameters">
+                <psk-list>
+                    <span><strong>eventName</strong> <i>(mandatory)</i> - The name of the event that needs to be listened</span>
+                    <span><strong>htmlElement</strong> <i>(optional)</i> - On this element the event will be attached. Also, a callback function can be provided instead to allow the ussage of the function without providing null parameters. Instead of calling like <code>controller.on(evName, null, function()...)</code> you can call it like <code>controller.receive(evName, function()...)</code>. If this parameter is a function, then this is the callback that will be executed when the event is captured.</span>
+                    <span><strong>callback</strong> <i>(optional)</i> - The function that will be executed when the event is captured.</span>
+                    <span><strong>options</strong> <i>(optional)</i> - an object that indicates the options that should be used by the <code>addEventListener</code> method</span>
                 </psk-list>
             </psk-card>
             <psk-card class="api-subtitle" title="Return value">
