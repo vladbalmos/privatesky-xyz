@@ -98,63 +98,6 @@
 }
 
 
-/* toc  */
-
-.table-of-content {
-    width: 20rem;
-    position: fixed;
-    right: 6px;
-    top: 125px;
-    height: 80vh;
-    overflow: auto;
-    scrollbar-width: none;
-}
-
-.table-of-content::-webkit-scrollbar {
-    display: none;
-}
-
-.table-of-content .psk-card .card-body,
-.table-of-content .psk-card .card-header {
-    padding-left: 0;
-    padding-right: 40px;
-    padding-bottom: 0;
-}
-
-.table-of-content .psk-card {
-    padding: 0;
-}
-
-.table-of-content .psk-card .card-header h5 {
-    font-weight: bold;
-    font-size: 1rem;
-    color: #354F9B;
-    border-bottom: 2px solid #354F9B;
-    padding-bottom: 0.5rem;
-}
-
-.table-of-content .card-body span {
-    font-size: 0.9rem;
-    color: #4C71DE;
-}
-
-.table-of-content .card-body span:hover {
-    color: #0029b4;
-}
-
-.psk-card .table-of-content {
-    position: static;
-}
-
-.table-of-content .card-body ul li {
-    text-align: left;
-}
-
-.table-of-content .psk-card ul ul li::before {
-    content: "";
-}
-
-
 /* code tag */
 
 .psk-card .card-body p code,

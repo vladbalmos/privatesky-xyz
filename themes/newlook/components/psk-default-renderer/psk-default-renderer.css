@@ -19,7 +19,7 @@ div.global_container.is-mobile {
 
 aside {
     height: 100%;
-    background-image: linear-gradient(180deg, #5E7FE1 30%, #354F9B 100%);
+    background-image: linear-gradient(180deg, #5e7fe1 30%, #354f9b 100%);
     color: white;
     order: 1;
     flex: 0.5;
@@ -40,24 +40,19 @@ aside {
     background: #ffffff1a;
     font-size: 85%;
 }
-@media(max-width:960px) {
+
+@media (max-width: 960px) {
     aside {
         grid-template-rows: auto minmax(0px, auto);
     }
-    .nav-footer{
-        display:none;
-     }
-}
-.nav-footer.bottom-stick {
-    color: #FFF;
-    background: #ffffff1a;
+    .nav-footer {
+        display: none;
+    }
 }
 
-section {
-    height: 100%;
-    overflow: auto;
-    scrollbar-color: #354F9B #E5E5E5;
-    scrollbar-width: thin;
+.nav-footer.bottom-stick {
+    color: #fff;
+    background: #ffffff1a;
 }
 
 app-menu,
@@ -75,6 +70,10 @@ h1 {
 section {
     order: 2;
     flex: 8;
+    height: 100%;
+    overflow: auto;
+    scrollbar-color: #354f9b #e5e5e5;
+    scrollbar-width: thin;
 }
 
 aside::-webkit-scrollbar,
@@ -88,7 +87,7 @@ section::-webkit-scrollbar {
 
 aside::-webkit-scrollbar-track,
 section::-webkit-scrollbar-track {
-    background-color: #354F9B;
+    background-color: #354f9b;
 }
 
 
@@ -105,5 +104,5 @@ section::-webkit-scrollbar-thumb {
 /* set button(top and bottom of the scrollbar) */
 
 aside::-webkit-scrollbar-button {
-    display: none
+    display: none;
 }
