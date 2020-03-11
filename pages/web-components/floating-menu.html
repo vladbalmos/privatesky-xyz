@@ -53,7 +53,7 @@
                             "pageUrl": "http://localhost:8000/pages/PrivateSky/architecture.html"
                         }
                     }]
-                    controller.receive("needFloatingItems", function (evt) {
+                    controller.on("needFloatingItems", function (evt) {
                         evt.stopImmediatePropagation();
                         if (evt.detail) {
                             callback = evt.detail;
@@ -71,7 +71,7 @@
     <psk-example title="Live example">
         <psk-container>
             <script>
-                controller.receive("needFloatingMenu", function (evt) {
+                controller.on("needFloatingMenu", function (evt) {
                     evt.stopImmediatePropagation();
                     if (evt.detail) {
                         callback = evt.detail;

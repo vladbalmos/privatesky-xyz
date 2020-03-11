@@ -105,18 +105,18 @@
     </psk-chapter>
 
     <psk-chapter title="Handling events in psk-container component">
-        <psk-chapter title="controller.receive">
+        <psk-chapter title="controller.on">
             <psk-description>
-                Coming soon.
+                Check the Controllers documentation page for <a href="/?Cardinal/controllers&chapter=controller-on">controller.on</a>.
             </psk-description>
         </psk-chapter>
 
-        <psk-chapter title="controller.dismiss">
-            Coming soon.
+        <psk-chapter title="controller.off">
+            Check the Controllers documentation page for <a href="/?Cardinal/controllers&chapter=controller-off">controller.off</a>.
         </psk-chapter>
 
         <psk-chapter title="controller.send">
-            Coming soon.
+            Check the Controllers documentation page for <a href="/?Cardinal/controllers&chapter=controller-send">controller.send</a>.
         </psk-chapter>
     </psk-chapter>
 
@@ -147,7 +147,7 @@
             <psk-code>
                 <psk-container>
                     <script>
-                        controller.receive("giveMeAFruit", function (evt) {
+                        controller.on("giveMeAFruit", function (evt) {
                             evt.stopImmediatePropagation();
                             callback = evt.detail;
                             callback(null, "apple");
@@ -163,7 +163,7 @@
                                 callback(null, "pear");
                             };
 
-                            controller.receive("addFruit", function () {
+                            controller.on("addFruit", function () {
                                 let fruit = document.createElement("span");
                                 this.querySelector("#fruit_basket").appendChild(fruit);
                                 controller.send("giveMeAFruit", function (err, fruitName) {
@@ -173,12 +173,12 @@
                                 })
                             });
 
-                            controller.receive("changeProvider", function () {
+                            controller.on("changeProvider", function () {
                                 localProvider = !localProvider;
                                 if (localProvider) {
-                                    return controller.receive("giveMeAFruit", localProviderHandler);
+                                    return controller.on("giveMeAFruit", localProviderHandler);
                                 }
-                                controller.dismiss("giveMeAFruit", localProviderHandler);
+                                controller.off("giveMeAFruit", localProviderHandler);
                             })
                         </script>
 
@@ -201,7 +201,7 @@
 
             <psk-container>
                 <script>
-                    controller.receive("giveMeAFruit", function (evt) {
+                    controller.on("giveMeAFruit", function (evt) {
                         evt.stopImmediatePropagation();
                         callback = evt.detail;
                         callback(null, "apple");
@@ -234,7 +234,7 @@
                             callback(null, "pear");
                         };
 
-                        controller.receive("addFruit", function () {
+                        controller.on("addFruit", function () {
                             let fruit = document.createElement("span");
                             this.querySelector("#fruit_basket").appendChild(fruit);
                             controller.send("giveMeAFruit", function (err, fruitName) {
@@ -244,12 +244,12 @@
                             })
                         });
 
-                        controller.receive("changeProvider", function () {
+                        controller.on("changeProvider", function () {
                             localProvider = !localProvider;
                             if (localProvider) {
-                                return controller.receive("giveMeAFruit", localProviderHandler);
+                                return controller.on("giveMeAFruit", localProviderHandler);
                             }
-                            controller.dismiss("giveMeAFruit", localProviderHandler);
+                            controller.off("giveMeAFruit", localProviderHandler);
                         })
                     </script>
 
