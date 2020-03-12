@@ -28,48 +28,52 @@
     <psk-example title="View-Model example">
         <psk-chapter title="Controller - Model example - Source code">
             <psk-code language="javascript">
-                import DefaultFormController from "../base-controllers/DefaultFormController.js";
+               import BindableController from "./base-controllers/BindableController.js";
 
-                export default class TestFormChildrenController extends DefaultFormController {
-                    constructor(element) {
-                        super(element, {
-                            sectionTitle: {
-                                label: "Your personal information"
-                            },
-                            name: {
-                                label: "Name",
-                                name: "name",
+                const model = {
+                    sectionTitle: {
+                        label: "Your personal information"
+                    },
+                    name: {
+                        label: "Name",
+                        name: "name",
+                        required: true,
+                        placeholder: "Name here...",
+                        value: ''
+                    },
+                    subSection: {
+                        title: {
+                            label: "Personal information from sub-tree of a model"
+                        },
+                        otherInformation: {
+                            email: {
+                                label: "Email address",
+                                name: "email",
                                 required: true,
-                                placeholder: "Name here...",
+                                placeholder: "Email address here...",
                                 value: ''
                             },
-                            subSection: {
-                                title: {
-                                    label: "Personal information from sub-tree of a model"
-                                },
-                                otherInformation: {
-                                    email: {
-                                        label: "Email address",
-                                        name: "email",
-                                        required: true,
-                                        placeholder: "Email address here...",
-                                        value: ''
-                                    },
-                                    otherLabels: [{
-                                        label: "Zero Label",
-                                        subLabel: {
-                                            label: "Zero sub-label"
-                                        }
-                                    }, {
-                                        label: "One Label"
-                                    }, {
-                                        label: "Two Label"
-                                    }]
+                            otherLabels: [{
+                                label: "Zero Label",
+                                subLabel: {
+                                    label: "Zero sub-label"
                                 }
-                            }
-                        });
+                            }, {
+                                label: "One Label"
+                            }, {
+                                label: "Two Label"
+                            }]
+                        }
+                    }
+                };
+
+                export default class TestFormChildrenController extends BindableController {
+                    constructor(element) {
+                        super(element);
+                        this.model = this.setModel(model);
                     }
                 }
+
             </psk-code>
         </psk-chapter>
 
